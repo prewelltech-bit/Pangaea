@@ -3,8 +3,6 @@ import React from "react";
 const Footer = () => {
   return (
     <div className="footer7-wrapper">
-      <h2 className="footer7-title">Style 7: Compact Professional Footer</h2>
-
       <footer className="footer7">
         <div className="footer7-container">
 
@@ -12,8 +10,7 @@ const Footer = () => {
 
             {/* Brand */}
             <div className="footer7-brand">
-              <h3>PREWELL DIGITECH</h3>
-              <p>Innovative Digital Solutions</p>
+              <img src="/public/assets/Logo/PANGEA_PATHWAYS.png" alt="Pangaea Pathways Logo" className="footer7-logo" />
             </div>
 
             {/* Links */}
@@ -35,7 +32,7 @@ const Footer = () => {
           {/* Bottom */}
           <div className="footer7-bottom">
             <p>
-              © 2025 Prewell Digitech. All rights reserved. |{" "}
+              © 2025 Pagaea Pathways. All rights reserved. |{" "}
               <a href="#">Privacy Policy</a> |{" "}
               <a href="#">Terms of Service</a>
             </p>
