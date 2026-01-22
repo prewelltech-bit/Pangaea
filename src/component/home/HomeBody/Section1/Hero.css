@@ -1,7 +1,80 @@
-.hero-section {
-    background-color: #40506d;
-    padding: 60px 20px;
+.hero {
+  width: 100%;
+  padding: 75px 0;
+}
+
+.hero-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.left-hero h1 {
+  color: #000;
+  font-size: 48px;
+  line-height: 1.4;
+  font-weight: 400;
+}
+
+.left-hero span {
+  color: #000;
+  font-weight: 900;
+}
+
+.left-hero p {
+    margin-top: 15px;
+    color: #4d5566;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.right-hero img {
+  width: 100%;
+  max-width: 480px;
+}
+
+.hero-swiper {
+  width: 100%;
+}
+
+.swiper-pagination-bullet {
+  background: #000;
+  opacity: 0.4;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+/* swiper dots */
+.hero-swiper .swiper-pagination-bullet {
+  background-color: black !important;
+  opacity: 0.4;
+}
+
+.hero-swiper .swiper-pagination-bullet-active {
+  background-color: black !important;
+  opacity: 1;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column-reverse; 
     text-align: center;
-    height: 1400px;
-    /* margin-top: 150px; */
+  }
+
+  .right-hero img {
+    max-width: 360px;
+  }
+
+  .left-hero h1 {
+    font-size: 34px;
+  }
 }
