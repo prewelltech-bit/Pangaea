@@ -1,22 +1,20 @@
 .hero {
   width: 100%;
-  padding: 75px 0;
+  padding: 180px 0 40px;
 }
-.hero-main
-{
-    margin: auto;
-    max-width: 1400px;
-    align-items: center;
-    text-align: center;
+
+.hero-main {
+  margin: auto;
+  max-width: 1400px;
+  align-items: center;
 }
 
 .hero-container {
   max-width: 1200px;
   margin: auto;
   padding: 0 20px;
-
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: space-between;
   gap: 40px;
 }
@@ -43,7 +41,9 @@
 .right-hero img {
   width: 100%;
   max-width: 480px;
+  margin-top: -96px; 
 }
+
 
 .hero-swiper {
   width: 100%;
@@ -71,17 +71,593 @@
 
 
 /* Responsive */
-@media (max-width: 768px) {
-  .hero-container {
-    flex-direction: column-reverse; 
-    text-align: center;
-  }
-
-  .right-hero img {
-    max-width: 360px;
+/* Tablet */
+@media (max-width: 992px) {
+  .hero {
+    padding: 140px 0 40px;
   }
 
   .left-hero h1 {
-    font-size: 34px;
+    font-size: 40px;
+  }
+
+  .right-hero {
+    display: flex;
+    justify-content: center;
+  }
+
+  .right-hero img {
+    max-width: 420px;
+    margin-top: -60px;
   }
 }
+
+/* Mobile */
+@media (max-width: 768px) {
+  .hero {
+    padding: 120px 60px 30px;
+  }
+
+  .hero-container {
+    flex-direction: column-reverse;
+    
+  }
+
+  .left-hero {
+    text-align: left; 
+  }
+
+  .left-hero h1 {
+    font-size: 32px;
+    line-height: 1.3;
+  }
+
+  .left-hero p {
+    font-size: 18px;
+  }
+
+  .right-hero {
+    display: flex;
+    justify-content: center;
+  }
+
+  .right-hero img {
+    max-width: 320px;
+    margin-top: -20px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .left-hero h1 {
+    font-size: 28px;
+  }
+
+  .left-hero p {
+    font-size: 16px;
+  }
+
+  .right-hero img {
+    max-width: 280px;
+    margin-top: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+   

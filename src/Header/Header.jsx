@@ -33,7 +33,7 @@ const Header = () => {
           <li style={{"--i": 3}}><a href="#exams" onClick={() => setIsMobile(false)}>IELTS/PTE</a></li>
           <li style={{"--i": 4}}><a href="#about" onClick={() => setIsMobile(false)}>About Us</a></li>
           <li style={{"--i": 5}}>
-            <button className="apply-btn">Apply Now</button>
+            <button className="apply-btn">Contact Us</button>
           </li>
         </ul>
 

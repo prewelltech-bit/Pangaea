@@ -1,0 +1,244 @@
+/* --- Base Page Wrapper --- */
+.page-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+  transition: background 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 80px 20px; 
+  position: relative;
+  overflow: hidden;
+  background-color: #f8fafc; 
+}
+
+/* --- Main Heading (WAP) --- */
+.wap {
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 900;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #002d5b 0%, #0056b3 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  letter-spacing: -1.5px;
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.wap::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 5px;
+  background: linear-gradient(to right, #002d5b, #60a5fa);
+  margin: 15px auto 0;
+  border-radius: 10px;
+  transition: width 0.4s ease;
+}
+
+.wap:hover::after {
+  width: 120px;
+}
+
+/* --- Content Layout --- */
+.main-wrapper-inner {
+  width: 100%;
+  max-width: 1100px; 
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 25px; 
+  z-index: 2;
+}
+
+/* --- Card Container --- */
+.card-container {
+  width: 100%;
+  background: #ffffff;
+  border-radius: 24px;
+  box-shadow: 0 40px 100px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card-container:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 50px 120px rgba(0, 0, 0, 0.12);
+}
+
+.slanted-card {
+  display: flex;
+  min-height: 550px;
+}
+
+/* --- Left Side: Content --- */
+.content-part {
+  flex: 1.3;
+  padding: 80px 60px;
+  background: white;
+  z-index: 5;
+  clip-path: polygon(0 0, 100% 0, 88% 100%, 0% 100%);
+  position: relative;
+}
+
+.large-quote {
+  position: absolute;
+  top: 30px; 
+  left: 40px; 
+  font-size: 180px;
+  font-family: serif;
+  z-index: -1;
+  line-height: 0.8;
+  opacity: 0.1; 
+  color: #002d5b;
+  pointer-events: none; 
+}
+
+.title-text {
+  font-size: 40px;
+  font-weight: 800;
+  color: #002d5b;
+  line-height: 1.2;
+  margin-bottom: 30px;
+  letter-spacing: -0.5px;
+}
+
+.story-para {
+  color: #4a5a6b;
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 450px;
+}
+
+/* --- Right Side: Image --- */
+.image-part {
+  flex: 1;
+  z-index: 1;
+  background-color: #f1f5f9;
+  overflow: hidden;
+  position: relative;
+  min-height: 400px; 
+}
+
+.person-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  object-position: center center; 
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  display: block;
+}
+
+.card-container:hover .person-img {
+  transform: scale(1.08);
+}
+
+/* --- Navigation Buttons --- */
+.custom-nav-wrapper {
+  display: flex;
+  justify-content: flex-end; 
+  gap: 15px;
+  padding-right: 10px;
+}
+
+.nav-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #002d5b;
+  background: white;
+  color: #002d5b;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+  background: #002d5b;
+  color: white;
+}
+
+/* --- User Meta & Ratings --- */
+.stars-container {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 12px;
+  background: rgba(255, 193, 7, 0.1); 
+  padding: 6px 14px;
+  border-radius: 50px;
+  width: fit-content;
+  border: 1px solid rgba(255, 193, 7, 0.3);
+  margin-top: 25px;
+}
+
+.star-icon {
+  color: #ffc107;
+  font-size: 18px;
+}
+
+.user-meta {
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid #f1f5f9;
+  display: flex;
+  flex-direction: column;
+}
+
+.name-bold {
+  font-size: 20px;
+  font-weight: 800;
+  color: #002d5b;
+}
+
+.role-light {
+  font-size: 14px;
+  color: #64748b;
+  text-transform: uppercase;
+}
+
+/* --- Responsive Layout (Mobile) --- */
+@media (max-width: 768px) {
+  .page-wrapper {
+    padding: 40px 15px;
+  }
+
+  .slanted-card {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .content-part {
+    clip-path: none; 
+    padding: 40px 25px;
+    order: 2;
+  }
+
+  .image-part {
+    margin-left: 0;
+    height: 350px;
+    order: 1; 
+  }
+
+  .title-text {
+    font-size: 28px;
+  }
+
+  .wap {
+    font-size: 2.2rem;
+  }
+
+  .custom-nav-wrapper {
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+}
