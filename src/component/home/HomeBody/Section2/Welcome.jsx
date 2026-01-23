@@ -6,7 +6,7 @@ const Welcome = () => {
             <section className="welcome-section">
                 <div className="welcome-overlay">
                     <div className="welcome-card animate-welcome-card">
-                    <h1 className="welcome-h1">Find our events</h1>
+                        <h1 className="welcome-h1">Find our events</h1>
                     </div>
                 </div>
             </section>

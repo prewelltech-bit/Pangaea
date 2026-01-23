@@ -1,0 +1,150 @@
+/* HEADER BASE */
+.pp-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(90deg, #0f4c81, #0b2e4f);
+  color: #ffffff;
+  z-index: 1000;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* CONTAINER */
+.pp-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* LOGO */
+.pp-logo a {
+  font-size: 22px;
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* NAVIGATION */
+.pp-nav {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.pp-nav a,
+.pp-dropdown span {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 15px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.pp-nav a:hover,
+.pp-dropdown span:hover {
+  color: #ffd369;
+}
+
+/* DROPDOWN */
+.pp-dropdown {
+  position: relative;
+}
+
+.pp-dropdown-menu {
+  position: absolute;
+  top: 35px;
+  left: 0;
+  background: #0b2e4f;
+  min-width: 200px;
+  display: none;
+  flex-direction: column;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.pp-dropdown-menu a {
+  padding: 10px 15px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.pp-dropdown-menu a:hover {
+  background: #123e68;
+}
+
+.pp-dropdown:hover .pp-dropdown-menu {
+  display: flex;
+}
+
+/* CTA BUTTON */
+.pp-cta a {
+  background: #ffd369;
+  color: #0b2e4f;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.pp-cta a:hover {
+  background: #ffcb4c;
+}
+
+/* MOBILE TOGGLE */
+.pp-menu-toggle {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+/* MOBILE MENU */
+.pp-mobile-menu {
+  display: none;
+  flex-direction: column;
+  background: #0b2e4f;
+  padding: 20px;
+}
+
+.pp-mobile-menu a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 0;
+  font-size: 15px;
+}
+
+.pp-mobile-menu a:hover {
+  color: #ffd369;
+}
+
+.pp-mobile-cta {
+  background: #ffd369;
+  color: #0b2e4f !important;
+  padding: 12px;
+  text-align: center;
+  border-radius: 6px;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .pp-nav,
+  .pp-cta {
+    display: none;
+  }
+
+  .pp-menu-toggle {
+    display: block;
+  }
+
+  .pp-mobile-menu.open {
+    display: flex;
+  }
+}
