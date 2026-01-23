@@ -7,7 +7,7 @@
 }
 .footer7-brand img {
     height: 115px;
-    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.05));
+    /* filter: drop-shadow(0 2px 4px #f0e1e10d); */
     transition: transform 0.3s ease;
 }
 

@@ -9,8 +9,8 @@ const Footer = () => {
           <div className="footer7-top">
 
             {/* Brand */}
-            <div className="footer7-brand">
-              <img src="/public/assets/Logo/PANGEA_PATHWAYS.png" alt="Pangaea Pathways Logo" className="footer7-logo" />
+            <div className="footer7-brand ">
+              <img src="/public/assets/Logo/pp-2.png" alt="Pangaea Pathways Logo" className="footer7-logo" />
             </div>
 
             {/* Links */}
@@ -22,7 +22,7 @@ const Footer = () => {
 
             {/* Social Icons */}
             <div className="footer7-social">
-              <a href="#">f</a>
+              <a href="https://www.instagram.com/pangaea_pathways/">i</a>
               <a href="#">t</a>
               <a href="#">in</a>
             </div>

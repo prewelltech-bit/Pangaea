@@ -52,3 +52,85 @@ const Header = () => {
 };
 
 export default Header;
+
+// import React, { useState } from "react";
+// import "./Header.css";
+
+// const Header = () => {
+//   const [menuOpen, setMenuOpen] = useState(false);
+
+//   return (
+//     <header className="pp-header">
+//       <div className="pp-container">
+        
+//         {/* Logo */}
+//         <div className="pp-logo">
+//           <a href="#home">Pangaea Pathways</a>
+//         </div>
+
+//         {/* Desktop Navigation */}
+//         <nav className="pp-nav">
+//           <a href="#home">Home</a>
+//           <a href="#about">About Us</a>
+
+//           <div className="pp-dropdown">
+//             <span>Services</span>
+//             <div className="pp-dropdown-menu">
+//               <a href="#study">Study Abroad</a>
+//               <a href="#visa">Visa Assistance</a>
+//               <a href="#migration">Migration Planning</a>
+//             </div>
+//           </div>
+
+//           <div className="pp-dropdown">
+//             <span>Destinations</span>
+//             <div className="pp-dropdown-menu">
+//               <a href="#australia">Australia</a>
+//               <a href="#uk">United Kingdom</a>
+//               <a href="#nz">New Zealand</a>
+//               <a href="#canada">Canada</a>
+//             </div>
+//           </div>
+
+//           <a href="#stories">Success Stories</a>
+//           <a href="#blog">Blog</a>
+//           <a href="#contact">Contact</a>
+//         </nav>
+
+//         {/* CTA */}
+//         <div className="pp-cta">
+//           <a href="#consult">Get Free Consultation</a>
+//         </div>
+
+//         {/* Mobile Toggle */}
+//         <div
+//           className="pp-menu-toggle"
+//           onClick={() => setMenuOpen(!menuOpen)}
+//         >
+//           {menuOpen ? "✕" : "☰"}
+//         </div>
+//       </div>
+
+//       {/* Mobile Menu */}
+//       <div className={`pp-mobile-menu ${menuOpen ? "open" : ""}`}>
+//         <a href="#home">Home</a>
+//         <a href="#about">About Us</a>
+//         <a href="#study">Study Abroad</a>
+//         <a href="#visa">Visa Assistance</a>
+//         <a href="#migration">Migration Planning</a>
+//         <a href="#australia">Australia</a>
+//         <a href="#uk">United Kingdom</a>
+//         <a href="#nz">New Zealand</a>
+//         <a href="#canada">Canada</a>
+//         <a href="#stories">Success Stories</a>
+//         <a href="#blog">Blog</a>
+//         <a href="#contact">Contact</a>
+//         <a href="#consult" className="pp-mobile-cta">
+//           Get Free Consultation
+//         </a>
+//       </div>
+//     </header>
+//   );
+// };
+
+// export default Header;
