@@ -1,0 +1,114 @@
+/* welcome BACKGROUND */
+.welcome-section {
+  height: 100vh;
+  background-image: url("/public/assets/Img/welcome-bg.jpg"); /* your background image */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* IMPORTANT */
+  position: sticky;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* DARK OVERLAY */
+.welcome-overlay {
+  background: rgba(0, 0, 0, 0.45);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+/* CONTENT CARD */
+.welcome-card {
+  /* background: rgba(255, 255, 255, 0.92); */
+  padding: 40px 60px;
+  height: 500px;
+  width: 80%;
+  margin: auto 0;
+  border-radius: 12px;
+  text-align: center;
+  /* box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3); */
+  transform: translateY(30px);
+  opacity: 0;
+}
+
+/* TEXT */
+.welcome-card h2 {
+  color: #e53935;
+  margin-bottom: 15px;
+  font-size: 28px;
+}
+
+.calendar-welcome-icon {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+/* BUTTON */
+.welcome-btn {
+  background: #2196f3;
+  color: #fff;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.welcome-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(33, 150, 243, 0.4);
+}
+
+/* ANIMATION */
+.animate-welcome-card {
+  animation: fadeUp 1.2s ease forwards;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+/* --- Main Heading (WAP) --- */
+.welcome-h1 {
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 900;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #002d5b 0%, #0056b3 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  letter-spacing: -1.5px;
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.welcome-h1::after {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 5px;
+  background: linear-gradient(to right, #002d5b, #60a5fa);
+  margin: 15px auto 0;
+  border-radius: 10px;
+  transition: width 0.4s ease;
+}
+
+.welcome-h1:hover::after {
+  width: 120px;
+}

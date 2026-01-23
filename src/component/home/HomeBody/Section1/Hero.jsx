@@ -45,7 +45,7 @@ const Hero = () => {
               </div>
 
               <div className="right-hero">
-                <img src="/assets/Logo/PANGEA_PATHWAYS.png" alt="logo" />
+                <img src="/public/assets/img/hero.jpg" alt="logo" />
               </div>
             </div>
           </SwiperSlide>
@@ -67,7 +67,7 @@ const Hero = () => {
               </div>
 
               <div className="right-hero">
-                <img src="/assets/Logo/PANGEA_PATHWAYS.png" alt="logo" />
+                <img src="/public/assets/img/hero.jpg" alt="logo" />
               </div>
             </div>
           </SwiperSlide>
@@ -89,7 +89,7 @@ const Hero = () => {
               </div>
 
               <div className="right-hero">
-                <img src="/assets/Logo/PANGEA_PATHWAYS.png" alt="logo" />
+                <img src="/public/assets/img/hero.jpg" alt="logo" />
               </div>
             </div>
           </SwiperSlide>

@@ -1,14 +1,16 @@
 import React from 'react'
 import Hero from './HomeBody/Section1/Hero';
-import SuccessStories from './HomeBody/Section2/SuccessStories';
-import SuccesStories from './HomeBody/Section2/SuccesStories';
-import Demo from './HomeBody/Section3/demo';
+import Demo from './HomeBody/Section4/demo';
+import SuccessStories from './HomeBody/Section3/SuccessStories';
+import Welcome from './HomeBody/Section2/Welcome';
 
 const Body = () => {
   return (
     <>
             <Hero/>
-        </div>
+            <Welcome/>
+            <SuccessStories/>
+            <Demo/>
     </>
   )
 }

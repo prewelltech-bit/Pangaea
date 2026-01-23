@@ -16,12 +16,12 @@ const Demo = () => {
       </section>
 
       {/* NEXT SECTION */}
-      <section className="next-section">
+      {/* <section className="next-section">
         <h2>Next Section Content</h2>
         <p>
           This section scrolls normally and comes over the hero background.
         </p>
-      </section>
+      </section> */}
     </>
   );
 };
