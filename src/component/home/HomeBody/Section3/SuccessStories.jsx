@@ -1,7 +1,9 @@
 import React, { useState, useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
+// eslint-disable-next-line no-unused-vars
 import { motion, AnimatePresence } from "framer-motion";
+import { useRevealAnimation, staggerContainerVariants, getDirectionVariants } from "../../../../hooks/useRevealAnimation";
 
 import storiesData from "../../../../jsonFiles/SuccessStories.json";
 
@@ -10,6 +12,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 const SuccessStories = () => {
+  const { ref, isInView } = useRevealAnimation(0.2);
   const bgColors = ["#daedff", "#dcfce7", "#f3e8ff", "#fff7ed", "#fce7f3"];
   const quoteColors = ["#b3d7ff", "#bbf7d0", "#e9d5ff", "#fed7aa", "#fbcfe8"];
 
@@ -37,9 +40,19 @@ const SuccessStories = () => {
 
   return (
     <>
-    <h1 className="wap">Success Stories</h1>
-    <div
+    <motion.div
+      ref={ref}
+      initial="hidden"
+      animate={isInView ? "visible" : "hidden"}
+      variants={staggerContainerVariants}
+    >
+      <motion.h1 className="wap" variants={getDirectionVariants('down', 30)}>Success Stories</motion.h1>
+    </motion.div>
+    <motion.div
       className="page-wrapper"
+      initial="hidden"
+      animate={isInView ? "visible" : "hidden"}
+      variants={staggerContainerVariants}
       style={{
         background: `linear-gradient(to right, ${bgColors[activeIndex]} 32%, #ffffff 32%)`,
         transition: "background 0.8s cubic-bezier(0.4, 0, 0.2, 1)",
@@ -56,6 +69,7 @@ const SuccessStories = () => {
         </div>
 
         <div className="card-container">
+          {/* eslint-disable react-hooks/rules-of-hooks */}
           <Swiper
             modules={[Navigation, Autoplay]}
             navigation={{
@@ -154,7 +168,7 @@ const SuccessStories = () => {
           </Swiper>
         </div>
       </div>
-    </div>
+    </motion.div>
     </>
   );
 };

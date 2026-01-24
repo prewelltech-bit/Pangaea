@@ -1,4 +1,7 @@
 import React from "react";
+// eslint-disable-next-line no-unused-vars
+import { motion } from "framer-motion";
+import { useRevealAnimation, staggerContainerVariants, getDirectionVariants } from "../../../../hooks/useRevealAnimation";
 import "./Hero.css";
 
 // Swiper imports
@@ -10,8 +13,16 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 const Hero = () => {
+  const { ref, isInView } = useRevealAnimation(0.3);
+
   return (
-    <div className="hero-main">
+    <motion.div 
+      className="hero-main"
+      ref={ref}
+      initial="hidden"
+      animate={isInView ? "visible" : "hidden"}
+      variants={staggerContainerVariants}
+    >
       <section className="hero">
         <Swiper
           modules={[Autoplay, Pagination]}
@@ -26,8 +37,11 @@ const Hero = () => {
         >
           {/* Slide 1 */}
           <SwiperSlide>
-            <div className="hero-container">
-              <div className="left-hero">
+            <motion.div 
+              className="hero-container"
+              variants={getDirectionVariants('up')}
+            >
+              <motion.div className="left-hero" variants={getDirectionVariants('left', 50)}>
                 <h1>
                   Meet with 80+ <br /> Universities at the
                   <span>
@@ -42,18 +56,21 @@ const Hero = () => {
                   Australia
                   <br /> New Zealand Singapore...
                 </p>
-              </div>
+              </motion.div>
 
-              <div className="right-hero">
+              <motion.div className="right-hero" variants={getDirectionVariants('right', 50)}>
                 <img src="/public/assets/img/hero.jpg" alt="logo" />
-              </div>
-            </div>
+              </motion.div>
+            </motion.div>
           </SwiperSlide>
 
           {/* Slide 2 */}
           <SwiperSlide>
-            <div className="hero-container">
-              <div className="left-hero">
+            <motion.div 
+              className="hero-container"
+              variants={getDirectionVariants('up')}
+            >
+              <motion.div className="left-hero" variants={getDirectionVariants('left', 50)}>
                 <h1>
                   Get Started with a Free <br />
                   <span>Instant Virtual </span>
@@ -64,18 +81,21 @@ const Hero = () => {
                   <br />
                   personalized virtual interaction with our experts.
                 </p>
-              </div>
+              </motion.div>
 
-              <div className="right-hero">
+              <motion.div className="right-hero" variants={getDirectionVariants('right', 50)}>
                 <img src="/public/assets/img/hero.jpg" alt="logo" />
-              </div>
-            </div>
+              </motion.div>
+            </motion.div>
           </SwiperSlide>
 
           {/* Slide 3 */}
           <SwiperSlide>
-            <div className="hero-container">
-              <div className="left-hero">
+            <motion.div 
+              className="hero-container"
+              variants={getDirectionVariants('up')}
+            >
+              <motion.div className="left-hero" variants={getDirectionVariants('left', 50)}>
                 <h1>
                   Dream, Discover & <br /> Conquer with
                   <span> Edwise</span>
@@ -86,16 +106,16 @@ const Hero = () => {
                   Ready to start your overseas education journey? Reach out to
                   one <br /> of Edwise’s expert country counselors today!
                 </p>
-              </div>
+              </motion.div>
 
-              <div className="right-hero">
+              <motion.div className="right-hero" variants={getDirectionVariants('right', 50)}>
                 <img src="/public/assets/img/hero.jpg" alt="logo" />
-              </div>
-            </div>
+              </motion.div>
+            </motion.div>
           </SwiperSlide>
         </Swiper>
       </section>
-    </div>
+    </motion.div>
   );
 };
 
