@@ -34,7 +34,7 @@
 .wap::after {
   content: "";
   display: block;
-  width: 80px;
+  width: 0px;
   height: 5px;
   background: linear-gradient(to right, #002d5b, #60a5fa);
   margin: 15px auto 0;
