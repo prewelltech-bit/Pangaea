@@ -1,3 +1,4 @@
+/* ===== HERO BASE ===== */
 .hero {
   width: 100%;
   padding: 180px 0 40px;
@@ -6,7 +7,6 @@
 .hero-main {
   margin: auto;
   max-width: 1400px;
-  align-items: center;
 }
 
 .hero-container {
@@ -14,11 +14,12 @@
   margin: auto;
   padding: 0 20px;
   display: flex;
-  /* align-items: center; */
+  align-items: center;
   justify-content: space-between;
   gap: 40px;
 }
 
+/* ===== LEFT TEXT ===== */
 .left-hero h1 {
   color: #000;
   font-size: 48px;
@@ -27,50 +28,102 @@
 }
 
 .left-hero span {
-  color: #000;
   font-weight: 900;
 }
 
 .left-hero p {
-    margin-top: 15px;
-    color: #4d5566;
-    font-size: 20px;
-    font-weight: 200;
+  margin-top: 15px;
+  color: #4d5566;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+/* ===== RIGHT IMAGE ===== */
+.right-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .right-hero img {
   width: 100%;
   max-width: 480px;
-  margin-top: -96px; 
+  object-fit: contain;
+  margin-top: -96px;
 }
 
-
+/* ===== SWIPER ===== */
 .hero-swiper {
   width: 100%;
 }
 
-.swiper-pagination-bullet {
+.hero-swiper .swiper-pagination-bullet {
   background: #000;
   opacity: 0.4;
 }
 
-.swiper-pagination-bullet-active {
-  opacity: 1;
-}
-
-/* swiper dots */
-.hero-swiper .swiper-pagination-bullet {
-  background-color: black !important;
-  opacity: 0.4;
-}
-
 .hero-swiper .swiper-pagination-bullet-active {
-  background-color: black !important;
   opacity: 1;
 }
 
+/* ================================================= */
+/* 🔥 JASAKA SLIDE ANIMATION */
+/* ================================================= */
 
-/* Responsive */
+/* Initial hidden state */
+.hero-container .left-hero,
+.hero-container .right-hero {
+  opacity: 0;
+  transition: all 0.9s ease;
+}
+
+/* Text entry */
+.hero-container .left-hero {
+  transform: translateX(-60px);
+}
+
+/* Image entry */
+.hero-container .right-hero {
+  transform: translateX(60px) scale(0.95);
+}
+
+/* Active slide */
+.swiper-slide-active .left-hero {
+  opacity: 1;
+  transform: translateX(0);
+  transition-delay: 0.2s;
+}
+
+.swiper-slide-active .right-hero {
+  opacity: 1;
+  transform: translateX(0) scale(1);
+  transition-delay: 0.4s;
+}
+
+/* Text stagger */
+.swiper-slide-active .left-hero h1 {
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.swiper-slide-active .left-hero p {
+  animation: fadeUp 0.8s ease forwards;
+  animation-delay: 0.2s;
+}
+
+/* Keyframes */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== RESPONSIVE ===== */
+
 /* Tablet */
 @media (max-width: 992px) {
   .hero {
@@ -79,11 +132,6 @@
 
   .left-hero h1 {
     font-size: 40px;
-  }
-
-  .right-hero {
-    display: flex;
-    justify-content: center;
   }
 
   .right-hero img {
@@ -95,16 +143,12 @@
 /* Mobile */
 @media (max-width: 768px) {
   .hero {
-    padding: 120px 60px 30px;
+    padding: 120px 40px 30px;
   }
 
   .hero-container {
     flex-direction: column-reverse;
-    
-  }
-
-  .left-hero {
-    text-align: left; 
+    text-align: left;
   }
 
   .left-hero h1 {
@@ -114,11 +158,6 @@
 
   .left-hero p {
     font-size: 18px;
-  }
-
-  .right-hero {
-    display: flex;
-    justify-content: center;
   }
 
   .right-hero img {
@@ -143,521 +182,3 @@
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-   

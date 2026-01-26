@@ -1,32 +1,40 @@
-import React from 'react'
+import React, { useEffect, useRef } from "react";
 import "./Welcome.css";
+
 const Welcome = () => {
-    return (
-        <>
-            <section className="welcome-section">
-                <div className="welcome-overlay">
-                    <div className="welcome-card animate-welcome-card">
-                        <h1 className="welcome-h1">Welcome To Pangaea</h1>
+  const boxRef = useRef(null);
 
-                        <h3>Abroad Institute</h3>
-                        <p>
-                            is a Dallas Fort Worth, Texas based global agency for student
-                            advising, college preparation, and admission counseling. We advise
-                            both international and domestic students to assist college and
-                            university admission and recruitment teams with complete
-                            application packages for evaluation and decision making.
-                        </p>
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+        }
+      },
+      {
+        threshold: 0.9,
+      }
+    );
 
-                        <p>
-                            Honesty, Integrity, and professional commitment are our company
-                            philosophy. We exceed the expectation of our students, partners,
-                            and educational institutions we partner with.
-                        </p>
-                    </div>
-                </div>
-            </section>
-        </>
-    )
-}
+    if (boxRef.current) {
+      observer.observe(boxRef.current);
+    }
 
-export default Welcome
+    return () => {
+      if (boxRef.current) observer.unobserve(boxRef.current);
+    };
+  }, []);
+
+  return (
+    <div className="layout-wrapper">
+      <div className="scroll-area">
+        <div className="glass-box" ref={boxRef}>
+          <h1 className="title-text">Welcome</h1>
+          <p className="sub-text">is a Dallas Fort Worth, Texas based global agency for student advising, college preparation, and admission counseling. We advise both international and domestic students to assist college and university admission and recruitment teams with complete application packages for evaluation and decision making. Honesty, Integrity, and professional commitment are our company philosophy. We exceed the expectation of our students, partners, and educational institutions we partner with.</p>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Welcome;

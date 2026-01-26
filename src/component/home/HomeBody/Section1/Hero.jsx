@@ -17,8 +17,9 @@ const Hero = () => {
           modules={[Autoplay, Pagination]}
           slidesPerView={1}
           loop={true}
+          speed={900}
           autoplay={{
-            delay: 3000,
+            delay: 3500,
             disableOnInteraction: false,
           }}
           pagination={{ clickable: true }}
@@ -29,7 +30,8 @@ const Hero = () => {
             <div className="hero-container">
               <div className="left-hero">
                 <h1>
-                  Meet with 80+ <br /> Universities at the
+                  Meet with 80+ <br />
+                  Universities at the
                   <span>
                     <br />
                     World Education Fair
@@ -38,14 +40,14 @@ const Hero = () => {
                   In Your City!
                 </h1>
                 <p>
-                  Meet representatives from top universities from UK USA
-                  Australia
-                  <br /> New Zealand Singapore...
+                  Meet representatives from top universities from UK, USA,
+                  Australia,
+                  <br /> New Zealand, Singapore...
                 </p>
               </div>
 
               <div className="right-hero">
-                <img src="/public/assets/img/hero.jpg" alt="logo" />
+                <img src="/public/assets/img/hero.jpg" alt="hero" />
               </div>
             </div>
           </SwiperSlide>
@@ -56,18 +58,18 @@ const Hero = () => {
               <div className="left-hero">
                 <h1>
                   Get Started with a Free <br />
-                  <span>Instant Virtual </span>
-                  Meet <br /> with Edwise Experts.
+                  <span>Instant Virtual</span>
+                  <br /> Meet with Experts
                 </h1>
                 <p>
-                  Turn your study abroad aspirations into reality through a{" "}
+                  Turn your study abroad aspirations into reality through a
                   <br />
-                  personalized virtual interaction with our experts.
+                  personalized virtual interaction.
                 </p>
               </div>
 
               <div className="right-hero">
-                <img src="/public/assets/img/hero.jpg" alt="logo" />
+                <img src="/public/assets/img/hero.jpg" alt="hero" />
               </div>
             </div>
           </SwiperSlide>
@@ -77,19 +79,20 @@ const Hero = () => {
             <div className="hero-container">
               <div className="left-hero">
                 <h1>
-                  Dream, Discover & <br /> Conquer with
-                  <span> Edwise</span>
+                  Dream, Discover & <br />
+                  Conquer with <span>Edwise</span>
                   <br />
-                  Your Study Abroad <br /> Partner
+                  Your Study Abroad Partner
                 </h1>
                 <p>
-                  Ready to start your overseas education journey? Reach out to
-                  one <br /> of Edwise’s expert country counselors today!
+                  Ready to start your overseas education journey?
+                  <br />
+                  Talk to our expert counselors today.
                 </p>
               </div>
 
               <div className="right-hero">
-                <img src="/public/assets/img/hero.jpg" alt="logo" />
+                <img src="/public/assets/img/hero.jpg" alt="hero" />
               </div>
             </div>
           </SwiperSlide>
