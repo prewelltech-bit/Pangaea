@@ -1,11 +1,9 @@
-
 /* ===== Layout Wrapper (SHORT BACKGROUND) ===== */
 .layout-wrapper {
   margin-top: 30px;
   margin-bottom: 90px;
   width: 100%;
   height: 900px;
-  /* min-height: 20vh; */
   background-image: url('https://i.pinimg.com/736x/b3/15/52/b315527f272a1a00df44206a286308b7.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -13,15 +11,13 @@
   background-attachment: fixed;
 }
 
-/* welcome BACKGROUND */
+/* ===== Welcome Background ===== */
 .welcome-section {
   height: 100vh;
   background-image: url("/public/assets/Img/event-image.jpg");
-  /* your background image */
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  /* IMPORTANT */
   position: relative;
   display: flex;
   justify-content: center;
@@ -38,30 +34,31 @@
   align-items: center;
 }
 
-/* ===== Welcome Glass Box (BIGGER + MORE TRANSPARENT) ===== */
+/* ===== Glass Box ===== */
 .glass-box {
-  background: rgba(255, 255, 255, 0.12); 
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-
+  background: rgba(255, 255, 255, 0.12);
   border: 1px solid rgba(255, 255, 255, 0.22);
   border-radius: 18px;
-
-  padding: 56px 64px;     
-  width: 70%;             
+  padding: 56px 64px;
+  width: 70%;
   max-width: 520px;
-
   align-items: center;
   justify-content: center;
-  backdrop-filter: blur(0px);
-  transition: backdrop-filter 0.3s ease;
+
+  opacity: 0;
+  transform: translateY(40px) scale(0.96);
+  transition: all 0.8s ease-out;
 }
 
-/* CONTENT CARD */
+.glass-box.show {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* ===== Welcome Card ===== */
 .welcome-card {
   background: rgba(255, 255, 255, 0.92);
   padding: 40px 60px;
-  /* height: 60%; */
   width: 80%;
   margin: auto 0;
   border-radius: 12px;
@@ -71,11 +68,13 @@
 
 /* ===== Text ===== */
 .title-text {
-  font-size: 38px;        
+  font-size: 38px;
   font-weight: 700;
-  color: white;
-  margin-bottom: 14px;
+  color: #fff !important;
+  -webkit-text-fill-color: #fff;
+  background: none;
 }
+
 
 .sub-text {
   font-size: 17px;
@@ -84,59 +83,7 @@
   text-align: left;
 }
 
-/* ===== Animation Base ===== */
-.glass-box {
-  opacity: 0;
-  transform: translateY(40px) scale(0.96);
-  transition: all 0.8s ease-out;
-}
-
-/* ===== When visible ===== */
-.glass-box.show {
-  opacity: 1;
-  transform: translateY(0) scale(1);
-}
-
-.calendar-welcome-icon {
-  font-size: 40px;
-  margin-bottom: 20px;
-}
-
-/* BUTTON */
-.welcome-btn {
-  background: #2196f3;
-  color: #fff;
-  border: none;
-  padding: 12px 28px;
-  border-radius: 6px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.welcome-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(33, 150, 243, 0.4);
-}
-
-/* ANIMATION */
-.animate-welcome-card {
-  animation: fadeUp 1.2s ease forwards;
-}
-
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(40px) scale(0.95);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
-}
-
-/* --- Main Heading (WAP) --- */
+/* ===== Main Heading (H1) ===== */
 .welcome-h1 {
   text-align: center;
   font-size: 3.5rem;
@@ -144,10 +91,9 @@
   margin-top: 20px;
   margin-bottom: 10px;
   font-family: 'Inter', sans-serif;
-  background: linear-gradient(135deg, #002d5b 0%, #0056b3 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+
+  color: #fff; 
+
   text-transform: uppercase;
   letter-spacing: -1.5px;
   position: relative;
@@ -155,31 +101,12 @@
   width: 100%;
 }
 
-.welcome-card p {
-  color: #000000;
-  text-align: left;
-  font-size: 18px;
-  line-height: 1.6;
-  margin-bottom: 30px;
-}
-
-.welcome-card h3 {
-  background: linear-gradient(135deg, #302626 0%, #0056b3 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-align: center;
-  font-size: 25px;
-  line-height: 1.6;
-  margin-bottom: 50px;
-}
-
 .welcome-h1::after {
   content: "";
   display: block;
   width: 0px;
   height: 5px;
-  background: linear-gradient(to right, #002d5b, #60a5fa);
+  /* background: linear-gradient(to right, #002d5b, #60a5fa); */
   margin: 15px auto 0;
   border-radius: 10px;
   transition: width 0.4s ease;
@@ -189,113 +116,92 @@
   width: 120px;
 }
 
+/* ===== Welcome Card Text ===== */
+.welcome-card p {
+  color: #000;
+  text-align: left;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
 
+.welcome-card h3 {
+  /* background: linear-gradient(135deg, #302626 0%, #0056b3 100%); */
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-size: 25px;
+  line-height: 1.6;
+  margin-bottom: 50px;
+}
+
+/* ===== Icons ===== */
+.calendar-welcome-icon {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+/* ===== Animation ===== */
+.animate-welcome-card {
+  animation: fadeUp 1.2s ease forwards;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* ===== Responsive ===== */
 @media (max-width: 1064px) {
   .welcome-card {
     padding: 30px 20px;
-    height: auto;
     width: 90%;
-  }
-
-  .welcome-card h2 {
-    font-size: 24px;
-  }
-
-  .welcome-card p {
-    color: #000000;
-    text-align: left;
-    font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 30px;
-  }
-
-  .calendar-welcome-icon {
-    font-size: 30px;
-    margin-bottom: 15px;
-  }
-
-  .welcome-btn {
-    padding: 10px 20px;
-    font-size: 14px;
   }
 
   .welcome-h1 {
     font-size: 28px;
-    margin-bottom: 10px;
+  }
+
+  .welcome-card p {
+    font-size: 16px;
+  }
+
+  .calendar-welcome-icon {
+    font-size: 30px;
   }
 }
 
 @media (max-width: 560px) {
   .welcome-card {
-    padding: 30px 20px;
-    height: auto;
     width: 90%;
   }
 
-  .welcome-card h2 {
-    font-size: 15px;
-    margin-top: 10px;
-  }
-
   .welcome-card p {
-    color: #000000;
-    text-align: left;
-    font-size: 10px;
-    line-height: 1.6;
-    margin-bottom: 30px;
-  }
-
-  .calendar-welcome-icon {
-    font-size: 30px;
-    margin-bottom: 15px;
-  }
-
-  .welcome-btn {
-    padding: 10px 20px;
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .welcome-h1 {
-    font-size: 28px;
-    margin-top: 10px;
+    font-size: 26px;
   }
 }
 
 @media (max-width: 450px) {
   .welcome-card {
-    /* padding: 30px 20px; */
-    /* height: auto; */
     width: 90%;
-    margin: auto 0;
-  }
-
-  .welcome-card h2 {
-    font-size: 15px;
-    margin-top: 0;
-    margin-bottom: 0px;
   }
 
   .welcome-card p {
-    color: #000000;
-    text-align: left;
     font-size: 10px;
-    line-height: 1.6;
-    margin-bottom: 10px;
-    margin-top: 0;
-  }
-
-  .calendar-welcome-icon {
-    font-size: 30px;
-    margin-bottom: 15px;
-  }
-
-  .welcome-btn {
-    padding: 10px 20px;
-    font-size: 14px;
   }
 
   .welcome-h1 {
-    font-size: 28px;
-    margin-bottom: 5px;
+    font-size: 24px;
   }
 }

@@ -80,7 +80,7 @@ const Hero = () => {
               <div className="left-hero">
                 <h1>
                   Dream, Discover & <br />
-                  Conquer with <span>Edwise</span>
+                  Conquer with <span>Pangaea</span>
                   <br />
                   Your Study Abroad Partner
                 </h1>

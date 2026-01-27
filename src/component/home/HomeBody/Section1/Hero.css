@@ -21,7 +21,7 @@
 
 /* ===== LEFT TEXT ===== */
 .left-hero h1 {
-  color: #000;
+  color: #1d3e74;
   font-size: 48px;
   line-height: 1.4;
   font-weight: 400;
@@ -33,7 +33,7 @@
 
 .left-hero p {
   margin-top: 15px;
-  color: #4d5566;
+  color: #1d3e74;
   font-size: 20px;
   font-weight: 300;
 }
@@ -58,7 +58,7 @@
 }
 
 .hero-swiper .swiper-pagination-bullet {
-  background: #000;
+  background: #1d3e74;
   opacity: 0.4;
 }
 

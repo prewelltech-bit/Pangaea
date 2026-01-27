@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./OurPartners.css";
 
 const universityLogos = [
@@ -15,10 +16,12 @@ const universityLogos = [
 ];
 
 const OurPartners = () => {
+  const navigate = useNavigate();
+
   return (
     <section className="partners">
       <h1 className="wap">Our Top Ranked Partners</h1>
-      
+
       <div className="partners-card">
         {/* Row 1 */}
         {universityLogos.slice(0, 5).map((img, i) => (
@@ -42,9 +45,14 @@ const OurPartners = () => {
         ))}
       </div>
 
-      {/* NEW BUTTON SECTION */}
+      {/* BUTTON */}
       <div className="view-more-container">
-        <button className="view-more-btn">View More Partners</button>
+        <button
+          className="view-more-btn"
+          onClick={() => navigate("/partnered-universities")}
+        >
+          View More Partners
+        </button>
       </div>
     </section>
   );
