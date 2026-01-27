@@ -5,7 +5,6 @@ import SuccessStories from './HomeBody/Section3/SuccessStories';
 import Demo from './HomeBody/Section4/Demo'
 import OurPartners from './HomeBody/Section5/OurPartners';
 import DreamDestination from './HomeBody/Section6/DreamDestination';
-
 const Body = () => {
   return (
     <>
@@ -14,6 +13,7 @@ const Body = () => {
             <SuccessStories />
             <OurPartners />
             <Demo />
+            <DreamDestination />
     </>
   )
 }
