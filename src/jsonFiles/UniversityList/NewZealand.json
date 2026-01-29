@@ -1,0 +1,98 @@
+[
+  {
+    "name": "University of Auckland",
+    "city": "Auckland",
+    "country": "New Zealand",
+    "logo":"./assets/Logo/NewZealand/University_of_Auckland.jpg"
+  },
+  {
+    "name": "Auckland University of Technology (AUT)",
+    "city": "Auckland",
+    "country": "New Zealand",
+    "logo":"./assets/Logo/NewZealand/Auckland_University_of_Technology.png"
+  },
+  {
+    "name": "University of Waikato",
+    "city": "Hamilton",
+    "country": "New Zealand",
+    "logo":"./assets/Logo/NewZealand/University_of_Waikato.jpg"
+  },
+  {
+    "name": "Massey University",
+    "city": "Palmerston North / Auckland / Wellington",
+    "country": "New Zealand",
+    "logo":"./assets/Logo/NewZealand/Massey_University.jpg"
+  },
+  {
+    "name": "Victoria University of Wellington",
+    "city": "Wellington",
+    "country": "New Zealand",
+    "logo":"./assets/Logo/NewZealand/Victoria_University_of_Wellington.png"
+  },
+  {
+    "name": "University of Canterbury",
+    "city": "Christchurch",
+    "country": "New Zealand",
+    "logo":"./assets/Logo/NewZealand/University_of_Canterbury.jpg"
+  },
+  {
+    "name": "Lincoln University",
+    "city": "Lincoln (near Christchurch)",
+    "country": "New Zealand",
+    "logo":"./assets/Logo/NewZealand/Lincoln_University.png"
+  },
+  {
+    "name": "University of Otago",
+    "city": "Dunedin",
+    "country": "New Zealand",
+    "logo":"./assets/Logo/NewZealand/University_of_Otago.jpg"
+  },
+  {
+    "name": "Unitec Institute of Technology",
+    "city": "Auckland",
+    "country": "New Zealand",
+    "logo":"./assets/Logo/NewZealand/Unitec_Institute_of_Technology.png"
+  },
+  {
+    "name": "Manukau Institute of Technology (MIT)",
+    "city": "Auckland",
+    "country": "New Zealand",
+    "logo":"./assets/Logo/NewZealand/Manukau_Institute_of_Technology.png"
+  },
+  {
+    "name": "Southern Institute of Technology (SIT)",
+    "city": "Invercargill",
+    "country": "New Zealand",
+    "logo":"./assets/Logo/NewZealand/Southern_Institute_of_Technology.png"
+  },
+  {
+    "name": "Ara Institute of Canterbury",
+    "city": "Christchurch",
+    "country": "New Zealand",
+    "logo":"./assets/Logo/NewZealand/Ara_Institute_of_Canterbury.png"
+  },
+  {
+    "name": "Wintec (Waikato Institute of Technology)",
+    "city": "Hamilton",
+    "country": "New Zealand",
+    "logo":"./assets/Logo/NewZealand/Wintec.png"
+  },
+  {
+    "name": "Eastern Institute of Technology (EIT)",
+    "city": "Napier / Hastings",
+    "country": "New Zealand",
+    "logo":"./assets/Logo/NewZealand/Eastern_Institute_of_Technology.png"
+  },
+  {
+    "name": "Otago Polytechnic",
+    "city": "Dunedin / Auckland",
+    "country": "New Zealand",
+    "logo":"./assets/Logo/NewZealand/Otago_Polytechnic.jpg"
+  },
+  {
+    "name": "Whitireia & WelTec",
+    "city": "Wellington / Porirua",
+    "country": "New Zealand",
+    "logo":"./assets/Logo/NewZealand/Whitireia_WelTec.png"
+  }
+]

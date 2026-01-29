@@ -1,0 +1,222 @@
+[
+    {
+        "name": "University of Toronto",
+        "country": "Canada",
+        "logo":"./assets/Logo/Canada/University_of_Toronto.png"
+    },
+    {
+        "name": "York University",
+        "country": "Canada",
+        "logo":"./assets/Logo/Canada/York_University.png"
+    },
+    {
+        "name": "Toronto Metropolitan University (TMU)",
+        "country": "Canada",
+        "logo":"./assets/Logo/Canada/Toronto_Metropolitan_University.jpg"
+    },
+    {
+        "name": "University of Waterloo",
+        "country": "Canada",
+        "logo":"./assets/Logo/Canada/University_of_Waterloo.jpg"
+    },
+    {
+        "name": "McMaster University",
+        "country": "Canada",
+        "logo":"./assets/Logo/Canada/McMaster_University.jpg"
+    },
+    {
+        "name": "Western University",
+        "country": "Canada",
+        "logo":"./assets/Logo/Canada/Western_University.png"
+    },
+    {
+        "name": "Queen’s University",
+        "country": "Canada",
+        "logo":"./assets/Logo/Canada/Queens_University.jpg"
+    },
+    {
+        "name": "University of Ottawa",
+        "country": "Canada",
+        "logo":"./assets/Logo/Canada/University_of_Ottawa.jpg"
+    },
+    {
+        "name": "Carleton University",
+        "country": "Canada",
+        "logo":"./assets/Logo/Canada/Carleton_University.png"
+    },
+    {
+        "name": "Humber College",
+        "country": "Canada",
+        "logo":"./assets/Logo/Canada/Humber_College.jpg"
+    },
+    {
+        "name": "Seneca College",
+        "country": "Canada",
+        "logo":"./assets/Logo/Canada/Seneca_College.jpg"
+    },
+    {
+        "name": "George Brown College",
+        "country": "Canada",
+        "logo":"./assets/Logo/Canada/George_Brown_College.jpg"
+    },
+    {
+        "name": "Centennial College",
+        "country": "Canada",
+        "logo":"./assets/Logo/Canada/Centennial_College.jpg"
+    },
+    {
+        "name": "Sheridan College",
+        "country": "Canada",
+        "logo":"./assets/Logo/Canada/Sheridan_College.png"
+    },
+    {
+        "name": "Fanshawe College",
+        "country": "Canada",
+        "logo":"./assets/Logo/Canada/Fanshawe_College.png"
+    },
+    {
+        "name": "Conestoga College",
+        "country": "Canada",
+        "logo":"./assets/Logo/Canada/Conestoga_College.jpg"
+    },
+    {
+        "name": "University of British Columbia (UBC)",
+        "country": "Canada",
+        "logo":"./assets/Logo/Canada/University_of_British_Columbia.png"
+    },
+    {
+        "name": "Simon Fraser University (SFU)",
+        "country": "Canada",
+        "logo":"./assets/Logo/Canada/Simon_Fraser_University.png"
+    },
+    {
+        "name": "University of Victoria (UVic)",
+        "country": "Canada",
+        "logo":"./assets/Logo/Canada/University_of_Victoria.jpg"
+    },
+    {
+        "name": "Thompson Rivers University (TRU)",
+        "country": "Canada",
+        "logo":"./assets/Logo/Canada/Thompson_Rivers_University.png"
+    },
+    {
+        "name": "Douglas College",
+        "country": "Canada",
+        "logo":"./assets/Logo/Canada/Douglas_College.jpeg"
+    },
+    {
+        "name": "Langara College",
+        "country": "Canada",
+        "logo":"./assets/Logo/Canada/Langara_College.jpg"
+    },
+    {
+        "name": "Vancouver Community College (VCC)",
+        "country": "Canada",
+        "logo":"./assets/Logo/Canada/Vancouver_Community_College.png"
+    },
+    {
+        "name": "University of Alberta",
+        "country": "Canada",
+        "logo":"./assets/Logo/Canada/University_of_Alberta.jpg"
+    },
+    {
+        "name": "University of Calgary",
+        "country": "Canada",
+        "logo":"./assets/Logo/Canada/University_of_Calgary.png"
+    },
+    {
+        "name": "Mount Royal University",
+        "country": "Canada",
+        "logo":"./assets/Logo/Canada/Mount_Royal_University.webp"
+    },
+    {
+        "name": "Bow Valley College",
+        "country": "Canada",
+        "logo":"./assets/Logo/Canada/Bow_Valley_College.png"
+    },
+    {
+        "name": "Northern Alberta Institute of Technology (NAIT)",
+        "country": "Canada",
+        "logo":"./assets/Logo/Canada/Northern_Alberta_Institute_of_Technology.png"
+    },
+    {
+        "name": "Southern Alberta Institute of Technology (SAIT)",
+        "country": "Canada",
+        "logo":"./assets/Logo/Canada/Southern_Alberta_Institute_of_Technology.jpg"
+    },
+    {
+        "name": "McGill University",
+        "country": "Canada",
+        "logo":"./assets/Logo/Canada/McGill_University.png"
+    },
+    {
+        "name": "Concordia University",
+        "country": "Canada",
+        "logo":"./assets/Logo/Canada/Concordia_University.jpg"
+    },
+    {
+        "name": "Université de Montréal",
+        "country": "Canada",
+        "logo":"./assets/Logo/Canada/Université_de_Montréal.jpg"
+    },
+    {
+        "name": "Dawson College",
+        "country": "Canada",
+        "logo":"./assets/Logo/Canada/Dawson_College.jpg"
+    },
+    {
+        "name": "Lasalle College",
+        "country": "Canada",
+        "logo":"./assets/Logo/Canada/Lasalle_College.jpg"
+    },
+    {
+        "name": "University of Manitoba",
+        "country": "Canada",
+        "logo":"./assets/Logo/Canada/University_of_Manitoba.jpg"
+    },
+    {
+        "name": "University of Winnipeg",
+        "country": "Canada",
+        "logo":"./assets/Logo/Canada/University_of_Winnipeg.jpg"
+    },
+    {
+        "name": "Red River College Polytechnic",
+        "country": "Canada",
+        "logo":"./assets/Logo/Canada/Red_River_College_Polytechnic.webp"
+    },
+    {
+        "name": "University of Saskatchewan",
+        "country": "Canada",
+        "logo":"./assets/Logo/Canada/University_of_Saskatchewan.jpg"
+    },
+    {
+        "name": "University of Regina",
+        "country": "Canada",
+        "logo":"./assets/Logo/Canada/University-of_Regina.png"
+    },
+    {
+        "name": "Saskatchewan Polytechnic",
+        "country": "Canada",
+        "logo":"./assets/Logo/Canada/Saskatchewan_Polytechnic.jpg"
+    },
+    {
+        "name": "Dalhousie University",
+        "country": "Canada",
+        "logo":"./assets/Logo/Canada/Dalhousie_University.jpg"
+    },
+    {
+        "name": "University of New Brunswick (UNB)",
+        "country": "Canada",
+        "logo":"./assets/Logo/Canada/University_of_New_Brunswick.png"
+    },
+    {
+        "name": "Nova Scotia Community College (NSCC)",
+        "country": "Canada",
+        "logo":"./assets/Logo/Canada/Nova_Scotia_Community_College.png"
+    },
+    {
+        "name": "College of the North Atlantic",
+        "country": "Canada",
+        "logo":"./assets/Logo/Canada/College_of_the_North_Atlantic.jpg"
+    }
+]

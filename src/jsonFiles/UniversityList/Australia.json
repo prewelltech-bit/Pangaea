@@ -1,0 +1,122 @@
+[
+  {
+    "name": "Australian National University",
+    "country": "Australia",
+    "logo": "/assets/Logo/Australia/Australian_National_University.png"
+  },
+  {
+    "name": "University of Melbourne",
+    "country": "Australia",
+    "logo": "/assets/Logo/Australia/University_of_Melbourne.jpg"
+  },
+  {
+    "name": "University of Sydney",
+    "country": "Australia",
+    "logo": "/assets/Logo/Australia/University_of_Sydney.png"
+  },
+  {
+    "name": "University of New South Wales",
+    "country": "Australia",
+    "logo": "/assets/Logo/Australia/University_of_New_South_Wales.jpg"    
+  },
+  {
+    "name": "Monash University",
+    "country": "Australia",
+    "logo": "/assets/Logo/Australia/Monash_University.jpg"       
+  },
+  {
+    "name": "University of Queensland",
+    "country": "Australia",
+    "logo": "/assets/Logo/Australia/University_of_Queensland.png"       
+  },
+  {
+    "name": "University of Western Australia",
+    "country": "Australia",
+    "logo": "/assets/Logo/Australia/University_of_Western_Australia.webp"       
+  },
+  {
+    "name": "University of Adelaide",
+    "country": "Australia",
+    "logo": "/assets/Logo/Australia/University_of_Adelaide.png"       
+  },
+  {
+    "name": "University of Technology Sydney",
+    "country": "Australia",
+    "logo": "/assets/Logo/Australia/University_of_Technology_Sydney.jpg"       
+  },
+  {
+    "name": "Macquarie University",
+    "country": "Australia",
+    "logo": "/assets/Logo/Australia/Macquarie_University.png"       
+  },
+  {
+    "name": "RMIT University",
+    "country": "Australia",
+    "logo": "/assets/Logo/Australia/RMIT_University.gif"       
+  },
+  {
+    "name": "Deakin University",
+    "country": "Australia",
+    "logo": "/assets/Logo/Australia/deakin-university.webp"       
+  },
+  {
+    "name": "Queensland University of Technology",
+    "country": "Australia",
+    "logo": "/assets/Logo/Australia/Queensland_University_of_Technology.jpg"       
+  },
+  {
+    "name": "La Trobe University",
+    "country": "Australia",
+    "logo": "/assets/Logo/Australia/La_Trobe_University.webp"       
+  },
+  {
+    "name": "Swinburne University of Technology",
+    "country": "Australia",
+    "logo": "/assets/Logo/Australia/Swinburne_University_of_Technology.jpg"       
+  },
+  {
+    "name": "Curtin University",
+    "country": "Australia",
+    "logo": "/assets/Logo/Australia/Curtin_University.jpg"       
+  },
+  {
+    "name": "Griffith University",
+    "country": "Australia",
+    "logo": "/assets/Logo/Australia/Griffith_University.jpg"       
+  },
+  {
+    "name": "Curtin University",
+    "country": "Australia",
+    "logo": "/assets/Logo/Australia/Curtin_University.jpg"       
+  },
+  {
+    "name": "University of Tasmania",
+    "country": "Australia",
+    "logo": "/assets/Logo/Australia/University_of_Tasmania.png"       
+  },
+  {
+    "name": "Flinders University",
+    "country": "Australia",
+    "logo": "/assets/Logo/Australia/Flinders_University.jpg"       
+  },
+  {
+    "name": "Australian Catholic University",
+    "country": "Australia",
+    "logo": "/assets/Logo/Australia/Australian_Catholic_University.jpg"       
+  },
+  {
+    "name": "University of Canberra",
+    "country": "Australia",
+    "logo": "/assets/Logo/Australia/University_of_Canberra.webp"       
+  },
+  {
+    "name": "Charles Darwin University",
+    "country": "Australia",
+    "logo": "/assets/Logo/Australia/Charles_Darwin_University.jpg"       
+  },
+  {
+    "name": "Bond University",
+    "country": "Australia",
+    "logo": "/assets/Logo/Australia/Bond_University.jpg"       
+  }
+]

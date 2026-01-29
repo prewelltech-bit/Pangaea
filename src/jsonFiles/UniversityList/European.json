@@ -1,0 +1,52 @@
+[
+    {
+        "name": "EU Business School",
+        "country": "Europe",
+        "location": "Spain"
+    },
+    {
+        "name": "EAE",
+        "country": "Europe",
+        "location": "Spain"
+    },
+    {
+        "name": "UNIE",
+        "country": "Europe",
+        "location": "Spain"
+    },
+    {
+        "name": "GBS",
+        "country": "Europe",
+        "location": "Malta"
+    },
+    {
+        "name": "IBS",
+        "country": "Europe",
+        "location": "Hungary"
+    },
+    {
+        "name": "IBS",
+        "country": "Europe",
+        "location": "Austria"
+    },
+    {
+        "name": "EU Business School",
+        "country": "Europe",
+        "location": "Switzerland"
+    },
+    {
+        "name": "NABA",
+        "country": "Europe",
+        "location": "Italy"
+    },
+    {
+        "name": "TIO Business School",
+        "country": "Europe",
+        "location": "Netherlands"
+    },
+    {
+        "name": "SEU Georgian National University",
+        "country": "Europe",
+        "location": "Georgia"
+    }
+]
