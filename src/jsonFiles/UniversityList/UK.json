@@ -1,0 +1,177 @@
+[
+  {
+    "name": "University of Oxford",
+    "city": "Oxford",
+    "region": "England",
+    "country": "UK",
+    "logo":"./assets/Logo/UK/University_of_Oxford.png"
+  },
+  {
+    "name": "University of Cambridge",
+    "city": "Cambridge",
+    "region": "England",
+    "country": "UK",
+    "logo":"./assets/Logo/UK/University_of_Cambridge.jpg"
+  },
+  {
+    "name": "Imperial College London",
+    "city": "London",
+    "region": "England",
+    "country": "UK",
+    "logo":"./assets/Logo/UK/Imperial_College_London.jpg"
+  },
+  {
+    "name": "University College London (UCL)",
+    "city": "London",
+    "region": "England",
+    "country": "UK",
+    "logo":"./assets/Logo/UK/University_College_London.jpg"
+  },
+  {
+    "name": "King’s College London",
+    "city": "London",
+    "region": "England",
+    "country": "UK",
+    "logo":"./assets/Logo/UK/Kings_College_London.jpg"
+  },
+  {
+    "name": "London School of Economics (LSE)",
+    "city": "London",
+    "region": "England",
+    "country": "UK",
+    "logo":"./assets/Logo/UK/London_School_of_Economics.jpg"
+  },
+  {
+    "name": "University of Manchester",
+    "city": "Manchester",
+    "region": "England",
+    "country": "UK",
+    "logo":"./assets/Logo/UK/University_of_Manchester.png"
+  },
+  {
+    "name": "University of Birmingham",
+    "city": "Birmingham",
+    "region": "England",
+    "country": "UK",
+    "logo":"./assets/Logo/UK/University_of_Birmingham.jpg"
+  },
+  {
+    "name": "University of Leeds",
+    "city": "Leeds",
+    "region": "England",
+    "country": "UK",
+    "logo":"./assets/Logo/UK/University_of_Leeds.jpg"
+  },
+  {
+    "name": "University of Bristol",
+    "city": "Bristol",
+    "region": "England",
+    "country": "UK",
+    "logo":"./assets/Logo/UK/University_of_Bristol.jpg"
+  },
+  {
+    "name": "University of Nottingham",
+    "city": "Nottingham",
+    "region": "England",
+    "country": "UK",
+    "logo":"./assets/Logo/UK/University_of_Nottingham.jpg"
+  },
+  {
+    "name": "Coventry University",
+    "city": "Coventry",
+    "region": "England",
+    "country": "UK",
+    "logo":"./assets/Logo/UK/Coventry_University.jpg"
+  },
+  {
+    "name": "University of Westminster",
+    "city": "London",
+    "region": "England",
+    "country": "UK",
+    "logo":"./assets/Logo/UK/University_of_Westminster.jpg"
+  },
+  {
+    "name": "London South Bank University",
+    "city": "London",
+    "region": "England",
+    "country": "UK",
+    "logo":"./assets/Logo/UK/London_South_Bank_University.jpg"
+  },
+  {
+    "name": "Teesside University",
+    "city": "Middlesbrough",
+    "region": "England",
+    "country": "UK",
+    "logo":"./assets/Logo/UK/Teesside_University.jpg"
+  },
+  {
+    "name": "University of Edinburgh",
+    "city": "Edinburgh",
+    "region": "Scotland",
+    "country": "UK",
+    "logo":"./assets/Logo/UK/University_of_Edinburgh.jpg"
+  },
+  {
+    "name": "University of Glasgow",
+    "city": "Glasgow",
+    "region": "Scotland",
+    "country": "UK",
+    "logo":"./assets/Logo/UK/University_of_Glasgow.jpg"
+  },
+  {
+    "name": "University of Strathclyde",
+    "city": "Glasgow",
+    "region": "Scotland",
+    "country": "UK",
+    "logo":"./assets/Logo/UK/University_of_Strathclyde.png"
+  },
+  {
+    "name": "Heriot-Watt University",
+    "city": "Edinburgh",
+    "region": "Scotland",
+    "country": "UK",
+    "logo":"./assets/Logo/UK/Heriot_Watt_University.jpg"
+  },
+  {
+    "name": "University of Dundee",
+    "city": "Dundee",
+    "region": "Scotland",
+    "country": "UK",
+    "logo":"./assets/Logo/UK/University_of_Dundee.jpg"
+  },
+  {
+    "name": "Cardiff University",
+    "city": "Cardiff",
+    "region": "Wales",
+    "country": "UK",
+    "logo":"./assets/Logo/UK/Cardiff_University.png"
+  },
+  {
+    "name": "Swansea University",
+    "city": "Swansea",
+    "region": "Wales",
+    "country": "UK",
+    "logo":"./assets/Logo/UK/Swansea_University.jpg"
+  },
+  {
+    "name": "Bangor University",
+    "city": "Bangor",
+    "region": "Wales",
+    "country": "UK",
+    "logo":"./assets/Logo/UK/Bangor_University.jpg"
+  },
+  {
+    "name": "Queen’s University Belfast",
+    "city": "Belfast",
+    "region": "Northern Ireland",
+    "country": "UK",
+    "logo":"./assets/Logo/UK/Queens_University_Belfast.jpg"
+  },
+  {
+    "name": "Ulster University",
+    "city": "Belfast / Derry",
+    "region": "Northern Ireland",
+    "country": "UK",
+    "logo":"./assets/Logo/UK/Ulster_University.jpg"
+  }
+]

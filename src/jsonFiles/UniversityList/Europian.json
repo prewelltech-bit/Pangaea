@@ -1,0 +1,47 @@
+[
+  {
+    "name": "EU Business School",
+    "country": "Europian",
+    "logo":"./assets/Logo/Europe/Eu_Business_School.png"
+  },
+  {
+    "name": "EAE",
+    "country": "Europian",
+    "logo":"./assets/Logo/Europe/EAE.jpg"  
+  },
+  {
+    "name": "UNIE",
+    "country": "Europian",
+    "logo":"./assets/Logo/Europe/UNIE.jpg"
+  },
+  {
+    "name": "GBS",
+    "country": "Europian",
+    "logo":"./assets/Logo/Europe/GBS.png"
+  },
+  {
+    "name": "IBS",
+    "country": "Europian",
+    "logo":"./assets/Logo/Europe/IBS_.png"
+  },
+  {
+    "name": "IBS",
+    "country": "Europian",
+    "logo":"./assets/Logo/Europe/IBS.png"
+  },
+  {
+    "name": "NABA",
+    "country": "Europian",
+    "logo":"./assets/Logo/Europe/NABA.jpg"
+  },
+  {
+    "name": "TIO Business School",
+    "country": "Europian",
+    "logo":"./assets/Logo/Europe/TIO_Business_School.jpg"
+  },
+  {
+    "name": "SEU Georgian National University",
+    "country": "Europian",
+    "logo":"./assets/Logo/Europe/SEU_Georgian_National_University.jpg"
+  }
+]
