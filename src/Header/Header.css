@@ -1,193 +1,210 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 :root {
-    --brand-main: #0a2351; 
-    --brand-accent:  #0c2444; 
-    --bg-white: #ffffff;
-    --text-main:  #0c2444;
-    --nav-height: 80px;
+  --brand-main: #0a2351;
+  --brand-accent: #0c2444;
+  --bg-white: #ffffff;
+  --text-main: #0c2444;
+  --nav-height: 80px;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Plus Jakarta Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 .navbar {
-    background: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(15px) saturate(180%);
-    -webkit-backdrop-filter: blur(15px) saturate(180%);
-    height: var(--nav-height);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed; 
-    width: 95%;
-    margin: 1px 2.5%;
-    border-radius: 20px; 
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
-    z-index: 1000;
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+   background: linear-gradient(90deg, var(--brand-main), #22314d);
+  backdrop-filter: blur(15px) saturate(180%);
+  -webkit-backdrop-filter: blur(15px) saturate(180%);
+  height: var(--nav-height);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 95vW;
+  margin: 1px 2.5%;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
+  z-index: 1000;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.outer-header {
+  position: relative;
+  width: 80%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
 .navbar-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 92%;
-    max-width: 1400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  max-width: 1400px;
 }
 
 /* Logo: Pangea Pathways */
 .logo img {
-    height: 115px;
-    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.05));
-    transition: transform 0.3s ease;
+  height: 115px;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.05));
+  transition: transform 0.3s ease;
 }
 
 .logo img:hover {
-    transform: scale(1.03);
+  transform: scale(1.03);
 }
 
 /* Nav Links Styling */
 .nav-links {
-    display: flex;
-    list-style: none;
-    align-items: center;
-    gap: 35px; 
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 35px;
 }
 
 .nav-links li a {
-    text-decoration: none;
-    color: var(--text-main);
-    font-size: 15px;
-    font-weight: 500;
-    letter-spacing: -0.2px;
-    opacity: 0.8;
-    transition: 0.3s all ease;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: px;
+  font-weight: 700;
+  letter-spacing: -0.2px;
+  opacity: 0.8;
+  transition: 0.3s all ease;
 }
 
 .nav-links li a:hover {
-    opacity: 1;
-    color: var(--brand-accent);
+  opacity: 1;
+  color: #abbace;
 }
 
 /* Animated Dot on Hover */
 .nav-links li a::after {
-    content: '';
-    display: block;
-    width: 4px;
-    height: 4px;
-    background: var(--brand-accent);
-    border-radius: 50%;
-    margin: 4px auto 0;
-    opacity: 0;
-    transition: 0.3s;
-    transform: translateY(5px);
+  content: "";
+  display: block;
+  width: 4px;
+  height: 4px;
+  background: #ffffff;
+  border-radius: 50%;
+  margin: 4px auto 0;
+  opacity: 0;
+  transition: 0.3s;
+  transform: translateY(5px);
 }
 
 .nav-links li a:hover::after {
-    opacity: 1;
-    transform: translateY(0px);
+  opacity: 1;
+  transform: translateY(0px);
 }
 
 /* Apply Button: The "Glow" Effect */
 .apply-btn {
-    background: var(--brand-main);
-    color: #fff;
-    padding: 12px 24px;
-    border: none;
-    border-radius: 12px;
-    font-weight: 600;
-    font-size: 14px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(10, 35, 81, 0.2);
+  background:#5a79b3 ;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(168, 180, 202, 0.2);
 }
 
 .apply-btn:hover {
-    background: var(--brand-accent);
-    transform: translateY(-3px);
+  background: var(--brand-accent);
+  transform: translateY(-3px);
 }
 
 /* Mobile Icon */
 .mobile-menu-icon {
-    display: none;
-    cursor: pointer;
-    background: none;
-    border: none;
+  display: none;
+  cursor: pointer;
+  background: none;
+  border: none;
 }
 
 .mobile-menu-icon div {
-    width: 25px;
-    height: 3px;
-    background-color: var(--brand-main);
-    margin: 5px;
-    transition: 0.4s;
+  width: 25px;
+  height: 3px;
+  background-color: var(--brand-main);
+  margin: 5px;
+  transition: 0.4s;
 }
 
 @media (max-width: 968px) {
-    .mobile-menu-icon { display: block; z-index: 1001; }
-    
-    /* Hamburger to X Animation */
-    .mobile-menu-icon.open .bar1 { transform: rotate(-45deg) translate(-5px, 6px); }
-    .mobile-menu-icon.open .bar2 { opacity: 0; }
-    .mobile-menu-icon.open .bar3 { transform: rotate(45deg) translate(-5px, -6px); }
+  .mobile-menu-icon {
+    display: block;
+    z-index: 1001;
+  }
 
-    .nav-links { display: none; }
+  /* Hamburger to X Animation */
+  .mobile-menu-icon.open .bar1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  .mobile-menu-icon.open .bar2 {
+    opacity: 0;
+  }
+  .mobile-menu-icon.open .bar3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
 
-    .nav-links-mobile {
-        position: fixed;
-        top: 0;
-        right: -100%; /* Shuruat ma screen ni bahar */
-        width: 75%;
-        height: 100vh;
-        background: rgba(255, 255, 255, 0.9);
-        backdrop-filter: blur(20px);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding-left: 40px;
-        gap: 25px;
-        list-style: none;
-        transition: 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
-        z-index: 1000;
-        box-shadow: -10px 0 30px rgba(0,0,0,0.1);
-    }
+  .nav-links {
+    display: none;
+  }
 
-    .nav-links-mobile.active {
-        right: 0; /* Screen par avse */
-    }
+  .nav-links-mobile {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Shuruat ma screen ni bahar */
+    width: 75%;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(20px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 40px;
+    gap: 25px;
+    list-style: none;
+    transition: 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    z-index: 1000;
+    box-shadow: -10px 0 30px rgba(0, 0, 0, 0.1);
+  }
 
-    .nav-links-mobile li {
-        opacity: 0;
-        transform: translateX(50px);
-        transition: 0.4s ease;
-    }
+  .nav-links-mobile.active {
+    right: 0; /* Screen par avse */
+  }
 
-    .nav-links-mobile.active li {
-        opacity: 1;
-        transform: translateX(0);
-        /* Staggered Delay using CSS Variables */
-        transition-delay: calc(var(--i) * 0.1s);
-    }
+  .nav-links-mobile li {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: 0.4s ease;
+  }
 
-    .nav-links-mobile li a {
-        font-size: 20px;
-        text-decoration: none;
-        color: var(--brand-main);
-        font-weight: 700;
-    }
+  .nav-links-mobile.active li {
+    opacity: 1;
+    transform: translateX(0);
+    /* Staggered Delay using CSS Variables */
+    transition-delay: calc(var(--i) * 0.1s);
+  }
 
-    .menu-overlay {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100vh;
-        background: rgba(0,0,0,0.3);
-        z-index: 998;
-    }
+  .nav-links-mobile li a {
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--brand-main);
+    font-weight: 700;
+  }
+
+  .menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 998;
+  }
 }

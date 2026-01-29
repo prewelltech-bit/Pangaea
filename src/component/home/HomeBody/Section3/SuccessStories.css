@@ -13,25 +13,26 @@
 }
 
 /* --- Main Heading (WAP) --- */
-.wap {
+.story-h1 {
   text-align: center;
   font-size: 3.5rem;
-  font-weight: 900;
+  font-weight: 400;
   margin-top: 20px;
   margin-bottom: 40px;
-  font-family: 'Inter', sans-serif;
-  background: linear-gradient(135deg, #002d5b 0%, #0056b3 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-transform: uppercase;
+  /* font-family: 'Inter', sans-serif; */
+  /* background: linear-gradient(135deg, #002d5b 0%, #0056b3 100%); */
+  /* -webkit-background-clip: text; */
+  /* background-clip: text; */
+  /* -webkit-text-fill-color: transparent; */
+  /* text-transform: uppercase; */
   letter-spacing: -1.5px;
   position: relative;
   display: block;
-  width: 100%;
+  /* width: 100%; */
+  color: #1d3e74;
 }
 
-.wap::after {
+.story-h1::after {
   content: "";
   display: block;
   width: 0px;
@@ -41,11 +42,14 @@
   border-radius: 10px;
   transition: width 0.4s ease;
 }
-
-.wap:hover::after {
-  width: 120px;
+.story-h1-span {
+  color: #0c2444;
+  font-weight: 900;
 }
 
+.story-h1:hover::after {
+  width: 120px;
+}
 /* --- Content Layout --- */
 .main-wrapper-inner {
   width: 100%;

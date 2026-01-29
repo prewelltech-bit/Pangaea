@@ -2,8 +2,10 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./Header/Header";
 import Footer from "./Footer/Footer";
-import Body from "./component/home/body";
 import PartneredUniversities from "./component/partnered-universities/PartneredUniversities";
+import Body from "./component/home/Body";
+import "./index.css"
+import Uk from "./component/StudyAbroad/UK/Uk";
 
 const App = () => {
   return (
@@ -16,6 +18,11 @@ const App = () => {
           path="/partnered-universities"
           element={<PartneredUniversities/>}
         />
+        <Route
+          path="/study/uk"
+          element={<Uk/>}
+        />
+
       </Routes>
 
       <Footer />

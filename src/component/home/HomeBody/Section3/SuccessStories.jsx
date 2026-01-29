@@ -46,7 +46,7 @@ const SuccessStories = () => {
       animate={isInView ? "visible" : "hidden"}
       variants={staggerContainerVariants}
     >
-      <motion.h1 className="wap" variants={getDirectionVariants('down', 30)}>Success Stories</motion.h1>
+      <motion.h1 className="story-h1" variants={getDirectionVariants('down', 30)}>Success <span className="story-h1-span">Stories</span></motion.h1>
     </motion.div>
     <motion.div
       className="page-wrapper"

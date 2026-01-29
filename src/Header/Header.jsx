@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import './Header.css';
+import React, { useState, useEffect } from "react";
+import "./Header.css";
 
 const Header = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -14,40 +14,66 @@ const Header = () => {
         setScrolled(false);
       }
     };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
-    <nav className={`navbar ${scrolled ? 'navbar-scrolled' : ''}`}>
-      <div className="navbar-container">
-        {/* Logo */}
-        <div className="logo">
-          <img src="/assets/Logo/PANGEA_PATHWAYS.png" alt="Pangea Pathways" />
+    <div className="outer-header">
+      <nav className={`navbar ${scrolled ? "navbar-scrolled" : ""}`}>
+        <div className="navbar-container">
+          {/* Logo */}
+          <div className="logo">
+            <img src="/assets/Logo/PP-2.png" alt="Pangea Pathways" />
+          </div>
+
+          {/* Navigation Links */}
+          <ul className={isMobile ? "nav-links-mobile active" : "nav-links"}>
+            <li style={{ "--i": 1 }}>
+              <a href="#home" onClick={() => setIsMobile(false)}>
+                Home
+              </a>
+            </li>
+            <li style={{ "--i": 2 }}>
+              <a href="#countries" onClick={() => setIsMobile(false)}>
+                Destinations
+              </a>
+            </li>
+            <li style={{ "--i": 3 }}>
+              <a href="#exams" onClick={() => setIsMobile(false)}>
+                IELTS/PTE
+              </a>
+            </li>
+            <li style={{ "--i": 4 }}>
+              <a href="#about" onClick={() => setIsMobile(false)}>
+                About Us
+              </a>
+            </li>
+            <li style={{ "--i": 5 }}>
+              <button className="apply-btn">Contact Us</button>
+            </li>
+          </ul>
+
+          {/* Hamburger Icon */}
+          <button
+            className={`mobile-menu-icon ${isMobile ? "open" : ""}`}
+            onClick={() => setIsMobile(!isMobile)}
+          >
+            <div className="bar1"></div>
+            <div className="bar2"></div>
+            <div className="bar3"></div>
+          </button>
         </div>
 
-        {/* Navigation Links */}
-        <ul className={isMobile ? "nav-links-mobile active" : "nav-links"}>
-          <li style={{"--i": 1}}><a href="#home" onClick={() => setIsMobile(false)}>Home</a></li>
-          <li style={{"--i": 2}}><a href="#countries" onClick={() => setIsMobile(false)}>Destinations</a></li>
-          <li style={{"--i": 3}}><a href="#exams" onClick={() => setIsMobile(false)}>IELTS/PTE</a></li>
-          <li style={{"--i": 4}}><a href="#about" onClick={() => setIsMobile(false)}>About Us</a></li>
-          <li style={{"--i": 5}}>
-            <button className="apply-btn">Contact Us</button>
-          </li>
-        </ul>
-
-        {/* Hamburger Icon */}
-        <button className={`mobile-menu-icon ${isMobile ? 'open' : ''}`} onClick={() => setIsMobile(!isMobile)}>
-          <div className="bar1"></div>
-          <div className="bar2"></div>
-          <div className="bar3"></div>
-        </button>
-      </div>
-      
-      {/* Overlay: Jyare menu khule tyare pachal nu background dhundhlu karva mate */}
-      {isMobile && <div className="menu-overlay" onClick={() => setIsMobile(false)}></div>}
-    </nav>
+        {/* Overlay: Jyare menu khule tyare pachal nu background dhundhlu karva mate */}
+        {isMobile && (
+          <div
+            className="menu-overlay"
+            onClick={() => setIsMobile(false)}
+          ></div>
+        )}
+      </nav>
+    </div>
   );
 };
 
@@ -62,7 +88,7 @@ export default Header;
 //   return (
 //     <header className="pp-header">
 //       <div className="pp-container">
-        
+
 //         {/* Logo */}
 //         <div className="pp-logo">
 //           <a href="#home">Pangaea Pathways</a>

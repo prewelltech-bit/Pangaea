@@ -20,7 +20,7 @@ const OurPartners = () => {
 
   return (
     <section className="partners">
-      <h1 className="wap">Our Top Ranked Partners</h1>
+      <h1 className="partner-h1">Our Top <span className="partner-h1-span">Ranked Partners</span></h1>
 
       <div className="partners-card">
         {/* Row 1 */}

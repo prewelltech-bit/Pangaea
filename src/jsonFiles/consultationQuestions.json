@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "question": "Which country are you interested in studying?",
+    "type": "single",
+    "answers": [
+      { "id": "uk", "text": "United Kingdom", "nextQuestion": 2 },
+      { "id": "germany", "text": "Germany", "nextQuestion": 2 },
+      { "id": "newzealand", "text": "New Zealand", "nextQuestion": 2 },
+      { "id": "australia", "text": "Australia", "nextQuestion": 2 }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "What is your preferred level of study?",
+    "type": "single",
+    "answers": [
+      { "id": "ug", "text": "Undergraduate", "nextQuestion": 3 },
+      { "id": "pg", "text": "Postgraduate", "nextQuestion": 3 },
+      { "id": "diploma", "text": "Diploma", "nextQuestion": 3 }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "Which field interests you the most?",
+    "type": "single",
+    "answers": [
+      { "id": "eng", "text": "Engineering", "nextQuestion": null },
+      { "id": "bus", "text": "Business", "nextQuestion": null },
+      { "id": "cs", "text": "Computer Science", "nextQuestion": null },
+      { "id": "health", "text": "Healthcare", "nextQuestion": null }
+    ],
+    "final": true
+  }
+]

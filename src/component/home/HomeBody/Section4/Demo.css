@@ -11,7 +11,43 @@
   justify-content: center;
   overflow: hidden;
 }
+.event-h1 {
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  /* font-family: 'Inter', sans-serif; */
+  /* background: linear-gradient(135deg, #002d5b 0%, #0056b3 100%); */
+  /* -webkit-background-clip: text; */
+  /* background-clip: text; */
+  /* -webkit-text-fill-color: transparent; */
+  /* text-transform: uppercase; */
+  letter-spacing: -1.5px;
+  position: relative;
+  display: block;
+  /* width: 100%; */
+  color: #1d3e74;
+}
 
+.event-h1::after {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 5px;
+  background: linear-gradient(to right, #002d5b, #60a5fa);
+  margin: 15px auto 0;
+  border-radius: 10px;
+  transition: width 0.4s ease;
+}
+.event-h1-span {
+  color: #0c2444;
+  font-weight: 900;
+}
+
+.event-h1:hover::after {
+  width: 120px;
+}
 /* DARK OVERLAY */
 .hero-overlay {
   background: linear-gradient(
@@ -36,7 +72,7 @@
 }
 
 /* HEADING */
-.hero-box h1 {
+/* .hero-box h1 {
   font-size: 3.2rem;
   font-weight: 800;
   margin-bottom: 30px;
@@ -44,7 +80,7 @@
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-}
+} */
 
 
 /* BUTTON */

@@ -1,19 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import "tailwindcss";
-/* :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* --- Main Heading (WAP) --- */
+.wap {
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 900;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  /* font-family: 'Inter', sans-serif; */
+  /* background: linear-gradient(135deg, #002d5b 0%, #0056b3 100%); */
+  /* -webkit-background-clip: text; */
+  /* background-clip: text; */
+  /* -webkit-text-fill-color: transparent; */
+  /* text-transform: uppercase; */
+  letter-spacing: -1.5px;
+  position: relative;
+  display: block;
+  width: 100%;
+  color: linear-gradient(135deg, #002d5b 0%, #0056b3 100%);
 }
 
+.wap::after {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 5px;
+  background: linear-gradient(to right, #002d5b, #60a5fa);
+  margin: 15px auto 0;
+  border-radius: 10px;
+  transition: width 0.4s ease;
+}
+.wap-span {
+  color: #000000;
+}
+
+.wap:hover::after {
+  width: 120px;
+}
+/*
 a {
   font-weight: 500;
   color: #646cff;

@@ -25,7 +25,7 @@ const Demo = () => {
           className="hero-box"
           variants={getDirectionVariants("up")}
         >
-          <h1>Find Your Events</h1>
+          <h1 className="event-h1">Find Your <span className="event-h1-span">Events</span></h1>
           <button className="hero-btn">See More</button>
         </motion.div>
       </motion.section>
