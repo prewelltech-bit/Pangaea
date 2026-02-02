@@ -1,0 +1,57 @@
+.destination-section {
+  padding: 80px 60px;
+  background: #f8fafc;
+}
+
+.destination-title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 50px;
+  color: #0a2351;
+}
+
+.destination-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.destination-card {
+  position: relative;
+  border-radius: 18px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  transition: transform 0.4s ease;
+}
+
+.destination-card:hover {
+  transform: translateY(-8px);
+}
+
+.destination-card img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  display: block;
+}
+
+.destination-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(10, 35, 81, 0.85),
+    rgba(10, 35, 81, 0.2)
+  );
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+}
+
+.destination-overlay h3 {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 500;
+}

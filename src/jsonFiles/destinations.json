@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "name": "United Kingdom",
+    "image": "/assets/Img/Uk.jpg"
+  },
+  {
+    "id": 2,
+    "name": "New Zealand",
+    "image": "/assets/Img/NewZealand.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Europe",
+    "image": "/assets/Img/Europe.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Australia",
+    "image": "/assets/Img/Australia.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Canada",
+    "image": "/assets/Img/Canada.jpg"
+  }
+]

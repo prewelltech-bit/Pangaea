@@ -5,7 +5,6 @@ const Header = () => {
   const [isMobile, setIsMobile] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
-  // Scroll thava par header ni style badlavva mate
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 50) {
@@ -22,12 +21,11 @@ const Header = () => {
     <div className="outer-header">
       <nav className={`navbar ${scrolled ? "navbar-scrolled" : ""}`}>
         <div className="navbar-container">
-          {/* Logo */}
+
           <div className="logo">
             <img src="/assets/Logo/PP-2.png" alt="Pangea Pathways" />
           </div>
 
-          {/* Navigation Links */}
           <ul className={isMobile ? "nav-links-mobile active" : "nav-links"}>
             <li style={{ "--i": 1 }}>
               <a href="#home" onClick={() => setIsMobile(false)}>
@@ -54,7 +52,6 @@ const Header = () => {
             </li>
           </ul>
 
-          {/* Hamburger Icon */}
           <button
             className={`mobile-menu-icon ${isMobile ? "open" : ""}`}
             onClick={() => setIsMobile(!isMobile)}
@@ -65,7 +62,6 @@ const Header = () => {
           </button>
         </div>
 
-        {/* Overlay: Jyare menu khule tyare pachal nu background dhundhlu karva mate */}
         {isMobile && (
           <div
             className="menu-overlay"

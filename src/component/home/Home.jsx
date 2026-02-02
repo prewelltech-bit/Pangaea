@@ -1,5 +1,6 @@
 import React from 'react'
-import Body from './body';
+import Body from './Body';
+
 
 const Home = () => {
   return (

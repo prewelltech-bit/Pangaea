@@ -6,6 +6,7 @@ import Demo from './HomeBody/Section4/Demo'
 import OurPartners from './HomeBody/Section5/OurPartners';
 import DreamDestination from './HomeBody/Section6/DreamDestination';
 import PopularStudy from './HomeBody/Section7/PopularStudy';
+import FreeCounselling from '../freecounselling/FreeCounselling';
 const Body = () => {
   return (
     <>
@@ -15,6 +16,7 @@ const Body = () => {
             <OurPartners />
             <Demo />
             <DreamDestination />
+            <FreeCounselling />
             <PopularStudy />
     </>
   )
