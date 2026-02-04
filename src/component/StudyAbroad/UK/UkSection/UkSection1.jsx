@@ -111,7 +111,7 @@ const UkSection1 = () => {
                   </div>
 
                   <a href={uni.link}>
-                    <button className="apply-btn">View Details</button>
+                    <button className="apply-btn-uni">View Details</button>
                   </a>
                 </div>
               </div>
