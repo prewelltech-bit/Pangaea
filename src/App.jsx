@@ -9,6 +9,9 @@ import Uk from "./component/StudyAbroad/UK/Uk";
 
 import "./index.css";
 import PTE from "./component/pte/PTE";
+import Contact from "./component/ContactUs/Contact";
+import Blogs from "./component/Blogs/Blogs";
+
 
 const App = () => {
   return (
@@ -23,6 +26,8 @@ const App = () => {
         />
         <Route path="/study/uk" element={<Uk />} />
         <Route path="/pte" element={<PTE />} />
+        <Route path="/Contact" element={<Contact />} />
+        <Route path="/blogs" element={<Blogs />} />
       </Routes>
 
       <Footer />

@@ -7,6 +7,8 @@ import OurPartners from './HomeBody/Section5/OurPartners';
 import DreamDestination from './HomeBody/Section6/DreamDestination';
 import PopularStudy from './HomeBody/Section7/PopularStudy';
 import FreeCounselling from '../freecounselling/FreeCounselling';
+import TrendingCourses from '../TrendingCourses/TrendingCourses';
+import Blogs from '../Blogs/Blogs';
 const Body = () => {
   return (
     <>
@@ -18,6 +20,8 @@ const Body = () => {
             <DreamDestination />
             <FreeCounselling />
             <PopularStudy />
+            <TrendingCourses />
+            <Blogs/>
     </>
   )
 }

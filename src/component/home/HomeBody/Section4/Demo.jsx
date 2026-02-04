@@ -26,7 +26,7 @@ const Demo = () => {
           variants={getDirectionVariants("up")}
         >
           <h1 className="event-h1">Find Your <span className="event-h1-span">Events</span></h1>
-          <button className="hero-btn">See More</button>
+          <button className="view-more-btn">See More</button>
         </motion.div>
       </motion.section>
     </>

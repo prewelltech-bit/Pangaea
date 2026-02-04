@@ -13,8 +13,8 @@ import "swiper/css/navigation";
 
 const SuccessStories = () => {
   const { ref, isInView } = useRevealAnimation(0.2);
-  const bgColors = ["#daedff", "#dcfce7", "#f3e8ff", "#fff7ed", "#fce7f3"];
-  const quoteColors = ["#b3d7ff", "#bbf7d0", "#e9d5ff", "#fed7aa", "#fbcfe8"];
+  const bgColors = ["#001D39", "#0A4174", "#49769F", "#7BBDE8", "#BDD8E9"];
+  const quoteColors = ["#001D39", "#0A4174", "#49769F", "#7BBDE8", "#BDD8E9"];
 
   const [activeIndex, setActiveIndex] = useState(0);
   const prevRef = useRef(null);

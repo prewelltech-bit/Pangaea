@@ -60,10 +60,15 @@ const Header = () => {
               About Us
             </li>
 
-            <li style={{ "--i": 6 }}>
+            <li style={{ "--i": 6 }} 
+            onClick={() =>goToPage("/bolg")}>
+              Blogs
+            </li>
+
+            <li style={{ "--i": 7 }}>
               <button
                 className="apply-btn"
-                onClick={() => goToPage("/partnered-universities")}
+                onClick={() => goToPage("/Contact")}
               >
                 Contact Us
               </button>

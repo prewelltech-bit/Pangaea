@@ -1,0 +1,24 @@
+{
+  "tabs": [
+    { "id": "uk", "label": "Courses in the UK" },
+    { "id": "usa", "label": "Courses in the USA" },
+    { "id": "canada", "label": "Courses in Canada" },
+    { "id": "australia", "label": "Courses in Australia" }
+  ],
+
+  "courses": [
+    { "id": 1, "title": "IT & Data Science", "image": "../../public/assets/Img/C-1.avif" },
+    { "id": 2, "title": "Engineering", "image": "../../public/assets/Img/eng.webp" },
+    { "id": 3, "title": "Biotechnology", "image": "../../public/assets/Img/Biotechnology.jpg" },
+    { "id": 4, "title": "Nursing & Physiotherapy", "image": "../../public/assets/Img/Nursing-Physiotherapy.jpg" },
+    { "id": 5, "title": "Business & Management", "image": "../../public/assets/Img/Business-Management.jpg" },
+    { "id": 6, "title": "Architecture", "image": "../../public/assets/Img/Architecture.jpg" }
+  ],
+
+  "courseOrder": {
+    "uk": [1, 2, 5, 3, 4, 6],
+    "usa": [2, 1, 6, 5, 3, 4],
+    "canada": [3, 5, 1, 2, 4, 6],
+    "australia": [4, 1, 2, 5, 6, 3]
+  }
+}
