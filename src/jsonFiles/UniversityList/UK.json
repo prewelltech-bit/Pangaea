@@ -2,176 +2,276 @@
   {
     "name": "University of Oxford",
     "city": "Oxford",
+    "type": "Public Research University",
+    "fees": "£33,000 – £48,000 per year (course-dependent)",
+    "link": "https://www.ox.ac.uk/",
     "region": "England",
     "country": "UK",
-    "logo":"./assets/Logo/UK/University_of_Oxford.png"
+    "logo": "./assets/Logo/UK/University_of_Oxford.png",
+    "image": "../../../public/assets/Img/universityPic/oxford.jpg"
   },
   {
     "name": "University of Cambridge",
     "city": "Cambridge",
+    "type": "Public Research University",
+    "fees": "Fees (International): £24,000 – £63,000 per year",
+    "link": "https://www.cam.ac.uk",
     "region": "England",
     "country": "UK",
-    "logo":"./assets/Logo/UK/University_of_Cambridge.jpg"
+    "logo": "./assets/Logo/UK/University_of_Cambridge.jpg",
+    "image": "../../../public/assets/Img/universityPic/cambridge.jpg"
   },
   {
     "name": "Imperial College London",
     "city": "London",
+    "type": "Public Research University (STEM-focused)",
+    "fees": " £35,000 – £50,000 per year",
+    "link": "https://www.imperial.ac.uk",
     "region": "England",
     "country": "UK",
-    "logo":"./assets/Logo/UK/Imperial_College_London.jpg"
+    "logo": "./assets/Logo/UK/Imperial_College_London.jpg",
+    "image": "../../../public/assets/Img/universityPic/impirial-college-london.jpg"
   },
   {
     "name": "University College London (UCL)",
     "city": "London",
+    "type": "Public Research University",
+    "fess": "£26,000 – £39,000 per year",
+    "link": "https://www.ucl.ac.uk",
     "region": "England",
     "country": "UK",
-    "logo":"./assets/Logo/UK/University_College_London.jpg"
+    "logo": "./assets/Logo/UK/University_College_London.jpg",
+    "image": "../../../public/assets/Img/universityPic/UCL.jpg"
   },
   {
     "name": "King’s College London",
     "city": "London",
+    "type": "Public Research University",
+    "fees": "£25,000 – £37,000 per year",
+    "link": "https://www.kcl.ac.uk",
     "region": "England",
     "country": "UK",
-    "logo":"./assets/Logo/UK/Kings_College_London.jpg"
+    "logo": "./assets/Logo/UK/Kings_College_London.jpg",
+    "image": "../../../public/assets/Img/universityPic/king's-college-london.jpg"
   },
   {
     "name": "London School of Economics (LSE)",
     "city": "London",
+    "type": "Public Research University (Social Sciences)",
+    "fees": "£26,000 – £35,000 per year",
+    "link": "https://www.lse.ac.uk",
     "region": "England",
     "country": "UK",
-    "logo":"./assets/Logo/UK/London_School_of_Economics.jpg"
+    "logo": "./assets/Logo/UK/London_School_of_Economics.jpg",
+    "image": "../../../public/assets/Img/universityPic/LSE.jpg"
   },
   {
     "name": "University of Manchester",
     "city": "Manchester",
+    "type": "Public Research University",
+    "fees": "£22,000 – £45,000 per year",
+    "link": "https://www.manchester.ac.uk",
     "region": "England",
     "country": "UK",
-    "logo":"./assets/Logo/UK/University_of_Manchester.png"
+    "logo": "./assets/Logo/UK/University_of_Manchester.png",
+    "image": "../../../public/assets/Img/universityPic/university-of-manchester.jpg"
   },
   {
     "name": "University of Birmingham",
     "city": "Birmingham",
+    "type": "Public Research University",
+    "fees": "£21,000 – £40,000 per year",
+    "link": "https://www.birmingham.ac.uk",
     "region": "England",
     "country": "UK",
-    "logo":"./assets/Logo/UK/University_of_Birmingham.jpg"
+    "logo": "./assets/Logo/UK/University_of_Birmingham.jpg",
+    "image": "../../../public/assets/Img/universityPic/University_Birmingham.jpg"
   },
   {
     "name": "University of Leeds",
     "city": "Leeds",
+    "type": "Public Research University",
+    "fees": "£22,000 – £38,000 per year",
+    "link": "https://www.leeds.ac.uk",
     "region": "England",
     "country": "UK",
-    "logo":"./assets/Logo/UK/University_of_Leeds.jpg"
+    "logo": "./assets/Logo/UK/University_of_Leeds.jpg",
+    "image": "../../../public/assets/Img/universityPic/University_Leeds.jpg"
   },
   {
     "name": "University of Bristol",
     "city": "Bristol",
+    "type": "Public research university",
+    "fees": "£22,000 – £38,000 per year (approximate range)",
+    "link": "https://www.bristol.ac.uk/",
     "region": "England",
     "country": "UK",
-    "logo":"./assets/Logo/UK/University_of_Bristol.jpg"
+    "logo": "./assets/Logo/UK/University_of_Bristol.jpg",
+    "image": "../../../public/assets/Img/universityPic/University-Bristol.jpg"
   },
   {
     "name": "University of Nottingham",
     "city": "Nottingham",
+    "type": "Public Research University",
+    "fees": "£20,000 – £35,000 per year",
+    "link": "https://www.nottingham.ac.uk",
     "region": "England",
     "country": "UK",
-    "logo":"./assets/Logo/UK/University_of_Nottingham.jpg"
+    "logo": "./assets/Logo/UK/University_of_Nottingham.jpg",
+    "image": "../../../public/assets/Img/universityPic/cambridge.jpg"
   },
   {
     "name": "Coventry University",
     "city": "Coventry",
+    "type": "Public University (Career-Focused)",
+    "fees": "£16,000 – £20,000 per year",
+    "link": "https://www.coventry.ac.uk",
     "region": "England",
     "country": "UK",
-    "logo":"./assets/Logo/UK/Coventry_University.jpg"
+    "logo": "./assets/Logo/UK/Coventry_University.jpg",
+    "image": "../../../public/assets/Img/universityPic/cambridge.jpg"
   },
   {
     "name": "University of Westminster",
     "city": "London",
+    "type": "Public University",
+    "fees": "£14,000 – £18,000 per year",
+    "link": "https://www.westminster.ac.uk",
     "region": "England",
     "country": "UK",
-    "logo":"./assets/Logo/UK/University_of_Westminster.jpg"
+    "logo": "./assets/Logo/UK/University_of_Westminster.jpg",
+    "image": "../../../public/assets/Img/universityPic/cambridge.jpg"
   },
   {
     "name": "London South Bank University",
     "city": "London",
+    "type": "Public University",
+    "fees": "£15,000 – £18,000 per year",
+    "link": "https://www.lsbu.ac.uk",
     "region": "England",
     "country": "UK",
-    "logo":"./assets/Logo/UK/London_South_Bank_University.jpg"
+    "logo": "./assets/Logo/UK/London_South_Bank_University.jpg",
+    "image": "../../../public/assets/Img/universityPic/cambridge.jpg"
   },
   {
     "name": "Teesside University",
     "city": "Middlesbrough",
+    "type": "Public university",
+    "fees": "£13,500 – £20,000 per year (approximate range)",
+    "link": "https://tees.ac.uk/",
     "region": "England",
     "country": "UK",
-    "logo":"./assets/Logo/UK/Teesside_University.jpg"
+    "logo": "./assets/Logo/UK/Teesside_University.jpg",
+    "image": "../../../public/assets/Img/universityPic/cambridge.jpg"
   },
   {
     "name": "University of Edinburgh",
     "city": "Edinburgh",
+    "type": "Public Research University",
+    "fees": "£23,000 – £37,000 per year",
+    "link": "https://www.ed.ac.uk",
     "region": "Scotland",
     "country": "UK",
-    "logo":"./assets/Logo/UK/University_of_Edinburgh.jpg"
+    "logo": "./assets/Logo/UK/University_of_Edinburgh.jpg",
+    "image": "../../../public/assets/Img/universityPic/cambridge.jpg"
   },
   {
     "name": "University of Glasgow",
     "city": "Glasgow",
+    "type": "Public Research University",
+    "fees": "£20,000 – £35,000 per year",
+    "link": "https://www.gla.ac.uk",
     "region": "Scotland",
     "country": "UK",
-    "logo":"./assets/Logo/UK/University_of_Glasgow.jpg"
+    "logo": "./assets/Logo/UK/University_of_Glasgow.jpg",
+    "image": "../../../public/assets/Img/universityPic/cambridge.jpg"
   },
   {
     "name": "University of Strathclyde",
     "city": "Glasgow",
+    "type": "Public Research University (Technology & Industry Focused)",
+    "fees": "£19,000 – £31,000 per year",
+    "link": "https://www.strath.ac.uk",
     "region": "Scotland",
     "country": "UK",
-    "logo":"./assets/Logo/UK/University_of_Strathclyde.png"
+    "logo": "./assets/Logo/UK/University_of_Strathclyde.png",
+    "image": "../../../public/assets/Img/universityPic/cambridge.jpg"
   },
   {
     "name": "Heriot-Watt University",
     "city": "Edinburgh",
+    "type": "Public Research University (STEM & Business Focused)",
+    "fees": "£19,000 – £25,000 per year",
+    "link": "https://www.hw.ac.uk",
     "region": "Scotland",
     "country": "UK",
-    "logo":"./assets/Logo/UK/Heriot_Watt_University.jpg"
+    "logo": "./assets/Logo/UK/Heriot_Watt_University.jpg",
+    "image": "../../../public/assets/Img/universityPic/cambridge.jpg"
   },
   {
     "name": "University of Dundee",
     "city": "Dundee",
+    "type": "Public University",
+    "fees": "£19,000 – £28,000 per year",
+    "link": "https://www.dundee.ac.uk",
     "region": "Scotland",
     "country": "UK",
-    "logo":"./assets/Logo/UK/University_of_Dundee.jpg"
+    "logo": "./assets/Logo/UK/University_of_Dundee.jpg",
+    "image": "../../../public/assets/Img/universityPic/cambridge.jpg"
   },
   {
     "name": "Cardiff University",
     "city": "Cardiff",
+    "type": "Public Research University",
+    "fees": "£19,000 – £28,000 per year",
+    "link": "https://www.cardiff.ac.uk",
     "region": "Wales",
     "country": "UK",
-    "logo":"./assets/Logo/UK/Cardiff_University.png"
+    "logo": "./assets/Logo/UK/Cardiff_University.png",
+    "image": "../../../public/assets/Img/universityPic/cambridge.jpg"
   },
   {
     "name": "Swansea University",
     "city": "Swansea",
+    "type": "Public Research University",
+    "fees": "£16,000 – £25,000 per year",
+    "link": "https://www.swansea.ac.uk",
     "region": "Wales",
     "country": "UK",
-    "logo":"./assets/Logo/UK/Swansea_University.jpg"
+    "logo": "./assets/Logo/UK/Swansea_University.jpg",
+    "image": "../../../public/assets/Img/universityPic/cambridge.jpg"
   },
   {
     "name": "Bangor University",
     "city": "Bangor",
+    "type": "Public University",
+    "fees": "£15,000 – £20,000 per year",
+    "link": "https://www.bangor.ac.uk",
     "region": "Wales",
     "country": "UK",
-    "logo":"./assets/Logo/UK/Bangor_University.jpg"
+    "logo": "./assets/Logo/UK/Bangor_University.jpg",
+    "image": "../../../public/assets/Img/universityPic/cambridge.jpg"
   },
   {
     "name": "Queen’s University Belfast",
     "city": "Belfast",
+    "type": "Public Research University",
+    "fees": "£20,000 – £38,000 per year",
+    "link": "https://www.qub.ac.uk",
     "region": "Northern Ireland",
     "country": "UK",
-    "logo":"./assets/Logo/UK/Queens_University_Belfast.jpg"
+    "logo": "./assets/Logo/UK/Queens_University_Belfast.jpg",
+    "image": "../../../public/assets/Img/universityPic/cambridge.jpg"
   },
   {
     "name": "Ulster University",
     "city": "Belfast / Derry",
+    "type": "Public University (Applied & Research)",
+    "fees": "£15,000 – £18,000 per year",
+    "link": "https://www.ulster.ac.uk",
     "region": "Northern Ireland",
     "country": "UK",
-    "logo":"./assets/Logo/UK/Ulster_University.jpg"
+    "logo": "./assets/Logo/UK/Ulster_University.jpg",
+    "image": "../../../public/assets/Img/universityPic/cambridge.jpg"
   }
 ]

@@ -1,0 +1,57 @@
+{
+      "name": "Germany",
+      "target_students": "Indian Students",
+      "overview": "Germany is a top European study destination known for world-class public universities, low or no tuition fees, and strong job opportunities.",
+      "study_options": [
+        "Bachelor’s Programs",
+        "Master’s Programs",
+        "PhD / Doctoral Programs",
+        "Public & Private Universities",
+        "English & German Taught Programs",
+        "Vocational & Dual Study Programs",
+        "Foundation Programs",
+        "Exchange Programs"
+      ],
+      "top_universities": [
+        "Technical University of Munich (TUM)",
+        "LMU Munich",
+        "Heidelberg University",
+        "RWTH Aachen University",
+        "Humboldt University of Berlin",
+        "Free University of Berlin",
+        "Karlsruhe Institute of Technology (KIT)",
+        "University of Freiburg",
+        "University of Stuttgart",
+        "TU Berlin"
+      ],
+      "eligibility": {
+        "bachelor": "12th pass with 60–70%",
+        "masters": "Relevant bachelor’s degree with 60–65%",
+        "notes": "Subject-specific requirements apply"
+      },
+      "english_requirements": {
+        "IELTS": "6.0–6.5 (some require 7.0)",
+        "TOEFL_iBT": "80–90 (top universities may require 95+)",
+        "PTE": "55–65"
+      },
+      "costs": {
+        "public_universities": "No tuition fees (semester contribution €150–€350)",
+        "private_universities_per_year": "€5,000–€20,000"
+      },
+      "scholarships": [
+        "DAAD Scholarships",
+        "Deutschlandstipendium",
+        "University-Specific Scholarships",
+        "Research Grants"
+      ],
+      "work_rights": "140 full days or 280 half days per year or 20 hours per week",
+      "pr_options": [
+        "18-month Job Search Visa",
+        "EU Blue Card",
+        "PR after 4–5 years"
+      ],
+      "intakes": {
+        "winter": "October",
+        "summer": "April"
+      }
+    }

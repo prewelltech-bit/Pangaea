@@ -1,0 +1,106 @@
+[
+  {
+    "name": "United Kingdom",
+    "flag": "🇬🇧",
+    "image": "../../public/assets/Img/uk-hero.jpg",
+    "target_students": "Indian Students",
+    "overview": "The United Kingdom is home to one of the world’s oldest, most respected, and prestigious education systems, with a rich academic heritage that spans centuries. UK universities are globally renowned for their high teaching standards, innovative research, and strong emphasis on critical thinking and practical learning. Degrees awarded by UK institutions are internationally recognised and highly valued by employers across the world.",
+    "study_options": [
+      "Foundation Programs",
+      "Bachelor’s Degrees",
+      "Master’s Programs",
+      "PhD & Research Programs",
+      "Professional Courses"
+    ],
+    "whyStudyInUk": [
+      {
+        "id": 1,
+        "icon": "🎓",
+        "title": "World-Renowned Universities",
+        "description": "The UK is home to top universities like Oxford, Cambridge, and Imperial College London. UK degrees are globally recognized and highly valued by employers."
+      },
+      {
+        "id": 2,
+        "icon": "⏱",
+        "title": "Shorter Course Duration",
+        "description": "Most undergraduate courses are 3 years and master’s programs are just 1 year, saving both time and money compared to other countries."
+      },
+      {
+        "id": 3,
+        "icon": "💼",
+        "title": "Post-Study Work Opportunities",
+        "description": "The Graduate Route Visa allows international students to stay and work in the UK for 2 years (3 years for PhD graduates) after completing their studies."
+      },
+      {
+        "id": 4,
+        "icon": "🌍",
+        "title": "Multicultural Environment",
+        "description": "Students from over 180+ countries study in the UK, making it a culturally diverse and welcoming place to live and learn."
+      },
+      {
+        "id": 5,
+        "icon": "🧑‍💻",
+        "title": "Work While Studying",
+        "description": "International students can work up to 20 hours per week during term time and full-time during holidays to support living expenses and gain experience."
+      },
+      {
+        "id": 6,
+        "icon": "📚",
+        "title": "High-Quality Education System",
+        "description": "UK education focuses on practical learning, critical thinking, and research-based study, preparing students for real-world challenges."
+      }
+    ],
+    "popular_fields": [
+      "Business",
+      "IT",
+      "Engineering",
+      "Healthcare",
+      "Law",
+      "Finance"
+    ],
+    "top_universities": [
+      "University of Oxford",
+      "University of Cambridge",
+      "Imperial College London",
+      "University College London (UCL)",
+      "University of Edinburgh",
+      "University of Manchester",
+      "University of Birmingham",
+      "University of Leeds"
+    ],
+    "eligibility": {
+      "bachelor": "12th pass with 60–75%",
+      "masters": "Relevant bachelor’s degree with 60–65%",
+      "notes": "MBA may require work experience"
+    },
+    "english_requirements": {
+      "IELTS": "6.0–6.5",
+      "PTE": "51–59",
+      "TOEFL_iBT": "72–88",
+      "Duolingo": "Accepted by many universities",
+      "MOI": "Available in selected universities"
+    },
+    "costs": {
+      "tuition_fees_GBP_per_year": "10,000–25,000",
+      "living_cost_GBP_per_year": "9,000–12,000"
+    },
+    "scholarships": [
+      "Commonwealth Scholarships",
+      "University Merit-Based Scholarships (up to GBP 5,000)"
+    ],
+    "work_rights": "20 hours per week during term time and full-time during holidays",
+    "pr_options": [
+      "Graduate Route Visa (18 months–3 years)",
+      "Skilled Worker Visa"
+    ],
+    "intakes": [
+      "September",
+      "January",
+      "May (limited)"
+    ],
+    "application_timeline": {
+      "apply_before": "6–9 months",
+      "visa_processing": "3–6 weeks"
+    }
+  }
+]

@@ -1,0 +1,60 @@
+ {
+      "name": "New Zealand",
+      "target_students": "Indian Students",
+      "overview": "New Zealand is a safe and student-friendly country known for high-quality education and excellent quality of life.",
+      "study_options": [
+        "Diploma & Advanced Diploma",
+        "Bachelor’s Degrees",
+        "Master’s Programs",
+        "PhD & Research Programs",
+        "Postgraduate Diplomas"
+      ],
+      "popular_fields": [
+        "IT",
+        "Business",
+        "Engineering",
+        "Healthcare",
+        "Agriculture",
+        "Hospitality"
+      ],
+      "top_universities": [
+        "University of Auckland",
+        "University of Otago",
+        "Victoria University of Wellington",
+        "University of Canterbury",
+        "Massey University",
+        "AUT",
+        "Lincoln University"
+      ],
+      "eligibility": {
+        "bachelor": "12th pass with 60–70%",
+        "masters": "Relevant bachelor’s degree with 60–65%",
+        "notes": "Some programs require work experience"
+      },
+      "english_requirements": {
+        "IELTS": "6.0–6.5",
+        "PTE": "50–58",
+        "TOEFL_iBT": "60–80",
+        "Duolingo": "Accepted by some institutions"
+      },
+      "costs": {
+        "tuition_fees_NZD_per_year": "18,000–40,000",
+        "living_cost_NZD_per_year": "20,000–22,000"
+      },
+      "scholarships": [
+        "New Zealand Excellence Awards",
+        "University Merit Scholarships",
+        "Tuition Fee Waivers",
+        "Research Scholarships"
+      ],
+      "work_rights": "25 hours per week during study and full-time during holidays",
+      "pr_options": [
+        "Post Study Work Visa (1–3 years)",
+        "Skilled Migrant Category"
+      ],
+      "intakes": ["February", "June–July"],
+      "application_timeline": {
+        "apply_before": "6–8 months",
+        "visa_processing": "4–6 weeks"
+      }
+    }
