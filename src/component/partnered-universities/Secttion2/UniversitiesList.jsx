@@ -6,8 +6,16 @@ import canada from "../../../jsonFiles/UniversityList/Canada.json";
 import uk from "../../../jsonFiles/UniversityList/UK.json";
 import europ from "../../../jsonFiles/UniversityList/Europian.json";
 import nz from "../../../jsonFiles/UniversityList/NewZealand.json";
+import usa from "../../../jsonFiles/UniversityList/USA.json"; // ✅ USA added
 
-const countries = ["UK", "Europian", "Canada", "Australia", "New Zealand"];
+const countries = [
+  "UK",
+  "Europian",
+  "Canada",
+  "Australia",
+  "New Zealand",
+  "USA" // ✅ USA added
+];
 
 const allUniversities = [
   ...uk,
@@ -15,6 +23,7 @@ const allUniversities = [
   ...canada,
   ...australia,
   ...nz,
+  ...usa // ✅ USA added
 ];
 
 const ITEMS_PER_PAGE = 5;
@@ -37,13 +46,10 @@ const UniversityList = () => {
     page * ITEMS_PER_PAGE
   );
 
-  // 🔥 sliding pagination logic (2 numbers only)
   const visiblePages = () => {
     if (totalPages <= 2) return [1, 2].slice(0, totalPages);
-
     if (page === 1) return [1, 2];
     if (page === totalPages) return [totalPages - 1, totalPages];
-
     return [page - 1, page];
   };
 

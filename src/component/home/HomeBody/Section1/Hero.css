@@ -2,6 +2,8 @@
 .hero {
   width: 100%;
   padding: 180px 0 40px;
+  position: relative;
+  overflow: hidden;
 }
 
 .hero-main {
@@ -16,7 +18,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  min-height: 520px;
   gap: 40px;
+  position: relative;
+  z-index: 2;
 }
 
 /* ===== LEFT TEXT ===== */
@@ -38,18 +43,37 @@
   font-weight: 300;
 }
 
-/* ===== RIGHT IMAGE ===== */
+/* ===== RIGHT IMAGE (SHARP) ===== */
 .right-hero {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.right-hero::before {
+  content: "";
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  background: radial-gradient(
+    circle,
+    rgba(29, 62, 116, 0.22),
+    transparent 70%
+  );
+  filter: blur(60px);      /* 🔥 only background */
+  z-index: -1;
+}
+
 .right-hero img {
   width: 100%;
-  max-width: 480px;
+  max-width: 560px;
   object-fit: contain;
-  margin-top: -96px;
+  filter: none;            /* ❌ no blur */
+  image-rendering: auto;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  animation: floatHero 6s ease-in-out infinite;
 }
 
 /* ===== SWIPER ===== */
@@ -57,10 +81,9 @@
   width: 100%;
 }
 
-/* 🔥 MAIN FIX */
 .hero-swiper .swiper-pagination {
-  position: relative;   
-  margin-top: 60px;     
+  position: relative;
+  margin-top: 60px;
 }
 
 .hero-swiper .swiper-pagination-bullet {
@@ -78,7 +101,7 @@
 }
 
 /* ================================================= */
-/* 🔥 SLIDE ANIMATION */
+/* SLIDE ANIMATION */
 /* ================================================= */
 
 .hero-container .left-hero,
@@ -92,7 +115,7 @@
 }
 
 .hero-container .right-hero {
-  transform: translateX(60px) scale(0.95);
+  transform: translateX(60px);
 }
 
 .swiper-slide-active .left-hero {
@@ -103,27 +126,38 @@
 
 .swiper-slide-active .right-hero {
   opacity: 1;
-  transform: translateX(0) scale(1);
+  transform: translateX(0);
   transition-delay: 0.4s;
 }
 
-.swiper-slide-active .left-hero h1 {
-  animation: fadeUp 0.8s ease forwards;
+.swiper-slide-active .right-hero img {
+  animation:
+    slidePop 0.9s ease forwards,
+    floatHero 6s ease-in-out infinite;
 }
 
-.swiper-slide-active .left-hero p {
-  animation: fadeUp 0.8s ease forwards;
-  animation-delay: 0.2s;
+/* ===== KEYFRAMES ===== */
+
+@keyframes floatHero {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-16px) scale(1.03);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
 }
 
-@keyframes fadeUp {
+@keyframes slidePop {
   from {
     opacity: 0;
-    transform: translateY(30px);
+    transform: scale(0.9) translateX(40px);
   }
   to {
     opacity: 1;
-    transform: translateY(0);
+    transform: scale(1) translateX(0);
   }
 }
 
@@ -139,8 +173,7 @@
   }
 
   .right-hero img {
-    max-width: 420px;
-    margin-top: -60px;
+    max-width: 480px;
   }
 }
 
@@ -151,7 +184,8 @@
 
   .hero-container {
     flex-direction: column-reverse;
-    text-align: left;
+    text-align: center;
+    min-height: auto;
   }
 
   .left-hero h1 {
@@ -163,8 +197,7 @@
   }
 
   .right-hero img {
-    max-width: 320px;
-    margin-top: -20px;
+    max-width: 340px;
   }
 
   .hero-swiper .swiper-pagination {
@@ -183,6 +216,5 @@
 
   .right-hero img {
     max-width: 280px;
-    margin-top: 0;
   }
 }

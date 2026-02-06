@@ -45,7 +45,7 @@ const Hero = () => {
               </div>
 
               <div className="right-hero">
-                <img src="../../../../../public/assets/Img/student.jpg" alt="hero" />
+                <img src="../../../../../public/assets/Img/h1.png" alt="hero" />
               </div>
             </div>
           </SwiperSlide>
@@ -67,7 +67,7 @@ const Hero = () => {
               </div>
 
               <div className="right-hero">
-                <img src="../../../../../public/assets/Img/student.jpg" alt="hero" />
+                <img src="../../../../../public/assets/Img/h1.png" alt="hero" />
               </div>
             </div>
           </SwiperSlide>
@@ -90,7 +90,7 @@ const Hero = () => {
               </div>
 
               <div className="right-hero">
-                <img src="../../../../../public/assets/Img/student.jpg" alt="hero" />
+                <img src="../../../../../public/assets/Img/h1.png" alt="hero" />
               </div>
             </div>
           </SwiperSlide>

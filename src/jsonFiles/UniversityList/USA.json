@@ -1,0 +1,122 @@
+[
+    {
+        "name": "Harvard University",
+        "country": "USA",
+        "logo": "./assets/Logo/USA/Harvard_University.jpg"
+    },
+    {
+        "name": "Massachusetts Institute of Technology",
+        "country": "USA",
+        "logo": "./assets/Logo/USA/MIT.png"
+    },
+    {
+        "name": "Columbia University",
+        "country": "USA",
+        "logo": "./assets/Logo/USA/Columbia_University.jpg"
+    },
+    {
+        "name": "New York University",
+        "country": "USA",
+        "logo": "./assets/Logo/USA/New_York_University.jpg"
+    },
+    {
+        "name": "Carnegie Mellon University",
+        "country": "USA",
+        "logo": "./assets/Logo/USA/Carnegie_Mellon_University.jpg"
+    },
+    {
+        "name": "University of Pennsylvania",
+        "country": "USA",
+        "logo": "./assets/Logo/USA/University_of_Pennsylvania.png"
+    },
+    {
+        "name": "Boston University",
+        "country": "USA",
+        "logo": "./assets/Logo/USA/Boston_University.png"
+    },
+    {
+        "name": "Northeastern University",
+        "country": "USA",   
+        "logo": "./assets/Logo/USA/Northeastern_University.png"
+    },
+    {
+        "name": "University of Chicago",
+        "country": "USA",
+        "logo": "./assets/Logo/USA/University_of_Chicago.jpg"
+    },
+    {
+        "name": "University of Illinois Urbana Champaign",
+        "country": "USA",
+        "logo": "./assets/Logo/USA/University_of_Illinois_Urbana_Champaign.png"
+    },
+    {
+        "name": "Purdue University",
+        "country": "USA",
+        "logo": "./assets/Logo/USA/Purdue_University.png"
+    },
+    {
+        "name": "University of Michigan Ann Arbor",
+        "country": "USA",
+        "logo": "./assets/Logo/USA/University_of_Michigan_Ann_Arbor.png"
+    },
+    {
+        "name": "Ohio State University",
+        "country": "USA",
+        "logo": "./assets/Logo/USA/Ohio_State_University.png"
+    },
+    {
+        "name": "University of Minnesota",
+        "country": "USA",
+        "logo": "./assets/Logo/USA/University_of_Minnesota.png"             
+    },
+    {
+        "name": "Duke University",
+        "country": "USA",
+        "logo": "./assets/Logo/USA/Duke_University.png"
+    },
+    {
+        "name": "Georgia Institute of Technology",
+        "country": "USA",
+        "logo": "./assets/Logo/USA/Georgia_Institute_of_Technology.webp"
+    },
+    {
+        "name": "University of Texas at Austin",
+        "country": "USA",
+        "logo": "./assets/Logo/USA/University_of_Texas_at_Austin.png"
+    },
+    {
+        "name": "Texas A and M University",
+        "country": "USA",
+        "logo": "./assets/Logo/USA/Texas_A_M_University.png"
+    },
+    {
+        "name": "Rice University",
+        "country": "USA",
+        "logo": "./assets/Logo/USA/Rice_University.png"
+    },
+    {
+        "name": "University of California Berkeley",
+        "country": "USA",
+        "logo": "./assets/Logo/USA/University_of_California_Berkeley.png"
+    },
+    {
+        "name": "University of California Los Angeles",
+        "country": "USA",
+        "logo" : "./assets/Logo/USA/University_of_California_Los_Angeles.png"
+    },
+    {
+        "name": "University of Southern California",
+        "country": "USA",
+        "logo": "./assets/Logo/USA/University_of_Southern_California.png"
+    },
+    {
+        "name": "California Institute of Technology",
+        "country": "USA",
+        "logo": "./assets/Logo/USA/California_Institute_of_Technology.png"
+    },
+    {
+        "name": "Arizona State University",
+        "country": "USA",
+        "logo": "./assets/Logo/USA/Arizona_State_University.png"
+    }
+]
