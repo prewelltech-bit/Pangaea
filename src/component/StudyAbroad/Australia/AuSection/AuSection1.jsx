@@ -1,25 +1,22 @@
 import React from "react";
-import "./UkSection1.css";
-import Country from "../../../../jsonFiles/Uk.json";
-import UkUniversity from "../../../../jsonFiles/UniversityList/UK.json";
+import "./AuSection1.css";
+import AuCountry from "../../../../jsonFiles/AustraliaCountry.json";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
-
+import AuUniversity from "../../../../jsonFiles/UniversityList/Australia.json";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import UKCourse from "./sections/Uk_Course/UKCourse";
-import UkTabs from "./sections/Additional_info/UkTabs";
-
-// import "./UniversitySwiper.css";
-const UkSection1 = () => {
+import AuCourse from "./AuCourse/AuCourse";
+import AuTabs from "./AditionalInfo/AuTabs";
+const AuSection1 = () => {
   return (
     <>
       {/* UK hero section */}
-      {Country.map((section, index) => (
-        <div className="uk-section" key={index}>
-          <section className="country-hero">
-            <div className="container">
+      {AuCountry.map((section, index) => (
+        <div className="Au-section" key={index}>
+          <section className="Au-country-hero">
+            <div className="Au-container">
               <h1>{section.name}</h1>
               {/* <p>{section.overview}</p> */}
             </div>
@@ -28,17 +25,19 @@ const UkSection1 = () => {
       ))}
 
       {/* UK Overview Section */}
-      {Country.map((section, index) => {
+      {AuCountry.map((section, index) => {
         return (
-          <div className="uk-overview" key={index}>
-            <div className="overview-container">
-              <div className="left-overview">
+          <div className="Au-overview" key={index}>
+            <div className="Au-overview-container">
+              <div className="Au-left-overview">
                 <img src={section.image} alt={section.name} />
               </div>
-              <div className="right-overview">
-                <h1 className="right-overview-h1">
+              <div className="Au-right-overview">
+                <h1 className="Au-right-overview-h1">
                   Overview of{" "}
-                  <span className="right-overview-h1-span">{section.name}</span>
+                  <span className="Au-right-overview-h1-span">
+                    {section.name}
+                  </span>
                 </h1>
                 <p>{section.overview}</p>
               </div>
@@ -48,21 +47,21 @@ const UkSection1 = () => {
       })}
 
       {/* UK- Why Study in UK Section */}
-      {Country.map((section, index) => {
+      {AuCountry.map((section, index) => {
         return (
-          <div className="uk-why-study" key={index}>
-            <div className="why-study-container">
-              <div className="why-study-text">
-                <h1 className="why-study-h1">
+          <div className="Au-why-study" key={index}>
+            <div className="Au-why-study-container">
+              <div className="Au-why-study-text">
+                <h1 className="Au-why-study-h1">
                   Why Study in{" "}
-                  <span className="why-study-h1-span">{section.name} ?</span>
+                  <span className="Au-why-study-h1-span">{section.name} ?</span>
                 </h1>
-                <div className="why-study-cards">
-                  {section.whyStudyInUk.map((item) => (
-                    <div className="why-study-card" key={item.id}>
-                      <div className="why-study-icon">{item.icon}</div>
-                      <h3 className="why-study-card-h3">{item.title}</h3>
-                      <p className="why-study-card-p">{item.description}</p>
+                <div className="Au-why-study-cards">
+                  {section.whyStudyInAustralia.map((item) => (
+                    <div className="Au-why-study-card" key={item.id}>
+                      <div className="Au-why-study-icon">{item.icon}</div>
+                      <h3 className="Au-why-study-card-h3">{item.title}</h3>
+                      <p className="Au-why-study-card-p">{item.description}</p>
                     </div>
                   ))}
                 </div>
@@ -75,7 +74,7 @@ const UkSection1 = () => {
       {/* University Swiper */}
       <section className="uni-swiper-section">
         <h2 className="uni-h1">
-         Explore <span className="uni-h1-span">Top Universities</span> In UK
+          Explore <span className="uni-h1-span">Top Universities</span> In UK
         </h2>
 
         <Swiper
@@ -92,17 +91,17 @@ const UkSection1 = () => {
             1200: { slidesPerView: 3 },
           }}
         >
-          {UkUniversity.map((uni, index) => (
+          {AuUniversity.map((uni, index) => (
             <SwiperSlide key={index}>
               <div className="uni-card">
-                <img src={uni.image} alt={uni.name} className="uni-card-img" />
+                <img src={uni.images} alt={uni.name} className="uni-card-img" />
                 <div className="uni-card-body">
                   <h3>{uni.name}</h3>
                   <p>{uni.country}</p>
 
                   <div className="uni-meta">
-                    <span>🎓 12{uni.type}</span>
-                    <span>💰 {uni.fees}212</span>
+                    <span>🎓 {uni.type}</span>
+                    <span>💰 {uni.approxFees}</span>
                     <span>🗼 {uni.city}</span>
 
                     {/* <span>🏆 Rank #{uni.ranking}</span> */}
@@ -118,10 +117,11 @@ const UkSection1 = () => {
         </Swiper>
       </section>
 
-      <UKCourse/>
-      <UkTabs />
+
+      <AuCourse />
+      <AuTabs />
     </>
   );
 };
 
-export default UkSection1;
+export default AuSection1;

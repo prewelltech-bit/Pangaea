@@ -11,6 +11,7 @@ import "./index.css";
 import PTE from "./component/pte/PTE";
 import Contact from "./component/ContactUs/Contact";
 import Blogs from "./component/Blogs/Blogs";
+import Au from "./component/StudyAbroad/Australia/Au";
 
 
 const App = () => {
@@ -25,6 +26,7 @@ const App = () => {
           element={<PartneredUniversities />}
         />
         <Route path="/study/uk" element={<Uk />} />
+        <Route path="/study/australia" element={<Au />} />
         <Route path="/pte" element={<PTE />} />
         <Route path="/Contact" element={<Contact />} />
         <Route path="/blogs" element={<Blogs />} />

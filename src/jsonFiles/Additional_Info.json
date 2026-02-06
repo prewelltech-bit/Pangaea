@@ -1,0 +1,27 @@
+{
+    "tabs":
+    [
+        {
+            "id":"Fees & Living Cost",
+            "label":"Tuition Fees & Living Cost "
+        },
+        {
+            "id":"Scholarships",
+            "label":"Scholarships & Financial Support"
+        },
+        {
+            "id":"Future Opportunities",
+            "label":"PR & Future Opportunities"
+        },
+        {
+            "id":"Application Timeline",
+            "label":"Intakes & Application Timeline "
+        }
+    ],
+    "info":[
+        {
+            "id":1,
+            "label":"Tuition Fees & Living Cost "
+        }
+    ]
+}

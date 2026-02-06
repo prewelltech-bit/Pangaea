@@ -2,121 +2,254 @@
   {
     "name": "Australian National University",
     "country": "Australia",
-    "logo": "/assets/Logo/Australia/Australian_National_University.png"
+    "logo": "/assets/Logo/Australia/Australian_National_University.png",
+    "city": "Canberra",
+    "type": "Public",
+    "approxFees": "AUD 45,000 – 50,000 per year",
+    "link": "https://www.anu.edu.au",
+    "region": "Australian Capital Territory",
+    "images": "https://www.anu.edu.au/sites/default/files/styles/anu_hero/public/anu-campus.jpg"
   },
   {
     "name": "University of Melbourne",
     "country": "Australia",
-    "logo": "/assets/Logo/Australia/University_of_Melbourne.jpg"
+    "logo": "/assets/Logo/Australia/University_of_Melbourne.jpg",
+    "city": "Melbourne",
+    "type": "Public",
+    "approxFees": "AUD 45,000 – 55,000 per year",
+    "link": "https://www.unimelb.edu.au",
+    "region": "Victoria",
+    "images": "https://study.unimelb.edu.au/__data/assets/image/0005/3395801/campus.jpg"
   },
   {
     "name": "University of Sydney",
     "country": "Australia",
-    "logo": "/assets/Logo/Australia/University_of_Sydney.png"
+    "logo": "/assets/Logo/Australia/University_of_Sydney.png",
+    "city": "Sydney",
+    "type": "Public",
+    "approxFees": "AUD 45,000 – 54,000 per year",
+    "link": "https://www.sydney.edu.au",
+    "region": "New South Wales",
+    "images": "https://www.sydney.edu.au/content/dam/corporate/images/campus.jpg"
   },
   {
     "name": "University of New South Wales",
     "country": "Australia",
-    "logo": "/assets/Logo/Australia/University_of_New_South_Wales.jpg"    
+    "logo": "/assets/Logo/Australia/University_of_New_South_Wales.jpg",
+    "city": "Sydney",
+    "type": "Public",
+    "approxFees": "AUD 44,000 – 53,000 per year",
+    "link": "https://www.unsw.edu.au",
+    "region": "New South Wales",
+    "images": "https://www.unsw.edu.au/content/dam/images/campus.jpg"
   },
   {
     "name": "Monash University",
     "country": "Australia",
-    "logo": "/assets/Logo/Australia/Monash_University.jpg"       
+    "logo": "/assets/Logo/Australia/Monash_University.jpg",
+    "city": "Melbourne",
+    "type": "Public",
+    "approxFees": "AUD 40,000 – 50,000 per year",
+    "link": "https://www.monash.edu",
+    "region": "Victoria",
+    "images": "https://www.monash.edu/__data/assets/image/0006/2878485/campus.jpg"
   },
   {
     "name": "University of Queensland",
     "country": "Australia",
-    "logo": "/assets/Logo/Australia/University_of_Queensland.png"       
+    "logo": "/assets/Logo/Australia/University_of_Queensland.png",
+    "city": "Brisbane",
+    "type": "Public",
+    "approxFees": "AUD 42,000 – 50,000 per year",
+    "link": "https://www.uq.edu.au",
+    "region": "Queensland",
+    "images": "https://www.uq.edu.au/sites/default/files/campus.jpg"
   },
   {
     "name": "University of Western Australia",
     "country": "Australia",
-    "logo": "/assets/Logo/Australia/University_of_Western_Australia.webp"       
+    "logo": "/assets/Logo/Australia/University_of_Western_Australia.webp",
+    "city": "Perth",
+    "type": "Public",
+    "approxFees": "AUD 38,000 – 45,000 per year",
+    "link": "https://www.uwa.edu.au",
+    "region": "Western Australia",
+    "images": "https://www.uwa.edu.au/__data/assets/image/0004/3100645/campus.jpg"
   },
   {
     "name": "University of Adelaide",
     "country": "Australia",
-    "logo": "/assets/Logo/Australia/University_of_Adelaide.png"       
+    "logo": "/assets/Logo/Australia/University_of_Adelaide.png",
+    "city": "Adelaide",
+    "type": "Public",
+    "approxFees": "AUD 37,000 – 45,000 per year",
+    "link": "https://www.adelaide.edu.au",
+    "region": "South Australia",
+    "images": "https://www.adelaide.edu.au/__data/assets/image/0010/2923825/campus.jpg"
   },
   {
     "name": "University of Technology Sydney",
     "country": "Australia",
-    "logo": "/assets/Logo/Australia/University_of_Technology_Sydney.jpg"       
+    "logo": "/assets/Logo/Australia/University_of_Technology_Sydney.jpg",
+    "city": "Sydney",
+    "type": "Public",
+    "approxFees": "AUD 38,000 – 46,000 per year",
+    "link": "https://www.uts.edu.au",
+    "region": "New South Wales",
+    "images": "https://www.uts.edu.au/sites/default/files/campus.jpg"
   },
   {
     "name": "Macquarie University",
     "country": "Australia",
-    "logo": "/assets/Logo/Australia/Macquarie_University.png"       
+    "logo": "/assets/Logo/Australia/Macquarie_University.png",
+    "city": "Sydney",
+    "type": "Public",
+    "approxFees": "AUD 36,000 – 44,000 per year",
+    "link": "https://www.mq.edu.au",
+    "region": "New South Wales",
+    "images": "https://www.mq.edu.au/__data/assets/image/0003/3185061/campus.jpg"
   },
   {
     "name": "RMIT University",
     "country": "Australia",
-    "logo": "/assets/Logo/Australia/RMIT_University.gif"       
+    "logo": "/assets/Logo/Australia/RMIT_University.gif",
+    "city": "Melbourne",
+    "type": "Public",
+    "approxFees": "AUD 35,000 – 45,000 per year",
+    "link": "https://www.rmit.edu.au",
+    "region": "Victoria",
+    "images": "https://www.rmit.edu.au/content/dam/global/images/campus.jpg"
   },
   {
     "name": "Deakin University",
     "country": "Australia",
-    "logo": "/assets/Logo/Australia/deakin-university.webp"       
+    "logo": "/assets/Logo/Australia/deakin-university.webp",
+    "city": "Geelong",
+    "type": "Public",
+    "approxFees": "AUD 32,000 – 42,000 per year",
+    "link": "https://www.deakin.edu.au",
+    "region": "Victoria",
+    "images": "https://www.deakin.edu.au/__data/assets/image/0012/2904324/campus.jpg"
   },
   {
     "name": "Queensland University of Technology",
     "country": "Australia",
-    "logo": "/assets/Logo/Australia/Queensland_University_of_Technology.jpg"       
+    "logo": "/assets/Logo/Australia/Queensland_University_of_Technology.jpg",
+    "city": "Brisbane",
+    "type": "Public",
+    "approxFees": "AUD 34,000 – 43,000 per year",
+    "link": "https://www.qut.edu.au",
+    "region": "Queensland",
+    "images": "https://www.qut.edu.au/__data/assets/image/0005/3178890/campus.jpg"
   },
   {
     "name": "La Trobe University",
     "country": "Australia",
-    "logo": "/assets/Logo/Australia/La_Trobe_University.webp"       
+    "logo": "/assets/Logo/Australia/La_Trobe_University.webp",
+    "city": "Melbourne",
+    "type": "Public",
+    "approxFees": "AUD 33,000 – 42,000 per year",
+    "link": "https://www.latrobe.edu.au",
+    "region": "Victoria",
+    "images": "https://www.latrobe.edu.au/__data/assets/image/0006/2839302/campus.jpg"
   },
   {
     "name": "Swinburne University of Technology",
     "country": "Australia",
-    "logo": "/assets/Logo/Australia/Swinburne_University_of_Technology.jpg"       
+    "logo": "/assets/Logo/Australia/Swinburne_University_of_Technology.jpg",
+    "city": "Melbourne",
+    "type": "Public",
+    "approxFees": "AUD 32,000 – 40,000 per year",
+    "link": "https://www.swinburne.edu.au",
+    "region": "Victoria",
+    "images": "https://www.swinburne.edu.au/__data/assets/image/0011/2915453/campus.jpg"
   },
   {
     "name": "Curtin University",
     "country": "Australia",
-    "logo": "/assets/Logo/Australia/Curtin_University.jpg"       
+    "logo": "/assets/Logo/Australia/Curtin_University.jpg",
+    "city": "Perth",
+    "type": "Public",
+    "approxFees": "AUD 34,000 – 42,000 per year",
+    "link": "https://www.curtin.edu.au",
+    "region": "Western Australia",
+    "images": "https://www.curtin.edu.au/__data/assets/image/0009/3164562/campus.jpg"
   },
   {
     "name": "Griffith University",
     "country": "Australia",
-    "logo": "/assets/Logo/Australia/Griffith_University.jpg"       
-  },
-  {
-    "name": "Curtin University",
-    "country": "Australia",
-    "logo": "/assets/Logo/Australia/Curtin_University.jpg"       
+    "logo": "/assets/Logo/Australia/Griffith_University.jpg",
+    "city": "Brisbane / Gold Coast",
+    "type": "Public",
+    "approxFees": "AUD 32,000 – 40,000 per year",
+    "link": "https://www.griffith.edu.au",
+    "region": "Queensland",
+    "images": "https://www.griffith.edu.au/__data/assets/image/0024/2885304/campus.jpg"
   },
   {
     "name": "University of Tasmania",
     "country": "Australia",
-    "logo": "/assets/Logo/Australia/University_of_Tasmania.png"       
+    "logo": "/assets/Logo/Australia/University_of_Tasmania.png",
+    "city": "Hobart",
+    "type": "Public",
+    "approxFees": "AUD 30,000 – 38,000 per year",
+    "link": "https://www.utas.edu.au",
+    "region": "Tasmania",
+    "images": "https://www.utas.edu.au/__data/assets/image/0011/2788811/campus.jpg"
   },
   {
     "name": "Flinders University",
     "country": "Australia",
-    "logo": "/assets/Logo/Australia/Flinders_University.jpg"       
+    "logo": "/assets/Logo/Australia/Flinders_University.jpg",
+    "city": "Adelaide",
+    "type": "Public",
+    "approxFees": "AUD 30,000 – 40,000 per year",
+    "link": "https://www.flinders.edu.au",
+    "region": "South Australia",
+    "images": "https://www.flinders.edu.au/__data/assets/image/0004/2948134/campus.jpg"
   },
   {
     "name": "Australian Catholic University",
     "country": "Australia",
-    "logo": "/assets/Logo/Australia/Australian_Catholic_University.jpg"       
+    "logo": "/assets/Logo/Australia/Australian_Catholic_University.jpg",
+    "city": "Sydney",
+    "type": "Public",
+    "approxFees": "AUD 28,000 – 36,000 per year",
+    "link": "https://www.acu.edu.au",
+    "region": "New South Wales",
+    "images": "https://www.acu.edu.au/__data/assets/image/0007/3204591/campus.jpg"
   },
   {
     "name": "University of Canberra",
     "country": "Australia",
-    "logo": "/assets/Logo/Australia/University_of_Canberra.webp"       
+    "logo": "/assets/Logo/Australia/University_of_Canberra.webp",
+    "city": "Canberra",
+    "type": "Public",
+    "approxFees": "AUD 30,000 – 38,000 per year",
+    "link": "https://www.canberra.edu.au",
+    "region": "Australian Capital Territory",
+    "images": "https://www.canberra.edu.au/__data/assets/image/0008/2898792/campus.jpg"
   },
   {
     "name": "Charles Darwin University",
     "country": "Australia",
-    "logo": "/assets/Logo/Australia/Charles_Darwin_University.jpg"       
+    "logo": "/assets/Logo/Australia/Charles_Darwin_University.jpg",
+    "city": "Darwin",
+    "type": "Public",
+    "approxFees": "AUD 27,000 – 35,000 per year",
+    "link": "https://www.cdu.edu.au",
+    "region": "Northern Territory",
+    "images": "https://www.cdu.edu.au/__data/assets/image/0003/2884332/campus.jpg"
   },
   {
     "name": "Bond University",
     "country": "Australia",
-    "logo": "/assets/Logo/Australia/Bond_University.jpg"       
+    "logo": "/assets/Logo/Australia/Bond_University.jpg",
+    "city": "Gold Coast",
+    "type": "Private",
+    "approxFees": "AUD 45,000 – 55,000 per year",
+    "link": "https://bond.edu.au",
+    "region": "Queensland",
+    "images": "https://bond.edu.au/__data/assets/image/0006/2803113/campus.jpg"
   }
 ]

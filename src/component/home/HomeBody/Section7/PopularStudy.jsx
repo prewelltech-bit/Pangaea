@@ -22,9 +22,9 @@ const destinations = [
     link: "/study/canada",
   },
   {
-    country: "Germany",
-    image: "🇩🇪",
-    description: "Free/low-cost education with strong career prospects",
+    country: "Europe",
+    image: "eu",
+    description: "Affordable European education with strong career prospects.",
     link: "/study/germany",
   },
   {

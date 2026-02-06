@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "title": "Engineering",
+        "image": "../../public/assets/Img/eng.webp"
+    },
+    {
+        "id": 2,
+        "title": "Biotechnology",
+        "image": "../../public/assets/Img/Biotechnology.jpg"
+    },
+    {
+        "id": 3,
+        "title": "Nursing & Physiotherapy",
+        "image": "../../public/assets/Img/Nursing-Physiotherapy.jpg"
+    },
+    {
+        "id": 4,
+        "title": "Business & Management",
+        "image": "../../public/assets/Img/Business-Management.jpg"
+    },
+    {
+        "id": 5,
+        "title": "Architecture",
+        "image": "../../public/assets/Img/Architecture.jpg"
+    },
+    {
+      "id": 6,
+      "title": "IT & Data Science",
+      "image": "../../public/assets/Img/C-1.avif"
+    }
+]
