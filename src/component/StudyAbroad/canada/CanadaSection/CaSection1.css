@@ -1,0 +1,98 @@
+/*========================= AU Hero-section =========================*/
+
+.Ca-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  container: 1200px;
+}
+.Ca-section {
+  background: url("../../../../../public/assets/img/canada/canadaCountry.jpg");
+  background-size: cover;
+  background-position: center;
+  padding-top: 40px;
+  padding-right: 40px;
+  /* border-radius: 20px; */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+.Ca-section h2 {
+  color: #1e3a8a;
+  margin-bottom: 20px;
+}
+.Ca-section p {
+  color: #555555;
+  line-height: 1.6;
+}
+.Ca-section ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #555555;
+}
+.Ca-section ul li {
+  margin-bottom: 10px;
+}
+.Ca-section {
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+.Ca-country-hero {
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  color: rgb(202, 118, 118);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.Ca-container h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #fff;
+  border-left: 5px solid #d27130;
+  border-right: 5px solid #d27130;
+  border-radius: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  /* animation: slideInDown 0.6s ease-in-out; */
+}
+
+.Ca-container span {
+  font-size: 3.5rem;
+  margin-right: 20px;
+  display: inline-block;
+  animation: bounce 2s infinite;
+}
+.Ca-container {
+  display: flex;
+  /* align-items: center; */
+  padding-top: 50px;
+  justify-content: left;
+  /* flex-direction: column; */
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.Ca-container p {
+  font-size: 1.2rem;
+  opacity: 0.95;
+  animation: slideInUp 0.6s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .Ca-sections {
+    gap: 40px;
+  }
+  .Ca-section {
+    padding: 30px;
+  }
+}
+.Ca-section h2 {
+  font-size: 1.5rem;
+}
+
+.Ca-section p,
+.Ca-section ul li {
+  font-size: 1rem;
+}

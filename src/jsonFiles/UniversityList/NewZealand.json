@@ -3,96 +3,176 @@
     "name": "University of Auckland",
     "city": "Auckland",
     "country": "New Zealand",
-    "logo":"./assets/Logo/NewZealand/University_of_Auckland.jpg"
+    "logo": "./assets/Logo/NewZealand/University_of_Auckland.jpg",
+    "type": "Public Research University",
+    "fees": "NZD 35,000 – 50,000 per year",
+    "link": "https://www.auckland.ac.nz",
+    "region": "North Island",
+    "images": "./assets/Img/NewZealand/university_of_auckland.jpg"
   },
   {
     "name": "Auckland University of Technology (AUT)",
     "city": "Auckland",
     "country": "New Zealand",
-    "logo":"./assets/Logo/NewZealand/Auckland_University_of_Technology.png"
+    "logo": "./assets/Logo/NewZealand/Auckland_University_of_Technology.png",
+    "type": "Public University of Technology",
+    "fees": "NZD 32,000 – 45,000 per year",
+    "link": "https://www.aut.ac.nz",
+    "region": "North Island",
+    "images": "./assets/Img/NewZealand/aut_university.jpg"
   },
   {
     "name": "University of Waikato",
     "city": "Hamilton",
     "country": "New Zealand",
-    "logo":"./assets/Logo/NewZealand/University_of_Waikato.jpg"
+    "logo": "./assets/Logo/NewZealand/University_of_Waikato.jpg",
+    "type": "Public Research University",
+    "fees": "NZD 28,000 – 38,000 per year",
+    "link": "https://www.waikato.ac.nz",
+    "region": "North Island",
+    "images": "./assets/Img/NewZealand/university_of_waikato.jpg"
   },
   {
     "name": "Massey University",
     "city": "Palmerston North / Auckland / Wellington",
     "country": "New Zealand",
-    "logo":"./assets/Logo/NewZealand/Massey_University.jpg"
+    "logo": "./assets/Logo/NewZealand/Massey_University.jpg",
+    "type": "Public Multi-Campus University",
+    "fees": "NZD 27,000 – 40,000 per year",
+    "link": "https://www.massey.ac.nz",
+    "region": "North Island",
+    "images": "./assets/Img/NewZealand/massey_university.jpg"
   },
   {
     "name": "Victoria University of Wellington",
     "city": "Wellington",
     "country": "New Zealand",
-    "logo":"./assets/Logo/NewZealand/Victoria_University_of_Wellington.png"
+    "logo": "./assets/Logo/NewZealand/Victoria_University_of_Wellington.png",
+    "type": "Public Research University",
+    "fees": "NZD 30,000 – 42,000 per year",
+    "link": "https://www.wgtn.ac.nz",
+    "region": "North Island",
+    "images": "./assets/Img/NewZealand/victoria_university_wellington.jpg"
   },
   {
     "name": "University of Canterbury",
     "city": "Christchurch",
     "country": "New Zealand",
-    "logo":"./assets/Logo/NewZealand/University_of_Canterbury.jpg"
+    "logo": "./assets/Logo/NewZealand/University_of_Canterbury.jpg",
+    "type": "Public Research University",
+    "fees": "NZD 32,000 – 44,000 per year",
+    "link": "https://www.canterbury.ac.nz",
+    "region": "South Island",
+    "images": "./assets/Img/NewZealand/university_of_canterbury.jpg"
   },
   {
     "name": "Lincoln University",
     "city": "Lincoln (near Christchurch)",
     "country": "New Zealand",
-    "logo":"./assets/Logo/NewZealand/Lincoln_University.png"
+    "logo": "./assets/Logo/NewZealand/Lincoln_University.png",
+    "type": "Public Specialist University",
+    "fees": "NZD 28,000 – 38,000 per year",
+    "link": "https://www.lincoln.ac.nz",
+    "region": "South Island",
+    "images": "./assets/Img/NewZealand/lincoln_university.jpg"
   },
   {
     "name": "University of Otago",
     "city": "Dunedin",
     "country": "New Zealand",
-    "logo":"./assets/Logo/NewZealand/University_of_Otago.jpg"
+    "logo": "./assets/Logo/NewZealand/University_of_Otago.jpg",
+    "type": "Public Research University",
+    "fees": "NZD 32,000 – 45,000 per year",
+    "link": "https://www.otago.ac.nz",
+    "region": "South Island",
+    "images": "./assets/Img/NewZealand/university_of_otago.jpg"
   },
   {
     "name": "Unitec Institute of Technology",
     "city": "Auckland",
     "country": "New Zealand",
-    "logo":"./assets/Logo/NewZealand/Unitec_Institute_of_Technology.png"
+    "logo": "./assets/Logo/NewZealand/Unitec_Institute_of_Technology.png",
+    "type": "Public Institute of Technology",
+    "fees": "NZD 22,000 – 30,000 per year",
+    "link": "https://www.unitec.ac.nz",
+    "region": "North Island",
+    "images": "./assets/Img/NewZealand/unitec.jpg"
   },
   {
     "name": "Manukau Institute of Technology (MIT)",
     "city": "Auckland",
     "country": "New Zealand",
-    "logo":"./assets/Logo/NewZealand/Manukau_Institute_of_Technology.png"
+    "logo": "./assets/Logo/NewZealand/Manukau_Institute_of_Technology.png",
+    "type": "Public Institute of Technology",
+    "fees": "NZD 20,000 – 28,000 per year",
+    "link": "https://www.manukau.ac.nz",
+    "region": "North Island",
+    "images": "./assets/Img/NewZealand/mit_auckland.jpg"
   },
   {
     "name": "Southern Institute of Technology (SIT)",
     "city": "Invercargill",
     "country": "New Zealand",
-    "logo":"./assets/Logo/NewZealand/Southern_Institute_of_Technology.png"
+    "logo": "./assets/Logo/NewZealand/Southern_Institute_of_Technology.png",
+    "type": "Public Institute of Technology",
+    "fees": "NZD 15,000 – 25,000 per year",
+    "link": "https://www.sit.ac.nz",
+    "region": "South Island",
+    "images": "./assets/Img/NewZealand/sit.jpg"
   },
   {
     "name": "Ara Institute of Canterbury",
     "city": "Christchurch",
     "country": "New Zealand",
-    "logo":"./assets/Logo/NewZealand/Ara_Institute_of_Canterbury.png"
+    "logo": "./assets/Logo/NewZealand/Ara_Institute_of_Canterbury.png",
+    "type": "Public Institute of Technology",
+    "fees": "NZD 20,000 – 28,000 per year",
+    "link": "https://www.ara.ac.nz",
+    "region": "South Island",
+    "images": "./assets/Img/NewZealand/ara_institute.jpg"
   },
   {
     "name": "Wintec (Waikato Institute of Technology)",
     "city": "Hamilton",
     "country": "New Zealand",
-    "logo":"./assets/Logo/NewZealand/Wintec.png"
+    "logo": "./assets/Logo/NewZealand/Wintec.png",
+    "type": "Public Institute of Technology",
+    "fees": "NZD 22,000 – 30,000 per year",
+    "link": "https://www.wintec.ac.nz",
+    "region": "North Island",
+    "images": "./assets/Img/NewZealand/wintec.jpg"
   },
   {
     "name": "Eastern Institute of Technology (EIT)",
     "city": "Napier / Hastings",
     "country": "New Zealand",
-    "logo":"./assets/Logo/NewZealand/Eastern_Institute_of_Technology.png"
+    "logo": "./assets/Logo/NewZealand/Eastern_Institute_of_Technology.png",
+    "type": "Public Institute of Technology",
+    "fees": "NZD 21,000 – 29,000 per year",
+    "link": "https://www.eit.ac.nz",
+    "region": "North Island",
+    "images": "./assets/Img/NewZealand/eit.jpg"
   },
   {
     "name": "Otago Polytechnic",
     "city": "Dunedin / Auckland",
     "country": "New Zealand",
-    "logo":"./assets/Logo/NewZealand/Otago_Polytechnic.jpg"
+    "logo": "./assets/Logo/NewZealand/Otago_Polytechnic.jpg",
+    "type": "Public Polytechnic Institute",
+    "fees": "NZD 22,000 – 30,000 per year",
+    "link": "https://www.op.ac.nz",
+    "region": "South Island",
+    "images": "./assets/Img/NewZealand/otago_polytechnic.jpg"
   },
   {
     "name": "Whitireia & WelTec",
     "city": "Wellington / Porirua",
     "country": "New Zealand",
-    "logo":"./assets/Logo/NewZealand/Whitireia_WelTec.png"
+    "logo": "./assets/Logo/NewZealand/Whitireia_WelTec.png",
+    "type": "Public Institute of Technology",
+    "fees": "NZD 21,000 – 29,000 per year",
+    "link": "https://www.whitireiaweltec.ac.nz",
+    "region": "North Island",
+    "images": "./assets/Img/NewZealand/whitireia_weltec.jpg"
   }
 ]

@@ -118,7 +118,7 @@
     "region": "England",
     "country": "UK",
     "logo": "./assets/Logo/UK/University_of_Nottingham.jpg",
-    "image": "../../../public/assets/Img/universityPic/cambridge.jpg"
+    "image": "../../../public/assets/Img/universityPic/uni-of-nottingham.jpg"
   },
   {
     "name": "Coventry University",
@@ -129,7 +129,7 @@
     "region": "England",
     "country": "UK",
     "logo": "./assets/Logo/UK/Coventry_University.jpg",
-    "image": "../../../public/assets/Img/universityPic/cambridge.jpg"
+    "image": "../../../public/assets/Img/universityPic/university of coventry.jpeg"
   },
   {
     "name": "University of Westminster",
@@ -140,7 +140,7 @@
     "region": "England",
     "country": "UK",
     "logo": "./assets/Logo/UK/University_of_Westminster.jpg",
-    "image": "../../../public/assets/Img/universityPic/cambridge.jpg"
+    "image": "../../../public/assets/Img/universityPic/uni-of-westminster.jpg"
   },
   {
     "name": "London South Bank University",
@@ -151,7 +151,7 @@
     "region": "England",
     "country": "UK",
     "logo": "./assets/Logo/UK/London_South_Bank_University.jpg",
-    "image": "../../../public/assets/Img/universityPic/cambridge.jpg"
+    "image": "../../../public/assets/Img/universityPic/LONDON SOUTH BANK UNIVERSITY.jpeg"
   },
   {
     "name": "Teesside University",
@@ -162,7 +162,7 @@
     "region": "England",
     "country": "UK",
     "logo": "./assets/Logo/UK/Teesside_University.jpg",
-    "image": "../../../public/assets/Img/universityPic/cambridge.jpg"
+    "image": "../../../public/assets/Img/universityPic/Teesside_web_featured-scaled.jpeg"
   },
   {
     "name": "University of Edinburgh",
@@ -173,7 +173,7 @@
     "region": "Scotland",
     "country": "UK",
     "logo": "./assets/Logo/UK/University_of_Edinburgh.jpg",
-    "image": "../../../public/assets/Img/universityPic/cambridge.jpg"
+    "image": "../../../public/assets/Img/universityPic/UNIVERSITY OF EDINBURGH.jpeg"
   },
   {
     "name": "University of Glasgow",
@@ -184,7 +184,7 @@
     "region": "Scotland",
     "country": "UK",
     "logo": "./assets/Logo/UK/University_of_Glasgow.jpg",
-    "image": "../../../public/assets/Img/universityPic/cambridge.jpg"
+    "image": "../../../public/assets/Img/universityPic/university-of-glasgow.jpeg"
   },
   {
     "name": "University of Strathclyde",
@@ -195,7 +195,7 @@
     "region": "Scotland",
     "country": "UK",
     "logo": "./assets/Logo/UK/University_of_Strathclyde.png",
-    "image": "../../../public/assets/Img/universityPic/cambridge.jpg"
+    "image": "../../../public/assets/Img/universityPic/University-of-Strathclyde-Campus.jpeg"
   },
   {
     "name": "Heriot-Watt University",
@@ -206,7 +206,7 @@
     "region": "Scotland",
     "country": "UK",
     "logo": "./assets/Logo/UK/Heriot_Watt_University.jpg",
-    "image": "../../../public/assets/Img/universityPic/cambridge.jpg"
+    "image": "../../../public/assets/Img/universityPic/HERIOT WATT UNIVERSITY.jpeg"
   },
   {
     "name": "University of Dundee",
@@ -217,7 +217,7 @@
     "region": "Scotland",
     "country": "UK",
     "logo": "./assets/Logo/UK/University_of_Dundee.jpg",
-    "image": "../../../public/assets/Img/universityPic/cambridge.jpg"
+    "image": "../../../public/assets/Img/universityPic/UNIVERSITY OF DUNDEE.jpeg"
   },
   {
     "name": "Cardiff University",
@@ -228,7 +228,7 @@
     "region": "Wales",
     "country": "UK",
     "logo": "./assets/Logo/UK/Cardiff_University.png",
-    "image": "../../../public/assets/Img/universityPic/cambridge.jpg"
+    "image": "../../../public/assets/Img/universityPic/CARDIFF UNIVERSITY.jpeg"
   },
   {
     "name": "Swansea University",
@@ -239,7 +239,7 @@
     "region": "Wales",
     "country": "UK",
     "logo": "./assets/Logo/UK/Swansea_University.jpg",
-    "image": "../../../public/assets/Img/universityPic/cambridge.jpg"
+    "image": "../../../public/assets/Img/universityPic/SWANSEA UNIVERSITY.jpeg"
   },
   {
     "name": "Bangor University",
@@ -250,7 +250,7 @@
     "region": "Wales",
     "country": "UK",
     "logo": "./assets/Logo/UK/Bangor_University.jpg",
-    "image": "../../../public/assets/Img/universityPic/cambridge.jpg"
+    "image": "../../../public/assets/Img/universityPic/Bangor UNIVERSITY.jpeg"
   },
   {
     "name": "Queen’s University Belfast",
@@ -261,7 +261,7 @@
     "region": "Northern Ireland",
     "country": "UK",
     "logo": "./assets/Logo/UK/Queens_University_Belfast.jpg",
-    "image": "../../../public/assets/Img/universityPic/cambridge.jpg"
+    "image": "../../../public/assets/Img/universityPic/QUEEN'S UNIVERSITY BELFAST.jpeg"
   },
   {
     "name": "Ulster University",
@@ -272,6 +272,6 @@
     "region": "Northern Ireland",
     "country": "UK",
     "logo": "./assets/Logo/UK/Ulster_University.jpg",
-    "image": "../../../public/assets/Img/universityPic/cambridge.jpg"
+    "image": "../../../public/assets/Img/universityPic/Ulster-University.jpeg"
   }
 ]

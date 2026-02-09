@@ -1,0 +1,105 @@
+[
+  {
+    "name": "New Zealand",
+    "flag": "🇳🇿",
+    "image": "../../public/assets/Img/NewZealand/Nz-hero section.jpg",
+    "target_students": "Indian Students",
+    "overview": "New Zealand is a safe, peaceful, and student-friendly country known for its high-quality education system, globally recognised qualifications, and excellent quality of life. The country offers a practical, research-driven learning environment with strong industry connections, making graduates highly employable worldwide.",
+    "study_options": [
+      "Diploma & Advanced Diploma",
+      "Bachelor’s Degrees",
+      "Master’s Programs",
+      "PhD & Research Programs",
+      "Postgraduate Diplomas"
+    ],
+    "whyStudyInNewZealand": [
+      {
+        "id": 1,
+        "icon": "🎓",
+        "title": "Globally Recognised Education",
+        "description": "New Zealand qualifications are recognised worldwide and follow a practical, industry-focused learning approach."
+      },
+      {
+        "id": 2,
+        "icon": "🛡",
+        "title": "Safe & Peaceful Country",
+        "description": "New Zealand consistently ranks among the safest countries in the world, offering a secure environment for international students."
+      },
+      {
+        "id": 3,
+        "icon": "💼",
+        "title": "Post-Study Work Opportunities",
+        "description": "International students can stay and work in New Zealand for 1–3 years after graduation under the Post Study Work Visa."
+      },
+      {
+        "id": 4,
+        "icon": "🌏",
+        "title": "Excellent Quality of Life",
+        "description": "New Zealand offers a balanced lifestyle with clean cities, natural beauty, and a welcoming multicultural society."
+      },
+      {
+        "id": 5,
+        "icon": "🧑‍💻",
+        "title": "Work While Studying",
+        "description": "Students can work up to 25 hours per week during study and full-time during scheduled holidays."
+      },
+      {
+        "id": 6,
+        "icon": "📈",
+        "title": "PR & Long-Term Opportunities",
+        "description": "Clear pathways are available for permanent residency under the Skilled Migrant Category."
+      }
+    ],
+    "popular_fields": [
+      "IT",
+      "Business",
+      "Engineering",
+      "Healthcare",
+      "Agriculture",
+      "Hospitality"
+    ],
+    "top_universities": [
+      "University of Auckland",
+      "University of Otago",
+      "Victoria University of Wellington",
+      "University of Canterbury",
+      "Massey University",
+      "Auckland University of Technology (AUT)",
+      "Lincoln University"
+    ],
+    "eligibility": {
+      "bachelor": "12th pass with 60–70%",
+      "masters": "Relevant bachelor’s degree with 60–65%",
+      "notes": "Some programs may require work experience"
+    },
+    "english_requirements": {
+      "IELTS": "6.0–6.5",
+      "PTE": "50–58",
+      "TOEFL_iBT": "60–80",
+      "Duolingo": "Accepted by some institutions"
+    },
+    "costs": {
+      "tuition_fees_NZD_per_year": "18,000–40,000",
+      "living_cost_NZD_per_year": "20,000–22,000"
+    },
+    "scholarships": [
+      "New Zealand Excellence Awards",
+      "University Merit-Based Scholarships",
+      "Tuition Fee Waivers",
+      "Research Scholarships"
+    ],
+    "work_rights": "Up to 25 hours per week during study and full-time during scheduled holidays",
+    "pr_options": [
+      "Post Study Work Visa (1–3 years)",
+      "Skilled Migrant Category"
+    ],
+    "intakes": [
+      "February",
+      "June–July"
+    ],
+    "application_timeline": {
+      "apply_before": "6–8 months",
+      "visa_processing": "4–6 weeks"
+    }
+  }
+]

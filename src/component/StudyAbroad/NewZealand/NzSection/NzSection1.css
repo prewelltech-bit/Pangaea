@@ -1,0 +1,282 @@
+/*========================= AU Hero-section =========================*/
+
+.Nz-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  container: 1200px;
+}
+.Nz-section {
+  background: url("../../../../../public/assets/Img//NewZealand/NewZealand.jpg");
+  background-size: cover;
+  background-position: center;
+  padding-top: 40px;
+  padding-right: 40px;
+  /* border-radius: 20px; */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+.Nz-section h2 {
+  color: #1e3a8a;
+  margin-bottom: 20px;
+}
+.Nz-section p {
+  color: #555555;
+  line-height: 1.6;
+}
+.Nz-section ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #555555;
+}
+.Nz-section ul li {
+  margin-bottom: 10px;
+}
+.Nz-section {
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+.Nz-country-hero {
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  color: rgb(202, 118, 118);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.Nz-container h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #fff;
+  border-left: 5px solid #d27130;
+  border-right: 5px solid #d27130;
+  border-radius: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  /* animation: slideInDown 0.6s ease-in-out; */
+}
+
+.Nz-container span {
+  font-size: 3.5rem;
+  margin-right: 20px;
+  display: inline-block;
+  animation: bounce 2s infinite;
+}
+.Nz-container {
+  display: flex;
+  /* align-items: center; */
+  padding-top: 50px;
+  justify-content: left;
+  /* flex-direction: column; */
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.Nz-container p {
+  font-size: 1.2rem;
+  opacity: 0.95;
+  animation: slideInUp 0.6s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .Nz-sections {
+    gap: 40px;
+  }
+  .Nz-section {
+    padding: 30px;
+  }
+}
+.Nz-section h2 {
+  font-size: 1.5rem;
+}
+
+.Nz-section p,
+.Nz-section ul li {
+  font-size: 1rem;
+}
+
+/*========================= Uk Overview Section =========================*/
+
+.Nz-overview{
+  padding: 40px 20px;
+  /* width: 90% */
+  max-width: 1500px;
+  margin: 0 auto;
+  /* background-color:#d27130; */
+}
+.Nz-right-overview-h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  position: relative;
+  display: block;
+  color: #1d3e74;
+}
+
+.Nz-right-overview-h1::after {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 5px;
+  background: linear-gradient(to right, #002d5b, #60a5fa);
+  margin: 15px auto 0;
+  border-radius: 10px;
+  transition: width 0.4s ease;
+}
+.Nz-right-overview-h1-span {
+  color: #0c2444;
+  font-weight: 900;
+}
+.Nz-right-overview-h1:hover::after {
+  width: 120px;
+}
+.Nz-left-overview {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.Nz-left-overview img {
+  width: 90%;
+  height: 90%;
+  /* height: auto; */
+  border-radius: 10%;
+  /* box-shadow: 0 30px 68px rgba(4, 9, 61, 0.733); */
+}
+.Nz-right-overview {
+  padding: 40px;
+  width: 100%;
+}
+.Nz-right-overview p {
+  font-size: 1.5rem;
+  line-height: 1.8;
+  color: #333333;
+  text-align: justify;
+}
+.Nz-overview-container {
+  width: 100%;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+/* responsive overview */
+
+@media (max-width: 1028px) {
+  .Nz-overview-container {
+    flex-direction: column;
+  }
+  .Nz-left-overview,
+  .Nz-right-overview {
+    width: 80%;
+  }
+  .Nz-right-overview p {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 768px) {
+  .Nz-overview-container {
+    flex-direction: column;
+  }
+  .Nz-left-overview,
+  .Nz-right-overview {
+    width: 100%;
+  }
+  .Nz-right-overview p {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 300px) {
+  .Nz-right-overview-h1 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 150px) {
+  .Nz-right-overview-h1 {
+    font-size: 1rem;
+  }
+}
+
+/* ========================= Why Study In Uk =========================*/
+.Nz-why-study {
+  padding: 40px 20px;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.Nz-why-study-h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  position: relative;
+  display: block;
+  color: #1d3e74;
+}
+
+.Nz-why-study-h1::after {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 5px;
+  background: linear-gradient(to right, #002d5b, #60a5fa);
+  margin: 15px auto 0;
+  border-radius: 10px;
+  transition: width 0.4s ease;
+}
+.Nz-why-study-h1-span {
+  color: #0c2444;
+  font-weight: 900;
+}
+.Nz-why-study-h1:hover::after {
+  width: 120px;
+}
+
+.Nz-why-study-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: center;
+  margin-left: 30px;
+}
+.Nz-why-study-card {
+  /* background:linear-gradient(90deg , #e2e3e6,#0f1d3a); */
+  border-radius: 0 40px;
+  border-left: 2px solid #0f1d3a;
+  border-bottom: 2px solid #002d5b;
+  width: 90%;
+  padding: 20px 90px 20px 20px;
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 20px;
+  /* align-items: center; */
+  gap: 20px;
+  transition: 0.4s ease-in-out;
+}
+.Nz-why-study-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.18);
+  border-radius: 40px;
+}
+.Nz-why-study-icon {
+  font-size: 3rem;
+}
+.Nz-why-study-card-h3 {
+  font-size: 1.8rem;
+  color: #1d3e74;
+}
+.Nz-why-study-card-p {
+  font-size: 1rem;
+  color: #212121;
+}

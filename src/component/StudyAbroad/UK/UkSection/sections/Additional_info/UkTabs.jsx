@@ -1,8 +1,8 @@
 // import React from "react";
 import React, { useState } from "react";
 import FeesLivingCost from "./FeesLivingCost";
-import Scholarships from "./Scholarships";
-import FutureOpportunities from "./FutureOpportunities";
+import NzScholarships from "../../../../NewZealand/NzSection/NzAdditionalInfo/NzScholarships";
+import NzFutureOppo from "../../../../NewZealand/NzSection/NzAdditionalInfo/NzFutureOppo";
 
 const UkTabs = () => {
   const [activeTab, setActiveTab] = useState("fees");
@@ -12,9 +12,9 @@ const UkTabs = () => {
       case "fees":
         return <FeesLivingCost />;
       case "scholarships":
-        return <Scholarships />;
+        return <NzScholarships />;
       case "future":
-        return <FutureOpportunities />;
+        return <NzFutureOppo />;
       default:
         return null;
     }

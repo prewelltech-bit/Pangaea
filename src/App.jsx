@@ -12,7 +12,8 @@ import PTE from "./component/pte/PTE";
 import Contact from "./component/ContactUs/Contact";
 import Blogs from "./component/Blogs/Blogs";
 import Au from "./component/StudyAbroad/Australia/Au";
-
+import CanadaCountry from "./component/StudyAbroad/canada/CanadaCountry";
+import NewZealand from "./component/StudyAbroad/NewZealand/NewZealand";
 
 const App = () => {
   return (
@@ -25,8 +26,11 @@ const App = () => {
           path="/partnered-universities"
           element={<PartneredUniversities />}
         />
-        <Route path="/study/uk" element={<Uk />} />
         <Route path="/study/australia" element={<Au />} />
+        <Route path="/study/uk" element={<Uk />} />
+        <Route path="/study/canada" element={<CanadaCountry />} />
+        <Route path="/study/new-zealand" element={<NewZealand />} />
+
         <Route path="/pte" element={<PTE />} />
         <Route path="/Contact" element={<Contact />} />
         <Route path="/blogs" element={<Blogs />} />

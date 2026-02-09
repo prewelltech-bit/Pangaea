@@ -1,0 +1,92 @@
+[
+    {
+        "name": "Canada",
+        "flag": "🇨🇦",
+        "title": "Study in Canada",
+        "image": "../../public/assets/img/canada/Ca-overview.jpg",
+        "target_students": "Indian Students",
+        "whyStudyInCanada": [
+            {
+                "id": 1,
+                "icon": "🎓",
+                "title": "Globally Recognized Education",
+                "description": "Canada offers internationally recognized degrees with high academic standards, research opportunities, and strong industry connections."
+            },
+            {
+                "id": 2,
+                "icon": "💼",
+                "title": "Work While Studying",
+                "description": "International students can work up to 24 hours per week during their studies, allowing them to gain practical experience and support their living expenses."
+            },
+            {
+                "id": 3,
+                "icon": "💰",
+                "title": "GIC Financial Requirement",
+                "description": "Students must deposit around 22,895 CAD as a Guaranteed Investment Certificate (GIC), ensuring sufficient funds for living expenses in Canada."
+            },
+            {
+                "id": 4,
+                "icon": "🌍",
+                "title": "Safe & Multicultural Country",
+                "description": "Canada is known for its safe environment, welcoming communities, and diverse multicultural society, making it a preferred destination for international students."
+            }
+        ],
+        "types_of_courses": [
+            {
+                "course": "Bachelor's Degree",
+                "duration": "3 to 4 years",
+                "eligibility": "Student after 12th are eligible to apply"
+            },
+            {
+                "course": "Master's Degree",
+                "duration": "1 to 2 years",
+                "eligibility": "Student after graduation are eligible to apply"
+            }
+        ],
+        "english_language_requirement": {
+            "bachelor_graduate_diploma": "Overall 6 / 5.5",
+            "pg_masters": "Overall 6.5 / 6",
+            "offer_tat_time": "4-6 working weeks"
+        },
+        "intakes": [
+            {
+                "month": "September",
+                "details": "All courses are available"
+            },
+            {
+                "month": "January",
+                "details": "Majority courses are available"
+            },
+            {
+                "month": "April / May",
+                "details": "Few universities offer courses in this intake"
+            }
+        ],
+        "student_visa_process": [
+            "Free consultation and detailed assessment of the profile",
+            "Shortlisting universities and courses",
+            "Prepare required documents",
+            "Submit application to university",
+            "Receive offer letter",
+            "Pay course fee or initial deposit amount to get LOA (Letter of Acceptance)",
+            "Deposit GIC amount with authorised banks in Canada",
+            "Take the medical test with panel doctors authorised by Canada",
+            "Submit visa application and give biometrics",
+            "Get visa approval and submit passport for visa stamping"
+        ],
+        "admission_checklist": [
+            "Passport Copy",
+            "Educational Marksheet (10+12+Bachelors + PG)",
+            "Educational Transcripts (12+Bachelors+PG)",
+            "Degree Certificates",
+            "IELTS / TOEFL / GRE / GMAT / SAT Test score sheet (Test reporting by student)",
+            "Detailed & Updated CV",
+            "Work Experience Letters (If applicable)",
+            "Statement of Purpose (Only for university)",
+            "Letter of Recommendation - 3 (Sealed Envelope)",
+            "Affidavit of Sponsorship (If applicable)",
+            "Bank Certificate",
+            "Extra Curriculum Certificate"
+        ]
+    }
+]
