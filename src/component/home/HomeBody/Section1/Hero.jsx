@@ -40,12 +40,18 @@ const Hero = () => {
                   In Your City!
                 </h1>
                 <p>
-                  Meet representatives from top universities from UK, USA, <br />Australia,New Zealand, Singapore...
+                  Meet representatives from top universities from UK, USA,
+                  <br />
+                  Australia, New Zealand, Singapore...
                 </p>
               </div>
 
               <div className="right-hero">
-                <img src="../../../../../public/assets/Img/h1.png" alt="hero" />
+                <img
+                  src="/assets/Img/h1.png"
+                  alt="hero"
+                  loading="lazy"
+                />
               </div>
             </div>
           </SwiperSlide>
@@ -67,7 +73,11 @@ const Hero = () => {
               </div>
 
               <div className="right-hero">
-                <img src="../../../../../public/assets/Img/h1.png" alt="hero" />
+                <img
+                  src="/assets/Img/h2.png"
+                  alt="hero"
+                  loading="lazy"
+                />
               </div>
             </div>
           </SwiperSlide>
@@ -90,7 +100,11 @@ const Hero = () => {
               </div>
 
               <div className="right-hero">
-                <img src="../../../../../public/assets/Img/h1.png" alt="hero" />
+                <img
+                  src="/assets/Img/h4.png"
+                  alt="hero"
+                  loading="lazy"
+                />
               </div>
             </div>
           </SwiperSlide>

@@ -34,42 +34,29 @@ const Header = () => {
           {/* NAV LINKS */}
           <ul className={isMobile ? "nav-links-mobile active" : "nav-links"}>
 
-            <li style={{ "--i": 1 }} onClick={() => goToPage("/")}>
-              Home
-            </li>
+            <li style={{ "--i": 1 }} onClick={() => goToPage("/")}>Home</li>
 
             <li style={{ "--i": 2 }} onClick={() => goToPage("/study/uk")}>
               Destinations
             </li>
 
-            <li
-              style={{ "--i": 3 }}
-              onClick={() => goToPage("/partnered-universities")}
-            >
+            <li style={{ "--i": 3 }} onClick={() => goToPage("/partnered-universities")}>
               Universities
             </li>
 
-            <li
-              style={{ "--i": 4 }}
-              onClick={() => goToPage("/pte")}
-            >
+            <li style={{ "--i": 4 }} onClick={() => goToPage("/pte")}>
               PTE
             </li>
 
-            <li style={{ "--i": 5 }}>
-              About Us
-            </li>
+            <li style={{ "--i": 5 }}>About Us</li>
 
-            <li style={{ "--i": 6 }} 
-            onClick={() =>goToPage("/bolg")}>
+            {/* ✅ BLOGS FIX */}
+            <li style={{ "--i": 6 }} onClick={() => goToPage("/blogs")}>
               Blogs
             </li>
 
             <li style={{ "--i": 7 }}>
-              <button
-                className="apply-btn"
-                onClick={() => goToPage("/Contact")}
-              >
+              <button className="apply-btn" onClick={() => goToPage("/contact")}>
                 Contact Us
               </button>
             </li>
@@ -89,10 +76,7 @@ const Header = () => {
 
         {/* OVERLAY */}
         {isMobile && (
-          <div
-            className="menu-overlay"
-            onClick={() => setIsMobile(false)}
-          ></div>
+          <div className="menu-overlay" onClick={() => setIsMobile(false)}></div>
         )}
       </nav>
     </div>

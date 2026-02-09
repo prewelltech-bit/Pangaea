@@ -12,6 +12,7 @@ import PTE from "./component/pte/PTE";
 import Contact from "./component/ContactUs/Contact";
 import Blogs from "./component/Blogs/Blogs";
 import Au from "./component/StudyAbroad/Australia/Au";
+import AustraliaBlog from "./component/Blogs/AustraliaBlog";
 
 
 const App = () => {
@@ -30,8 +31,8 @@ const App = () => {
         <Route path="/pte" element={<PTE />} />
         <Route path="/Contact" element={<Contact />} />
         <Route path="/blogs" element={<Blogs />} />
+        <Route path="/australia-blog" element={<AustraliaBlog />} />
       </Routes>
-
       <Footer />
     </BrowserRouter>
   );

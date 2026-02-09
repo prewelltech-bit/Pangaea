@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "country": "Australia",
+    "title": "Australia Student Visa 2026: What Indian Students Must Know",
+    "description": "Australia Student Visa Update 2026: India’s Evidence Level Change Explained",
+    "date": "January 09, 2026",
+    "image": "../../public/assets/Img/b1.png",
+    "slug": "study-in-australia-jan-2026"
+  },
+  {
+    "id": 2,
+    "country": "Canada",
+    "title": "Canada Study Visa February 2025: New IRCC Rules",
+    "description": "Start your Business with 485 Visa: How to Start your Entrepreneurship Journey in Australia...",
+    "date": "October 28, 2025",
+    "image": "../../public/assets/Img/b2.png",
+    "slug": "canada-study-visa-oct-2025"
+  },
+  {
+    "id": 3,
+    "country": "UK",
+    "title": "Can You Change Jobs on a UK 485 Visa Without Affecting PR?",
+    "description": "Can You Change Jobs on a 485 Without Hurting Your PR Plans?",
+    "date": "February 06, 2026",
+    "image": "../../public/assets/Img/b3.png",
+    "slug": "uk-study-feb-2026"
+  }
+]
