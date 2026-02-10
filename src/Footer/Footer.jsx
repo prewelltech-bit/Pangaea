@@ -46,7 +46,7 @@ const Footer = () => {
             <p>
               © 2025 Pagaea Pathways. All rights reserved. |{" "}
               <a href="#">Privacy Policy</a> |{" "}
-              <a href="#">Terms of Service</a>
+              <a href="#">Terms and Conditions</a>
             </p>
           </motion.div>
 

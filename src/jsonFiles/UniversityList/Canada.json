@@ -1,222 +1,750 @@
 [
-    {
-        "name": "University of Toronto",
-        "country": "Canada",
-        "logo":"./assets/Logo/Canada/University_of_Toronto.png"
-    },
-    {
-        "name": "York University",
-        "country": "Canada",
-        "logo":"./assets/Logo/Canada/York_University.png"
-    },
-    {
-        "name": "Toronto Metropolitan University (TMU)",
-        "country": "Canada",
-        "logo":"./assets/Logo/Canada/Toronto_Metropolitan_University.jpg"
-    },
-    {
-        "name": "University of Waterloo",
-        "country": "Canada",
-        "logo":"./assets/Logo/Canada/University_of_Waterloo.jpg"
-    },
-    {
-        "name": "McMaster University",
-        "country": "Canada",
-        "logo":"./assets/Logo/Canada/McMaster_University.jpg"
-    },
-    {
-        "name": "Western University",
-        "country": "Canada",
-        "logo":"./assets/Logo/Canada/Western_University.png"
-    },
-    {
-        "name": "Queen’s University",
-        "country": "Canada",
-        "logo":"./assets/Logo/Canada/Queens_University.jpg"
-    },
-    {
-        "name": "University of Ottawa",
-        "country": "Canada",
-        "logo":"./assets/Logo/Canada/University_of_Ottawa.jpg"
-    },
-    {
-        "name": "Carleton University",
-        "country": "Canada",
-        "logo":"./assets/Logo/Canada/Carleton_University.png"
-    },
-    {
-        "name": "Humber College",
-        "country": "Canada",
-        "logo":"./assets/Logo/Canada/Humber_College.jpg"
-    },
-    {
-        "name": "Seneca College",
-        "country": "Canada",
-        "logo":"./assets/Logo/Canada/Seneca_College.jpg"
-    },
-    {
-        "name": "George Brown College",
-        "country": "Canada",
-        "logo":"./assets/Logo/Canada/George_Brown_College.jpg"
-    },
-    {
-        "name": "Centennial College",
-        "country": "Canada",
-        "logo":"./assets/Logo/Canada/Centennial_College.jpg"
-    },
-    {
-        "name": "Sheridan College",
-        "country": "Canada",
-        "logo":"./assets/Logo/Canada/Sheridan_College.png"
-    },
-    {
-        "name": "Fanshawe College",
-        "country": "Canada",
-        "logo":"./assets/Logo/Canada/Fanshawe_College.png"
-    },
-    {
-        "name": "Conestoga College",
-        "country": "Canada",
-        "logo":"./assets/Logo/Canada/Conestoga_College.jpg"
-    },
-    {
-        "name": "University of British Columbia (UBC)",
-        "country": "Canada",
-        "logo":"./assets/Logo/Canada/University_of_British_Columbia.png"
-    },
-    {
-        "name": "Simon Fraser University (SFU)",
-        "country": "Canada",
-        "logo":"./assets/Logo/Canada/Simon_Fraser_University.png"
-    },
-    {
-        "name": "University of Victoria (UVic)",
-        "country": "Canada",
-        "logo":"./assets/Logo/Canada/University_of_Victoria.jpg"
-    },
-    {
-        "name": "Thompson Rivers University (TRU)",
-        "country": "Canada",
-        "logo":"./assets/Logo/Canada/Thompson_Rivers_University.png"
-    },
-    {
-        "name": "Douglas College",
-        "country": "Canada",
-        "logo":"./assets/Logo/Canada/Douglas_College.jpeg"
-    },
-    {
-        "name": "Langara College",
-        "country": "Canada",
-        "logo":"./assets/Logo/Canada/Langara_College.jpg"
-    },
-    {
-        "name": "Vancouver Community College (VCC)",
-        "country": "Canada",
-        "logo":"./assets/Logo/Canada/Vancouver_Community_College.png"
-    },
-    {
-        "name": "University of Alberta",
-        "country": "Canada",
-        "logo":"./assets/Logo/Canada/University_of_Alberta.jpg"
-    },
-    {
-        "name": "University of Calgary",
-        "country": "Canada",
-        "logo":"./assets/Logo/Canada/University_of_Calgary.png"
-    },
-    {
-        "name": "Mount Royal University",
-        "country": "Canada",
-        "logo":"./assets/Logo/Canada/Mount_Royal_University.webp"
-    },
-    {
-        "name": "Bow Valley College",
-        "country": "Canada",
-        "logo":"./assets/Logo/Canada/Bow_Valley_College.png"
-    },
-    {
-        "name": "Northern Alberta Institute of Technology (NAIT)",
-        "country": "Canada",
-        "logo":"./assets/Logo/Canada/Northern_Alberta_Institute_of_Technology.png"
-    },
-    {
-        "name": "Southern Alberta Institute of Technology (SAIT)",
-        "country": "Canada",
-        "logo":"./assets/Logo/Canada/Southern_Alberta_Institute_of_Technology.jpg"
-    },
-    {
-        "name": "McGill University",
-        "country": "Canada",
-        "logo":"./assets/Logo/Canada/McGill_University.png"
-    },
-    {
-        "name": "Concordia University",
-        "country": "Canada",
-        "logo":"./assets/Logo/Canada/Concordia_University.jpg"
-    },
-    {
-        "name": "Université de Montréal",
-        "country": "Canada",
-        "logo":"./assets/Logo/Canada/Université_de_Montréal.jpg"
-    },
-    {
-        "name": "Dawson College",
-        "country": "Canada",
-        "logo":"./assets/Logo/Canada/Dawson_College.jpg"
-    },
-    {
-        "name": "Lasalle College",
-        "country": "Canada",
-        "logo":"./assets/Logo/Canada/Lasalle_College.jpg"
-    },
-    {
-        "name": "University of Manitoba",
-        "country": "Canada",
-        "logo":"./assets/Logo/Canada/University_of_Manitoba.jpg"
-    },
-    {
-        "name": "University of Winnipeg",
-        "country": "Canada",
-        "logo":"./assets/Logo/Canada/University_of_Winnipeg.jpg"
-    },
-    {
-        "name": "Red River College Polytechnic",
-        "country": "Canada",
-        "logo":"./assets/Logo/Canada/Red_River_College_Polytechnic.webp"
-    },
-    {
-        "name": "University of Saskatchewan",
-        "country": "Canada",
-        "logo":"./assets/Logo/Canada/University_of_Saskatchewan.jpg"
-    },
-    {
-        "name": "University of Regina",
-        "country": "Canada",
-        "logo":"./assets/Logo/Canada/University-of_Regina.png"
-    },
-    {
-        "name": "Saskatchewan Polytechnic",
-        "country": "Canada",
-        "logo":"./assets/Logo/Canada/Saskatchewan_Polytechnic.jpg"
-    },
-    {
-        "name": "Dalhousie University",
-        "country": "Canada",
-        "logo":"./assets/Logo/Canada/Dalhousie_University.jpg"
-    },
-    {
-        "name": "University of New Brunswick (UNB)",
-        "country": "Canada",
-        "logo":"./assets/Logo/Canada/University_of_New_Brunswick.png"
-    },
-    {
-        "name": "Nova Scotia Community College (NSCC)",
-        "country": "Canada",
-        "logo":"./assets/Logo/Canada/Nova_Scotia_Community_College.png"
-    },
-    {
-        "name": "College of the North Atlantic",
-        "country": "Canada",
-        "logo":"./assets/Logo/Canada/College_of_the_North_Atlantic.jpg"
-    }
+  {
+    "name": "University of Toronto",
+    "country": "Canada",
+    "logo": "./assets/Logo/Canada/University_of_Toronto.png",
+    "city": "Toronto",
+    "region": "Ontario",
+    "type_of_course": [
+      "Bachelor's",
+      "Master's",
+      "Diploma"
+    ],
+    "fees_approx": "15000 - 45000 CAD per year",
+    "link": "https://www.utoronto.ca/",
+    "images": [
+      "./assets/Images/Canada/University_of_Toronto.jpg"
+    ]
+  },
+  {
+    "name": "York University",
+    "country": "Canada",
+    "logo": "./assets/Logo/Canada/York_University.png",
+    "city": "Toronto",
+    "region": "Ontario",
+    "type_of_course": [
+      "Bachelor's",
+      "Master's",
+      "Diploma"
+    ],
+    "fees_approx": "15000 - 45000 CAD per year",
+    "link": "https://www.yorku.ca/",
+    "images": [
+      "./assets/Images/Canada/York_University.jpg"
+    ]
+  },
+  {
+    "name": "Toronto Metropolitan University (TMU)",
+    "country": "Canada",
+    "logo": "./assets/Logo/Canada/Toronto_Metropolitan_University.jpg",
+    "city": "Toronto",
+    "region": "Ontario",
+    "type_of_course": [
+      "Bachelor's",
+      "Master's",
+      "Diploma"
+    ],
+    "fees_approx": "15000 - 45000 CAD per year",
+    "link": "https://www.torontomu.ca/",
+    "images": [
+      "./assets/Images/Canada/Toronto_Metropolitan_University_TMU.jpg"
+    ]
+  },
+  {
+    "name": "University of Waterloo",
+    "country": "Canada",
+    "logo": "./assets/Logo/Canada/University_of_Waterloo.jpg",
+    "city": "Waterloo",
+    "region": "Ontario",
+    "type_of_course": [
+      "Bachelor's",
+      "Master's",
+      "Diploma"
+    ],
+    "fees_approx": "15000 - 45000 CAD per year",
+    "link": "https://uwaterloo.ca/",
+    "images": [
+      "./assets/Images/Canada/University_of_Waterloo.jpg"
+    ]
+  },
+  {
+    "name": "McMaster University",
+    "country": "Canada",
+    "logo": "./assets/Logo/Canada/McMaster_University.jpg",
+    "city": "Hamilton",
+    "region": "Ontario",
+    "type_of_course": [
+      "Bachelor's",
+      "Master's",
+      "Diploma"
+    ],
+    "fees_approx": "15000 - 45000 CAD per year",
+    "link": "https://www.mcmaster.ca/",
+    "images": [
+      "./assets/Images/Canada/McMaster_University.jpg"
+    ]
+  },
+  {
+    "name": "Western University",
+    "country": "Canada",
+    "logo": "./assets/Logo/Canada/Western_University.png",
+    "city": "London",
+    "region": "Ontario",
+    "type_of_course": [
+      "Bachelor's",
+      "Master's",
+      "Diploma"
+    ],
+    "fees_approx": "15000 - 45000 CAD per year",
+    "link": "https://www.uwo.ca/",
+    "images": [
+      "./assets/Images/Canada/Western_University.jpg"
+    ]
+  },
+  {
+    "name": "Queen’s University",
+    "country": "Canada",
+    "logo": "./assets/Logo/Canada/Queens_University.jpg",
+    "city": "Kingston",
+    "region": "Ontario",
+    "type_of_course": [
+      "Bachelor's",
+      "Master's",
+      "Diploma"
+    ],
+    "fees_approx": "15000 - 45000 CAD per year",
+    "link": "https://www.queensu.ca/",
+    "images": [
+      "./assets/Images/Canada/Queens_University.jpg"
+    ]
+  },
+  {
+    "name": "University of Ottawa",
+    "country": "Canada",
+    "logo": "./assets/Logo/Canada/University_of_Ottawa.jpg",
+    "city": "Ottawa",
+    "region": "Ontario",
+    "type_of_course": [
+      "Bachelor's",
+      "Master's",
+      "Diploma"
+    ],
+    "fees_approx": "15000 - 45000 CAD per year",
+    "link": "https://www.uottawa.ca/",
+    "images": [
+      "./assets/Images/Canada/University_of_Ottawa.jpg"
+    ]
+  },
+  {
+    "name": "Carleton University",
+    "country": "Canada",
+    "logo": "./assets/Logo/Canada/Carleton_University.png",
+    "city": "Ottawa",
+    "region": "Ontario",
+    "type_of_course": [
+      "Bachelor's",
+      "Master's",
+      "Diploma"
+    ],
+    "fees_approx": "15000 - 45000 CAD per year",
+    "link": "https://carleton.ca/",
+    "images": [
+      "./assets/Images/Canada/Carleton_University.jpg"
+    ]
+  },
+  {
+    "name": "Humber College",
+    "country": "Canada",
+    "logo": "./assets/Logo/Canada/Humber_College.jpg",
+    "city": "Toronto",
+    "region": "Ontario",
+    "type_of_course": [
+      "Bachelor's",
+      "Master's",
+      "Diploma"
+    ],
+    "fees_approx": "15000 - 45000 CAD per year",
+    "link": "https://humber.ca/",
+    "images": [
+      "./assets/Images/Canada/Humber_College.jpg"
+    ]
+  },
+  {
+    "name": "Seneca College",
+    "country": "Canada",
+    "logo": "./assets/Logo/Canada/Seneca_College.jpg",
+    "city": "Toronto",
+    "region": "Ontario",
+    "type_of_course": [
+      "Bachelor's",
+      "Master's",
+      "Diploma"
+    ],
+    "fees_approx": "15000 - 45000 CAD per year",
+    "link": "https://www.senecacollege.ca/",
+    "images": [
+      "./assets/Images/Canada/Seneca_College.jpg"
+    ]
+  },
+  {
+    "name": "George Brown College",
+    "country": "Canada",
+    "logo": "./assets/Logo/Canada/George_Brown_College.jpg",
+    "city": "Toronto",
+    "region": "Ontario",
+    "type_of_course": [
+      "Bachelor's",
+      "Master's",
+      "Diploma"
+    ],
+    "fees_approx": "15000 - 45000 CAD per year",
+    "link": "https://www.georgebrown.ca/",
+    "images": [
+      "./assets/Images/Canada/George_Brown_College.jpg"
+    ]
+  },
+  {
+    "name": "Centennial College",
+    "country": "Canada",
+    "logo": "./assets/Logo/Canada/Centennial_College.jpg",
+    "city": "Toronto",
+    "region": "Ontario",
+    "type_of_course": [
+      "Bachelor's",
+      "Master's",
+      "Diploma"
+    ],
+    "fees_approx": "15000 - 45000 CAD per year",
+    "link": "https://www.centennialcollege.ca/",
+    "images": [
+      "./assets/Images/Canada/Centennial_College.jpg"
+    ]
+  },
+  {
+    "name": "Sheridan College",
+    "country": "Canada",
+    "logo": "./assets/Logo/Canada/Sheridan_College.png",
+    "city": "Oakville",
+    "region": "Ontario",
+    "type_of_course": [
+      "Bachelor's",
+      "Master's",
+      "Diploma"
+    ],
+    "fees_approx": "15000 - 45000 CAD per year",
+    "link": "https://www.sheridancollege.ca/",
+    "images": [
+      "./assets/Images/Canada/Sheridan_College.jpg"
+    ]
+  },
+  {
+    "name": "Fanshawe College",
+    "country": "Canada",
+    "logo": "./assets/Logo/Canada/Fanshawe_College.png",
+    "city": "London",
+    "region": "Ontario",
+    "type_of_course": [
+      "Bachelor's",
+      "Master's",
+      "Diploma"
+    ],
+    "fees_approx": "15000 - 45000 CAD per year",
+    "link": "https://www.fanshawec.ca/",
+    "images": [
+      "./assets/Images/Canada/Fanshawe_College.jpg"
+    ]
+  },
+  {
+    "name": "Conestoga College",
+    "country": "Canada",
+    "logo": "./assets/Logo/Canada/Conestoga_College.jpg",
+    "city": "Kitchener",
+    "region": "Ontario",
+    "type_of_course": [
+      "Bachelor's",
+      "Master's",
+      "Diploma"
+    ],
+    "fees_approx": "15000 - 45000 CAD per year",
+    "link": "https://www.conestogac.on.ca/",
+    "images": [
+      "./assets/Images/Canada/Conestoga_College.jpg"
+    ]
+  },
+  {
+    "name": "University of British Columbia (UBC)",
+    "country": "Canada",
+    "logo": "./assets/Logo/Canada/University_of_British_Columbia.png",
+    "city": "Vancouver",
+    "region": "British Columbia",
+    "type_of_course": [
+      "Bachelor's",
+      "Master's",
+      "Diploma"
+    ],
+    "fees_approx": "15000 - 45000 CAD per year",
+    "link": "https://www.ubc.ca/",
+    "images": [
+      "./assets/Images/Canada/University_of_British_Columbia_UBC.jpg"
+    ]
+  },
+  {
+    "name": "Simon Fraser University (SFU)",
+    "country": "Canada",
+    "logo": "./assets/Logo/Canada/Simon_Fraser_University.png",
+    "city": "Burnaby",
+    "region": "British Columbia",
+    "type_of_course": [
+      "Bachelor's",
+      "Master's",
+      "Diploma"
+    ],
+    "fees_approx": "15000 - 45000 CAD per year",
+    "link": "https://www.sfu.ca/",
+    "images": [
+      "./assets/Images/Canada/Simon_Fraser_University_SFU.jpg"
+    ]
+  },
+  {
+    "name": "University of Victoria (UVic)",
+    "country": "Canada",
+    "logo": "./assets/Logo/Canada/University_of_Victoria.jpg",
+    "city": "Victoria",
+    "region": "British Columbia",
+    "type_of_course": [
+      "Bachelor's",
+      "Master's",
+      "Diploma"
+    ],
+    "fees_approx": "15000 - 45000 CAD per year",
+    "link": "https://www.uvic.ca/",
+    "images": [
+      "./assets/Images/Canada/University_of_Victoria_UVic.jpg"
+    ]
+  },
+  {
+    "name": "Thompson Rivers University (TRU)",
+    "country": "Canada",
+    "logo": "./assets/Logo/Canada/Thompson_Rivers_University.png",
+    "city": "Kamloops",
+    "region": "British Columbia",
+    "type_of_course": [
+      "Bachelor's",
+      "Master's",
+      "Diploma"
+    ],
+    "fees_approx": "15000 - 45000 CAD per year",
+    "link": "https://www.tru.ca/",
+    "images": [
+      "./assets/Images/Canada/Thompson_Rivers_University_TRU.jpg"
+    ]
+  },
+  {
+    "name": "Douglas College",
+    "country": "Canada",
+    "logo": "./assets/Logo/Canada/Douglas_College.jpeg",
+    "city": "New Westminster",
+    "region": "British Columbia",
+    "type_of_course": [
+      "Bachelor's",
+      "Master's",
+      "Diploma"
+    ],
+    "fees_approx": "15000 - 45000 CAD per year",
+    "link": "https://www.douglascollege.ca/",
+    "images": [
+      "./assets/Images/Canada/Douglas_College.jpg"
+    ]
+  },
+  {
+    "name": "Langara College",
+    "country": "Canada",
+    "logo": "./assets/Logo/Canada/Langara_College.jpg",
+    "city": "Vancouver",
+    "region": "British Columbia",
+    "type_of_course": [
+      "Bachelor's",
+      "Master's",
+      "Diploma"
+    ],
+    "fees_approx": "15000 - 45000 CAD per year",
+    "link": "https://langara.ca/",
+    "images": [
+      "./assets/Images/Canada/Langara_College.jpg"
+    ]
+  },
+  {
+    "name": "Vancouver Community College (VCC)",
+    "country": "Canada",
+    "logo": "./assets/Logo/Canada/Vancouver_Community_College.png",
+    "city": "Vancouver",
+    "region": "British Columbia",
+    "type_of_course": [
+      "Bachelor's",
+      "Master's",
+      "Diploma"
+    ],
+    "fees_approx": "15000 - 45000 CAD per year",
+    "link": "https://www.vcc.ca/",
+    "images": [
+      "./assets/Images/Canada/Vancouver_Community_College_VCC.jpg"
+    ]
+  },
+  {
+    "name": "University of Alberta",
+    "country": "Canada",
+    "logo": "./assets/Logo/Canada/University_of_Alberta.jpg",
+    "city": "Edmonton",
+    "region": "Alberta",
+    "type_of_course": [
+      "Bachelor's",
+      "Master's",
+      "Diploma"
+    ],
+    "fees_approx": "15000 - 45000 CAD per year",
+    "link": "https://www.ualberta.ca/",
+    "images": [
+      "./assets/Images/Canada/University_of_Alberta.jpg"
+    ]
+  },
+  {
+    "name": "University of Calgary",
+    "country": "Canada",
+    "logo": "./assets/Logo/Canada/University_of_Calgary.png",
+    "city": "Calgary",
+    "region": "Alberta",
+    "type_of_course": [
+      "Bachelor's",
+      "Master's",
+      "Diploma"
+    ],
+    "fees_approx": "15000 - 45000 CAD per year",
+    "link": "https://www.ucalgary.ca/",
+    "images": [
+      "./assets/Images/Canada/University_of_Calgary.jpg"
+    ]
+  },
+  {
+    "name": "Mount Royal University",
+    "country": "Canada",
+    "logo": "./assets/Logo/Canada/Mount_Royal_University.webp",
+    "city": "Calgary",
+    "region": "Alberta",
+    "type_of_course": [
+      "Bachelor's",
+      "Master's",
+      "Diploma"
+    ],
+    "fees_approx": "15000 - 45000 CAD per year",
+    "link": "https://www.mtroyal.ca/",
+    "images": [
+      "./assets/Images/Canada/Mount_Royal_University.jpg"
+    ]
+  },
+  {
+    "name": "Bow Valley College",
+    "country": "Canada",
+    "logo": "./assets/Logo/Canada/Bow_Valley_College.png",
+    "city": "Calgary",
+    "region": "Alberta",
+    "type_of_course": [
+      "Bachelor's",
+      "Master's",
+      "Diploma"
+    ],
+    "fees_approx": "15000 - 45000 CAD per year",
+    "link": "https://bowvalleycollege.ca/",
+    "images": [
+      "./assets/Images/Canada/Bow_Valley_College.jpg"
+    ]
+  },
+  {
+    "name": "Northern Alberta Institute of Technology (NAIT)",
+    "country": "Canada",
+    "logo": "./assets/Logo/Canada/Northern_Alberta_Institute_of_Technology.png",
+    "city": "Edmonton",
+    "region": "Alberta",
+    "type_of_course": [
+      "Bachelor's",
+      "Master's",
+      "Diploma"
+    ],
+    "fees_approx": "15000 - 45000 CAD per year",
+    "link": "https://www.nait.ca/",
+    "images": [
+      "./assets/Images/Canada/Northern_Alberta_Institute_of_Technology_NAIT.jpg"
+    ]
+  },
+  {
+    "name": "Southern Alberta Institute of Technology (SAIT)",
+    "country": "Canada",
+    "logo": "./assets/Logo/Canada/Southern_Alberta_Institute_of_Technology.jpg",
+    "city": "Calgary",
+    "region": "Alberta",
+    "type_of_course": [
+      "Bachelor's",
+      "Master's",
+      "Diploma"
+    ],
+    "fees_approx": "15000 - 45000 CAD per year",
+    "link": "https://www.sait.ca/",
+    "images": [
+      "./assets/Images/Canada/Southern_Alberta_Institute_of_Technology_SAIT.jpg"
+    ]
+  },
+  {
+    "name": "McGill University",
+    "country": "Canada",
+    "logo": "./assets/Logo/Canada/McGill_University.png",
+    "city": "Montreal",
+    "region": "Quebec",
+    "type_of_course": [
+      "Bachelor's",
+      "Master's",
+      "Diploma"
+    ],
+    "fees_approx": "15000 - 45000 CAD per year",
+    "link": "https://www.mcgill.ca/",
+    "images": [
+      "./assets/Images/Canada/McGill_University.jpg"
+    ]
+  },
+  {
+    "name": "Concordia University",
+    "country": "Canada",
+    "logo": "./assets/Logo/Canada/Concordia_University.jpg",
+    "city": "Montreal",
+    "region": "Quebec",
+    "type_of_course": [
+      "Bachelor's",
+      "Master's",
+      "Diploma"
+    ],
+    "fees_approx": "15000 - 45000 CAD per year",
+    "link": "https://www.concordia.ca/",
+    "images": [
+      "./assets/Images/Canada/Concordia_University.jpg"
+    ]
+  },
+  {
+    "name": "Université de Montréal",
+    "country": "Canada",
+    "logo": "./assets/Logo/Canada/Université_de_Montréal.jpg",
+    "city": "Montreal",
+    "region": "Quebec",
+    "type_of_course": [
+      "Bachelor's",
+      "Master's",
+      "Diploma"
+    ],
+    "fees_approx": "15000 - 45000 CAD per year",
+    "link": "https://www.umontreal.ca/",
+    "images": [
+      "./assets/Images/Canada/Universite_de_Montreal.jpg"
+    ]
+  },
+  {
+    "name": "Dawson College",
+    "country": "Canada",
+    "logo": "./assets/Logo/Canada/Dawson_College.jpg",
+    "city": "Montreal",
+    "region": "Quebec",
+    "type_of_course": [
+      "Bachelor's",
+      "Master's",
+      "Diploma"
+    ],
+    "fees_approx": "15000 - 45000 CAD per year",
+    "link": "https://www.dawsoncollege.qc.ca/",
+    "images": [
+      "./assets/Images/Canada/Dawson_College.jpg"
+    ]
+  },
+  {
+    "name": "Lasalle College",
+    "country": "Canada",
+    "logo": "./assets/Logo/Canada/Lasalle_College.jpg",
+    "city": "Montreal",
+    "region": "Quebec",
+    "type_of_course": [
+      "Bachelor's",
+      "Master's",
+      "Diploma"
+    ],
+    "fees_approx": "15000 - 45000 CAD per year",
+    "link": "https://www.lasallecollege.com/",
+    "images": [
+      "./assets/Images/Canada/Lasalle_College.jpg"
+    ]
+  },
+  {
+    "name": "University of Manitoba",
+    "country": "Canada",
+    "logo": "./assets/Logo/Canada/University_of_Manitoba.jpg",
+    "city": "Winnipeg",
+    "region": "Manitoba",
+    "type_of_course": [
+      "Bachelor's",
+      "Master's",
+      "Diploma"
+    ],
+    "fees_approx": "15000 - 45000 CAD per year",
+    "link": "https://umanitoba.ca/",
+    "images": [
+      "./assets/Images/Canada/University_of_Manitoba.jpg"
+    ]
+  },
+  {
+    "name": "University of Winnipeg",
+    "country": "Canada",
+    "logo": "./assets/Logo/Canada/University_of_Winnipeg.jpg",
+    "city": "Winnipeg",
+    "region": "Manitoba",
+    "type_of_course": [
+      "Bachelor's",
+      "Master's",
+      "Diploma"
+    ],
+    "fees_approx": "15000 - 45000 CAD per year",
+    "link": "https://www.uwinnipeg.ca/",
+    "images": [
+      "./assets/Images/Canada/University_of_Winnipeg.jpg"
+    ]
+  },
+  {
+    "name": "Red River College Polytechnic",
+    "country": "Canada",
+    "logo": "./assets/Logo/Canada/Red_River_College_Polytechnic.webp",
+    "city": "Winnipeg",
+    "region": "Manitoba",
+    "type_of_course": [
+      "Bachelor's",
+      "Master's",
+      "Diploma"
+    ],
+    "fees_approx": "15000 - 45000 CAD per year",
+    "link": "https://www.rrc.ca/",
+    "images": [
+      "./assets/Images/Canada/Red_River_College_Polytechnic.jpg"
+    ]
+  },
+  {
+    "name": "University of Saskatchewan",
+    "country": "Canada",
+    "logo": "./assets/Logo/Canada/University_of_Saskatchewan.jpg",
+    "city": "Saskatoon",
+    "region": "Saskatchewan",
+    "type_of_course": [
+      "Bachelor's",
+      "Master's",
+      "Diploma"
+    ],
+    "fees_approx": "15000 - 45000 CAD per year",
+    "link": "https://www.usask.ca/",
+    "images": [
+      "./assets/Images/Canada/University_of_Saskatchewan.jpg"
+    ]
+  },
+  {
+    "name": "University of Regina",
+    "country": "Canada",
+    "logo": "./assets/Logo/Canada/University-of_Regina.png",
+    "city": "Regina",
+    "region": "Saskatchewan",
+    "type_of_course": [
+      "Bachelor's",
+      "Master's",
+      "Diploma"
+    ],
+    "fees_approx": "15000 - 45000 CAD per year",
+    "link": "https://www.uregina.ca/",
+    "images": [
+      "./assets/Images/Canada/University_of_Regina.jpg"
+    ]
+  },
+  {
+    "name": "Saskatchewan Polytechnic",
+    "country": "Canada",
+    "logo": "./assets/Logo/Canada/Saskatchewan_Polytechnic.jpg",
+    "city": "Saskatoon",
+    "region": "Saskatchewan",
+    "type_of_course": [
+      "Bachelor's",
+      "Master's",
+      "Diploma"
+    ],
+    "fees_approx": "15000 - 45000 CAD per year",
+    "link": "https://saskpolytech.ca/",
+    "images": [
+      "./assets/Images/Canada/Saskatchewan_Polytechnic.jpg"
+    ]
+  },
+  {
+    "name": "Dalhousie University",
+    "country": "Canada",
+    "logo": "./assets/Logo/Canada/Dalhousie_University.jpg",
+    "city": "Halifax",
+    "region": "Nova Scotia",
+    "type_of_course": [
+      "Bachelor's",
+      "Master's",
+      "Diploma"
+    ],
+    "fees_approx": "15000 - 45000 CAD per year",
+    "link": "https://www.dal.ca/",
+    "images": [
+      "./assets/Images/Canada/Dalhousie_University.jpg"
+    ]
+  },
+  {
+    "name": "University of New Brunswick (UNB)",
+    "country": "Canada",
+    "logo": "./assets/Logo/Canada/University_of_New_Brunswick.png",
+    "city": "Fredericton",
+    "region": "New Brunswick",
+    "type_of_course": [
+      "Bachelor's",
+      "Master's",
+      "Diploma"
+    ],
+    "fees_approx": "15000 - 45000 CAD per year",
+    "link": "https://www.unb.ca/",
+    "images": [
+      "./assets/Images/Canada/University_of_New_Brunswick_UNB.jpg"
+    ]
+  },
+  {
+    "name": "Nova Scotia Community College (NSCC)",
+    "country": "Canada",
+    "logo": "./assets/Logo/Canada/Nova_Scotia_Community_College.png",
+    "city": "Halifax",
+    "region": "Nova Scotia",
+    "type_of_course": [
+      "Bachelor's",
+      "Master's",
+      "Diploma"
+    ],
+    "fees_approx": "15000 - 45000 CAD per year",
+    "link": "https://www.nscc.ca/",
+    "images": [
+      "./assets/Images/Canada/Nova_Scotia_Community_College_NSCC.jpg"
+    ]
+  },
+  {
+    "name": "College of the North Atlantic",
+    "country": "Canada",
+    "logo": "./assets/Logo/Canada/College_of_the_North_Atlantic.jpg",
+    "city": "St. John's",
+    "region": "Newfoundland and Labrador",
+    "type_of_course": [
+      "Bachelor's",
+      "Master's",
+      "Diploma"
+    ],
+    "fees_approx": "15000 - 45000 CAD per year",
+    "link": "https://www.cna.nl.ca/",
+    "images": [
+      "./assets/Images/Canada/College_of_the_North_Atlantic.jpg"
+    ]
+  }
 ]

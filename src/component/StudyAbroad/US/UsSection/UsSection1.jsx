@@ -1,31 +1,30 @@
 import React from "react";
-import "./AuSection1.css";
-import AuCountry from "../../../../jsonFiles/AustraliaCountry.json";
+import "./UsSection1.css";
+import Country from "../../../../jsonFiles/UsCountry.json";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
-import AuUniversity from "../../../../jsonFiles/UniversityList/Australia.json";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import AuCourse from "./AuCourse/AuCourse";
-import AuTabs from "./AditionalInfo/AuTabs";
-const AuSection1 = () => {
+import USAUniversity from "../../../../jsonFiles/UniversityList/USA.json";
+import UsCourse from "./UsCourse/UsCourse";
+import UsTabs from "./AdditionalInfo/UsTabs";
+const UsSection1 = () => {
   return (
     <>
-      {/* Australia hero section */}
-      {AuCountry.map((section, index) => (
-        <div className="Au-section" key={index}>
-          <section className="Au-country-hero">
-            <div className="Au-container">
+      {/* Usa hero section */}
+      {Country.map((section, index) => (
+        <div className="Us-section" key={index}>
+          <section className="Us-country-hero">
+            <div className="Us-container">
               <h1>{section.name}</h1>
-              {/* <p>{section.overview}</p> */}
             </div>
           </section>
         </div>
       ))}
 
-      {/* Australia Overview Section */}
-      {AuCountry.map((section, index) => {
+      {/* Usa Overview Section */}
+      {Country.map((section, index) => {
         return (
           <div className="Au-overview" key={index}>
             <div className="Au-overview-container">
@@ -46,8 +45,8 @@ const AuSection1 = () => {
         );
       })}
 
-      {/* Australia- Why Study in Australia Section */}
-      {AuCountry.map((section, index) => {
+      {/* Usa- Why Study in Usa Section */}
+      {Country.map((section, index) => {
         return (
           <div className="Au-why-study" key={index}>
             <div className="Au-why-study-container">
@@ -57,7 +56,7 @@ const AuSection1 = () => {
                   <span className="Au-why-study-h1-span">{section.name} ?</span>
                 </h1>
                 <div className="Au-why-study-cards">
-                  {section.whyStudyInAustralia.map((item) => (
+                  {section.whyStudyInUSA.map((item) => (
                     <div className="Au-why-study-card" key={item.id}>
                       <div className="Au-why-study-icon">{item.icon}</div>
                       <h3 className="Au-why-study-card-h3">{item.title}</h3>
@@ -71,10 +70,11 @@ const AuSection1 = () => {
         );
       })}
 
-      {/* University Swiper */}
+      {/* Usa Universities Section */}
       <section className="uni-swiper-section">
         <h2 className="uni-h1">
-          Explore <span className="uni-h1-span">Top Universities</span> In UK
+          Explore <span className="uni-h1-span">Top Universities</span> In
+            USA
         </h2>
 
         <Swiper
@@ -91,17 +91,23 @@ const AuSection1 = () => {
             1200: { slidesPerView: 3 },
           }}
         >
-          {AuUniversity.map((uni, index) => (
+          {USAUniversity.map((uni, index) => (
             <SwiperSlide key={index}>
               <div className="uni-card">
+                {/* Use first image if images is an array and normalize public path */}
                 <img src={uni.images} alt={uni.name} className="uni-card-img" />
                 <div className="uni-card-body">
                   <h3>{uni.name}</h3>
                   <p>{uni.country}</p>
 
                   <div className="uni-meta">
-                    <span>🎓 {uni.type}</span>
-                    <span>💰 {uni.approxFees}</span>
+                    <span>
+                      🎓{" "}
+                      {Array.isArray(uni.type_of_course)
+                        ? uni.type_of_course.join(", ")
+                        : uni.type_of_course}
+                    </span>
+                    <span>💰 {uni.fees_approx}</span>
                     <span>🗼 {uni.city}</span>
 
                     {/* <span>🏆 Rank #{uni.ranking}</span> */}
@@ -116,12 +122,10 @@ const AuSection1 = () => {
           ))}
         </Swiper>
       </section>
-
-
-      <AuCourse />
-      <AuTabs />
+      <UsCourse />
+      <UsTabs />
     </>
   );
 };
 
-export default AuSection1;
+export default UsSection1;

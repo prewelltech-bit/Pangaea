@@ -1,0 +1,131 @@
+[
+  {
+    "name": "Europe",
+    "target_students": "Indian Students",
+    "image": "../../public/assets/Img/Europe/Europe_overview.jpg",
+    "overview": "Europe is one of the most popular study destinations for international students due to its high-quality education system, affordable tuition fees, globally recognised degrees, and strong career opportunities. Many European countries offer English-taught programs, scholarships, and post-study work options, making Europe an excellent choice for global education and international exposure.",
+    
+    "study_options": [
+      "Diploma Programs",
+      "Bachelor’s Degrees",
+      "Master’s Programs",
+      "PhD & Research Programs",
+      "Medical Programs (MBBS)",
+      "Engineering Specialisations"
+    ],
+
+    "whyStudyInEurope": [
+      {
+        "id": 1,
+        "icon": "🎓",
+        "title": "Globally Recognised Universities",
+        "description": "Europe is home to some of the world's top-ranked universities known for academic excellence, innovation, and research-driven education."
+      },
+      {
+        "id": 2,
+        "icon": "💰",
+        "title": "Affordable & Tuition-Free Options",
+        "description": "Countries like Germany offer tuition-free or low-cost public universities, making Europe highly affordable compared to other destinations."
+      },
+      {
+        "id": 3,
+        "icon": "🌍",
+        "title": "English-Taught Programs",
+        "description": "Thousands of programs across Europe are available in English, especially in countries like Germany, Netherlands, Sweden, and Finland."
+      },
+      {
+        "id": 4,
+        "icon": "💼",
+        "title": "Post-Study Work Opportunities",
+        "description": "Many European countries offer stay-back options after graduation to gain international work experience."
+      },
+      {
+        "id": 5,
+        "icon": "🧑‍💻",
+        "title": "Work While Studying",
+        "description": "International students are allowed to work part-time during studies to support their living expenses."
+      },
+      {
+        "id": 6,
+        "icon": "✈️",
+        "title": "Schengen Travel Benefits",
+        "description": "Students can travel freely across 27 Schengen countries, enhancing cultural exposure and networking opportunities."
+      }
+    ],
+
+    "popular_fields": [
+      "Engineering",
+      "Information Technology",
+      "Business & Management",
+      "Data Science & AI",
+      "Architecture & Design",
+      "Medical (MBBS)",
+      "Environmental Sciences"
+    ],
+
+    "top_universities": [
+      "Technical University of Munich",
+      "University of Amsterdam",
+      "University of Helsinki",
+      "University of Bologna",
+      "KU Leuven",
+      "University of Vienna",
+      "Politecnico di Milano",
+      "Lund University"
+    ],
+
+    "popular_countries": [
+      "Germany",
+      "Italy",
+      "Netherlands",
+      "Sweden",
+      "Poland",
+      "Finland",
+      "Austria"
+    ],
+
+    "eligibility": {
+      "bachelor": "12th pass with 60–70%",
+      "masters": "Relevant bachelor’s degree with 60–65%",
+      "notes": "Some programs may require entrance exams, portfolio, or work experience."
+    },
+
+    "english_requirements": {
+      "IELTS": "6.0–6.5",
+      "PTE": "50–60",
+      "TOEFL_iBT": "70–90"
+    },
+
+    "costs": {
+      "tuition_fees_EUR_per_year": "0–20,000",
+      "living_cost_EUR_per_year": "8,000–15,000"
+    },
+
+    "scholarships": [
+      "Erasmus+",
+      "DAAD Scholarships (Germany)",
+      "Italian Government Scholarships",
+      "Swedish Institute Scholarships",
+      "University Merit Scholarships"
+    ],
+
+    "work_rights": "Part-time work allowed during studies (usually 20 hours per week depending on country).",
+
+    "pr_options": [
+      "Germany 18-month Job Seeker Visa",
+      "Netherlands Orientation Year Visa",
+      "Sweden Post-Study Residence Permit",
+      "EU Blue Card Pathway"
+    ],
+
+    "intakes": [
+      "September (Main Intake)",
+      "January (Limited Programs)"
+    ],
+
+    "application_timeline": {
+      "apply_before": "6–8 months",
+      "visa_processing": "4–12 weeks (varies by country)"
+    }
+  }
+]

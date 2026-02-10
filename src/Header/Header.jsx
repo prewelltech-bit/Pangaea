@@ -5,6 +5,7 @@ import "./Header.css";
 const Header = () => {
   const [isMobile, setIsMobile] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -19,7 +20,17 @@ const Header = () => {
   const goToPage = (path) => {
     navigate(path);
     setIsMobile(false);
+    setIsDropdownOpen(false);
   };
+
+  const countries = [
+    { name: "United Kingdom", path: "/study/uk" },
+    { name: "Europe", path: "/study/europe" },
+    { name: "Australia", path: "/study/australia" },
+    { name: "Canada", path: "/study/canada" },
+    { name: "New Zealand", path: "/study/new-zealand" },
+    { name: "USA", path: "/study/united-states" },
+  ];
 
   return (
     <div className="outer-header">
@@ -36,8 +47,30 @@ const Header = () => {
 
             <li style={{ "--i": 1 }} onClick={() => goToPage("/")}>Home</li>
 
-            <li style={{ "--i": 2 }} onClick={() => goToPage("/study/uk")}>
+            <li 
+              style={{ "--i": 2 }} 
+              className="dropdown-trigger"
+              onMouseEnter={() => !isMobile && setIsDropdownOpen(true)}
+              onMouseLeave={() => !isMobile && setIsDropdownOpen(false)}
+              onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+            >
               Destinations
+              <span className={`dropdown-arrow ${isDropdownOpen ? 'open' : ''}`}>▼</span>
+              
+              {/* DROPDOWN MENU */}
+              {isDropdownOpen && (
+                <div className={`dropdown-menu ${isMobile ? 'mobile' : ''}`} onClick={(e) => e.stopPropagation()}>
+                  {countries.map((country, index) => (
+                    <div 
+                      key={index}
+                      className="dropdown-item"
+                      onClick={() => goToPage(country.path)}
+                    >
+                      {country.name}
+                    </div>
+                  ))}
+                </div>
+              )}
             </li>
 
             <li style={{ "--i": 3 }} onClick={() => goToPage("/partnered-universities")}>

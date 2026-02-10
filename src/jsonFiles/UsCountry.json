@@ -1,0 +1,119 @@
+[
+  {
+    "name": "United States",
+    "target_students": "Indian Students",
+    "image": "../../public/assets/Img/USA/usa_overview.jpg",
+    "overview": "The United States of America (USA) is one of the most popular study destinations for international students. With world-class universities, cutting-edge research facilities, and diverse academic programs, the USA offers excellent opportunities for academic and professional growth along with strong global career prospects.",
+
+    "study_options": [
+      "Associate Degree Programs",
+      "Bachelor’s Degree Programs (4 Years)",
+      "Master’s Degree Programs (1–2 Years)",
+      "Doctoral (PhD) Programs",
+      "MBA and Professional Programs"
+    ],
+
+    "whyStudyInUSA": [
+      {
+        "id": 1,
+        "icon": "🎓",
+        "title": "Globally Ranked Universities",
+        "description": "The USA is home to many top-ranked universities offering internationally recognised degrees valued worldwide."
+      },
+      {
+        "id": 2,
+        "icon": "📚",
+        "title": "Wide Range of Programs",
+        "description": "Students can choose from thousands of academic programs and specialisations across various fields of study."
+      },
+      {
+        "id": 3,
+        "icon": "🔬",
+        "title": "Research & Innovation Focus",
+        "description": "Strong emphasis on research, innovation, and practical learning with state-of-the-art facilities."
+      },
+      {
+        "id": 4,
+        "icon": "🌎",
+        "title": "Multicultural Environment",
+        "description": "Diverse campus culture with students from around the world, offering global exposure and networking opportunities."
+      },
+      {
+        "id": 5,
+        "icon": "💼",
+        "title": "Work Opportunities",
+        "description": "Students can work during studies and gain practical experience through CPT and OPT programs."
+      },
+      {
+        "id": 6,
+        "icon": "🚀",
+        "title": "Strong Career Prospects",
+        "description": "Excellent employment opportunities with global companies and high earning potential after graduation."
+      }
+    ],
+
+    "popular_fields": [
+      "Business Administration",
+      "Computer Science & IT",
+      "Engineering",
+      "Data Science & Artificial Intelligence",
+      "Health Sciences & Medicine",
+      "Finance & Economics"
+    ],
+
+    "top_universities": [
+      "Harvard University",
+      "Stanford University",
+      "Massachusetts Institute of Technology (MIT)",
+      "University of California, Berkeley",
+      "University of Chicago",
+      "Columbia University",
+      "University of Pennsylvania",
+      "New York University"
+    ],
+
+    "eligibility": {
+      "bachelor": "12th pass with minimum 60–70%",
+      "masters": "Relevant bachelor’s degree with 60–65%",
+      "notes": "Some programs may require GRE/GMAT and relevant work experience."
+    },
+
+    "english_requirements": {
+      "IELTS": "6.0–7.0",
+      "PTE": "50–65",
+      "TOEFL_iBT": "70–100"
+    },
+
+    "costs": {
+      "tuition_fees_USD_per_year": "20,000–50,000",
+      "living_cost_USD_per_year": "10,000–20,000"
+    },
+
+    "scholarships": [
+      "Fulbright Scholarships",
+      "University Merit Scholarships",
+      "Need-Based Financial Aid",
+      "Assistantships (Teaching/Research)"
+    ],
+
+    "work_rights": "Up to 20 hours per week on-campus during study; CPT and OPT available after program completion.",
+
+    "pr_options": [
+      "Optional Practical Training (OPT - 12 Months)",
+      "STEM OPT Extension (24 Months)",
+      "H-1B Work Visa Pathway",
+      "Employment-Based Green Card"
+    ],
+
+    "intakes": [
+      "Fall – August/September (Primary Intake)",
+      "Spring – January/February",
+      "Summer – May/June (Limited Programs)"
+    ],
+
+    "application_timeline": {
+      "apply_before": "8–12 months",
+      "visa_processing": "3–8 weeks"
+    }
+  }
+]

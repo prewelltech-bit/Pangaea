@@ -2,46 +2,100 @@
   {
     "name": "EU Business School",
     "country": "Europian",
-    "logo":"./assets/Logo/Europe/Eu_Business_School.png"
+    "logo": "./assets/Logo/Europe/Eu_Business_School.png",
+    "city": "Barcelona / Geneva / Munich",
+    "region": "Western Europe",
+    "type_of_course": ["Bachelor (3 Years)", "Master (1 Year)", "MBA (1 Year)"],
+    "fees_approx": "12,000–20,000",
+    "link": "https://www.euruni.edu/",
+    "images": "./assets/Img/Europe/eu_business1.jpg"
   },
   {
     "name": "EAE",
     "country": "Europian",
-    "logo":"./assets/Logo/Europe/EAE.jpg"  
+    "logo": "./assets/Logo/Europe/EAE.jpg",
+    "city": "Barcelona / Madrid",
+    "region": "Southern Europe",
+    "type_of_course": ["Bachelor (3-4 Years)", "Master (1 Year)", "MBA (1 Year)"],
+    "fees_approx": "10,000–18,000",
+    "link": "https://www.eae.es/",
+    "images": "./assets/Img/Europe/eae1.jpg"
   },
   {
     "name": "UNIE",
     "country": "Europian",
-    "logo":"./assets/Logo/Europe/UNIE.jpg"
+    "logo": "./assets/Logo/Europe/UNIE.jpg",
+    "city": "Madrid",
+    "region": "Southern Europe",
+    "type_of_course": ["Bachelor (4 Years)", "Master (1-2 Years)"],
+    "fees_approx": "8,000–15,000",
+    "link": "https://www.unie.es/",
+    "images": "./assets/Img/Europe/unie1.jpg"
   },
   {
     "name": "GBS",
     "country": "Europian",
-    "logo":"./assets/Logo/Europe/GBS.png"
+    "logo": "./assets/Logo/Europe/GBS.png",
+    "city": "London / Birmingham / Manchester",
+    "region": "Western Europe",
+    "type_of_course": ["Bachelor (3 Years)", "Master (1 Year)"],
+    "fees_approx": "9,000–14,000",
+    "link": "https://globalbanking.ac.uk/",
+    "images": "./assets/Img/Europe/gbs1.jpg"
   },
   {
     "name": "IBS",
     "country": "Europian",
-    "logo":"./assets/Logo/Europe/IBS_.png"
+    "logo": "./assets/Logo/Europe/IBS_.png",
+    "city": "Budapest / Vienna",
+    "region": "Central Europe",
+    "type_of_course": ["Bachelor (3 Years)", "Master (1-2 Years)"],
+    "fees_approx": "7,000–12,000",
+    "link": "https://www.ibs-b.hu/",
+    "images": "./assets/Img/Europe/ibs1.jpg"
   },
   {
     "name": "IBS",
     "country": "Europian",
-    "logo":"./assets/Logo/Europe/IBS.png"
+    "logo": "./assets/Logo/Europe/IBS.png",
+    "city": "Barcelona",
+    "region": "Southern Europe",
+    "type_of_course": ["Bachelor (3-4 Years)", "Master (1 Year)"],
+    "fees_approx": "8,000–13,000",
+    "link": "https://www.ibsbarcelona.com/",
+    "images": "./assets/Img/Europe/ibs_barcelona1.jpg"
   },
   {
     "name": "NABA",
     "country": "Europian",
-    "logo":"./assets/Logo/Europe/NABA.jpg"
+    "logo": "./assets/Logo/Europe/NABA.jpg",
+    "city": "Milan / Rome",
+    "region": "Southern Europe",
+    "type_of_course": ["Bachelor (3 Years)", "Master (2 Years)"],
+    "fees_approx": "14,000–18,000",
+    "link": "https://www.naba.it/",
+    "images": "./assets/Img/Europe/naba1.jpg"
   },
   {
     "name": "TIO Business School",
     "country": "Europian",
-    "logo":"./assets/Logo/Europe/TIO_Business_School.jpg"
+    "logo": "./assets/Logo/Europe/TIO_Business_School.jpg",
+    "city": "Amsterdam / Utrecht",
+    "region": "Western Europe",
+    "type_of_course": ["Bachelor (3-4 Years)", "Master (1 Year)"],
+    "fees_approx": "9,000–16,000",
+    "link": "https://www.tio.nl/",
+    "images": "./assets/Img/Europe/tio1.jpg"
   },
   {
     "name": "SEU Georgian National University",
     "country": "Europian",
-    "logo":"./assets/Logo/Europe/SEU_Georgian_National_University.jpg"
+    "logo": "./assets/Logo/Europe/SEU_Georgian_National_University.jpg",
+    "city": "Tbilisi",
+    "region": "Eastern Europe",
+    "type_of_course": ["Bachelor (4 Years)", "Master (2 Years)", "MBBS (6 Years)"],
+    "fees_approx": "4,000–8,000",
+    "link": "https://www.seu.edu.ge/",
+    "images": "./assets/Img/Europe/seu1.jpg"
   }
 ]
