@@ -7,6 +7,8 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import CanadaCourse from "./CanadaCourse/CanadaCourse";
+import CanadaTab from "./AdditionalInfo/CanadaTab";
 const CaSection1 = () => {
   return (
     <>
@@ -91,14 +93,25 @@ const CaSection1 = () => {
           {Canada.map((uni, index) => (
             <SwiperSlide key={index}>
               <div className="uni-card">
-                <img src={uni.images} alt={uni.name} className="uni-card-img" />
+                {/* Use first image if images is an array and normalize public path */}
+                <img
+                  src={
+                    Array.isArray(uni.images)
+                      ? uni.images[0].replace("./assets/Images", "/assets/Img").replace("./assets/", "/assets/")
+                      : uni.images
+                  }
+                  alt={uni.name}
+                  className="uni-card-img"
+                />
                 <div className="uni-card-body">
                   <h3>{uni.name}</h3>
                   <p>{uni.country}</p>
 
                   <div className="uni-meta">
-                    <span>🎓 {uni.type}</span>
-                    <span>💰 {uni.approxFees}</span>
+                    <span>
+                      🎓 {Array.isArray(uni.type_of_course) ? uni.type_of_course.join(", ") : uni.type_of_course}
+                    </span>
+                    <span>💰 {uni.fees_approx}</span>
                     <span>🗼 {uni.city}</span>
 
                     {/* <span>🏆 Rank #{uni.ranking}</span> */}
@@ -113,6 +126,9 @@ const CaSection1 = () => {
           ))}
         </Swiper>
       </section>
+
+      <CanadaCourse />
+      <CanadaTab />
     </>
   );
 };

@@ -1,13 +1,13 @@
 import React from 'react'
+import EurSction1 from './EurSction/EurSction1'
 
-const europe = () => {
+const Europe = () => {
   return (
     <>
-        <h1>
-            hello europe
-        </h1>
+        <EurSction1 />
     </>
   )
 }
 
-export default europe
+export default Europe
+

@@ -15,6 +15,8 @@ import AustraliaBlog from "./component/Blogs/AustraliaBlog";
 import Au from "./component/StudyAbroad/Australia/Au";
 import CanadaCountry from "./component/StudyAbroad/canada/CanadaCountry";
 import NewZealand from "./component/StudyAbroad/NewZealand/NewZealand";
+import Europe from "./component/StudyAbroad/europe/europe";
+import Us from "./component/StudyAbroad/US/Us";
 
 const App = () => {
   return (
@@ -31,6 +33,8 @@ const App = () => {
         <Route path="/study/uk" element={<Uk />} />
         <Route path="/study/canada" element={<CanadaCountry />} />
         <Route path="/study/new-zealand" element={<NewZealand />} />
+        <Route path="/study/europe" element={<Europe />} />
+        <Route path="/study/united-states" element={<Us />} />
 
         <Route path="/pte" element={<PTE />} />
         <Route path="/Contact" element={<Contact />} />

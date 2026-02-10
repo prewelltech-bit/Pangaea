@@ -7,7 +7,7 @@ const AustraliaBlog = () => {
       {/* Hero Image */}
       <div className="blog-hero">
         <img
-          src="../../../public/assets/Img/b1.png"
+          src="/assets/Img/b1.png"
           alt="Australia Student Visa Update 2026"
         />
       </div>

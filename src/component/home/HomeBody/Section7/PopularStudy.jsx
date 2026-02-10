@@ -25,13 +25,19 @@ const destinations = [
     country: "Europe",
     image: "eu",
     description: "Affordable European education with strong career prospects.",
-    link: "/study/germany",
+    link: "/study/europe",
   },
   {
     country: "NewZealand",
     image: "🇳🇿",
     description: "Free/low-cost education with strong career prospects",
     link: "/study/new-zealand",
+  },
+  {
+    country: "United States",
+    image: "🇺🇸",
+    description: "World-class universities with diverse opportunities",
+    link: "/study/united-states",
   }
 ];
 const PopularStudy = () => {
