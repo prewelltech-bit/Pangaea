@@ -1,141 +1,196 @@
+/* Base container */
 .blog-container {
-  max-width: 920px;
-  margin: 0px auto;
-  padding: 150px 18px 60px;
-  font-family: "Inter", sans-serif;
-  color: #1c1c1c;
-  line-height: 1.75;
-  background: #ffffff;
+  max-width: 900px;
+  margin: auto;
+  padding: 140px 20px;
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.8;
+  color: #000;
 }
 
+/* Hero section */
 .blog-hero {
   width: 100%;
-  margin-bottom: 35px;
+  height: 380px;
+  overflow: hidden;
+  border-radius: 14px;
+  margin-bottom: 30px;
 }
 
 .blog-hero img {
   width: 100%;
-  max-height: 420px;
-  object-fit: cover;         
-  border-radius: 16px;
-  display: block;
+  height: 100%;
+  object-fit: cover;
 }
 
+/* Title */
 .blog-title {
   font-size: 34px;
-  font-weight: 500;
-  margin-bottom: 22px;
-  line-height: 1.3;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1.4;
+  color: #000;
 }
 
+/* Paragraphs */
 .blog-container p {
   font-size: 16.5px;
-  color: #333;
-  margin-bottom: 18px;
+  margin-bottom: 16px;
+  color: #000;
 }
 
+.span {
+  color: #000 !important;
+  font-weight: 700;
+}
+
+/* Headings */
 .blog-container h2 {
   font-size: 24px;
-  font-weight: 600;
-  margin: 40px 0 2px;
-  position: relative;
+  margin: 45px 0 12px;
+  font-weight: 700;
+  color: #000;
 }
 
-.blog-container h2.heading-with-icon {
+.blog-container h4 {
+  font-size: 17px;
+  margin: 18px 0;
+  font-weight: 400;
+  color: #000;
+}
+
+.blog-container h5 {
+  font-size: 15px;
+  margin: 12px 0;
+  color: #000;
+}
+
+/* Heading with icon */
+.heading-with-icon {
   display: flex;
   align-items: center;
   gap: 10px;
-  font-size: 24px;
-  font-weight: 600;
-  margin: 40px 0 20px;
 }
 
-.bell-icon{
+.bell-icon {
   width: 22px;
   height: 22px;
-  flex-shrink: 0;
 }
 
-.span{
-  font-weight: bold;
-}
-
-.blog-container ul,
-.blog-container ol {
-  margin-left: 22px;
-  margin-bottom: 22px;
+/* UL dots */
+.blog-container ul {
+  list-style-type: disc;
+  padding-left: 24px;
+  margin-bottom: 20px;
 }
 
 .blog-container li {
+  margin-bottom: 8px;
   font-size: 16px;
-  margin-bottom: 10px;
+  color: #000;
 }
 
-/* .expert-tip {
-  background: #f1f5ff;
-  border-left: 4px solid #2563eb;
-  padding: 16px 18px;
+/* Expert tip */
+.expert-tip {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  background: #f5f5f5;
+  border-left: 5px solid #000;
+  padding: 18px 20px;
   border-radius: 10px;
-  margin: 28px 0;
-  font-size: 15px;
-}
-
-.expert-tip.warning {
-  background: #fff6e5;
-  border-left-color: #f59e0b;
-} */
-
-.table-wrapper {
-  width: 100%;
-  overflow-x: auto;
   margin: 30px 0;
 }
 
-table {
-  width: 100%;
-  border-collapse: collapse;
-  background: #ffffff;
-  border-radius: 12px;
-  overflow: hidden;
+.tip-icon {
+  font-size: 22px;
 }
 
-thead {
-  background: #2563eb;
-  color: #ffffff;
+.expert-tip h1 {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+  color: #000;
 }
 
-th,
-td {
-  padding: 14px 16px;
-  font-size: 15px;
-  text-align: left;
+
+/* Links – black */
+a {
+  color: #000 !important;
+  text-decoration: none;
 }
 
-tbody tr:nth-child(even) {
-  background: #f8fafc;
+a:hover {
+  text-decoration: underline;
 }
 
+/* Mobile */
 @media (max-width: 768px) {
   .blog-title {
     font-size: 26px;
   }
 
-  .blog-container h2 {
-    font-size: 21px;
+  .blog-hero {
+    height: 240px;
   }
 
-  .blog-hero img {
-    max-height: 260px;
+  th,
+  td {
+    font-size: 14px;
+    padding: 12px;
   }
 }
 
-@media (max-width: 480px) {
-  .blog-title {
-    font-size: 23px;
-  }
+.simple-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 30px 0;
+  font-family: Arial, sans-serif;
+}
 
-  .blog-container p,
-  .blog-container li {
-    font-size: 15px;
+/* Header */
+.simple-table th {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+  background-color: #f5f5f5;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* Body */
+.simple-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .simple-table th,
+  .simple-table td {
+    font-size: 13px;
+    padding: 8px;
   }
+}
+
+.dha-link {
+  color: #0a58ca;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.dha-link:hover {
+  color: #084298;
+}
+
+.gs-link {
+  color: #0b5ed7;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.gs-link:hover {
+  color: #084298;
 }

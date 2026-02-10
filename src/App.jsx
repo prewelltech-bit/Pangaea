@@ -11,6 +11,7 @@ import "./index.css";
 import PTE from "./component/pte/PTE";
 import Contact from "./component/ContactUs/Contact";
 import Blogs from "./component/Blogs/Blogs";
+import AustraliaBlog from "./component/Blogs/AustraliaBlog";
 import Au from "./component/StudyAbroad/Australia/Au";
 import CanadaCountry from "./component/StudyAbroad/canada/CanadaCountry";
 import NewZealand from "./component/StudyAbroad/NewZealand/NewZealand";
@@ -34,6 +35,7 @@ const App = () => {
         <Route path="/pte" element={<PTE />} />
         <Route path="/Contact" element={<Contact />} />
         <Route path="/blogs" element={<Blogs />} />
+        <Route path="/australia-blog" element={<AustraliaBlog />} />
       </Routes>
 
       <Footer />
