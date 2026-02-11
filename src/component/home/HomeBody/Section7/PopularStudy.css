@@ -81,6 +81,10 @@
   overflow: hidden;
 }
 
+.destination-card:hover {
+  text-decoration: none;
+}
+
 .destination-card::before {
   content: "";
   position: absolute;
@@ -116,13 +120,18 @@
   color: var(--primary-color);
   margin-bottom: 10px;
   font-size: 1.5rem;
+  /* text-decoration: none; */
 }
 
 .destination-card p {
   color: var(--text-light);
   margin-bottom: 15px;
 }
+.card {
+  transition: var(--transition);
+  text-decoration: none;
 
+}
 .read-more {
   display: flex;
   align-items: center;

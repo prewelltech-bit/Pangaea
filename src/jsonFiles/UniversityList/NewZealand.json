@@ -8,7 +8,7 @@
     "fees": "NZD 35,000 – 50,000 per year",
     "link": "https://www.auckland.ac.nz",
     "region": "North Island",
-    "images": "./assets/Img/NewZealand/university_of_auckland.jpg"
+     "images": "../../../public/assets/Img/NewZealand/University of Auckland.jpg.jpeg"
   },
   {
     "name": "Auckland University of Technology (AUT)",
@@ -19,7 +19,7 @@
     "fees": "NZD 32,000 – 45,000 per year",
     "link": "https://www.aut.ac.nz",
     "region": "North Island",
-    "images": "./assets/Img/NewZealand/aut_university.jpg"
+    "images": "../../../public/assets/Img/NewZealand/Auckland-University-of-Technology.webp"
   },
   {
     "name": "University of Waikato",
@@ -30,7 +30,7 @@
     "fees": "NZD 28,000 – 38,000 per year",
     "link": "https://www.waikato.ac.nz",
     "region": "North Island",
-    "images": "./assets/Img/NewZealand/university_of_waikato.jpg"
+    "images": "../../../public/assets/Img/NewZealand/University of Waikato.webp"
   },
   {
     "name": "Massey University",
@@ -41,7 +41,7 @@
     "fees": "NZD 27,000 – 40,000 per year",
     "link": "https://www.massey.ac.nz",
     "region": "North Island",
-    "images": "./assets/Img/NewZealand/massey_university.jpg"
+    "images": "../../../public/assets/Img/NewZealand/Massey University.webp"
   },
   {
     "name": "Victoria University of Wellington",
@@ -52,7 +52,7 @@
     "fees": "NZD 30,000 – 42,000 per year",
     "link": "https://www.wgtn.ac.nz",
     "region": "North Island",
-    "images": "./assets/Img/NewZealand/victoria_university_wellington.jpg"
+    "images": "../../../public/assets/Img/NewZealand/Victoria University of Wellington.jpeg"
   },
   {
     "name": "University of Canterbury",
@@ -63,7 +63,7 @@
     "fees": "NZD 32,000 – 44,000 per year",
     "link": "https://www.canterbury.ac.nz",
     "region": "South Island",
-    "images": "./assets/Img/NewZealand/university_of_canterbury.jpg"
+    "images": "../../../public/assets/Img/NewZealand/University of Canterbury.jpg.jpeg"
   },
   {
     "name": "Lincoln University",
@@ -74,7 +74,7 @@
     "fees": "NZD 28,000 – 38,000 per year",
     "link": "https://www.lincoln.ac.nz",
     "region": "South Island",
-    "images": "./assets/Img/NewZealand/lincoln_university.jpg"
+    "images": "../../../public/assets/Img/NewZealand/Lincoln University.jpeg"
   },
   {
     "name": "University of Otago",
@@ -85,7 +85,7 @@
     "fees": "NZD 32,000 – 45,000 per year",
     "link": "https://www.otago.ac.nz",
     "region": "South Island",
-    "images": "./assets/Img/NewZealand/university_of_otago.jpg"
+    "images": "../../../public/assets/Img/NewZealand/University of Otago.jpeg"
   },
   {
     "name": "Unitec Institute of Technology",
@@ -96,7 +96,7 @@
     "fees": "NZD 22,000 – 30,000 per year",
     "link": "https://www.unitec.ac.nz",
     "region": "North Island",
-    "images": "./assets/Img/NewZealand/unitec.jpg"
+    "images": "../../../public/assets/Img/NewZealand/Unitec-Institute-of-Technology.webp"
   },
   {
     "name": "Manukau Institute of Technology (MIT)",
@@ -107,7 +107,7 @@
     "fees": "NZD 20,000 – 28,000 per year",
     "link": "https://www.manukau.ac.nz",
     "region": "North Island",
-    "images": "./assets/Img/NewZealand/mit_auckland.jpg"
+    "images": "../../../public/assets/Img/NewZealand/Manukau-Institute-of-Technology.jpg.jpeg"
   },
   {
     "name": "Southern Institute of Technology (SIT)",
@@ -118,7 +118,7 @@
     "fees": "NZD 15,000 – 25,000 per year",
     "link": "https://www.sit.ac.nz",
     "region": "South Island",
-    "images": "./assets/Img/NewZealand/sit.jpg"
+    "images": "../../../public/assets/Img/NewZealand/Southern Institute of Technology (SIT).jpeg"
   },
   {
     "name": "Ara Institute of Canterbury",
@@ -129,7 +129,7 @@
     "fees": "NZD 20,000 – 28,000 per year",
     "link": "https://www.ara.ac.nz",
     "region": "South Island",
-    "images": "./assets/Img/NewZealand/ara_institute.jpg"
+    "images": "../../../public/assets/Img/NewZealand/Ara Institute of Canterbury.jpeg"
   },
   {
     "name": "Wintec (Waikato Institute of Technology)",
@@ -140,7 +140,7 @@
     "fees": "NZD 22,000 – 30,000 per year",
     "link": "https://www.wintec.ac.nz",
     "region": "North Island",
-    "images": "./assets/Img/NewZealand/wintec.jpg"
+    "images": "../../../public/assets/Img/NewZealand/Waikato-Institute-of-Technology.jpg.jpeg"
   },
   {
     "name": "Eastern Institute of Technology (EIT)",
@@ -151,7 +151,7 @@
     "fees": "NZD 21,000 – 29,000 per year",
     "link": "https://www.eit.ac.nz",
     "region": "North Island",
-    "images": "./assets/Img/NewZealand/eit.jpg"
+    "images": "../../../public/assets/Img/NewZealand/Eastern-Institute-of-Technology.jpg.jpeg"
   },
   {
     "name": "Otago Polytechnic",
@@ -162,7 +162,7 @@
     "fees": "NZD 22,000 – 30,000 per year",
     "link": "https://www.op.ac.nz",
     "region": "South Island",
-    "images": "./assets/Img/NewZealand/otago_polytechnic.jpg"
+    "images": "../../../public/assets/Img/NewZealand/Otago Polytechnic.jpg.jpeg"
   },
   {
     "name": "Whitireia & WelTec",
@@ -173,6 +173,6 @@
     "fees": "NZD 21,000 – 29,000 per year",
     "link": "https://www.whitireiaweltec.ac.nz",
     "region": "North Island",
-    "images": "./assets/Img/NewZealand/whitireia_weltec.jpg"
+    "images": "../../../public/assets/Img/NewZealand/Whitireia & WelTec.jpg.jpeg"
   }
 ]
