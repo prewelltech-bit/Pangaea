@@ -12,9 +12,7 @@
     ],
     "fees_approx": "15000 - 45000 CAD per year",
     "link": "https://www.utoronto.ca/",
-    "images": [
-      "./assets/Images/Canada/University_of_Toronto.jpg"
-    ]
+    "images": "../../../public/assets/Img/canada/University-of-Toronto.webp"
   },
   {
     "name": "York University",
@@ -29,9 +27,7 @@
     ],
     "fees_approx": "15000 - 45000 CAD per year",
     "link": "https://www.yorku.ca/",
-    "images": [
-      "./assets/Images/Canada/York_University.jpg"
-    ]
+    "images": "../../../public/assets/Img/canada/York University.jpeg"
   },
   {
     "name": "Toronto Metropolitan University (TMU)",
@@ -46,9 +42,7 @@
     ],
     "fees_approx": "15000 - 45000 CAD per year",
     "link": "https://www.torontomu.ca/",
-    "images": [
-      "./assets/Images/Canada/Toronto_Metropolitan_University_TMU.jpg"
-    ]
+    "images": "../../../public/assets/Img/canada/Toronto Metropolitan University (TMU).jpeg"
   },
   {
     "name": "University of Waterloo",
@@ -63,9 +57,7 @@
     ],
     "fees_approx": "15000 - 45000 CAD per year",
     "link": "https://uwaterloo.ca/",
-    "images": [
-      "./assets/Images/Canada/University_of_Waterloo.jpg"
-    ]
+    "images": "../../../public/assets/Img/canada/University of Waterloo.jpeg"
   },
   {
     "name": "McMaster University",
@@ -80,9 +72,7 @@
     ],
     "fees_approx": "15000 - 45000 CAD per year",
     "link": "https://www.mcmaster.ca/",
-    "images": [
-      "./assets/Images/Canada/McMaster_University.jpg"
-    ]
+    "images": "../../../public/assets/Img/canada/McGill University – Montreal.jpeg"
   },
   {
     "name": "Western University",
@@ -97,9 +87,7 @@
     ],
     "fees_approx": "15000 - 45000 CAD per year",
     "link": "https://www.uwo.ca/",
-    "images": [
-      "./assets/Images/Canada/Western_University.jpg"
-    ]
+    "images": "../../../public/assets/Img/canada/Western_University.jpg.jpeg"
   },
   {
     "name": "Queen’s University",
@@ -114,9 +102,7 @@
     ],
     "fees_approx": "15000 - 45000 CAD per year",
     "link": "https://www.queensu.ca/",
-    "images": [
-      "./assets/Images/Canada/Queens_University.jpg"
-    ]
+    "images": "../../../public/assets/Img/canada/Queen’s University – Kingston.jpeg"
   },
   {
     "name": "University of Ottawa",
@@ -131,9 +117,7 @@
     ],
     "fees_approx": "15000 - 45000 CAD per year",
     "link": "https://www.uottawa.ca/",
-    "images": [
-      "./assets/Images/Canada/University_of_Ottawa.jpg"
-    ]
+    "images": "../../../public/assets/Img/canada/University of Ottawa – Ottawa.jpeg"
   },
   {
     "name": "Carleton University",
@@ -148,9 +132,7 @@
     ],
     "fees_approx": "15000 - 45000 CAD per year",
     "link": "https://carleton.ca/",
-    "images": [
-      "./assets/Images/Canada/Carleton_University.jpg"
-    ]
+    "images": "../../../public/assets/Img/canada/Carleton University – Ottawa.jpeg"
   },
   {
     "name": "Humber College",
@@ -165,9 +147,7 @@
     ],
     "fees_approx": "15000 - 45000 CAD per year",
     "link": "https://humber.ca/",
-    "images": [
-      "./assets/Images/Canada/Humber_College.jpg"
-    ]
+    "images": "../../../public/assets/Img/canada/Humber College – Toronto.jpeg"
   },
   {
     "name": "Seneca College",
@@ -182,9 +162,7 @@
     ],
     "fees_approx": "15000 - 45000 CAD per year",
     "link": "https://www.senecacollege.ca/",
-    "images": [
-      "./assets/Images/Canada/Seneca_College.jpg"
-    ]
+    "images": "../../../public/assets/Img/canada/Seneca College – Toronto.jpeg"
   },
   {
     "name": "George Brown College",
@@ -199,9 +177,7 @@
     ],
     "fees_approx": "15000 - 45000 CAD per year",
     "link": "https://www.georgebrown.ca/",
-    "images": [
-      "./assets/Images/Canada/George_Brown_College.jpg"
-    ]
+    "images": "../../../public/assets/Img/canada/George Brown College – Toronto.jpeg"
   },
   {
     "name": "Centennial College",
@@ -216,9 +192,7 @@
     ],
     "fees_approx": "15000 - 45000 CAD per year",
     "link": "https://www.centennialcollege.ca/",
-    "images": [
-      "./assets/Images/Canada/Centennial_College.jpg"
-    ]
+    "images": "../../../public/assets/Img/canada/Centennial College – Toronto.jpeg"
   },
   {
     "name": "Sheridan College",
@@ -233,9 +207,7 @@
     ],
     "fees_approx": "15000 - 45000 CAD per year",
     "link": "https://www.sheridancollege.ca/",
-    "images": [
-      "./assets/Images/Canada/Sheridan_College.jpg"
-    ]
+    "images": "../../../public/assets/Img/canada/Sheridan College.webp"
   },
   {
     "name": "Fanshawe College",
@@ -250,9 +222,7 @@
     ],
     "fees_approx": "15000 - 45000 CAD per year",
     "link": "https://www.fanshawec.ca/",
-    "images": [
-      "./assets/Images/Canada/Fanshawe_College.jpg"
-    ]
+    "images": "../../../public/assets/Img/canada/Fanshawe College – London.jpeg"
   },
   {
     "name": "Conestoga College",
@@ -267,9 +237,7 @@
     ],
     "fees_approx": "15000 - 45000 CAD per year",
     "link": "https://www.conestogac.on.ca/",
-    "images": [
-      "./assets/Images/Canada/Conestoga_College.jpg"
-    ]
+    "images": "../../../public/assets/Img/canada/Conestoga College – Kitchener.jpeg"
   },
   {
     "name": "University of British Columbia (UBC)",
@@ -284,9 +252,7 @@
     ],
     "fees_approx": "15000 - 45000 CAD per year",
     "link": "https://www.ubc.ca/",
-    "images": [
-      "./assets/Images/Canada/University_of_British_Columbia_UBC.jpg"
-    ]
+    "images": "../../../public/assets/Img/canada/University of British Columbia (UBC) – Vancouver.jpeg"
   },
   {
     "name": "Simon Fraser University (SFU)",
@@ -301,9 +267,7 @@
     ],
     "fees_approx": "15000 - 45000 CAD per year",
     "link": "https://www.sfu.ca/",
-    "images": [
-      "./assets/Images/Canada/Simon_Fraser_University_SFU.jpg"
-    ]
+    "images": "../../../public/assets/Img/canada/Simon Fraser University (SFU).jpeg"
   },
   {
     "name": "University of Victoria (UVic)",
@@ -318,9 +282,7 @@
     ],
     "fees_approx": "15000 - 45000 CAD per year",
     "link": "https://www.uvic.ca/",
-    "images": [
-      "./assets/Images/Canada/University_of_Victoria_UVic.jpg"
-    ]
+    "images": "../../../public/assets/Img/canada/University of Victoria (UVic) – Victoria.jpeg"
   },
   {
     "name": "Thompson Rivers University (TRU)",
@@ -335,9 +297,7 @@
     ],
     "fees_approx": "15000 - 45000 CAD per year",
     "link": "https://www.tru.ca/",
-    "images": [
-      "./assets/Images/Canada/Thompson_Rivers_University_TRU.jpg"
-    ]
+    "images": "../../../public/assets/Img/canada/Thompson Rivers University (TRU) – Kamloops.jpeg"
   },
   {
     "name": "Douglas College",
@@ -352,9 +312,7 @@
     ],
     "fees_approx": "15000 - 45000 CAD per year",
     "link": "https://www.douglascollege.ca/",
-    "images": [
-      "./assets/Images/Canada/Douglas_College.jpg"
-    ]
+    "images": "../../../public/assets/Img/canada/Douglas College – New Westminster.jpeg"
   },
   {
     "name": "Langara College",
@@ -369,9 +327,7 @@
     ],
     "fees_approx": "15000 - 45000 CAD per year",
     "link": "https://langara.ca/",
-    "images": [
-      "./assets/Images/Canada/Langara_College.jpg"
-    ]
+    "images": "../../../public/assets/Img/canada/Langara_College.webp"
   },
   {
     "name": "Vancouver Community College (VCC)",
@@ -386,9 +342,7 @@
     ],
     "fees_approx": "15000 - 45000 CAD per year",
     "link": "https://www.vcc.ca/",
-    "images": [
-      "./assets/Images/Canada/Vancouver_Community_College_VCC.jpg"
-    ]
+    "images": "../../../public/assets/Img/canada/Vancouver Community College (VCC) – Vancouver.jpeg"
   },
   {
     "name": "University of Alberta",
@@ -403,9 +357,7 @@
     ],
     "fees_approx": "15000 - 45000 CAD per year",
     "link": "https://www.ualberta.ca/",
-    "images": [
-      "./assets/Images/Canada/University_of_Alberta.jpg"
-    ]
+    "images": "../../../public/assets/Img/canada/University of Alberta – Edmonton.jpeg"
   },
   {
     "name": "University of Calgary",
@@ -420,9 +372,7 @@
     ],
     "fees_approx": "15000 - 45000 CAD per year",
     "link": "https://www.ucalgary.ca/",
-    "images": [
-      "./assets/Images/Canada/University_of_Calgary.jpg"
-    ]
+    "images": "../../../public/assets/Img/canada/University of Calgary – Calgary.jpeg"
   },
   {
     "name": "Mount Royal University",
@@ -437,9 +387,7 @@
     ],
     "fees_approx": "15000 - 45000 CAD per year",
     "link": "https://www.mtroyal.ca/",
-    "images": [
-      "./assets/Images/Canada/Mount_Royal_University.jpg"
-    ]
+    "images": "../../../public/assets/Img/canada/Mount Royal University – Calgary.jpeg"
   },
   {
     "name": "Bow Valley College",
@@ -454,9 +402,7 @@
     ],
     "fees_approx": "15000 - 45000 CAD per year",
     "link": "https://bowvalleycollege.ca/",
-    "images": [
-      "./assets/Images/Canada/Bow_Valley_College.jpg"
-    ]
+    "images": "../../../public/assets/Img/canada/Bow Valley College – Calgary.jpeg"
   },
   {
     "name": "Northern Alberta Institute of Technology (NAIT)",
@@ -471,9 +417,7 @@
     ],
     "fees_approx": "15000 - 45000 CAD per year",
     "link": "https://www.nait.ca/",
-    "images": [
-      "./assets/Images/Canada/Northern_Alberta_Institute_of_Technology_NAIT.jpg"
-    ]
+    "images": "../../../public/assets/Img/canada/Northern Alberta Institute of Technology (NAIT) – Edmonton.jpeg"
   },
   {
     "name": "Southern Alberta Institute of Technology (SAIT)",
@@ -488,9 +432,7 @@
     ],
     "fees_approx": "15000 - 45000 CAD per year",
     "link": "https://www.sait.ca/",
-    "images": [
-      "./assets/Images/Canada/Southern_Alberta_Institute_of_Technology_SAIT.jpg"
-    ]
+    "images": "../../../public/assets/Img/canada/Southern Alberta Institute of Technology (SAIT) – Calgary.jpeg"
   },
   {
     "name": "McGill University",
@@ -505,9 +447,7 @@
     ],
     "fees_approx": "15000 - 45000 CAD per year",
     "link": "https://www.mcgill.ca/",
-    "images": [
-      "./assets/Images/Canada/McGill_University.jpg"
-    ]
+    "images": "../../../public/assets/Img/canada/McGill University – Montreal.jpeg"
   },
   {
     "name": "Concordia University",
@@ -522,9 +462,7 @@
     ],
     "fees_approx": "15000 - 45000 CAD per year",
     "link": "https://www.concordia.ca/",
-    "images": [
-      "./assets/Images/Canada/Concordia_University.jpg"
-    ]
+    "images": "../../../public/assets/Img/canada/Concordia University – Montreal.jpeg"
   },
   {
     "name": "Université de Montréal",
@@ -539,9 +477,7 @@
     ],
     "fees_approx": "15000 - 45000 CAD per year",
     "link": "https://www.umontreal.ca/",
-    "images": [
-      "./assets/Images/Canada/Universite_de_Montreal.jpg"
-    ]
+    "images": "../../../public/assets/Img/canada/Université de Montréal – Montreal.jpeg"
   },
   {
     "name": "Dawson College",
@@ -556,9 +492,7 @@
     ],
     "fees_approx": "15000 - 45000 CAD per year",
     "link": "https://www.dawsoncollege.qc.ca/",
-    "images": [
-      "./assets/Images/Canada/Dawson_College.jpg"
-    ]
+    "images": "../../../public/assets/Img/canada/Dawson College – Montreal.png"
   },
   {
     "name": "Lasalle College",
@@ -573,9 +507,7 @@
     ],
     "fees_approx": "15000 - 45000 CAD per year",
     "link": "https://www.lasallecollege.com/",
-    "images": [
-      "./assets/Images/Canada/Lasalle_College.jpg"
-    ]
+    "images": "../../../public/assets/Img/canada/Lasalle College – Montreal.jpg.jpeg"
   },
   {
     "name": "University of Manitoba",
@@ -590,9 +522,7 @@
     ],
     "fees_approx": "15000 - 45000 CAD per year",
     "link": "https://umanitoba.ca/",
-    "images": [
-      "./assets/Images/Canada/University_of_Manitoba.jpg"
-    ]
+    "images": "../../../public/assets/Img/canada/University of Manitoba – Winnipeg.jpeg"
   },
   {
     "name": "University of Winnipeg",
@@ -607,9 +537,7 @@
     ],
     "fees_approx": "15000 - 45000 CAD per year",
     "link": "https://www.uwinnipeg.ca/",
-    "images": [
-      "./assets/Images/Canada/University_of_Winnipeg.jpg"
-    ]
+    "images": "../../../public/assets/Img/canada/University of Winnipeg – Winnipeg.jpeg"
   },
   {
     "name": "Red River College Polytechnic",
@@ -624,9 +552,7 @@
     ],
     "fees_approx": "15000 - 45000 CAD per year",
     "link": "https://www.rrc.ca/",
-    "images": [
-      "./assets/Images/Canada/Red_River_College_Polytechnic.jpg"
-    ]
+    "images": "../../../public/assets/Img/canada/Red River College Polytechnic – Winnipeg.jpeg"
   },
   {
     "name": "University of Saskatchewan",
@@ -641,9 +567,7 @@
     ],
     "fees_approx": "15000 - 45000 CAD per year",
     "link": "https://www.usask.ca/",
-    "images": [
-      "./assets/Images/Canada/University_of_Saskatchewan.jpg"
-    ]
+    "images": "../../../public/assets/Img/canada/University of Saskatchewan – Saskatoon.jpeg"
   },
   {
     "name": "University of Regina",
@@ -658,9 +582,7 @@
     ],
     "fees_approx": "15000 - 45000 CAD per year",
     "link": "https://www.uregina.ca/",
-    "images": [
-      "./assets/Images/Canada/University_of_Regina.jpg"
-    ]
+    "images": "../../../public/assets/Img/canada/University of Regina – Regina.jpeg"
   },
   {
     "name": "Saskatchewan Polytechnic",
@@ -675,9 +597,7 @@
     ],
     "fees_approx": "15000 - 45000 CAD per year",
     "link": "https://saskpolytech.ca/",
-    "images": [
-      "./assets/Images/Canada/Saskatchewan_Polytechnic.jpg"
-    ]
+    "images": "../../../public/assets/Img/canada/Saskatchewan Polytechnic.jpg.jpeg"
   },
   {
     "name": "Dalhousie University",
@@ -692,9 +612,7 @@
     ],
     "fees_approx": "15000 - 45000 CAD per year",
     "link": "https://www.dal.ca/",
-    "images": [
-      "./assets/Images/Canada/Dalhousie_University.jpg"
-    ]
+    "images": "../../../public/assets/Img/canada/Dalhousie University – Halifax (Nova Scotia).jpeg"
   },
   {
     "name": "University of New Brunswick (UNB)",
@@ -709,9 +627,7 @@
     ],
     "fees_approx": "15000 - 45000 CAD per year",
     "link": "https://www.unb.ca/",
-    "images": [
-      "./assets/Images/Canada/University_of_New_Brunswick_UNB.jpg"
-    ]
+    "images": "../../../public/assets/Img/canada/University of New Brunswick (UNB) – Fredericton.jpeg"
   },
   {
     "name": "Nova Scotia Community College (NSCC)",
@@ -726,9 +642,7 @@
     ],
     "fees_approx": "15000 - 45000 CAD per year",
     "link": "https://www.nscc.ca/",
-    "images": [
-      "./assets/Images/Canada/Nova_Scotia_Community_College_NSCC.jpg"
-    ]
+    "images": "../../../public/assets/Img/canada/Nova Scotia Community College (NSCC) – Halifax.jpeg"
   },
   {
     "name": "College of the North Atlantic",
@@ -743,8 +657,6 @@
     ],
     "fees_approx": "15000 - 45000 CAD per year",
     "link": "https://www.cna.nl.ca/",
-    "images": [
-      "./assets/Images/Canada/College_of_the_North_Atlantic.jpg"
-    ]
+    "images": "../../../public/assets/Img/canada/College of the North Atlantic – Newfoundland.jpeg"
   }
 ]
