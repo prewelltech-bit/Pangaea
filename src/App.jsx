@@ -17,6 +17,8 @@ import CanadaCountry from "./component/StudyAbroad/canada/CanadaCountry";
 import NewZealand from "./component/StudyAbroad/NewZealand/NewZealand";
 import Europe from "./component/StudyAbroad/europe/europe";
 import Us from "./component/StudyAbroad/US/Us";
+import CanadaBlogs from "./component/Blogs/CanadaBlogs";
+import UKBlogs from "./component/Blogs/UKBlogs";
 
 const App = () => {
   return (
@@ -40,6 +42,8 @@ const App = () => {
         <Route path="/Contact" element={<Contact />} />
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/australia-blog" element={<AustraliaBlog />} />
+        <Route path="/canada-blog" element={<CanadaBlogs />} />
+        <Route path="/uk-blog" element={<UKBlogs />} />
       </Routes>
 
       <Footer />

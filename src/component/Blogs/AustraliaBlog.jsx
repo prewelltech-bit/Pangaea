@@ -1,7 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./AustraliaBlog.css";
 
 const AustraliaBlog = () => {
+  const navigate = useNavigate();
   return (
     <section className="blog-container">
       {/* Hero Image */}
@@ -202,7 +204,10 @@ const AustraliaBlog = () => {
         <span className="span">💡 Expert Tip:</span> Being assessed under higher
         scrutiny does not mean refusal. Many Level 3 applicants are approved
         when their financial, academic, and{" "}
-        <a href="https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500/genuine-student-requirement" className="gs-link">
+        <a
+          href="https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500/genuine-student-requirement"
+          className="gs-link"
+        >
           GS evidence
         </a>{" "}
         is well prepared.
@@ -321,65 +326,135 @@ const AustraliaBlog = () => {
       <h2>🎓 What DHA Looks For — Regardless of Evidence Level</h2>
       <h4>Across all Assessment Levels, DHA focuses on: </h4>
       <ul>
-        <li> <span className="span">Genuine Student (GS)</span> requirements</li>
-        <li>Adequate, genuine, and traceable finances</li>
-        <li>A credible and well-explained study plan </li>
-        <li>Understanding of study and living conditions in Australia</li>
+        <li>
+          {" "}
+          <span className="span">Genuine Student (GS)</span> requirements
+        </li>
+        <li>
+          {" "}
+          <span className="span">
+            {" "}
+            Adequate, genuine, and traceable finances
+          </span>
+        </li>
+        <li>
+          A{" "}
+          <span className="span">
+            credible and well-explained study plan
+          </span>{" "}
+        </li>
+        <li>
+          Understanding of{" "}
+          <span className="span">
+            {" "}
+            study and living conditions in Australia
+          </span>
+        </li>
       </ul>
 
       <h5>
-        A well-prepared, honest application always carries more weight than
-        country classification alone.
+        A <span className="span"> well-prepared, honest application</span>always
+        carries more weight than country classification alone.
       </h5>
 
       <h2>How to Verify Your Own Case (Country Evidence Level)?</h2>
       <ol>
-        <li>Visit the DHA Document Checklist Tool</li>
-        <li>Select yourCountry of Passport </li>
-        <li>Enter your university or CRICOS provider code</li>
-        <li>Click “Display Evidence” to see required documents</li>
+        <li>
+          Visit the{" "}
+          <a
+            href="https://immi.homeaffairs.gov.au/visas/web-evidentiary-tool"
+            target="_blank"
+            rel="noopener"
+            className="dha-link"
+          >
+            DHA Document Checklist Tool
+          </a>
+        </li>
+        <li>
+          Select your <span className="span">Country of Passport</span>
+        </li>
+        <li>
+          Enter your{" "}
+          <span className="span">
+            university or
+            <a
+              href="http://education.gov.au/about-department/corporate-reporting/freedom-information-foi/foi-disclosure-log?search_api_fulltext=CRICOS%20Course%20Codes"
+              target="_blank"
+              rel="noopener"
+              className="dha-link"
+            >
+              {" "}
+              CRICOS
+            </a>{" "}
+            provider code
+          </span>
+        </li>
+        <li>
+          Click <span className="span">“Display Evidence”</span> to see required
+          documents
+        </li>
       </ol>
 
-      <h4>Important reminder: </h4>
       <h4>
-        Re-check the tool just before lodgement, as requirements can change. DHA
-        or your education provider may still request additional documents.{" "}
+        {" "}
+        <span className="span">Important reminder: </span>
+      </h4>
+      <h4>
+        Re-check the tool <span className="span"> just before lodgement,</span>{" "}
+        as requirements can change. DHA or your education provider may still
+        request additional documents.{" "}
       </h4>
       <h2>What If You Have Already Lodged Your Student Visa?</h2>
       <h4>
-        Students who lodged their student visa (Subclass 500) application before
+        Students who lodged their{" "}
+        <span className="span">student visa (Subclass 500)</span> application{" "}
+        <span className="span">before</span>
         the Evidence Level update do not need to panic.{" "}
       </h4>
       <br />
       <h4>
-        Country Evidence Levels are applied at the time of lodgement and are not
-        applied retrospectively. If your application was complete when
-        submitted, a later Evidence Level change does not automatically affect
-        your application.{" "}
+        Country Evidence Levels are applied{" "}
+        <span className="span">at the time of lodgement</span> and are{" "}
+        <span className="span"> not applied retrospectively.</span> If your
+        application was complete when submitted, a later Evidence Level change{" "}
+        <span className="span">
+          {" "}
+          does not automatically affect your application.
+        </span>{" "}
       </h4>
       <br />
       <h4>
-        The Department of Home Affairs does not cancel or refuse applications
-        solely because a country’s Evidence Level changes after lodgement.
+        The Department of Home Affairs does{" "}
+        <span className="span">
+          {" "}
+          not cancel or refuse applications solely because a country’s Evidence
+          Level changes after lodgement.
+        </span>
         However, DHA has always retained the right to request additional
-        documents if individual concerns arise — this applies across all
-        Evidence Levels.{" "}
+        documents if individual concerns arise — this applies across{" "}
+        <span className="span">all Evidence Levels.</span>{" "}
       </h4>
       <h4>
         💡 Expert Tip: If your visa application was lodged correctly before the
-        update, there is no need to withdraw or re-lodge purely due to the
-        Evidence Level change.{" "}
+        update, there is{" "}
+        <span className="span"> no need to withdraw or re-lodge</span>purely due
+        to the Evidence Level change.{" "}
       </h4>
 
       <h2>How Aussizz Group Supports Students Through Policy Changes?</h2>
       <h4>
-        At Pangea,we understand that visa policy updates can feel overwhelming —
-        especially for international students in Australia planning long-term
-        outcomes.{" "}
+        At Pangaea,we understand that visa policy updates can feel overwhelming
+        — especially for{" "}
+        <span className="span">international students in Australia</span>{" "}
+        planning long-term outcomes.{" "}
       </h4>
       <h4>
-        Our experienced education consultants and registered migration
-        professionals support students with:{" "}
+        Our experienced{" "}
+        <span className="span">
+          {" "}
+          education consultants and registered migration professionals
+        </span>{" "}
+        support students with:{" "}
       </h4>
 
       <ul>
@@ -387,41 +462,60 @@ const AustraliaBlog = () => {
           Course and institution selection aligned with career and PR goals{" "}
         </li>
         <li>
-          Australian student visa (Subclass 500) preparation and GS guidance
+          <span className="span">Australian student visa (Subclass 500) </span>
+          preparation and GS guidance
         </li>
         <li>Financial document structuring and compliance checks </li>
         <li>OSHC, admissions, and enrolment support </li>
         <li>
-          Post-study work visa (Subclass 485) and long-term PR pathway planning
+          <span className="span">Post-study work visa (Subclass 485)</span> and
+          long-term PR pathway planning
         </li>
       </ul>
 
       <h2>🧠 Key Advice for 2026 Student Visa Applicants</h2>
       <ul>
-        <li>Verify country and provider requirements before lodgement </li>
-        <li>Prepare a GS-aligned application, regardless of Evidence Level </li>
+        <li>
+          Verify <span className="span">country and provider requirements</span>{" "}
+          before lodgement{" "}
+        </li>
+        <li>
+          Prepare a <span className="span">GS-aligned application,</span>{" "}
+          regardless of Evidence Level{" "}
+        </li>
         <li>Avoid rushed or incomplete submissions </li>
         <li>Seek professional guidance for complex profiles </li>
       </ul>
 
       <h4>✅ Compliance Disclaimer </h4>
       <h4>
-        Country Evidence Levels are assessed dynamically by the Department of
-        Home Affairs. Applicants must always verify their current Evidence Level
-        using the DHA Document Checklist Tool at the time of visa
-        lodgement.{" "}
+        Country Evidence Levels are assessed dynamically by the{" "}
+        <span className="span">Department of Home Affairs.</span> Applicants
+        must always verify their current Evidence Level using the{" "}
+        <a
+          href="https://immi.homeaffairs.gov.au/visas/web-evidentiary-tool"
+          target="_blank"
+          rel="noopener"
+          className="dha-link"
+        >
+          DHA Document Checklist Tool
+        </a>{" "}
+        at the time of visa lodgement.{" "}
       </h4>
       <h2>📣 Need Expert Guidance?</h2>
       <h4>
         Country Evidence Levels are only one part of a successful student visa
-        application. A strong Genuine Student statement, accurate financial
-        documentation, and clear academic planning remain critical.{" "}
+        application. A{" "}
+        <span className="span">strong Genuine Student statement,</span> accurate
+        financial documentation, and clear academic planning remain
+        critical.{" "}
       </h4>
-      <h4>
-        👉 Connect with Pangea Pathways for personalised education and migration
-        guidance and take the next confident step towards your Australian study
-        and career goals.{" "}
-      </h4>
+            <button
+        className="blog-btn"
+        onClick={() => navigate("/")}
+      >
+        Back to Home
+      </button>
     </section>
   );
 };

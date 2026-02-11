@@ -6,11 +6,15 @@ import { useNavigate } from "react-router-dom";
 const Blogs = () => {
   const navigate = useNavigate();
 
-  const handleReadMore = (blog) => {
-    if (blog.country === "Australia") {
-      navigate("/australia-blog");
-    }
-  };
+const handleReadMore = (blog) => {
+  if (blog.country === "Australia") {
+    navigate("/australia-blog");
+  } else if (blog.country === "Canada") {
+    navigate("/canada-blog");
+  } else if (blog.country === "UK") {
+    navigate("/uk-blog");
+  }
+};
 
   return (
     <section className="blogs-section">
