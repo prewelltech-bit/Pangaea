@@ -101,7 +101,7 @@ const Hero = () => {
 
               <div className="right-hero">
                 <img
-                  src="/assets/Img/h4.png"
+                  src="/assets/Img/h3.png"
                   alt="hero"
                   loading="lazy"
                 />
