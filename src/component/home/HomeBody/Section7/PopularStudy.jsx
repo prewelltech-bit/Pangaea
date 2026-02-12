@@ -10,16 +10,16 @@ const destinations = [
     link: "/study/australia",
   },
   {
+    country: "NewZealand",
+    image: "🇳🇿",
+    description: "Free/low-cost education with strong career prospects",
+    link: "/study/new-zealand",
+  },
+  {
     country: "United Kingdom",
     image: "🇬🇧",
     description: "Historic universities with cutting-edge research",
     link: "/study/uk",
-  },
-  {
-    country: "Canada",
-    image: "🇨🇦",
-    description: "Affordable tuition with excellent quality education",
-    link: "/study/canada",
   },
   {
     country: "Europe",
@@ -28,10 +28,10 @@ const destinations = [
     link: "/study/europe",
   },
   {
-    country: "NewZealand",
-    image: "🇳🇿",
-    description: "Free/low-cost education with strong career prospects",
-    link: "/study/new-zealand",
+    country: "Canada",
+    image: "🇨🇦",
+    description: "Affordable tuition with excellent quality education",
+    link: "/study/canada",
   },
   {
     country: "United States",

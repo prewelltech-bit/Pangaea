@@ -1,53 +1,74 @@
-.container-Terms {
+.terms-container {
+  background: #f4f6f9;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.terms-wrapper {
   max-width: 1400px;
-  margin: 20px auto;
-  padding: 20px;
-  font-family: Arial, sans-serif;
+  background: #ffffff;
+  padding: 50px;
+  border-radius: 8px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+  line-height: 1.9;
+  font-size: 15px;
   color: #333;
-  /* background: #000; */
 }
-.terms-and-conditions {
-    background: #fffcfc;
-    padding: 30px;
-    border-radius: 8px;
+
+.terms-wrapper h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #111;
+  text-align: center;
 }
-.terms-and-conditions h1 {
-    font-size: 28px;
-    margin: 50px 0;
-    text-align: center;
+
+.terms-wrapper h2 {
+  font-size: 20px;
+  margin-bottom: 25px;
+  color: #666;
 }
-.terms-and-conditions-container p {
-  line-height: 1.6;
+
+.terms-wrapper h3 {
+  font-size: 20px;
+  margin-top: 35px;
   margin-bottom: 15px;
+  color: #1e3a8a;
 }
-.terms-and-conditions-container ul,
-.terms-and-conditions-container ol {
-    margin-left: 20px;
-    margin-bottom: 15px;
-    }
-.terms-and-conditions-container a {
-    color: #0066cc;
-    text-decoration: none;
-    }
-.terms-and-conditions-container a:hover {
-    text-decoration: underline;
-    }
-.terms-and-conditions-container .section {
-    margin-bottom: 30px;
-    }
-.terms-and-conditions-container .section-title {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    }
-.terms-and-conditions-container .subsection-title {
-    font-size: 16px;
-    font-weight: bold;
-    margin-top: 15px;   
-    margin-bottom: 10px;
-    }
-.terms-and-conditions-container .highlight {
-    background-color: #ffff99;
-    padding: 2px 4px;
-    border-radius: 3px;
-    }
+
+.terms-wrapper p {
+  margin-bottom: 15px;
+  text-align: center;
+  text-align: justify;
+}
+
+.terms-wrapper ul {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.terms-wrapper li {
+  margin-bottom: 8px;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #e5e7eb;
+  margin: 30px 0;
+}
+
+.contact-section {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+}
+
+@media (max-width: 768px) {
+  .terms-wrapper {
+    padding: 30px 20px;
+  }
+
+  .terms-wrapper h1 {
+    font-size: 28px;
+  }
+}

@@ -16,7 +16,9 @@ const Body = () => {
             <Welcome />
             <SuccessStories />
             <OurPartners />
-            <Demo />
+
+            {/* event section  */}
+            {/* <Demo /> */}
             <DreamDestination />
             <FreeCounselling />
             <PopularStudy />

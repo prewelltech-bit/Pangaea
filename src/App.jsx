@@ -20,6 +20,7 @@ import Us from "./component/StudyAbroad/US/Us";
 import CanadaBlogs from "./component/Blogs/CanadaBlogs";
 import UKBlogs from "./component/Blogs/UKBlogs";
 import TermsAndCondition from "./component/Terms&Condition/TermsAndCondition";
+import PrivacyPolice from "./component/PrivacyPolice/PrivacyPolice";
 
 const App = () => {
   return (
@@ -47,6 +48,8 @@ const App = () => {
         <Route path="/uk-blog" element={<UKBlogs />} />
 
         <Route path="/terms" element={<TermsAndCondition />} />
+        <Route path="/privacy-policy" element={<PrivacyPolice />} />
+
       </Routes>
 
       <Footer />

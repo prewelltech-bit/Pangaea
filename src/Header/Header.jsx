@@ -24,11 +24,11 @@ const Header = () => {
   };
 
   const countries = [
+    { name: "Australia", path: "/study/australia" },
+    { name: "New Zealand", path: "/study/new-zealand" },
     { name: "United Kingdom", path: "/study/uk" },
     { name: "Europe", path: "/study/europe" },
-    { name: "Australia", path: "/study/australia" },
     { name: "Canada", path: "/study/canada" },
-    { name: "New Zealand", path: "/study/new-zealand" },
     { name: "USA", path: "/study/united-states" },
   ];
 

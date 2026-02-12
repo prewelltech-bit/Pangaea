@@ -28,16 +28,16 @@ const Footer = () => {
 
             {/* Links */}
             <motion.div className="footer7-links" variants={getDirectionVariants('up')}>
-              <a href="#">Documentation</a>
-              <a href="#">Support</a>
-              <a href="#">Status</a>
+              <a href="#" className="footer-a">Documentation</a>
+              <a href="#" className="footer-a">Support</a>
+              <a href="#" className="footer-a">Status</a>
             </motion.div>
 
             {/* Social Icons */}
             <motion.div className="footer7-social" variants={getDirectionVariants('right')}>
-              <a href="https://www.instagram.com/pangaea_pathways/">i</a>
-              <a href="#">t</a>
-              <a href="#">in</a>
+              <a href="https://www.instagram.com/pangaea_pathways/" className="footer-a">i</a>
+              <a href="#" className="footer-a">t</a>
+              <a href="#" className="footer-a">in</a>
             </motion.div>
 
           </div>
@@ -46,8 +46,8 @@ const Footer = () => {
           <motion.div className="footer7-bottom" variants={getDirectionVariants('down')}>
             <p>
               © 2025 Pagaea Pathways. All rights reserved. |{" "}
-              <Link to="/terms">Terms and Conditions</Link> |{" "}
-              <a href="#">Terms and Conditions</a>
+              <Link to="/terms" className="footer-a">Terms and Conditions</Link> |{" "}
+              <Link to="/privacy-policy" className="footer-a">Privacy Policy</Link>
             </p>
           </motion.div>
 

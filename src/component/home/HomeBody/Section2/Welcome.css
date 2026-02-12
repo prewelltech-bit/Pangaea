@@ -76,13 +76,13 @@
 }
 /* ===== Glass Box ===== */
 .glass-box {
-  background: rgba(248, 233, 233, 0.574);
+  background: rgba(230, 234, 255, 0.772);
   border: 1px solid rgba(255, 255, 255, 0.22);
   border-radius: 18px;
   padding: 56px 64px;
   height: auto;
-  width: 90%;
-  max-width: 520px;
+  width: 100%;
+  max-width: 800px;
   align-items: center;
   justify-content: center;
   margin: auto 0;
@@ -113,8 +113,9 @@
 
 .sub-text {
   font-size: 20px;
-  color: white;
+  color: rgb(9, 9, 9);
   opacity: 1;
+  font-weight: 300;
   text-align:justify;
 }
 
