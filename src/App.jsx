@@ -19,6 +19,7 @@ import Europe from "./component/StudyAbroad/europe/europe";
 import Us from "./component/StudyAbroad/US/Us";
 import CanadaBlogs from "./component/Blogs/CanadaBlogs";
 import UKBlogs from "./component/Blogs/UKBlogs";
+import TermsAndCondition from "./component/Terms&Condition/TermsAndCondition";
 
 const App = () => {
   return (
@@ -44,6 +45,8 @@ const App = () => {
         <Route path="/australia-blog" element={<AustraliaBlog />} />
         <Route path="/canada-blog" element={<CanadaBlogs />} />
         <Route path="/uk-blog" element={<UKBlogs />} />
+
+        <Route path="/terms" element={<TermsAndCondition />} />
       </Routes>
 
       <Footer />

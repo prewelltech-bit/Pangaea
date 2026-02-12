@@ -3,6 +3,7 @@ import React from "react";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 import { useRevealAnimation, staggerContainerVariants, getDirectionVariants } from "../hooks/useRevealAnimation";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const { ref, isInView } = useRevealAnimation(0.4);
@@ -45,7 +46,7 @@ const Footer = () => {
           <motion.div className="footer7-bottom" variants={getDirectionVariants('down')}>
             <p>
               © 2025 Pagaea Pathways. All rights reserved. |{" "}
-              <a href="#">Privacy Policy</a> |{" "}
+              <Link to="/terms">Terms and Conditions</Link> |{" "}
               <a href="#">Terms and Conditions</a>
             </p>
           </motion.div>

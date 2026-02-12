@@ -2,93 +2,268 @@
   {
     "name": "Harvard University",
     "country": "USA",
-    "logo": "./assets/Logo/USA/Harvard_University.jpg",
+    "logo": "../../../public/assets/Logo/USA/Harvard_University.jpg",
     "city": "Cambridge, Massachusetts",
     "region": "Northeast USA",
-    "type_of_course": ["Bachelor (4 Years)", "Master (1-2 Years)", "PhD (3-5 Years)"],
+    "type_of_course": ["Bachelor (4 Years)", "Master (1-2 Years)"],
     "fees_approx": "55,000–60,000",
     "link": "https://www.harvard.edu/",
-    "images": ["./assets/Img/USA/harvard1.jpg", "./assets/Img/USA/harvard2.jpg"]
+    "images": "../../../public/assets/Img/USA/Harvard University (MA).jpeg"
   },
   {
-    "name": "Massachusetts Institute of Technology",
+    "name": "Massachusetts Institute of Technology (MIT)",
     "country": "USA",
-    "logo": "./assets/Logo/USA/MIT.png",
+    "logo": "../../../public/assets/Logo/USA/MIT.jpg",
     "city": "Cambridge, Massachusetts",
     "region": "Northeast USA",
-    "type_of_course": ["Bachelor (4 Years)", "Master (1-2 Years)", "PhD (3-5 Years)"],
-    "fees_approx": "53,000–58,000",
-    "link": "https://www.mit.edu/",
-    "images": ["./assets/Img/USA/mit1.jpg", "./assets/Img/USA/mit2.jpg"]
+    "type_of_course": ["Bachelor (4 Years)", "Master (1-2 Years)"],
+    "fees_approx": "55,000–60,000",
+    "link": "https://web.mit.edu/",
+    "images": "../../../public/assets/Img/USA/MIT (MA).jpeg"
   },
   {
     "name": "Columbia University",
     "country": "USA",
-    "logo": "./assets/Logo/USA/Columbia_University.jpg",
-    "city": "New York City, New York",
+    "logo": "../../../public/assets/Logo/USA/Columbia_University.jpg",
+    "city": "New York, New York",
     "region": "Northeast USA",
-    "type_of_course": ["Bachelor (4 Years)", "Master (1-2 Years)", "PhD (3-5 Years)"],
+    "type_of_course": ["Bachelor (4 Years)", "Master (1-2 Years)"],
     "fees_approx": "60,000–65,000",
     "link": "https://www.columbia.edu/",
-    "images": ["./assets/Img/USA/columbia1.jpg", "./assets/Img/USA/columbia2.jpg"]
+    "images": "../../../public/assets/Img/USA/Columbia University (NY).jpeg"
   },
   {
     "name": "New York University",
     "country": "USA",
-    "logo": "./assets/Logo/USA/New_York_University.jpg",
-    "city": "New York City, New York",
+    "logo": "../../../public/assets/Logo/USA/New_York_University.jpg",
+    "city": "New York, New York",
     "region": "Northeast USA",
     "type_of_course": ["Bachelor (4 Years)", "Master (1-2 Years)"],
     "fees_approx": "55,000–60,000",
     "link": "https://www.nyu.edu/",
-    "images": ["./assets/Img/USA/nyu1.jpg", "./assets/Img/USA/nyu2.jpg"]
+    "images": "../../../public/assets/Img/USA/New York University (NY).jpeg"
+  },
+  {
+    "name": "Carnegie Mellon University",
+    "country": "USA",
+    "logo": "../../../public/assets/Logo/USA/Carnegie_Mellon_University.jpg",
+    "city": "Pittsburgh, Pennsylvania",
+    "region": "Northeast USA",
+    "type_of_course": ["Bachelor (4 Years)", "Master (1-2 Years)"],
+    "fees_approx": "55,000–60,000",
+    "link": "https://www.cmu.edu/",
+    "images": "../../../public/assets/Img/USA/Carnegie Mellon University (PA).jpeg"
+  },
+  {
+    "name": "University of Pennsylvania",
+    "country": "USA",
+    "logo": "../../../public/assets/Logo/USA/University_of_Pennsylvania.png",
+    "city": "Philadelphia, Pennsylvania",
+    "region": "Northeast USA",
+    "type_of_course": ["Bachelor (4 Years)", "Master (1-2 Years)"],
+    "fees_approx": "55,000–60,000",
+    "link": "https://www.upenn.edu/",
+    "images": "../../../public/assets/Img/USA/University of Pennsylvania (PA).jpeg"
+  },
+  {
+    "name": "Boston University",
+    "country": "USA",
+    "logo": "../../../public/assets/Logo/USA/Boston_University.png",
+    "city": "Boston, Massachusetts",
+    "region": "Northeast USA",
+    "type_of_course": ["Bachelor (4 Years)", "Master (1-2 Years)"],
+    "fees_approx": "55,000–60,000",
+    "link": "https://www.bu.edu/",
+    "images": "../../../public/assets/Img/USA/Boston University (MA).jpeg"
+  },
+  {
+    "name": "Northeastern University",
+    "country": "USA",
+    "logo": "../../../public/assets/Logo/USA/Northeastern_University.png",
+    "city": "Boston, Massachusetts",
+    "region": "Northeast USA",
+    "type_of_course": ["Bachelor (4 Years)", "Master (1-2 Years)"],
+    "fees_approx": "50,000–55,000",
+    "link": "https://www.northeastern.edu/",
+    "images": "../../../public/assets/Img/USA/Northeastern University (MA).jpg.jpeg"
   },
 
   {
-    "name": "University of California Berkeley",
+    "name": "University of Chicago",
     "country": "USA",
-    "logo": "./assets/Logo/USA/University_of_California_Berkeley.png",
-    "city": "Berkeley, California",
-    "region": "West Coast USA",
-    "type_of_course": ["Bachelor (4 Years)", "Master (1-2 Years)", "PhD (3-6 Years)"],
-    "fees_approx": "45,000–55,000",
-    "link": "https://www.berkeley.edu/",
-    "images": ["./assets/Img/USA/berkeley1.jpg", "./assets/Img/USA/berkeley2.jpg"]
+    "logo": "../../../public/assets/Logo/USA/University_of_Chicago.jpg",
+    "city": "Chicago, Illinois",
+    "region": "Midwest USA",
+    "type_of_course": ["Bachelor (4 Years)", "Master (1-2 Years)"],
+    "fees_approx": "60,000–65,000",
+    "link": "https://www.uchicago.edu/",
+    "images": "../../../public/assets/Img/USA/University of Chicago (IL).jpg.jpeg"
   },
-
   {
-    "name": "University of Michigan Ann Arbor",
+    "name": "University of Illinois Urbana-Champaign",
     "country": "USA",
-    "logo": "./assets/Logo/USA/University_of_Michigan_Ann_Arbor.png",
+    "logo": "../../../public/assets/Logo/USA/University_of_Illinois_Urbana_Champaign.png",
+    "city": "Champaign, Illinois",
+    "region": "Midwest USA",
+    "type_of_course": ["Bachelor (4 Years)", "Master (1-2 Years)"],
+    "fees_approx": "35,000–40,000",
+    "link": "https://illinois.edu/",
+    "images": "../../../public/assets/Img/USA/University of Illinois Urbana-Champaign (IL).jpg.jpeg"
+  },
+  {
+    "name": "Purdue University",
+    "country": "USA",
+    "logo": "../../../public/assets/Logo/USA/Purdue_University.png",
+    "city": "West Lafayette, Indiana",
+    "region": "Midwest USA",
+    "type_of_course": ["Bachelor (4 Years)", "Master (1-2 Years)"],
+    "fees_approx": "30,000–35,000",
+    "link": "https://www.purdue.edu/",
+    "images": "../../../public/assets/Img/USA/Purdue University (IN).jpg.jpeg"
+  },
+  {
+    "name": "University of Michigan – Ann Arbor",
+    "country": "USA",
+    "logo": "../../../public/assets/Logo/USA/University_of_Michigan_Ann_Arbor.png",
     "city": "Ann Arbor, Michigan",
     "region": "Midwest USA",
     "type_of_course": ["Bachelor (4 Years)", "Master (1-2 Years)"],
     "fees_approx": "50,000–55,000",
     "link": "https://umich.edu/",
-    "images": ["./assets/Img/USA/umich1.jpg", "./assets/Img/USA/umich2.jpg"]
+    "images": "../../../public/assets/Img/USA/University of Michigan – Ann Arbor (MI).jpeg"
+  },
+  {
+    "name": "Ohio State University",
+    "country": "USA",
+    "logo": "../../../public/assets/Logo/USA/Ohio_State_University.png",
+    "city": "Columbus, Ohio",
+    "region": "Midwest USA",
+    "type_of_course": ["Bachelor (4 Years)", "Master (1-2 Years)"],
+    "fees_approx": "35,000–40,000",
+    "link": "https://www.osu.edu/",
+    "images": "../../../public/assets/Img/USA/Ohio State University (OH).jpeg"
+  },
+  {
+    "name": "University of Minnesota",
+    "country": "USA",
+    "logo": "../../../public/assets/Logo/USA/University_of_Minnesota.png",
+    "city": "Minneapolis, Minnesota",
+    "region": "Midwest USA",
+    "type_of_course": ["Bachelor (4 Years)", "Master (1-2 Years)"],
+    "fees_approx": "30,000–35,000",
+    "link": "https://twin-cities.umn.edu/",
+    "images": "../../../public/assets/Img/USA/University of Minnesota (MN).webp"
   },
 
+  {
+    "name": "Duke University",
+    "country": "USA",
+    "logo": "../../../public/assets/Logo/USA/Duke_University.png",
+    "city": "Durham, North Carolina",
+    "region": "South USA",
+    "type_of_course": ["Bachelor (4 Years)", "Master (1-2 Years)"],
+    "fees_approx": "60,000–65,000",
+    "link": "https://duke.edu/",
+    "images": "../../../public/assets/Img/USA/Duke University (NC).jpeg"
+  },
   {
     "name": "Georgia Institute of Technology",
     "country": "USA",
-    "logo": "./assets/Logo/USA/Georgia_Institute_of_Technology.webp",
+    "logo": "../../../public/assets/Logo/USA/Georgia_Institute_of_Technology.webp",
     "city": "Atlanta, Georgia",
     "region": "South USA",
     "type_of_course": ["Bachelor (4 Years)", "Master (1-2 Years)"],
-    "fees_approx": "35,000–45,000",
+    "fees_approx": "30,000–35,000",
     "link": "https://www.gatech.edu/",
-    "images": ["./assets/Img/USA/georgia1.jpg", "./assets/Img/USA/georgia2.jpg"]
+    "images": "../../../public/assets/Img/USA/Georgia Institute of Technology (GA).png"
+  },
+  {
+    "name": "University of Texas at Austin",
+    "country": "USA",
+    "logo": "../../../public/assets/Logo/USA/University_of_Texas_at_Austin.png",
+    "city": "Austin, Texas",
+    "region": "South USA",
+    "type_of_course": ["Bachelor (4 Years)", "Master (1-2 Years)"],
+    "fees_approx": "40,000–45,000",
+    "link": "https://www.utexas.edu/",
+    "images":"../../../public/assets/Img/USA/University of Texas at Austin (TX).jpeg"
+  },
+  {
+    "name": "Texas A&M University",
+    "country": "USA",
+    "logo": "../../../public/assets/Logo/USA/Texas_A_M_University.png",
+    "city": "College Station, Texas",
+    "region": "South USA",
+    "type_of_course": ["Bachelor (4 Years)", "Master (1-2 Years)"],
+    "fees_approx": "35,000–40,000",
+    "link": "https://www.tamu.edu/",
+    "images": "../../../public/assets/Img/USA/Texas A&M; University (TX).jpeg"
+  },
+  {
+    "name": "Rice University",
+    "country": "USA",
+    "logo": "../../../public/assets/Logo/USA/Rice_University.png",
+    "city": "Houston, Texas",
+    "region": "South USA",
+    "type_of_course": ["Bachelor (4 Years)", "Master (1-2 Years)"],
+    "fees_approx": "50,000–55,000",
+    "link": "https://www.rice.edu/",
+    "images":"../../../public/assets/Img/USA/Rice University (TX).webp"
   },
 
   {
+    "name": "University of California, Berkeley",
+    "country": "USA",
+    "logo": "../../../public/assets/Logo/USA/University_of_California_Berkeley.png",
+    "city": "Berkeley, California",
+    "region": "West USA",
+    "type_of_course": ["Bachelor (4 Years)", "Master (1-2 Years)"],
+    "fees_approx": "45,000–50,000",
+    "link": "https://www.berkeley.edu/",
+    "images": "../../../public/assets/Img/USA/University of California, Berkeley (CA).jpeg"
+  },
+  {
+    "name": "University of California, Los Angeles",
+    "country": "USA",
+    "logo": "../../../public/assets/Logo/USA/University_of_California_Los_Angeles.png",
+    "city": "Los Angeles, California",
+    "region": "West USA",
+    "type_of_course": ["Bachelor (4 Years)", "Master (1-2 Years)"],
+    "fees_approx": "45,000–50,000",
+    "link": "https://www.ucla.edu/",
+    "images": "../../../public/assets/Img/USA/University of California, Los Angeles (CA).webp"
+  },
+  {
+    "name": "University of Southern California",
+    "country": "USA",
+    "logo": "../../../public/assets/Logo/USA/University_of_Southern_California.png",
+    "city": "Los Angeles, California",
+    "region": "West USA",
+    "type_of_course": ["Bachelor (4 Years)", "Master (1-2 Years)"],
+    "fees_approx": "60,000–65,000",
+    "link": "https://www.usc.edu/",
+    "images": "../../../public/assets/Img/USA/University of Southern California (CA).jpeg"
+  },
+  {
+    "name": "California Institute of Technology",
+    "country": "USA",
+    "logo": "../../../public/assets/Logo/USA/California_Institute_of_Technology.png",
+    "city": "Pasadena, California",
+    "region": "West USA",
+    "type_of_course": ["Bachelor (4 Years)", "Master (1-2 Years)"],
+    "fees_approx": "55,000–60,000",
+    "link": "https://www.caltech.edu/",
+    "images": "../../../public/assets/Img/USA/California Institute of Technology (CA).jpeg"
+  },
+  {
     "name": "Arizona State University",
     "country": "USA",
-    "logo": "./assets/Logo/USA/Arizona_State_University.png",
+    "logo": "../../../public/assets/Logo/USA/Arizona_State_University.png",
     "city": "Tempe, Arizona",
     "region": "West USA",
     "type_of_course": ["Bachelor (4 Years)", "Master (1-2 Years)"],
-    "fees_approx": "28,000–35,000",
+    "fees_approx": "30,000–35,000",
     "link": "https://www.asu.edu/",
-    "images": ["./assets/Img/USA/asu1.jpg", "./assets/Img/USA/asu2.jpg"]
+    "images": "../../../public/assets/Img/USA/Arizona State University (AZ).jpg.jpeg"
   }
 ]
