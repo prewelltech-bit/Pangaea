@@ -40,9 +40,8 @@ const Hero = () => {
                   In Your City!
                 </h1>
                 <p>
-                  Meet representatives from top universities from UK, USA,
-                  <br />
-                  Australia, New Zealand, Singapore...
+                  Meet representatives from top universities from Australia, New Zealand,
+                   UK,Europe,Canada,USA...
                 </p>
               </div>
 
