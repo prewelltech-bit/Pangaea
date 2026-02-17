@@ -1,20 +1,28 @@
 {
   "tabs": [
     {
+      "id": "australia",
+      "label": "Courses in Australia"
+    },
+    {
+      "id": "new-zealand",
+      "label": "Courses in New Zealand"
+    },
+    {
       "id": "uk",
       "label": "Courses in the UK"
     },
     {
-      "id": "usa",
-      "label": "Courses in the USA"
+      "id": "europe",
+      "label": "Courses in Europe"
     },
     {
       "id": "canada",
       "label": "Courses in Canada"
-    },
+    }, 
     {
-      "id": "australia",
-      "label": "Courses in Australia"
+      "id": "usa",
+      "label": "Courses in the USA"
     }
   ],
   "courses": [
@@ -50,11 +58,43 @@
     }
   ],
   "courseOrder": {
+        "australia": [
+      4,
+      1,
+      2,
+      5,
+      6,
+      3
+    ],
+    "new-zealand": [
+      5,
+      3,
+      4,
+      1,
+      6,
+      2
+    ],    
     "uk": [
       1,
       2,
       5,
       3,
+      4,
+      6
+    ],
+    "europe": [
+      6,
+      4,
+      3,
+      2,
+      1,
+      5
+    ],
+    "canada": [
+      3,
+      5,
+      1,
+      2,
       4,
       6
     ],
@@ -65,22 +105,6 @@
       5,
       3,
       4
-    ],
-    "canada": [
-      3,
-      5,
-      1,
-      2,
-      4,
-      6
-    ],
-    "australia": [
-      4,
-      1,
-      2,
-      5,
-      6,
-      3
     ]
   }
 }

@@ -40,8 +40,9 @@ const Hero = () => {
                   In Your City!
                 </h1>
                 <p>
-                  Meet representatives from top universities from Australia, New Zealand,
-                   UK,Europe,Canada,USA...
+                  Meet representatives from top universities from Australia,
+                  <br />
+                   New Zealand,UK,Europe,Canada,USA...
                 </p>
               </div>
 
@@ -87,7 +88,7 @@ const Hero = () => {
               <div className="left-hero">
                 <h1>
                   Dream, Discover & <br />
-                  Conquer with <span>Pangaea</span>
+                  Conquer with  <br /> <span>Pangaea Pathways</span>
                   <br />
                   Your Study Abroad Partner
                 </h1>

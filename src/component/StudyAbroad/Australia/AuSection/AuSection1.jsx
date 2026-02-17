@@ -12,6 +12,8 @@ import AuTabs from "./AditionalInfo/AuTabs";
 const AuSection1 = () => {
   return (
     <>
+
+    
       {/* Australia hero section */}
       {AuCountry.map((section, index) => (
         <div className="Au-section" key={index}>
@@ -33,7 +35,7 @@ const AuSection1 = () => {
                 <img src={section.image} alt={section.name} />
               </div>
               <div className="Au-right-overview">
-                <h1 className="Au-right-overview-h1">
+                <h1 className="Au-why-study-h1">
                   Overview of{" "}
                   <span className="Au-right-overview-h1-span">
                     {section.name}
@@ -73,8 +75,8 @@ const AuSection1 = () => {
 
       {/* University Swiper */}
       <section className="uni-swiper-section">
-        <h2 className="uni-h1">
-          Explore <span className="uni-h1-span">Top Universities</span> In AU
+        <h2 className="Au-why-study-h1">
+          Explore <span className="uni-h1-span">Top Universities</span> In Australia
         </h2>
 
         <Swiper

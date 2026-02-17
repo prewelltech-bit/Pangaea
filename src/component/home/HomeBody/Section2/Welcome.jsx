@@ -35,14 +35,7 @@ const Welcome = () => {
             <span className="welcome-h1-span">Pangaea Pathways</span>{" "}
           </h1>
           <p className="sub-text">
-            is a Dallas Fort Worth, Texas based global agency for student
-            advising, college preparation, and admission counseling. We advise
-            both international and domestic students to assist college and
-            university admission and recruitment teams with complete application
-            packages for evaluation and decision making. Honesty, Integrity, and
-            professional commitment are our company philosophy. We exceed the
-            expectation of our students, partners, and educational institutions
-            we partner with.
+            We are a Dallas–Fort Worth–based global student advising and admission counseling agency helping international and domestic students achieve successful college and university admissions. With honesty, integrity, and professional commitment, we deliver complete application support and exceed expectations at every step of the journey.
           </p>
         </div>
       </div>

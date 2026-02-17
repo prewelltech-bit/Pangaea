@@ -6,9 +6,13 @@
 }
 
 .trending {
-  padding: 80px 20px;
+  padding: 80px 80px 140px 80px;
   background: #ffffff;
   text-align: center;
+}
+
+.popular-h1{
+  margin-bottom: 80px;
 }
 
 .trending h2 span {

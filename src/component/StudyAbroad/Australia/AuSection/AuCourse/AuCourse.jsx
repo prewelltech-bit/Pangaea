@@ -6,7 +6,7 @@ const AuCourse = () => {
     <>
       <section className="trending">
         <h2 className="popular-h1">
-          Discover <span className="popular-h1-span">Courses</span> in AU
+          Discover <span className="popular-h1-span">Courses</span> in Australia
         </h2>
 
         {/* Courses */}

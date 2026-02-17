@@ -75,8 +75,8 @@ const NzSection1 = () => {
 
       {/* University Swiper */}
       <section className="uni-swiper-section">
-        <h2 className="uni-h1">
-          Explore <span className="uni-h1-span">Top Universities</span> In UK
+        <h2 className="Au-why-study-h1">
+          Explore <span className="uni-h1-span">Top Universities</span> In New Zealand
         </h2>
 
         <Swiper

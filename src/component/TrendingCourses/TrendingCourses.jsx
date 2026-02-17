@@ -3,7 +3,7 @@ import "./TrendingCourses.css";
 import data from "../../jsonFiles/TrendingCourses.json";
 
 const TrendingCourses = () => {
-  const [activeTab, setActiveTab] = useState("uk");
+  const [activeTab, setActiveTab] = useState("australia");
 
   const orderedCourses = data.courseOrder[activeTab].map((id) =>
     data.courses.find((course) => course.id === id)
