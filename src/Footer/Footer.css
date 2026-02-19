@@ -6,11 +6,26 @@
 
 }
 .footer7-brand img {
-    height: 115px;
+    height: 205px;
     /* filter: drop-shadow(0 2px 4px #f0e1e10d); */
     transition: transform 0.3s ease;
 }
-
+.footer-logo-side {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 300px;
+    text-align: left;
+    gap: 10px;
+}
+.footer-logo-side p{
+    font-size: 14px;
+    color: #dbeafe;
+    margin-top: 8px;
+    padding-left: 0;
+    text-align:left;
+}
 .footer7-title {
     font-size: 26px;
     font-weight: bold;
@@ -93,6 +108,7 @@
 .footer7-social {
     display: flex;
     gap: 16px;
+    margin-top: 8px;
 }
 
 .footer7-social a {

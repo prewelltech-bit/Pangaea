@@ -21,6 +21,8 @@ import CanadaBlogs from "./component/Blogs/CanadaBlogs";
 import UKBlogs from "./component/Blogs/UKBlogs";
 import TermsAndCondition from "./component/Terms&Condition/TermsAndCondition";
 import PrivacyPolice from "./component/PrivacyPolice/PrivacyPolice";
+import AboutUs from "./component/AboutUS/AboutUs";
+// import Footer1 from "./Footer/Footer1";
 
 const App = () => {
   return (
@@ -40,8 +42,11 @@ const App = () => {
         <Route path="/study/europe" element={<Europe />} />
         <Route path="/study/united-states" element={<Us />} />
 
-        <Route path="/pte" element={<PTE />} />
         <Route path="/Contact" element={<Contact />} />
+        <Route path="/pte" element={<PTE />} />
+        <Route path="/about-us" element={<AboutUs />} />
+
+
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/australia-blog" element={<AustraliaBlog />} />
         <Route path="/canada-blog" element={<CanadaBlogs />} />
@@ -51,7 +56,7 @@ const App = () => {
         <Route path="/privacy-policy" element={<PrivacyPolice />} />
 
       </Routes>
-
+      {/* <Footer1 /> */}
       <Footer />
     </BrowserRouter>
   );

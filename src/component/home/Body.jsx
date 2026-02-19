@@ -19,6 +19,7 @@ const Body = () => {
 
             {/* event section  */}
             {/* <Demo /> */}
+            
             <DreamDestination />
             <FreeCounselling />
             <PopularStudy />

@@ -50,7 +50,6 @@ const Footer = () => {
               <Link to="/privacy-policy" className="footer-a">Privacy Policy</Link>
             </p>
           </motion.div>
-
         </div>
       </footer>
     </motion.div>

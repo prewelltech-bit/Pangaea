@@ -30,13 +30,7 @@ const Contact = () => {
 
     // ✅ EMAIL SEND
     emailjs
-      .send(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
-        form,
-        bX-q69rXMihDkMWMJ
-
-      )
+      .send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", form, bX - q69rXMihDkMWMJ)
       .then(
         () => {
           alert("Message Sent Successfully ✅");
@@ -51,7 +45,7 @@ const Contact = () => {
         (err) => {
           alert("Failed to send ❌");
           console.log(err);
-        }
+        },
       );
   };
 
@@ -62,34 +56,42 @@ const Contact = () => {
       </h2>
 
       <div className="contact-container">
-
         {/* LEFT INFO */}
         <div className="contact-info">
           <div className="info-box">
-            <div className="icon-wrap"><FaMapMarkerAlt /></div>
+            <div className="icon-wrap">
+              <FaMapMarkerAlt />
+            </div>
             <div className="info-text">
               <h4>Office Address</h4>
               <p>
-                Office No: 156, Opera Business Hub,<br/>
-                Lajamni Chowk, Mota Varchha,<br/>
+                Office No: 156, Opera Business Hub,
+                <br />
+                Lajamni Chowk, Mota Varchha,
+                <br />
                 Surat
               </p>
             </div>
           </div>
 
           <div className="info-box">
-            <div className="icon-wrap"><FaPhoneAlt /></div>
+            <div className="icon-wrap">
+              <FaPhoneAlt />
+            </div>
             <div className="info-text">
               <h4>Mobile</h4>
               <p>
-                +91 70696 26269<br/>
+                +91 70696 26269
+                <br />
                 +91 84698 88281
               </p>
             </div>
           </div>
 
           <div className="info-box">
-            <div className="icon-wrap"><FaEnvelope /></div>
+            <div className="icon-wrap">
+              <FaEnvelope />
+            </div>
             <div className="info-text">
               <h4>Email</h4>
               <p>admin@Pangeapathways.com</p>
@@ -105,16 +107,42 @@ const Contact = () => {
           {error && <span className="error">{error}</span>}
 
           <div className="form-row">
-            <input name="fname" placeholder="First name *" value={form.fname} onChange={handleChange}/>
-            <input name="lname" placeholder="Last name" value={form.lname} onChange={handleChange}/>
+            <input
+              name="fname"
+              placeholder="First name *"
+              value={form.fname}
+              onChange={handleChange}
+            />
+            <input
+              name="lname"
+              placeholder="Last name"
+              value={form.lname}
+              onChange={handleChange}
+            />
           </div>
 
           <div className="form-row">
-            <input type="email" name="email" placeholder="Email address *" value={form.email} onChange={handleChange}/>
-            <input name="phone" placeholder="Phone number" value={form.phone} onChange={handleChange}/>
+            <input
+              type="email"
+              name="email"
+              placeholder="Email address *"
+              value={form.email}
+              onChange={handleChange}
+            />
+            <input
+              name="phone"
+              placeholder="Phone number"
+              value={form.phone}
+              onChange={handleChange}
+            />
           </div>
 
-          <textarea name="message" placeholder="Your message *" value={form.message} onChange={handleChange}></textarea>
+          <textarea
+            name="message"
+            placeholder="Your message *"
+            value={form.message}
+            onChange={handleChange}
+          ></textarea>
 
           <button type="submit">Send Now</button>
         </form>
