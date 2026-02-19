@@ -31,25 +31,25 @@ const Contact = () => {
     setError("");
 
     // ✅ EMAIL SEND
-    emailjs
-      .send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", form, bX - q69rXMihDkMWMJ)
-      .then(
-        () => {
-          alert("Message Sent Successfully ✅");
-          setForm({
-            fname: "",
-            lname: "",
-            email: "",
-            phone: "",
-            message: "",
-            time_slot: "",
-          });
-        },
-        (err) => {
-          alert("Failed to send ❌");
-          console.log(err);
-        },
-      );
+    // emailjs
+    //   .send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", form, bX - q69rXMihDkMWMJ)
+    //   .then(
+    //     () => {
+    //       alert("Message Sent Successfully ✅");
+    //       setForm({
+    //         fname: "",
+    //         lname: "",
+    //         email: "",
+    //         phone: "",
+    //         message: "",
+    //         time_slot: "",
+    //       });
+    //     },
+    //     (err) => {
+    //       alert("Failed to send ❌");
+    //       console.log(err);
+    //     },
+    //   );
   };
 
   const times = [
