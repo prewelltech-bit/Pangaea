@@ -10,8 +10,10 @@ const Contact = () => {
     email: "",
     phone: "",
     message: "",
+    time_slot: "",
   });
 
+  const [open, setOpen] = useState(false);   // ✅ custom dropdown
   const [error, setError] = useState("");
 
   const handleChange = (e) => {
@@ -40,6 +42,7 @@ const Contact = () => {
             email: "",
             phone: "",
             message: "",
+            time_slot: "",
           });
         },
         (err) => {
@@ -48,6 +51,12 @@ const Contact = () => {
         },
       );
   };
+
+  const times = [
+    "10 AM – 12 PM",
+    "12 PM – 2 PM",
+    "2 PM – 4 PM"
+  ];
 
   return (
     <section className="contact-section">
@@ -102,7 +111,6 @@ const Contact = () => {
         {/* RIGHT FORM */}
         <form className="contact-form" onSubmit={handleSubmit}>
           <h2>Send us a Message</h2>
-          <p>We’d love to hear from you.</p>
 
           {error && <span className="error">{error}</span>}
 
@@ -137,12 +145,33 @@ const Contact = () => {
             />
           </div>
 
-          <textarea
-            name="message"
-            placeholder="Your message *"
-            value={form.message}
-            onChange={handleChange}
-          ></textarea>
+          <div className="custom-select">
+            <div
+              className="select-box"
+              onClick={() => setOpen(!open)}
+            >
+              {form.time_slot || "Preferred Contact Time *"}
+            </div>
+
+            {open && (
+              <div className="select-menu">
+                {times.map(t => (
+                  <div
+                    key={t}
+                    className="select-item"
+                    onClick={() => {
+                      setForm({...form, time_slot: t});
+                      setOpen(false);
+                    }}
+                  >
+                    {t}
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+
+          <textarea name="message" placeholder="Your message *" value={form.message} onChange={handleChange}></textarea>
 
           <button type="submit">Send Now</button>
         </form>
