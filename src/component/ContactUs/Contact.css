@@ -11,13 +11,14 @@
   font-family: "Poppins", sans-serif;
 }
 
-.popular-h1-span{
-    margin-top: 30px;
+.popular-h1-span {
+  margin-top: 30px;
 }
+
 /* ===== CONTACT SECTION ===== */
 .contact-section {
   padding: 130px 20px 60px;
-  background: url("../../../public/assets//Img/World\ map\ texture\ copy\ 2.png") #ffffff;
+  background: url("../../../public/assets//Img/World map texture copy 2.png") #ffffff;
 }
 
 .contact-container {
@@ -67,15 +68,9 @@
 }
 
 @keyframes pulse {
-  0% {
-    box-shadow: 0 0 0 0 rgba(10, 35, 81, 0.4);
-  }
-  70% {
-    box-shadow: 0 0 0 14px rgba(10, 35, 81, 0);
-  }
-  100% {
-    box-shadow: 0 0 0 0 rgba(10, 35, 81, 0);
-  }
+  0% { box-shadow: 0 0 0 0 rgba(10, 35, 81, 0.4); }
+  70% { box-shadow: 0 0 0 14px rgba(10, 35, 81, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(10, 35, 81, 0); }
 }
 
 .info-text h4 {
@@ -103,6 +98,7 @@
   font-size: 26px;
   font-weight: 600;
   color: var(--brand-main);
+  margin-bottom: 20px;
 }
 
 .contact-form p {
@@ -118,7 +114,7 @@
   margin-bottom: 12px;
 }
 
-/* INPUTS */
+/* ===== INPUTS ===== */
 .form-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -133,14 +129,15 @@
   border-radius: 12px;
   border: 1px solid #e2e8f0;
   font-size: 14px;
-  outline: none;
   transition: 0.3s;
+  background: #fff;
+  outline: none;
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
   border-color: var(--brand-main);
-  box-shadow: 0 0 0 2px rgba(10, 35, 81, 0.15);
+  box-shadow: 0 0 0 2px rgba(10, 35, 81, 0.18);
 }
 
 .contact-form textarea {
@@ -149,7 +146,62 @@
   margin-bottom: 22px;
 }
 
-/* BUTTON */
+/* ===== CUSTOM DROPDOWN (NO BLUE BUG) ===== */
+
+.custom-select {
+  position: relative;
+  margin-bottom: 18px;
+  user-select: none;
+}
+
+.select-box {
+  padding: 14px 16px;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  background: #fff;
+  cursor: pointer;
+  transition: .25s;
+}
+
+.select-box:hover {
+  border-color: var(--brand-main);
+}
+
+.select-box.active {
+  border-color: var(--brand-main);
+  box-shadow: 0 0 0 2px rgba(10, 35, 81, 0.18);
+}
+
+.select-menu {
+  position: absolute;
+  width: 100%;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(0,0,0,.15);
+  margin-top: 6px;
+  overflow: hidden;
+  z-index: 100;
+  animation: drop .18s ease;
+}
+
+@keyframes drop {
+  from { opacity: 0; transform: translateY(-6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.select-item {
+  padding: 12px 16px;
+  cursor: pointer;
+  transition: .2s;
+  font-size: 14px;
+}
+
+.select-item:hover {
+  background: var(--brand-main);
+  color: #ffffff;
+}
+
+/* ===== BUTTON ===== */
 .contact-form button {
   width: 100%;
   padding: 15px;
