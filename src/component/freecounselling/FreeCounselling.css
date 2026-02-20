@@ -94,3 +94,20 @@ button:hover {
     flex-direction: column;
   }
 }
+.slot-booking button {
+  padding: 12px 20px;
+  background-color: #0a2351;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.slot-booking{
+  max-width: 550px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  margin: 0 auto;
+}
