@@ -81,7 +81,7 @@ const Header = () => {
               PTE
             </li>
 
-            <li style={{ "--i": 5 }}>About Us</li>
+            <li style={{ "--i": 5 }} onClick={()=>goToPage("/about-us")}>About Us</li>
 
             {/* ✅ BLOGS FIX */}
             <li style={{ "--i": 6 }} onClick={() => goToPage("/blogs")}>

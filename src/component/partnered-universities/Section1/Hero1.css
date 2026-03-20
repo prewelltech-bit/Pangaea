@@ -59,7 +59,6 @@
 
 /* RIGHT */
 .edwise-right {
-  flex: 1;
   position: relative;
   display: flex;
   justify-content: center;
@@ -67,7 +66,7 @@
 
 .edwise-right img {
   width: 100%;
-  max-width: 420px;
+  max-width: 500px;
   border-radius: 16px;
-  z-index: 2;
+  z-index: 1;
 }
