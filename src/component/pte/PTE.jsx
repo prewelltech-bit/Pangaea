@@ -1,6 +1,6 @@
 import React from "react";
 import "./PTE.css";
-import pteImg from "../../../public/assets/Img/event-image.jpg"; 
+import pteImg from "../../../public/assets/Img/pte/pte-footer.png"; 
 
 const PTE = () => {
   return (

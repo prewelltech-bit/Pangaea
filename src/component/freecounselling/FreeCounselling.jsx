@@ -1,9 +1,11 @@
 import React from "react";
 import "./FreeCounselling.css";
+import SlotSelector from "./SlotSelecter";
 
 const FreeCounselling = () => {
   return (
     <section className="counselling-container">
+      <SlotSelector/>
       <div className="counselling-box">
         <h2>Get FREE Counselling Today!</h2>
         <p>Enter your details and our expert will reach out to you to discuss <br /> your plans. By the way, all our services are free!</p>

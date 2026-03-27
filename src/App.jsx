@@ -22,43 +22,45 @@ import UKBlogs from "./component/Blogs/UKBlogs";
 import TermsAndCondition from "./component/Terms&Condition/TermsAndCondition";
 import PrivacyPolice from "./component/PrivacyPolice/PrivacyPolice";
 import AboutUs from "./component/AboutUS/AboutUs";
+import WhatsAppChat from "./component/WhatsAppChat";
 // import Footer1 from "./Footer/Footer1";
 
 const App = () => {
   return (
-    <BrowserRouter>
-      <Header />
+    <>
+      <BrowserRouter>
+        <Header />
 
-      <Routes>
-        <Route path="/" element={<Body />} />
-        <Route
-          path="/partnered-universities"
-          element={<PartneredUniversities />}
-        />
-        <Route path="/study/australia" element={<Au />} />
-        <Route path="/study/uk" element={<Uk />} />
-        <Route path="/study/canada" element={<CanadaCountry />} />
-        <Route path="/study/new-zealand" element={<NewZealand />} />
-        <Route path="/study/europe" element={<Europe />} />
-        <Route path="/study/united-states" element={<Us />} />
+        <Routes>
+          <Route path="/" element={<Body />} />
+          <Route
+            path="/partnered-universities"
+            element={<PartneredUniversities />}
+          />
+          <Route path="/study/australia" element={<Au />} />
+          <Route path="/study/uk" element={<Uk />} />
+          <Route path="/study/canada" element={<CanadaCountry />} />
+          <Route path="/study/new-zealand" element={<NewZealand />} />
+          <Route path="/study/europe" element={<Europe />} />
+          <Route path="/study/united-states" element={<Us />} />
 
-        <Route path="/Contact" element={<Contact />} />
-        <Route path="/pte" element={<PTE />} />
-        <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/Contact" element={<Contact />} />
+          <Route path="/pte" element={<PTE />} />
+          <Route path="/about-us" element={<AboutUs />} />
 
+          <Route path="/blogs" element={<Blogs />} />
+          <Route path="/australia-blog" element={<AustraliaBlog />} />
+          <Route path="/canada-blog" element={<CanadaBlogs />} />
+          <Route path="/uk-blog" element={<UKBlogs />} />
 
-        <Route path="/blogs" element={<Blogs />} />
-        <Route path="/australia-blog" element={<AustraliaBlog />} />
-        <Route path="/canada-blog" element={<CanadaBlogs />} />
-        <Route path="/uk-blog" element={<UKBlogs />} />
-
-        <Route path="/terms" element={<TermsAndCondition />} />
-        <Route path="/privacy-policy" element={<PrivacyPolice />} />
-
-      </Routes>
-      {/* <Footer1 /> */}
-      <Footer />
-    </BrowserRouter>
+          <Route path="/terms" element={<TermsAndCondition />} />
+          <Route path="/privacy-policy" element={<PrivacyPolice />} />
+        </Routes>
+        {/* <Footer1 /> */}
+        <Footer />
+      </BrowserRouter>
+      <WhatsAppChat />
+    </>
   );
 };
 

@@ -12,7 +12,7 @@ function CounselingDemo() {
       return;
     }
 
-    const { data , error } = await supabase
+    const { error } = await supabase
       .from("slot")
       .insert([{ first_name: name }]);
 

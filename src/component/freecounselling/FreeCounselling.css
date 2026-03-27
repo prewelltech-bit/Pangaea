@@ -3,9 +3,15 @@
   font-family: "Poppins", sans-serif;
 }
 
-.counselling-container {
+/* .counselling-container {
   padding: 80px 20px;
   background-color: #0a2351;
+
+} */
+.counselling-booking {
+  padding: 80px 20px;
+  background-color: #0a2351;
+
 }
 * {
   box-sizing: border-box;
@@ -89,11 +95,15 @@ button:hover {
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .form-row {
+    flex-direction:column;
+  }
+  .counselling-form{
     flex-direction: column;
   }
 }
+
 .slot-booking button {
   padding: 12px 20px;
   background-color: #0a2351;
@@ -110,4 +120,15 @@ button:hover {
   display: flex;
   gap: 10px;
   margin: 0 auto;
+}
+.slot-heading
+{
+  text-align: center;
+  color: #e8eaff;
+  /* font-weight: bolder; */
+  /* border-bottom: 2px solid  #666; */
+  /* box-shadow: #032157; */
+  border-radius: 0 0 50% 50%;
+  font-size: 35px;
+  /* box-shadow: 0 20px 80px rgba(255, 255, 255, 0.2); */
 }

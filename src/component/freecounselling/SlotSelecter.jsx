@@ -5,10 +5,6 @@ import "./FreeCounselling.css";
 function SlotSelector({ selectedSlot, setSelectedSlot }) {
   const [slots, setSlots] = useState([]);
 
-  useEffect(() => {
-    fetchSlots();
-  }, []);
-
   async function fetchSlots() {
     const { data, error } = await supabase
       .from("slots")
@@ -21,12 +17,16 @@ function SlotSelector({ selectedSlot, setSelectedSlot }) {
       setSlots(data);
     }
   }
-
+  useEffect(() => {
+    fetchSlots();
+  }, []);
   return (
     <div>
-      <h3>Select Time Slot</h3>
-
-      <div style={{ display: "flex", flexWrap: "wrap", gap: "10px" }} className="slot-booking">
+      <h3 className="slot-heading">Select Time Slot</h3>
+      <div
+        style={{ display: "flex", flexWrap: "wrap", gap: "10px" }}
+        className="slot-booking"
+      >
         {slots.map((slot) => (
           <button
             key={slot.id}

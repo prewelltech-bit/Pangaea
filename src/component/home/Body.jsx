@@ -12,6 +12,7 @@ import Blogs from "../Blogs/Blogs";
 import CounselingDemo from "../freecounselling/CounselingDemo";
 import SlotSelector from "../freecounselling/SlotSelecter";
 import BookingForm from "../freecounselling/Booking";
+import "../freecounselling/FreeCounselling.css";
 const Body = () => {
   const [selectedSlot, setSelectedSlot] = useState(null);
   return (
@@ -25,19 +26,18 @@ const Body = () => {
       {/* <Demo /> */}
 
       <DreamDestination />
-      <FreeCounselling />
-      <PopularStudy />
-      <TrendingCourses />
-      <Blogs />
-
-      <div>
+      <div className="counselling-booking">
         <SlotSelector
           selectedSlot={selectedSlot}
           setSelectedSlot={setSelectedSlot}
         />
         <BookingForm selectedSlot={selectedSlot} />
       </div>
-      <CounselingDemo />
+      {/* <CounselingDemo /> */}
+      {/* <FreeCounselling /> */}
+      <PopularStudy />
+      <TrendingCourses />
+      <Blogs />
     </>
   );
 };
