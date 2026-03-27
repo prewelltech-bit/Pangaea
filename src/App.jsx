@@ -15,7 +15,7 @@ import AustraliaBlog from "./component/Blogs/AustraliaBlog";
 import Au from "./component/StudyAbroad/Australia/Au";
 import CanadaCountry from "./component/StudyAbroad/canada/CanadaCountry";
 import NewZealand from "./component/StudyAbroad/NewZealand/NewZealand";
-import Europe from "./component/StudyAbroad/europe/europe";
+import Europe from "./component/StudyAbroad/europe/Europe";
 import Us from "./component/StudyAbroad/US/Us";
 import CanadaBlogs from "./component/Blogs/CanadaBlogs";
 import UKBlogs from "./component/Blogs/UKBlogs";
