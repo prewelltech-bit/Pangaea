@@ -70,3 +70,38 @@
   border-radius: 16px;
   z-index: 1;
 }
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .edwise-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .edwise-left p {
+    margin: 24px auto 0;
+  }
+
+  .edwise-left h1 {
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .edwise-section {
+    padding: 60px 0;
+  }
+
+  .edwise-left h1 {
+    font-size: 2rem;
+  }
+
+  .edwise-left p {
+    font-size: 0.95rem;
+  }
+
+  .edwise-right img {
+    max-width: 100%;
+  }
+}
