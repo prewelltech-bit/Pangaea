@@ -9,7 +9,7 @@ const Footer = () => {
   const { ref, isInView } = useRevealAnimation(0.4);
 
   return (
-    <motion.div 
+    <motion.div
       className="footer7-wrapper"
       ref={ref}
       initial="hidden"
@@ -23,7 +23,7 @@ const Footer = () => {
 
             {/* Brand */}
             <motion.div className="footer7-brand" variants={getDirectionVariants('left')}>
-              <img src="/assets/Logo/pp-2.png" alt="Pangaea Pathways Logo" className="footer7-logo" />
+              <img src="/public/assets/Logo/pp-2.png" alt="Pangaea Pathways Logo" className="footer7-logo" />
             </motion.div>
 
             {/* Links */}
