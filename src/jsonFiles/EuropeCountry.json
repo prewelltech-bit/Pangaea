@@ -4,7 +4,6 @@
     "target_students": "Indian Students",
     "image": "/assets/Img/Europe/Europe_overview.jpg",
     "overview": "Europe is one of the most popular study destinations for international students due to its high-quality education system, affordable tuition fees, globally recognised degrees, and strong career opportunities. Many European countries offer English-taught programs, scholarships, and post-study work options, making Europe an excellent choice for global education and international exposure.",
-    
     "study_options": [
       "Diploma Programs",
       "Bachelorâ€™s Degrees",
@@ -13,46 +12,44 @@
       "Medical Programs (MBBS)",
       "Engineering Specialisations"
     ],
-
     "whyStudyInEurope": [
       {
         "id": 1,
-        "icon": "ðŸŽ“",
+        "icon": "🎓",
         "title": "Globally Recognised Universities",
         "description": "Europe is home to some of the world's top-ranked universities known for academic excellence, innovation, and research-driven education."
       },
       {
         "id": 2,
-        "icon": "ðŸ’°",
+        "icon": "💰",
         "title": "Affordable & Tuition-Free Options",
         "description": "Countries like Germany offer tuition-free or low-cost public universities, making Europe highly affordable compared to other destinations."
       },
       {
         "id": 3,
-        "icon": "ðŸŒ",
+        "icon": "🌍",
         "title": "English-Taught Programs",
         "description": "Thousands of programs across Europe are available in English, especially in countries like Germany, Netherlands, Sweden, and Finland."
       },
       {
         "id": 4,
-        "icon": "ðŸ’¼",
+        "icon": "💼",
         "title": "Post-Study Work Opportunities",
         "description": "Many European countries offer stay-back options after graduation to gain international work experience."
       },
       {
         "id": 5,
-        "icon": "ðŸ§‘â€ðŸ’»",
+        "icon": "🧑‍💻",
         "title": "Work While Studying",
         "description": "International students are allowed to work part-time during studies to support their living expenses."
       },
       {
         "id": 6,
-        "icon": "âœˆï¸",
+        "icon": "✈️",
         "title": "Schengen Travel Benefits",
         "description": "Students can travel freely across 27 Schengen countries, enhancing cultural exposure and networking opportunities."
       }
     ],
-
     "popular_fields": [
       "Engineering",
       "Information Technology",
@@ -62,7 +59,6 @@
       "Medical (MBBS)",
       "Environmental Sciences"
     ],
-
     "top_universities": [
       "Technical University of Munich",
       "University of Amsterdam",
@@ -73,7 +69,6 @@
       "Politecnico di Milano",
       "Lund University"
     ],
-
     "popular_countries": [
       "Germany",
       "Italy",
@@ -83,24 +78,20 @@
       "Finland",
       "Austria"
     ],
-
     "eligibility": {
       "bachelor": "12th pass with 60â€“70%",
       "masters": "Relevant bachelorâ€™s degree with 60â€“65%",
       "notes": "Some programs may require entrance exams, portfolio, or work experience."
     },
-
     "english_requirements": {
       "IELTS": "6.0â€“6.5",
       "PTE": "50â€“60",
       "TOEFL_iBT": "70â€“90"
     },
-
     "costs": {
       "tuition_fees_EUR_per_year": "0â€“20,000",
       "living_cost_EUR_per_year": "8,000â€“15,000"
     },
-
     "scholarships": [
       "Erasmus+",
       "DAAD Scholarships (Germany)",
@@ -108,26 +99,20 @@
       "Swedish Institute Scholarships",
       "University Merit Scholarships"
     ],
-
     "work_rights": "Part-time work allowed during studies (usually 20 hours per week depending on country).",
-
     "pr_options": [
       "Germany 18-month Job Seeker Visa",
       "Netherlands Orientation Year Visa",
       "Sweden Post-Study Residence Permit",
       "EU Blue Card Pathway"
     ],
-
     "intakes": [
       "September (Main Intake)",
       "January (Limited Programs)"
     ],
-
     "application_timeline": {
       "apply_before": "6â€“8 months",
       "visa_processing": "4â€“12 weeks (varies by country)"
     }
   }
 ]
-
-

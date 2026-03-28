@@ -15,37 +15,37 @@
     "whyStudyInUk": [
       {
         "id": 1,
-        "icon": "ðŸŽ“",
+        "icon": "🎓",
         "title": "World-Renowned Universities",
         "description": "The UK is home to top universities like Oxford, Cambridge, and Imperial College London. UK degrees are globally recognized and highly valued by employers."
       },
       {
         "id": 2,
-        "icon": "â±",
+        "icon": "⏱️",
         "title": "Shorter Course Duration",
-        "description": "Most undergraduate courses are 3 years and masterâ€™s programs are just 1 year, saving both time and money compared to other countries."
+        "description": "Most undergraduate courses are 3 years and master’s programs are just 1 year, saving both time and money compared to other countries."
       },
       {
         "id": 3,
-        "icon": "ðŸ’¼",
+        "icon": "💼",
         "title": "Post-Study Work Opportunities",
         "description": "The Graduate Route Visa allows international students to stay and work in the UK for 2 years (3 years for PhD graduates) after completing their studies."
       },
       {
         "id": 4,
-        "icon": "ðŸŒ",
+        "icon": "🌍",
         "title": "Multicultural Environment",
         "description": "Students from over 180+ countries study in the UK, making it a culturally diverse and welcoming place to live and learn."
       },
       {
         "id": 5,
-        "icon": "ðŸ§‘â€ðŸ’»",
+        "icon": "🧑‍💻",
         "title": "Work While Studying",
         "description": "International students can work up to 20 hours per week during term time and full-time during holidays to support living expenses and gain experience."
       },
       {
         "id": 6,
-        "icon": "ðŸ“š",
+        "icon": "📚",
         "title": "High-Quality Education System",
         "description": "UK education focuses on practical learning, critical thinking, and research-based study, preparing students for real-world challenges."
       }
@@ -104,4 +104,3 @@
     }
   }
 ]
-

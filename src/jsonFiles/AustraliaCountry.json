@@ -14,37 +14,37 @@
     "whyStudyInAustralia": [
       {
         "id": 1,
-        "icon": "ðŸŽ“",
+        "icon": "🎓",
         "title": "World-Class Universities",
         "description": "Australia is home to globally ranked universities such as the University of Melbourne, Australian National University, and the University of Sydney, offering internationally recognized qualifications."
       },
       {
         "id": 2,
-        "icon": "ðŸŒ",
+        "icon": "🌏",
         "title": "Globally Recognized Degrees",
         "description": "Australian degrees are respected worldwide and valued by employers for their strong academic standards, practical approach, and industry relevance."
       },
       {
         "id": 3,
-        "icon": "ðŸ’¼",
+        "icon": "💼",
         "title": "Post-Study Work Opportunities",
         "description": "International students can stay and work in Australia after graduation through post-study work visas, gaining valuable international work experience."
       },
       {
         "id": 4,
-        "icon": "ðŸŒ",
+        "icon": "🌍",
         "title": "Multicultural & Safe Environment",
         "description": "Australia is a safe and welcoming country with students from over 190 countries, offering a multicultural lifestyle and strong support for international students."
       },
       {
         "id": 5,
-        "icon": "ðŸ§‘â€ðŸ’»",
+        "icon": "🧑‍💻",
         "title": "Work While Studying",
         "description": "International students are allowed to work part-time during their studies and full-time during scheduled breaks to help manage living expenses."
       },
       {
         "id": 6,
-        "icon": "ðŸ“š",
+        "icon": "📚",
         "title": "High-Quality Education System",
         "description": "The Australian education system emphasizes practical learning, innovation, research, and industry-focused training to prepare students for global careers."
       }
@@ -105,4 +105,3 @@
     }
   }
 ]
-

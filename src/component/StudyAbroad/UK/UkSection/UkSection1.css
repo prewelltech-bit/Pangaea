@@ -7,7 +7,7 @@
   container: 1200px;
 }
 .uk-section {
-  background: url("/assets/img/UK.jpg");
+  background: url("/public/assets/img/UK.jpg");
   background-size: cover;
   background-position: center;
   padding-top: 40px;

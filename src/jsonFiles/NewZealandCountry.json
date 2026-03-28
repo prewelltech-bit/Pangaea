@@ -15,37 +15,37 @@
     "whyStudyInNewZealand": [
       {
         "id": 1,
-        "icon": "ðŸŽ“",
+        "icon": "🎓",
         "title": "Globally Recognised Education",
         "description": "New Zealand qualifications are recognised worldwide and follow a practical, industry-focused learning approach."
       },
       {
         "id": 2,
-        "icon": "ðŸ›¡",
+        "icon": "🛡️",
         "title": "Safe & Peaceful Country",
         "description": "New Zealand consistently ranks among the safest countries in the world, offering a secure environment for international students."
       },
       {
         "id": 3,
-        "icon": "ðŸ’¼",
+        "icon": "💼",
         "title": "Post-Study Work Opportunities",
-        "description": "International students can stay and work in New Zealand for 1â€“3 years after graduation under the Post Study Work Visa."
+        "description": "International students can stay and work in New Zealand for 1–3 years after graduation under the Post Study Work Visa."
       },
       {
         "id": 4,
-        "icon": "ðŸŒ",
+        "icon": "🌏",
         "title": "Excellent Quality of Life",
         "description": "New Zealand offers a balanced lifestyle with clean cities, natural beauty, and a welcoming multicultural society."
       },
       {
         "id": 5,
-        "icon": "ðŸ§‘â€ðŸ’»",
+        "icon": "🧑‍💻",
         "title": "Work While Studying",
         "description": "Students can work up to 25 hours per week during study and full-time during scheduled holidays."
       },
       {
         "id": 6,
-        "icon": "ðŸ“ˆ",
+        "icon": "📈",
         "title": "PR & Long-Term Opportunities",
         "description": "Clear pathways are available for permanent residency under the Skilled Migrant Category."
       }
@@ -103,5 +103,3 @@
     }
   }
 ]
-
-

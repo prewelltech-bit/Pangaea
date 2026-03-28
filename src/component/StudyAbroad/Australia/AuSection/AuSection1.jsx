@@ -13,7 +13,7 @@ const AuSection1 = () => {
   return (
     <>
 
-    
+
       {/* Australia hero section */}
       {AuCountry.map((section, index) => (
         <div className="Au-section" key={index}>

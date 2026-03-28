@@ -19,7 +19,7 @@
     "approxFees": "AUD 45,000 â€“ 55,000 per year",
     "link": "https://www.unimelb.edu.au",
     "region": "Victoria",
-    "images": "..//assets/Img/AuCountry/university-of-melbourne.jpeg"
+    "images": "/public/assets/Img/AuCountry/university-of-melbourne.jpeg"
   },
   {
     "name": "University of Sydney",
@@ -63,7 +63,7 @@
     "approxFees": "AUD 42,000 â€“ 50,000 per year",
     "link": "https://www.uq.edu.au",
     "region": "Queensland",
-     "images": "..//assets/Img/AuCountry/University-of-Queensland-1200x812.webp"
+    "images": "..//assets/Img/AuCountry/University-of-Queensland-1200x812.webp"
   },
   {
     "name": "University of Western Australia",
@@ -85,7 +85,7 @@
     "approxFees": "AUD 37,000 â€“ 45,000 per year",
     "link": "https://www.adelaide.edu.au",
     "region": "South Australia",
-     "images": "..//assets/Img/AuCountry/University of Adelaide.jpeg"
+    "images": "..//assets/Img/AuCountry/University of Adelaide.jpeg"
   },
   {
     "name": "University of Technology Sydney",
@@ -96,7 +96,7 @@
     "approxFees": "AUD 38,000 â€“ 46,000 per year",
     "link": "https://www.uts.edu.au",
     "region": "New South Wales",
-     "images": "..//assets/Img/AuCountry/University of Technology Sydney (UTS).jpeg"
+    "images": "..//assets/Img/AuCountry/University of Technology Sydney (UTS).jpeg"
   },
   {
     "name": "Macquarie University",
@@ -107,7 +107,7 @@
     "approxFees": "AUD 36,000 â€“ 44,000 per year",
     "link": "https://www.mq.edu.au",
     "region": "New South Wales",
-     "images": "..//assets/Img/AuCountry/Macquarie University.jpeg"
+    "images": "..//assets/Img/AuCountry/Macquarie University.jpeg"
   },
   {
     "name": "RMIT University",
@@ -118,7 +118,7 @@
     "approxFees": "AUD 35,000 â€“ 45,000 per year",
     "link": "https://www.rmit.edu.au",
     "region": "Victoria",
-     "images": "..//assets/Img/AuCountry/RMIT University.jpeg"
+    "images": "..//assets/Img/AuCountry/RMIT University.jpeg"
   },
   {
     "name": "Deakin University",
@@ -140,7 +140,7 @@
     "approxFees": "AUD 34,000 â€“ 43,000 per year",
     "link": "https://www.qut.edu.au",
     "region": "Queensland",
-     "images": "..//assets/Img/AuCountry/Queensland University of Technology (QUT).jpeg"
+    "images": "..//assets/Img/AuCountry/Queensland University of Technology (QUT).jpeg"
   },
   {
     "name": "La Trobe University",
@@ -151,7 +151,7 @@
     "approxFees": "AUD 33,000 â€“ 42,000 per year",
     "link": "https://www.latrobe.edu.au",
     "region": "Victoria",
-     "images": "..//assets/Img/AuCountry/La Trobe University.jpeg"
+    "images": "..//assets/Img/AuCountry/La Trobe University.jpeg"
   },
   {
     "name": "Swinburne University of Technology",
@@ -162,7 +162,7 @@
     "approxFees": "AUD 32,000 â€“ 40,000 per year",
     "link": "https://www.swinburne.edu.au",
     "region": "Victoria",
-     "images": "..//assets/Img/AuCountry/Swinburne University of Technology.jpeg"
+    "images": "..//assets/Img/AuCountry/Swinburne University of Technology.jpeg"
   },
   {
     "name": "Curtin University",
@@ -173,7 +173,7 @@
     "approxFees": "AUD 34,000 â€“ 42,000 per year",
     "link": "https://www.curtin.edu.au",
     "region": "Western Australia",
-     "images": "..//assets/Img/AuCountry/Curtin University.jpeg"
+    "images": "..//assets/Img/AuCountry/Curtin University.jpeg"
   },
   {
     "name": "Griffith University",
@@ -184,7 +184,7 @@
     "approxFees": "AUD 32,000 â€“ 40,000 per year",
     "link": "https://www.griffith.edu.au",
     "region": "Queensland",
-     "images": "..//assets/Img/AuCountry/Griffith University.avif"
+    "images": "..//assets/Img/AuCountry/Griffith University.avif"
   },
   {
     "name": "University of Tasmania",
@@ -195,7 +195,7 @@
     "approxFees": "AUD 30,000 â€“ 38,000 per year",
     "link": "https://www.utas.edu.au",
     "region": "Tasmania",
-     "images": "..//assets/Img/AuCountry/University of Tasmania.jpeg"
+    "images": "..//assets/Img/AuCountry/University of Tasmania.jpeg"
   },
   {
     "name": "Flinders University",
@@ -206,7 +206,7 @@
     "approxFees": "AUD 30,000 â€“ 40,000 per year",
     "link": "https://www.flinders.edu.au",
     "region": "South Australia",
-     "images": "..//assets/Img/AuCountry/Flinders University.jpeg"
+    "images": "..//assets/Img/AuCountry/Flinders University.jpeg"
   },
   {
     "name": "Australian Catholic University",
@@ -228,7 +228,7 @@
     "approxFees": "AUD 30,000 â€“ 38,000 per year",
     "link": "https://www.canberra.edu.au",
     "region": "Australian Capital Territory",
-     "images": "..//assets/Img/AuCountry/University of Canberra.jpeg"
+    "images": "..//assets/Img/AuCountry/University of Canberra.jpeg"
   },
   {
     "name": "Charles Darwin University",
@@ -239,7 +239,7 @@
     "approxFees": "AUD 27,000 â€“ 35,000 per year",
     "link": "https://www.cdu.edu.au",
     "region": "Northern Territory",
-     "images": "..//assets/Img/AuCountry/Charles Darwin University.jpeg"
+    "images": "..//assets/Img/AuCountry/Charles Darwin University.jpeg"
   },
   {
     "name": "Bond University",
@@ -250,7 +250,6 @@
     "approxFees": "AUD 45,000 â€“ 55,000 per year",
     "link": "https://bond.edu.au",
     "region": "Queensland",
-     "images": "..//assets/Img/AuCountry/Bond University.jpeg"
+    "images": "..//assets/Img/AuCountry/Bond University.jpeg"
   }
 ]
-
