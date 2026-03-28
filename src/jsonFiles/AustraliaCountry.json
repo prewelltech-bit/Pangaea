@@ -1,50 +1,50 @@
-[
+﻿[
   {
     "name": "Australia",
     "target_students": "Indian Students",
-    "image": "../../public/assets/Img/AuCountry/Au-overview.jpg",
+    "image": "/assets/Img/AuCountry/Au-overview.jpg",
     "overview": "Australia is a leading global study destination, renowned for its world-class education, safe and welcoming environment, multicultural society, and internationally recognized qualifications. With top-ranked universities, industry-focused programs, and excellent post-study opportunities, Australia offers students the perfect balance of academic excellence, global exposure, and a high quality of life.",
     "study_options": [
       "Diploma & Advanced Diploma",
-      "Bachelor’s Degrees",
-      "Master’s Programs",
+      "Bachelorâ€™s Degrees",
+      "Masterâ€™s Programs",
       "PhD & Research Programs",
       "Vocational Education & Training (VET)"
     ],
     "whyStudyInAustralia": [
       {
         "id": 1,
-        "icon": "🎓",
+        "icon": "ðŸŽ“",
         "title": "World-Class Universities",
         "description": "Australia is home to globally ranked universities such as the University of Melbourne, Australian National University, and the University of Sydney, offering internationally recognized qualifications."
       },
       {
         "id": 2,
-        "icon": "🌏",
+        "icon": "ðŸŒ",
         "title": "Globally Recognized Degrees",
         "description": "Australian degrees are respected worldwide and valued by employers for their strong academic standards, practical approach, and industry relevance."
       },
       {
         "id": 3,
-        "icon": "💼",
+        "icon": "ðŸ’¼",
         "title": "Post-Study Work Opportunities",
         "description": "International students can stay and work in Australia after graduation through post-study work visas, gaining valuable international work experience."
       },
       {
         "id": 4,
-        "icon": "🌍",
+        "icon": "ðŸŒ",
         "title": "Multicultural & Safe Environment",
         "description": "Australia is a safe and welcoming country with students from over 190 countries, offering a multicultural lifestyle and strong support for international students."
       },
       {
         "id": 5,
-        "icon": "🧑‍💻",
+        "icon": "ðŸ§‘â€ðŸ’»",
         "title": "Work While Studying",
         "description": "International students are allowed to work part-time during their studies and full-time during scheduled breaks to help manage living expenses."
       },
       {
         "id": 6,
-        "icon": "📚",
+        "icon": "ðŸ“š",
         "title": "High-Quality Education System",
         "description": "The Australian education system emphasizes practical learning, innovation, research, and industry-focused training to prepare students for global careers."
       }
@@ -69,39 +69,40 @@
       "Macquarie University"
     ],
     "eligibility": {
-      "bachelor": "12th pass with 60–70%",
-      "masters": "Relevant bachelor’s degree with 60–65%",
+      "bachelor": "12th pass with 60â€“70%",
+      "masters": "Relevant bachelorâ€™s degree with 60â€“65%",
       "notes": "Some courses may require work experience"
     },
     "english_requirements": {
-      "IELTS": "6.0–6.5",
-      "PTE": "50–58",
-      "TOEFL_iBT": "60–79"
+      "IELTS": "6.0â€“6.5",
+      "PTE": "50â€“58",
+      "TOEFL_iBT": "60â€“79"
     },
     "costs": {
-      "tuition_fees_AUD_per_year": "18,000–40,000",
+      "tuition_fees_AUD_per_year": "18,000â€“40,000",
       "living_cost_AUD_per_year": "29,710"
     },
     "scholarships": [
       "Australia Awards",
       "Destination Australia Scholarships",
       "University Merit Scholarships",
-      "Tuition fee waivers (10%–50%)"
+      "Tuition fee waivers (10%â€“50%)"
     ],
     "work_rights": "Up to 24 hours per week during study and unlimited hours during scheduled breaks",
     "pr_options": [
       "Subclass 189",
       "Subclass 190",
       "Subclass 491",
-      "Post Study Work Visa (Subclass 485: 2–4 years)"
+      "Post Study Work Visa (Subclass 485: 2â€“4 years)"
     ],
     "intakes": [
       "February",
-      "June–July"
+      "Juneâ€“July"
     ],
     "application_timeline": {
-      "apply_before": "6–9 months",
-      "visa_processing": "4–8 weeks"
+      "apply_before": "6â€“9 months",
+      "visa_processing": "4â€“8 weeks"
     }
   }
 ]
+

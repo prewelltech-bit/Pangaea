@@ -57,7 +57,7 @@ const DreamDestination = () => {
         </div>
 
         <div className="dream-image">
-          <img src="public/assets/img/d-2.png" alt="Dream" />
+          <img src="/assets/img/d-2.png" alt="Dream" />
         </div>
       </div>
 

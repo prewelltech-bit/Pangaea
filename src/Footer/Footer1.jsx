@@ -35,7 +35,7 @@ const Footer = () => {
               variants={getDirectionVariants("left")}
             >
               <img
-                src="/public/assets/Logo/PP-2.png"
+                src="/assets/Logo/PP-2.png"
                 alt="Pangaea Pathways Logo"
                 // className="footer7-logo"
               />

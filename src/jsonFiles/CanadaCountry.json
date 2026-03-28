@@ -1,33 +1,33 @@
-[
+﻿[
     {
         "name": "Canada",
-        "flag": "🇨🇦",
+        "flag": "ðŸ‡¨ðŸ‡¦",
         "title": "Study in Canada",
         "desc": "Explore top universities, diverse programs, and excellent career opportunities for Indian students in Canada. Discover why Canada is a preferred study destination with its high-quality education, multicultural environment, and post-study work options.",
-        "image": "../../public/assets/img/canada/Ca-overview.jpg",
+        "image": "/assets/img/canada/Ca-overview.jpg",
         "target_students": "Indian Students",
         "whyStudyInCanada": [
             {
                 "id": 1,
-                "icon": "🎓",
+                "icon": "ðŸŽ“",
                 "title": "Globally Recognized Education",
                 "description": "Canada offers internationally recognized degrees with high academic standards, research opportunities, and strong industry connections."
             },
             {
                 "id": 2,
-                "icon": "💼",
+                "icon": "ðŸ’¼",
                 "title": "Work While Studying",
                 "description": "International students can work up to 24 hours per week during their studies, allowing them to gain practical experience and support their living expenses."
             },
             {
                 "id": 3,
-                "icon": "💰",
+                "icon": "ðŸ’°",
                 "title": "GIC Financial Requirement",
                 "description": "Students must deposit around 22,895 CAD as a Guaranteed Investment Certificate (GIC), ensuring sufficient funds for living expenses in Canada."
             },
             {
                 "id": 4,
-                "icon": "🌍",
+                "icon": "ðŸŒ",
                 "title": "Safe & Multicultural Country",
                 "description": "Canada is known for its safe environment, welcoming communities, and diverse multicultural society, making it a preferred destination for international students."
             }
@@ -91,3 +91,4 @@
         ]
     }
 ]
+

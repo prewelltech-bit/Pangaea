@@ -14,7 +14,7 @@
 /* ===== Welcome Background ===== */
 .welcome-section {
   height: 100vh;
-  background-image: url("/public/assets/Img/event-image.jpg");
+  background-image: url("/assets/Img/event-image.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
