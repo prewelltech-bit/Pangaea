@@ -4,7 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { useRevealAnimation, staggerContainerVariants, getDirectionVariants } from "../hooks/useRevealAnimation";
 import { Link } from "react-router-dom";
-
+import logo from "../../public/assets/Logo/PP-2.png"
 const Footer = () => {
   const { ref, isInView } = useRevealAnimation(0.4);
 
@@ -23,7 +23,7 @@ const Footer = () => {
 
             {/* Brand */}
             <motion.div className="footer7-brand" variants={getDirectionVariants('left')}>
-              <img src="../../public/assets/Logo/PP-2.png" alt="Pangaea Pathways Logo" className="footer7-logo" />
+              <img src={logo} alt="Pangaea Pathways Logo" className="footer7-logo" />
             </motion.div>
 
             {/* Links */}
