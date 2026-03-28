@@ -18,6 +18,7 @@ function SlotSelector({ selectedSlot, setSelectedSlot }) {
     }
   }
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     fetchSlots();
   }, []);
   return (

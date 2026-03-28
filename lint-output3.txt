@@ -1,0 +1,11 @@
+﻿
+> pangea@0.0.0 lint
+> eslint .
+
+
+D:\preewel-office\Pangaea-main\Pangaea\src\component\home\HomeBody\Section3\SuccessStories.jsx
+  42:3  warning  Unused eslint-disable directive (no problems were reported from 'react-hooks/refs')
+
+Γ£û 1 problem (0 errors, 1 warning)
+  0 errors and 1 warning potentially fixable with the `--fix` option.
+

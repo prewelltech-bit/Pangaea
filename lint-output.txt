@@ -1,0 +1,14 @@
+﻿
+> pangea@0.0.0 lint
+> eslint .
+
+
+D:\preewel-office\Pangaea-main\Pangaea\src\component\home\HomeBody\Section2\Welcome.jsx
+  25:53  warning  The ref value 'boxRef.current' will likely have changed by the time this effect cleanup function runs. If this ref points to a node rendered by React, copy 'boxRef.current' to a variable inside the effect, and use that variable in the cleanup function  react-hooks/exhaustive-deps
+
+D:\preewel-office\Pangaea-main\Pangaea\src\component\home\HomeBody\Section3\SuccessStories.jsx
+  72:12  warning  Unused eslint-disable directive (no problems were reported from 'react-hooks/rules-of-hooks')
+
+Γ£û 2 problems (0 errors, 2 warnings)
+  0 errors and 1 warning potentially fixable with the `--fix` option.
+
