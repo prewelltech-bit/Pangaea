@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./DreamDestination.css";
 import ConsultationModal from "./ConsultationModel/ConsultationModel";
-
+import image from "../../../../../public/assets/Img/d-2.png"
 const steps = [
   {
     id: 1,
@@ -30,9 +30,9 @@ const DreamDestination = () => {
 
   return (
     <section className="dream-section">
-          <h2 className="dream-title">
-            Steps to Your <span className="dream-title-span">Dream Destination</span>
-          </h2>
+      <h2 className="dream-title">
+        Steps to Your <span className="dream-title-span">Dream Destination</span>
+      </h2>
       <div className="dream-layout">
         <div className="dream-stack">
 
@@ -52,12 +52,12 @@ const DreamDestination = () => {
                   Free Expert Consultation
                 </button>
               </div>
-            ))} 
+            ))}
           </div>
         </div>
 
         <div className="dream-image">
-          <img src="/assets/img/d-2.png" alt="Dream" />
+          <img src={image} alt="Dream" />
         </div>
       </div>
 
