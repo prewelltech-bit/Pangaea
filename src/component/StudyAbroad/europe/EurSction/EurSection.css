@@ -7,7 +7,7 @@
   container: 1200px;
 }
 .Eu-section {
-  background: url("/public/assets/img/Europe/Europe_hero.png");
+  background: url("../../../../../public/assets/Img/Europe/Europe_hero.png");
   background-size: cover;
   background-position: center;
   padding-top: 40px;

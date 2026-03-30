@@ -9,27 +9,27 @@ import nz from "../../../jsonFiles/UniversityList/NewZealand.json";
 import usa from "../../../jsonFiles/UniversityList/USA.json"; // ✅ USA added
 
 const countries = [
+  "Australia",
+  "New Zealand",
   "UK",
   "Europian",
   "Canada",
-  "Australia",
-  "New Zealand",
   "USA" // ✅ USA added
 ];
 
 const allUniversities = [
+  ...australia,
+  ...nz,
   ...uk,
   ...europ,
   ...canada,
-  ...australia,
-  ...nz,
   ...usa // ✅ USA added
 ];
 
 const ITEMS_PER_PAGE = 5;
 
 const UniversityList = () => {
-  const [activeCountry, setActiveCountry] = useState("UK");
+  const [activeCountry, setActiveCountry] = useState("Australia");
   const [search, setSearch] = useState("");
   const [page, setPage] = useState(1);
 

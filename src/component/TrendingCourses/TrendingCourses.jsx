@@ -38,11 +38,11 @@ const TrendingCourses = () => {
         ))}
       </div>
 
-      <div className="view-more-wrapper">
+      {/* <div className="view-more-wrapper">
         <button className="view-more-btn">
           View More Courses 
         </button>
-      </div>
+      </div> */}
     </section>
   );
 };

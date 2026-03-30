@@ -60,7 +60,7 @@
   {
     "name": "IBS",
     "country": "Europian",
-    "logo": "./assets/Logo/Europe/IBS_.png",
+    "logo": "/public/assets/Logo/Europe/ISB_LOGO.png",
     "city": "Budapest / Vienna",
     "region": "Central Europe",
     "type_of_course": [
@@ -70,20 +70,6 @@
     "fees_approx": "7,000â€“12,000",
     "link": "https://www.ibs-b.hu/",
     "images": "./assets/Img/Europe/ibs1.jpg"
-  },
-  {
-    "name": "IBS",
-    "country": "Europian",
-    "logo": "./assets/Logo/Europe/IBS.png",
-    "city": "Barcelona",
-    "region": "Southern Europe",
-    "type_of_course": [
-      "Bachelor (3-4 Years)",
-      "Master (1 Year)"
-    ],
-    "fees_approx": "8,000â€“13,000",
-    "link": "https://www.ibsbarcelona.com/",
-    "images": "./assets/Img/Europe/ibs_barcelona1.jpg"
   },
   {
     "name": "NABA",
@@ -127,5 +113,21 @@
     "fees_approx": "4,000â€“8,000",
     "link": "https://www.seu.edu.ge/",
     "images": "./assets/Img/Europe/seu1.jpg"
-  }
+  },
+  [
+    {
+      "name": "IBS",
+      "country": "Europian",
+      "logo": "./assets/Logo/Europe/IBS.png",
+      "city": "Barcelona",
+      "region": "Southern Europe",
+      "type_of_course": [
+        "Bachelor (3-4 Years)",
+        "Master (1 Year)"
+      ],
+      "fees_approx": "8,000â€“13,000",
+      "link": "https://www.ibsbarcelona.com/",
+      "images": "./assets/Img/Europe/ibs_barcelona1.jpg"
+    }
+  ]
 ]

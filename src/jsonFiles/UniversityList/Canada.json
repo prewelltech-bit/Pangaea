@@ -72,7 +72,7 @@
     ],
     "fees_approx": "15000 - 45000 CAD per year",
     "link": "https://www.mcmaster.ca/",
-    "images": "..//assets/Img/canada/McGill University â€“ Montreal.jpeg"
+    "images": "/public/assets/Img/canada/Hamilton_Hall_at_McMaster_University.jpg.jpeg"
   },
   {
     "name": "Western University",
@@ -467,7 +467,7 @@
   {
     "name": "UniversitÃ© de MontrÃ©al",
     "country": "Canada",
-    "logo": "./assets/Logo/Canada/UniversitÃ©_de_MontrÃ©al.jpg",
+    "logo": "/public/assets/Logo/Canada/Université_de_Montréal.jpg",
     "city": "Montreal",
     "region": "Quebec",
     "type_of_course": [
@@ -660,4 +660,3 @@
     "images": "..//assets/Img/canada/College of the North Atlantic â€“ Newfoundland.jpeg"
   }
 ]
-

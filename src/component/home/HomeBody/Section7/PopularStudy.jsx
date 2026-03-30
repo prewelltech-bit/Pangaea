@@ -59,7 +59,7 @@ const PopularStudy = () => {
                   {/* <div className="destination-emoji">{dest.image}</div> */}
                   <h3>{dest.country}</h3>
                   <p>{dest.description}</p>
-                  <div className="read-more" onClick={() => { Navigate(dest.link) }}>Learn More</div>
+                  {/* <div className="read-more" onClick={() => { Navigate(dest.link) }}>Learn More</div> */}
                 </Link>
               ))}
             </div>
