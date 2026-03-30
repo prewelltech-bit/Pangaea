@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./DreamDestination.css";
 import ConsultationModal from "./ConsultationModel/ConsultationModel";
-import image from "../../../../../public/assets/Img/d-2.png"
+const image = "/assets/Img/d-2.png";
 const steps = [
   {
     id: 1,

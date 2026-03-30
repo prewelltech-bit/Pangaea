@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "name": "Harvard University",
     "country": "USA",
@@ -13,7 +13,7 @@
   {
     "name": "Massachusetts Institute of Technology (MIT)",
     "country": "USA",
-    "logo": "../../../public/assets/Logo/USA/MIT.png",
+    "logo": "/assets/Logo/USA/MIT.png",
     "city": "Cambridge, Massachusetts",
     "region": "Northeast USA",
     "type_of_course": ["Bachelor (4 Years)", "Master (1-2 Years)"],

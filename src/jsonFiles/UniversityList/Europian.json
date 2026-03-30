@@ -1,8 +1,8 @@
-﻿[
+[
   {
     "name": "EU Business School",
     "country": "Europian",
-    "logo": "//public/assets/Img/Europe/Eu_Business_School.png",
+    "logo": "/assets/Img/Europe/Eu_Business_School.png",
     "city": "Barcelona / Geneva / Munich",
     "region": "Western Europe",
     "type_of_course": [
@@ -60,7 +60,7 @@
   {
     "name": "IBS",
     "country": "Europian",
-    "logo": "/public/assets/Logo/Europe/ISB_LOGO.png",
+    "logo": "/assets/Logo/Europe/ISB_LOGO.png",
     "city": "Budapest / Vienna",
     "region": "Central Europe",
     "type_of_course": [

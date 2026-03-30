@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "name": "University of Toronto",
     "country": "Canada",
@@ -72,7 +72,7 @@
     ],
     "fees_approx": "15000 - 45000 CAD per year",
     "link": "https://www.mcmaster.ca/",
-    "images": "/public/assets/Img/canada/Hamilton_Hall_at_McMaster_University.jpg.jpeg"
+    "images": "/assets/Img/canada/Hamilton_Hall_at_McMaster_University.jpg.jpeg"
   },
   {
     "name": "Western University",
@@ -467,7 +467,7 @@
   {
     "name": "UniversitÃ© de MontrÃ©al",
     "country": "Canada",
-    "logo": "/public/assets/Logo/Canada/Université_de_Montréal.jpg",
+    "logo": "/assets/Logo/Canada/Université_de_Montréal.jpg",
     "city": "Montreal",
     "region": "Quebec",
     "type_of_course": [

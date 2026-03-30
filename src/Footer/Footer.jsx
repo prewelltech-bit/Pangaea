@@ -4,7 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { useRevealAnimation, staggerContainerVariants, getDirectionVariants } from "../hooks/useRevealAnimation";
 import { Link } from "react-router-dom";
-import logo from "../../public/assets/Logo/PP-2.png"
+const logo = "/assets/Logo/PP-2.png";
 const Footer = () => {
   const { ref, isInView } = useRevealAnimation(0.4);
 
