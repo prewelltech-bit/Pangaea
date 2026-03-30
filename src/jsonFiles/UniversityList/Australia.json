@@ -19,7 +19,7 @@
     "approxFees": "AUD 45,000 â€“ 55,000 per year",
     "link": "https://www.unimelb.edu.au",
     "region": "Victoria",
-    "images": "/public/assets/Img/AuCountry/university-of-melbourne.jpeg"
+    "images": "../../../public/assets/Img/AuCountry/University-of-Melbourne.jpeg"
   },
   {
     "name": "University of Sydney",
