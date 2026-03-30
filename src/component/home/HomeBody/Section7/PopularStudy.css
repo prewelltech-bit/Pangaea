@@ -107,9 +107,21 @@
 
 .destination-emoji {
   font-size: 4rem;
-  margin-bottom: 20px;
+  /* margin-bottom: 100px; */
   display: block;
   transition: var(--transition);
+  height: 100px;
+  width: 100px;
+  margin: 20px auto;
+  border-radius: 50%;
+  object-fit: cover;
+  padding: 10px;
+  /* background-color: var(--brand-main); */
+  /* color: white; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
 }
 
 .destination-card:hover .destination-emoji {

@@ -1,6 +1,7 @@
 .edwise-section {
   width: 100%;
   padding: 100px 0;
+  
 }
 
 .edwise-container {
@@ -11,6 +12,9 @@
   align-items: center;
   justify-content: space-between;
   gap: 60px;
+  background: url(../../../../public/assets/Img/World-map\ texture-copy-2.png);
+  z-index: 1;
+  /* background-color: #1d3e74; */
 }
 
 /* LEFT */
@@ -90,7 +94,7 @@
 
 @media (max-width: 600px) {
   .edwise-section {
-    padding: 60px 0;
+    padding: 100px 0;
   }
 
   .edwise-left h1 {
