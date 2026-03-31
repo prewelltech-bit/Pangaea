@@ -1,6 +1,6 @@
 import React from 'react'
 import Hero1 from "./Section1/Hero1";
-import UniversitiesList from './Secttion2/UniversitiesList'
+import UniversitiesList from './Section2/UniversitiesList'
 
 const PartneredUniversities = () => {
   return (
