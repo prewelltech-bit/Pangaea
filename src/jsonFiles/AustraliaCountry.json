@@ -1,13 +1,13 @@
-[
+﻿[
   {
     "name": "Australia",
     "target_students": "Indian Students",
-    "image": "../../public/assets/Img/AuCountry/Au-overview.jpg",
+    "image": "/assets/Img/AuCountry/Au-overview.jpg",
     "overview": "Australia is a leading global study destination, renowned for its world-class education, safe and welcoming environment, multicultural society, and internationally recognized qualifications. With top-ranked universities, industry-focused programs, and excellent post-study opportunities, Australia offers students the perfect balance of academic excellence, global exposure, and a high quality of life.",
     "study_options": [
       "Diploma & Advanced Diploma",
-      "Bachelor’s Degrees",
-      "Master’s Programs",
+      "Bachelorâ€™s Degrees",
+      "Masterâ€™s Programs",
       "PhD & Research Programs",
       "Vocational Education & Training (VET)"
     ],
@@ -69,39 +69,39 @@
       "Macquarie University"
     ],
     "eligibility": {
-      "bachelor": "12th pass with 60–70%",
-      "masters": "Relevant bachelor’s degree with 60–65%",
+      "bachelor": "12th pass with 60â€“70%",
+      "masters": "Relevant bachelorâ€™s degree with 60â€“65%",
       "notes": "Some courses may require work experience"
     },
     "english_requirements": {
-      "IELTS": "6.0–6.5",
-      "PTE": "50–58",
-      "TOEFL_iBT": "60–79"
+      "IELTS": "6.0â€“6.5",
+      "PTE": "50â€“58",
+      "TOEFL_iBT": "60â€“79"
     },
     "costs": {
-      "tuition_fees_AUD_per_year": "18,000–40,000",
+      "tuition_fees_AUD_per_year": "18,000â€“40,000",
       "living_cost_AUD_per_year": "29,710"
     },
     "scholarships": [
       "Australia Awards",
       "Destination Australia Scholarships",
       "University Merit Scholarships",
-      "Tuition fee waivers (10%–50%)"
+      "Tuition fee waivers (10%â€“50%)"
     ],
     "work_rights": "Up to 24 hours per week during study and unlimited hours during scheduled breaks",
     "pr_options": [
       "Subclass 189",
       "Subclass 190",
       "Subclass 491",
-      "Post Study Work Visa (Subclass 485: 2–4 years)"
+      "Post Study Work Visa (Subclass 485: 2â€“4 years)"
     ],
     "intakes": [
       "February",
-      "June–July"
+      "Juneâ€“July"
     ],
     "application_timeline": {
-      "apply_before": "6–9 months",
-      "visa_processing": "4–8 weeks"
+      "apply_before": "6â€“9 months",
+      "visa_processing": "4â€“8 weeks"
     }
   }
 ]

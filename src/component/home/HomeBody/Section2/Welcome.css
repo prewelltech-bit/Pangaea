@@ -14,7 +14,7 @@
 /* ===== Welcome Background ===== */
 .welcome-section {
   height: 100vh;
-  background-image: url("/public/assets/Img/event-image.jpg");
+  background-image: url("/assets/Img/event-image.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -28,7 +28,7 @@
 .scroll-area {
   width: 100%;
   /* min-height: 140vh; */
-  max-width:100%;
+  max-width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -66,6 +66,7 @@
   border-radius: 10px;
   transition: width 0.4s ease;
 }
+
 .welcome-h1-span {
   color: #0c2444;
   font-weight: 900;
@@ -74,6 +75,7 @@
 .welcome-h1:hover::after {
   width: 120px;
 }
+
 /* ===== Glass Box ===== */
 .glass-box {
   background: rgba(230, 234, 255, 0.772);
@@ -116,7 +118,7 @@
   color: rgb(9, 9, 9);
   opacity: 1;
   font-weight: 300;
-  text-align:justify;
+  text-align: justify;
 }
 
 /* ===== Main Heading (H1) ===== */
@@ -188,6 +190,7 @@
     opacity: 0;
     transform: translateY(40px) scale(0.95);
   }
+
   to {
     opacity: 1;
     transform: translateY(0) scale(1);
@@ -199,6 +202,13 @@
   .welcome-card {
     padding: 30px 20px;
     width: 90%;
+  }
+
+  .sub-text {
+    font-size: 16px;
+    text-align: center;
+    /* width: 70%; */
+    margin: 0 auto;
   }
 
   .welcome-h1 {
@@ -217,6 +227,13 @@
 @media (max-width: 560px) {
   .welcome-card {
     width: 90%;
+  }
+
+  .sub-text {
+    font-size: 16px;
+    text-align: center;
+    word-spacing: 0px;
+    /* width: 100%; */
   }
 
   .welcome-card p {

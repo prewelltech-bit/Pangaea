@@ -1,6 +1,7 @@
 .edwise-section {
   width: 100%;
   padding: 100px 0;
+
 }
 
 .edwise-container {
@@ -11,6 +12,8 @@
   align-items: center;
   justify-content: space-between;
   gap: 60px;
+  background: url("/assets/Img/World-map\\ texture-copy-2.png");
+  z-index: 1;
 }
 
 /* LEFT */
@@ -39,22 +42,22 @@
 }
 
 .read-btn {
-    margin-top: 50px;
-    background: var(--brand-main);
-    color: #fff;
-    padding: 12px 24px;
-    border: none;
-    border-radius: 12px;
-    font-weight: 600;
-    font-size: 14px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(10, 35, 81, 0.2);
+  margin-top: 50px;
+  background: var(--brand-main);
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(10, 35, 81, 0.2);
 }
 
 .read-btn:hover {
-    background: var(--brand-accent);
-    transform: translateY(-3px);
+  background: var(--brand-accent);
+  transform: translateY(-3px);
 }
 
 /* RIGHT */
@@ -69,4 +72,39 @@
   max-width: 500px;
   border-radius: 16px;
   z-index: 1;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .edwise-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .edwise-left p {
+    margin: 24px auto 0;
+  }
+
+  .edwise-left h1 {
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .edwise-section {
+    padding: 100px 0;
+  }
+
+  .edwise-left h1 {
+    font-size: 2rem;
+  }
+
+  .edwise-left p {
+    font-size: 0.95rem;
+  }
+
+  .edwise-right img {
+    max-width: 100%;
+  }
 }

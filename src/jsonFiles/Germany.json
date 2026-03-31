@@ -1,10 +1,10 @@
-{
+﻿{
       "name": "Germany",
       "target_students": "Indian Students",
       "overview": "Germany is a top European study destination known for world-class public universities, low or no tuition fees, and strong job opportunities.",
       "study_options": [
-        "Bachelor’s Programs",
-        "Master’s Programs",
+        "Bachelorâ€™s Programs",
+        "Masterâ€™s Programs",
         "PhD / Doctoral Programs",
         "Public & Private Universities",
         "English & German Taught Programs",
@@ -25,18 +25,18 @@
         "TU Berlin"
       ],
       "eligibility": {
-        "bachelor": "12th pass with 60–70%",
-        "masters": "Relevant bachelor’s degree with 60–65%",
+        "bachelor": "12th pass with 60â€“70%",
+        "masters": "Relevant bachelorâ€™s degree with 60â€“65%",
         "notes": "Subject-specific requirements apply"
       },
       "english_requirements": {
-        "IELTS": "6.0–6.5 (some require 7.0)",
-        "TOEFL_iBT": "80–90 (top universities may require 95+)",
-        "PTE": "55–65"
+        "IELTS": "6.0â€“6.5 (some require 7.0)",
+        "TOEFL_iBT": "80â€“90 (top universities may require 95+)",
+        "PTE": "55â€“65"
       },
       "costs": {
-        "public_universities": "No tuition fees (semester contribution €150–€350)",
-        "private_universities_per_year": "€5,000–€20,000"
+        "public_universities": "No tuition fees (semester contribution â‚¬150â€“â‚¬350)",
+        "private_universities_per_year": "â‚¬5,000â€“â‚¬20,000"
       },
       "scholarships": [
         "DAAD Scholarships",
@@ -48,10 +48,11 @@
       "pr_options": [
         "18-month Job Search Visa",
         "EU Blue Card",
-        "PR after 4–5 years"
+        "PR after 4â€“5 years"
       ],
       "intakes": {
         "winter": "October",
         "summer": "April"
       }
     }
+

@@ -8,7 +8,7 @@
 }
 
 .Au-section {
-  background: url("../../../../../public/assets/img/AuCountry/Australia.jpg");
+  background: url("/assets/Img/AuCountry/Australia.jpg");
   background-size: cover;
   background-position: center;
   padding-top: 40px;

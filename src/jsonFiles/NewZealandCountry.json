@@ -1,14 +1,14 @@
-[
+﻿[
   {
     "name": "New Zealand",
-    "flag": "🇳🇿",
-    "image": "../../public/assets/Img/NewZealand/Nz-hero section.jpg",
+    "flag": "ðŸ‡³ðŸ‡¿",
+    "image": "/assets/Img/NewZealand/Nz-hero section.jpg",
     "target_students": "Indian Students",
     "overview": "New Zealand is a safe, peaceful, and student-friendly country known for its high-quality education system, globally recognised qualifications, and excellent quality of life. The country offers a practical, research-driven learning environment with strong industry connections, making graduates highly employable worldwide.",
     "study_options": [
       "Diploma & Advanced Diploma",
-      "Bachelor’s Degrees",
-      "Master’s Programs",
+      "Bachelorâ€™s Degrees",
+      "Masterâ€™s Programs",
       "PhD & Research Programs",
       "Postgraduate Diplomas"
     ],
@@ -21,7 +21,7 @@
       },
       {
         "id": 2,
-        "icon": "🛡",
+        "icon": "🛡️",
         "title": "Safe & Peaceful Country",
         "description": "New Zealand consistently ranks among the safest countries in the world, offering a secure environment for international students."
       },
@@ -68,19 +68,19 @@
       "Lincoln University"
     ],
     "eligibility": {
-      "bachelor": "12th pass with 60–70%",
-      "masters": "Relevant bachelor’s degree with 60–65%",
+      "bachelor": "12th pass with 60â€“70%",
+      "masters": "Relevant bachelorâ€™s degree with 60â€“65%",
       "notes": "Some programs may require work experience"
     },
     "english_requirements": {
-      "IELTS": "6.0–6.5",
-      "PTE": "50–58",
-      "TOEFL_iBT": "60–80",
+      "IELTS": "6.0â€“6.5",
+      "PTE": "50â€“58",
+      "TOEFL_iBT": "60â€“80",
       "Duolingo": "Accepted by some institutions"
     },
     "costs": {
-      "tuition_fees_NZD_per_year": "18,000–40,000",
-      "living_cost_NZD_per_year": "20,000–22,000"
+      "tuition_fees_NZD_per_year": "18,000â€“40,000",
+      "living_cost_NZD_per_year": "20,000â€“22,000"
     },
     "scholarships": [
       "New Zealand Excellence Awards",
@@ -90,16 +90,16 @@
     ],
     "work_rights": "Up to 25 hours per week during study and full-time during scheduled holidays",
     "pr_options": [
-      "Post Study Work Visa (1–3 years)",
+      "Post Study Work Visa (1â€“3 years)",
       "Skilled Migrant Category"
     ],
     "intakes": [
       "February",
-      "June–July"
+      "Juneâ€“July"
     ],
     "application_timeline": {
-      "apply_before": "6–8 months",
-      "visa_processing": "4–6 weeks"
+      "apply_before": "6â€“8 months",
+      "visa_processing": "4â€“6 weeks"
     }
   }
 ]

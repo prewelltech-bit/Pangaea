@@ -6,6 +6,7 @@ const Welcome = () => {
   const boxRef = useRef(null);
 
   useEffect(() => {
+    const boxElement = boxRef.current;
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -17,12 +18,12 @@ const Welcome = () => {
       },
     );
 
-    if (boxRef.current) {
-      observer.observe(boxRef.current);
+    if (boxElement) {
+      observer.observe(boxElement);
     }
 
     return () => {
-      if (boxRef.current) observer.unobserve(boxRef.current);
+      if (boxElement) observer.unobserve(boxElement);
     };
   }, []);
 

@@ -1,19 +1,17 @@
-[
+﻿[
   {
     "name": "Europe",
     "target_students": "Indian Students",
-    "image": "../../public/assets/Img/Europe/Europe_overview.jpg",
+    "image": "/assets/Img/Europe/Europe_overview.jpg",
     "overview": "Europe is one of the most popular study destinations for international students due to its high-quality education system, affordable tuition fees, globally recognised degrees, and strong career opportunities. Many European countries offer English-taught programs, scholarships, and post-study work options, making Europe an excellent choice for global education and international exposure.",
-    
     "study_options": [
       "Diploma Programs",
-      "Bachelor’s Degrees",
-      "Master’s Programs",
+      "Bachelorâ€™s Degrees",
+      "Masterâ€™s Programs",
       "PhD & Research Programs",
       "Medical Programs (MBBS)",
       "Engineering Specialisations"
     ],
-
     "whyStudyInEurope": [
       {
         "id": 1,
@@ -52,7 +50,6 @@
         "description": "Students can travel freely across 27 Schengen countries, enhancing cultural exposure and networking opportunities."
       }
     ],
-
     "popular_fields": [
       "Engineering",
       "Information Technology",
@@ -62,7 +59,6 @@
       "Medical (MBBS)",
       "Environmental Sciences"
     ],
-
     "top_universities": [
       "Technical University of Munich",
       "University of Amsterdam",
@@ -73,7 +69,6 @@
       "Politecnico di Milano",
       "Lund University"
     ],
-
     "popular_countries": [
       "Germany",
       "Italy",
@@ -83,24 +78,20 @@
       "Finland",
       "Austria"
     ],
-
     "eligibility": {
-      "bachelor": "12th pass with 60–70%",
-      "masters": "Relevant bachelor’s degree with 60–65%",
+      "bachelor": "12th pass with 60â€“70%",
+      "masters": "Relevant bachelorâ€™s degree with 60â€“65%",
       "notes": "Some programs may require entrance exams, portfolio, or work experience."
     },
-
     "english_requirements": {
-      "IELTS": "6.0–6.5",
-      "PTE": "50–60",
-      "TOEFL_iBT": "70–90"
+      "IELTS": "6.0â€“6.5",
+      "PTE": "50â€“60",
+      "TOEFL_iBT": "70â€“90"
     },
-
     "costs": {
-      "tuition_fees_EUR_per_year": "0–20,000",
-      "living_cost_EUR_per_year": "8,000–15,000"
+      "tuition_fees_EUR_per_year": "0â€“20,000",
+      "living_cost_EUR_per_year": "8,000â€“15,000"
     },
-
     "scholarships": [
       "Erasmus+",
       "DAAD Scholarships (Germany)",
@@ -108,24 +99,20 @@
       "Swedish Institute Scholarships",
       "University Merit Scholarships"
     ],
-
     "work_rights": "Part-time work allowed during studies (usually 20 hours per week depending on country).",
-
     "pr_options": [
       "Germany 18-month Job Seeker Visa",
       "Netherlands Orientation Year Visa",
       "Sweden Post-Study Residence Permit",
       "EU Blue Card Pathway"
     ],
-
     "intakes": [
       "September (Main Intake)",
       "January (Limited Programs)"
     ],
-
     "application_timeline": {
-      "apply_before": "6–8 months",
-      "visa_processing": "4–12 weeks (varies by country)"
+      "apply_before": "6â€“8 months",
+      "visa_processing": "4â€“12 weeks (varies by country)"
     }
   }
 ]

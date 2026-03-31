@@ -26,7 +26,7 @@ const Hero1 = () => {
 
         <div className="edwise-right">
           <img
-            src="/public/assets/Img/university-uni.png"
+            src="/assets/Img/university-uni.png"
             alt="Partnered Universities"
           />
         </div>

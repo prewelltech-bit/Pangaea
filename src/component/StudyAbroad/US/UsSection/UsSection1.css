@@ -7,7 +7,7 @@
   container: 1200px;
 }
 .Us-section {
-  background: url("../../../../../public/assets/img/USA//USA_hero.jpg");
+  background: url("/assets/Img/USA/USA_hero.jpg");
   background-size: cover;
   background-position: center;
   padding-top: 40px;

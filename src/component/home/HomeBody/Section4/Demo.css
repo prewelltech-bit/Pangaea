@@ -1,7 +1,7 @@
 /* HERO BACKGROUND */
 .hero-section {
   height: 100vh;
-  background-image: url("/public/assets/Img/2nd.png");
+  background-image: url("/assets/Img/2nd.png");
   background-size: cover;
   background-position: center;
   background-attachment: fixed; 

@@ -7,7 +7,7 @@
   container: 1200px;
 }
 .Nz-section {
-  background: url("../../../../../public/assets/Img//NewZealand/NewZealand.jpg");
+  background: url("/assets/Img//NewZealand/NewZealand.jpg");
   background-size: cover;
   background-position: center;
   padding-top: 40px;

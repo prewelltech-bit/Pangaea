@@ -1,6 +1,5 @@
 import React from "react";
 import "./PTE.css";
-import pteImg from "../../../public/assets/Img/pte/pte-footer.png"; 
 
 const PTE = () => {
   return (
@@ -10,7 +9,7 @@ const PTE = () => {
         <div className="pte-left">
           <span className="pte-tag">PTE</span>
 
-          <img src={pteImg} alt="PTE Student" className="pte-image" />
+          <img src="/assets/Img/pte/pte-footer.png" alt="PTE Student" className="pte-image" />
 
           <p className="pte-intro">
             PTE Academic is the world's leading computer based test of English

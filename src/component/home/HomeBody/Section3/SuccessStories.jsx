@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/refs */
 import React, { useState, useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
@@ -69,7 +70,6 @@ const SuccessStories = () => {
         </div>
 
         <div className="card-container">
-          {/* eslint-disable react-hooks/rules-of-hooks */}
           <Swiper
             modules={[Navigation, Autoplay]}
             navigation={{
