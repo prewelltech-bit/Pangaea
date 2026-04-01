@@ -6,24 +6,24 @@ import { useNavigate } from "react-router-dom";
 const Blogs = () => {
   const navigate = useNavigate();
 
-const handleReadMore = (blog) => {
-  if (blog.country === "Australia") {
-    navigate("/australia-blog");
-  } else if (blog.country === "Canada") {
-    navigate("/canada-blog");
-  } else if (blog.country === "UK") {
-    navigate("/uk-blog");
-  }
-};
+  const handleReadMore = (blog) => {
+    navigate("/australia-blog"); // direct Australia page
+  };
+
+  // 👉 Filter only Australia blogs
+  const australiaBlogs = blogData.filter(
+    (blog) => blog.country === "Australia"
+  );
 
   return (
     <section className="blogs-section">
       <h2 className="popular-h1">
-        Latest Study Abroad <span className="popular-h1-span">Blogs & Visa</span> Updates
+        Latest Study Abroad{" "}
+        <span className="popular-h1-span">Blogs & Visa</span> Updates
       </h2>
 
       <div className="blogs-container">
-        {blogData.map((blog) => (
+        {australiaBlogs.map((blog) => (
           <div className="blog-card" key={blog.id}>
             <div className="blog-img">
               <img src={blog.image} alt={blog.country} />

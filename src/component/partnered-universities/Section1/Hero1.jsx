@@ -21,7 +21,7 @@ const Hero1 = () => {
             excellent opportunities for studying abroad.
           </p>
 
-          <button className="read-btn">Read more</button>
+          {/* <button className="read-btn">Read more</button> */}
         </div>
 
         <div className="edwise-right">

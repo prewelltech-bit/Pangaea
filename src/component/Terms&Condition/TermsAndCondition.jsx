@@ -7,17 +7,17 @@ const TermsAndCondition = () => {
       <div className="terms-wrapper">
 
         <h1>Terms and Conditions</h1>
-        <h2>Pangaea Pathways Pty Ltd</h2>
+        <h2>Pangaea Pathways Pvt Ltd</h2>
 
         <p>
           Welcome to www.pangaeapathways.com.au (the “Website”), operated by
-          Pangaea Pathways Pty Ltd (“Pangaea Pathways”, “we”, “our”, “us”).
+          Pangaea Pathways Pvt Ltd (“Pangaea Pathways”, “we”, “our”, “us”).
         </p>
 
         <p>
           These Terms and Conditions (“Terms”, “User Agreement”, or “Agreement”)
           constitute a legally binding agreement between you (“User”, “you”, “your”)
-          and Pangaea Pathways Pty Ltd governing your access to and use of our Website and services.
+          and Pangaea Pathways Pvt Ltd governing your access to and use of our Website and services.
         </p>
 
         <p>
@@ -259,7 +259,7 @@ const TermsAndCondition = () => {
 
         <p>
           All Website content, logos, branding, and materials are the property
-          of Pangaea Pathways Pty Ltd unless otherwise stated.
+          of Pangaea Pathways Pvt Ltd unless otherwise stated.
         </p>
 
         <p>
@@ -316,7 +316,7 @@ const TermsAndCondition = () => {
 
         <div className="contact-section">
           <h3>Contact Us</h3>
-          <p>Pangaea Pathways Pty Ltd</p>
+          <p>Pangaea Pathways Pvt Ltd</p>
           <p>Email: admin@pangaeapathways.com.au</p>
           <p>
             Office no.156, OPERA BUSINESS HUB, Lajamni Chowk,
