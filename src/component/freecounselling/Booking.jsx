@@ -1,5 +1,8 @@
 import React, { useState } from "react";
-import { supabase } from "./supabase";
+import { collection, addDoc, doc, getDoc, query, where, getDocs } from "firebase/firestore";
+import { db } from "../../firebase";
+import emailjs from "emailjs-com";
+import { EMAILJS_CONFIG } from "../../utils/emailConfig";
 
 function BookingForm({ selectedSlot }) {
   const [formData, setFormData] = useState({
@@ -21,50 +24,76 @@ function BookingForm({ selectedSlot }) {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(e);
 
     if (!selectedSlot) {
       alert("Please select a time slot first");
       return;
     }
 
-    // 1️⃣ Check if slot is still available
-    const { data: slotData, error: slotCheckError } = await supabase
-      .from("slots")
-      .select("status")
-      .eq("id", selectedSlot.id)
-      .single();
+    try {
+      // 1️⃣ Check if slot physically exists in Firebase
+      const slotRef = doc(db, "slots", selectedSlot.id);
+      const slotSnap = await getDoc(slotRef);
 
-    if (slotCheckError) {
-      alert("Error checking slot");
-      return;
-    }
+      if (!slotSnap.exists()) {
+        alert("Error: Slot does not exist in Firebase.");
+        return;
+      }
 
-    if (slotData.status === "booked") {
-      alert("Sorry, this slot is already booked.");
-      return;
-    }
+      if (slotSnap.data().status === "booked") {
+        alert("Sorry, this slot is permanently closed.");
+        return;
+      }
 
-    // 2️⃣ Insert booking
-    const { error: bookingError } = await supabase.from("bookings").insert([
-      {
+      // 2️⃣ Check if someone already booked it TODAY
+      const todayDate = new Date().toISOString().split("T")[0];
+      const q = query(
+        collection(db, "bookings"), 
+        where("date", "==", todayDate), 
+        where("slot_time", "==", selectedSlot.time)
+      );
+      const bookingSnap = await getDocs(q);
+
+      if (!bookingSnap.empty) {
+        alert("Sorry, this slot was just booked by someone else for today!");
+        return;
+      }
+
+      // 3️⃣ Insert booking
+      await addDoc(collection(db, "bookings"), {
         ...formData,
         slot_id: selectedSlot.id,
-      },
-    ]);
+        slot_time: selectedSlot.time,
+        date: todayDate,
+        created_at: new Date().toISOString()
+      });
 
-    if (bookingError) {
-      alert("Booking failed: " + bookingError.message);
-      return;
+      // 4️⃣ Send Auto Email via EmailJS
+      const emailPayload = {
+        name: `${formData.first_name} ${formData.last_name}`,
+        email: formData.email,
+        phone: formData.phone,
+        form_type: "Counseling Registration",
+        time: selectedSlot.time
+      };
+
+      emailjs.send(
+        EMAILJS_CONFIG.SERVICE_ID,
+        EMAILJS_CONFIG.TEMPLATE_ID,
+        emailPayload,
+        EMAILJS_CONFIG.PUBLIC_KEY
+      ).then(() => {
+        alert("Booking Confirmed! A confirmation email has been sent. 🎉");
+        window.location.reload();
+      }).catch((err) => {
+        console.error("EmailJS Error:", err);
+        alert("Booking Confirmed 🎉 (Auto-email failed, check EmailJS Config keys)");
+        window.location.reload();
+      });
+
+    } catch (error) {
+      alert("Booking failed: " + error.message);
     }
-
-    // 3️⃣ Update slot status
-    await supabase
-      .from("slots")
-      .update({ status: "booked" })
-      .eq("id", selectedSlot.id);
-
-    alert("Booking Confirmed 🎉");
   };
 
   return (

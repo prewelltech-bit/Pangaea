@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import "./Contact.css";
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
-// import emailjs from "emailjs-com";
+import emailjs from "emailjs-com";
+import { EMAILJS_CONFIG } from "../../utils/emailConfig";
 
 const Contact = () => {
   const [form, setForm] = useState({
@@ -31,25 +32,32 @@ const Contact = () => {
     setError("");
 
     // ✅ EMAIL SEND
-    // emailjs
-    //   .send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", form, bX - q69rXMihDkMWMJ)
-    //   .then(
-    //     () => {
-    //       alert("Message Sent Successfully ✅");
-    //       setForm({
-    //         fname: "",
-    //         lname: "",
-    //         email: "",
-    //         phone: "",
-    //         message: "",
-    //         time_slot: "",
-    //       });
-    //     },
-    //     (err) => {
-    //       alert("Failed to send ❌");
-    //       console.log(err);
-    //     },
-    //   );
+    const emailPayload = {
+      name: `${form.fname} ${form.lname}`,
+      email: form.email,
+      phone: form.phone,
+      form_type: "Contact Us"
+    };
+
+    emailjs
+      .send(EMAILJS_CONFIG.SERVICE_ID, EMAILJS_CONFIG.TEMPLATE_ID, emailPayload, EMAILJS_CONFIG.PUBLIC_KEY)
+      .then(
+        () => {
+          alert("Message Sent Automatically ✅");
+          setForm({
+            fname: "",
+            lname: "",
+            email: "",
+            phone: "",
+            message: "",
+            time_slot: "",
+          });
+        },
+        (err) => {
+          console.error(err);
+          alert("Message saved. But failed to auto-send email ❌ (Check EmailJS keys in config)");
+        },
+      );
   };
 
   const times = [

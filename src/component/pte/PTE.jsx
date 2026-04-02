@@ -1,7 +1,49 @@
-import React from "react";
+import React, { useState } from "react";
 import "./PTE.css";
+import emailjs from "emailjs-com";
+import { EMAILJS_CONFIG } from "../../utils/emailConfig";
 
 const PTE = () => {
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    location: "",
+    message: ""
+  });
+
+  const handleChange = (e) => {
+    setForm({ ...form, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (!form.name || !form.email || !form.phone) {
+      alert("Please fill in required fields.");
+      return;
+    }
+
+    const emailPayload = {
+      name: form.name,
+      email: form.email,
+      phone: form.phone,
+      form_type: "PTE Registration"
+    };
+
+    emailjs
+      .send(EMAILJS_CONFIG.SERVICE_ID, EMAILJS_CONFIG.TEMPLATE_ID, emailPayload, EMAILJS_CONFIG.PUBLIC_KEY)
+      .then(
+        () => {
+          alert("Registration Sent Successfully! ✅");
+          setForm({ name: "", email: "", phone: "", location: "", message: "" });
+        },
+        (err) => {
+          console.error(err);
+          alert("Message saved, but failed to auto-send email ❌ (Check EmailJS keys in config)");
+        }
+      );
+  };
+
   return (
     <section className="pte-section">
       <div className="pte-container">
@@ -58,15 +100,15 @@ const PTE = () => {
         <div className="pte-right">
           <h3>Register Now</h3>
 
-          <form className="pte-form">
+          <form className="pte-form" onSubmit={handleSubmit}>
             <label>Course Applied for</label>
             <input type="text" value="PTE" readOnly />
 
-            <input type="text" placeholder="Name*" />
-            <input type="email" placeholder="Email*" />
-            <input type="text" placeholder="Phone*" />
-            <input type="text" placeholder="Location*" />
-            <textarea placeholder="Enter Your Message*" rows="4"></textarea>
+            <input type="text" name="name" placeholder="Name*" value={form.name} onChange={handleChange} required />
+            <input type="email" name="email" placeholder="Email*" value={form.email} onChange={handleChange} required />
+            <input type="text" name="phone" placeholder="Phone*" value={form.phone} onChange={handleChange} required />
+            <input type="text" name="location" placeholder="Location*" value={form.location} onChange={handleChange} />
+            <textarea name="message" placeholder="Enter Your Message*" rows="4" value={form.message} onChange={handleChange}></textarea>
 
             <button type="submit">SEND MESSAGE</button>
           </form>

@@ -1,6 +1,6 @@
 /* SECTION */
 .dream-section {
-  background: linear-gradient(180deg,#ffffff,#dbe7fb,#ffffff);
+  background: linear-gradient(180deg, #ffffff, #dbe7fb, #ffffff);
   padding: 120px 0;
 }
 
@@ -11,6 +11,8 @@
   display: flex;
   gap: 80px;
   align-items: center;
+  position: relative;
+  margin-top: 60px;
 }
 
 /* LEFT SIDE */
@@ -48,18 +50,21 @@
   border-radius: 10px;
   transition: width 0.4s ease;
 }
+
 .dream-title-span {
   color: #0c2444;
   font-weight: 900;
 }
+
 .dream-title:hover::after {
-    width: 120px;
+  width: 120px;
 }
 
 /* STACK LIST */
 .stack-list {
   position: relative;
-  min-height: 1200px; /* 👈 THIS IS THE STOPPER */
+  min-height: 1200px;
+  /* 👈 THIS IS THE STOPPER */
 }
 
 /* STACK CARD */
@@ -68,15 +73,17 @@
   background: #f3f6fb;
   padding: 30px;
   border-radius: 24px;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
   max-width: 520px;
   margin-bottom: 40px;
 }
+
 .card-heading {
   display: flex;
   align-items: center;
   gap: 15px;
 }
+
 /* .card-title {
   font-size: 24px;
   font-weight: 700;
@@ -113,7 +120,7 @@
 }
 
 .stack-card button:hover {
-  background:  rgb(10, 35, 81);
+  background: rgb(10, 35, 81);
   color: #fff;
 }
 

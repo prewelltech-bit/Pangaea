@@ -1,26 +1,41 @@
-import React from "react";
-import { useEffect, useState } from "react";
-import { supabase } from "./supabase";
+import React, { useEffect, useState } from "react";
+import { collection, getDocs, query, orderBy, where } from "firebase/firestore";
+import { db } from "../../firebase";
 import "./FreeCounselling.css";
+
 function SlotSelector({ selectedSlot, setSelectedSlot }) {
   const [slots, setSlots] = useState([]);
+  const [bookedTimes, setBookedTimes] = useState([]);
 
   async function fetchSlots() {
-    const { data, error } = await supabase
-      .from("slots")
-      .select("*")
-      .order("time", { ascending: true });
-    console.log("Slots data:", data);
-    if (error) {
-      console.log(error);
-    } else {
-      setSlots(data);
+    try {
+      // 1. Fetch available framework slots
+      const q = query(collection(db, "slots"), orderBy("time", "asc"));
+      const querySnapshot = await getDocs(q);
+      const fetchedSlots = [];
+      querySnapshot.forEach((doc) => {
+        fetchedSlots.push({ ...doc.data(), id: doc.id });
+      });
+      setSlots(fetchedSlots);
+
+      // 2. Fetch today's actively booked slots
+      const todayDate = new Date().toISOString().split("T")[0];
+      const bq = query(collection(db, "bookings"), where("date", "==", todayDate));
+      const bSnapshot = await getDocs(bq);
+      const booked = [];
+      bSnapshot.forEach((doc) => {
+        booked.push(doc.data().slot_time);
+      });
+      setBookedTimes(booked);
+    } catch (error) {
+      console.error("Error fetching slots:", error);
     }
   }
+
   useEffect(() => {
-    // eslint-disable-next-line react-hooks/set-state-in-effect
     fetchSlots();
   }, []);
+
   return (
     <div>
       <h3 className="slot-heading">Select Time Slot</h3>
@@ -28,27 +43,30 @@ function SlotSelector({ selectedSlot, setSelectedSlot }) {
         style={{ display: "flex", flexWrap: "wrap", gap: "10px" }}
         className="slot-booking"
       >
-        {slots.map((slot) => (
-          <button
-            key={slot.id}
-            disabled={slot.status === "booked"}
-            onClick={() => setSelectedSlot(slot)}
-            style={{
-              padding: "10px 15px",
-              border: "1px solid green",
-              background:
-                slot.status === "booked"
-                  ? "#ddd"
-                  : selectedSlot?.id === slot.id
-                    ? "green"
-                    : "white",
-              color: slot.status === "booked" ? "#999" : "black",
-              cursor: slot.status === "booked" ? "not-allowed" : "pointer",
-            }}
-          >
-            {slot.time}
-          </button>
-        ))}
+        {slots.map((slot) => {
+          const isBookedToday = bookedTimes.includes(slot.time) || slot.status === "booked";
+          return (
+            <button
+              key={slot.id}
+              disabled={isBookedToday}
+              onClick={() => setSelectedSlot(slot)}
+              style={{
+                padding: "10px 15px",
+                border: "1px solid green",
+                background:
+                  isBookedToday
+                    ? "#ddd"
+                    : selectedSlot?.id === slot.id
+                      ? "green"
+                      : "white",
+                color: isBookedToday ? "#999" : selectedSlot?.id === slot.id ? "white" : "black",
+                cursor: isBookedToday ? "not-allowed" : "pointer",
+              }}
+            >
+              {slot.time}
+            </button>
+          );
+        })}
       </div>
     </div>
   );

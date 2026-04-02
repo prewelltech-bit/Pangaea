@@ -41,7 +41,8 @@ const DreamDestination = () => {
               <div
                 key={step.id}
                 className="stack-card"
-                style={{ top: `${step.id * 90}px` }}
+                // This makes them stack beautifully at the top with a tiny 20px gap!
+                style={{ top: `${100 + (step.id * 20)}px` }}
               >
                 <div className="card-heading">
                   <span className="step-no">{step.id}</span>
