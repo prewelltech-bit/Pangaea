@@ -36,7 +36,7 @@ const Welcome = () => {
             <span className="welcome-h1-span">Pangaea Pathways</span>{" "}
           </h1>
           <p className="sub-text">
-            We are a Dallas–Fort Worth–based global student advising and admission counseling agency helping international and domestic students achieve successful college and university admissions. With honesty, integrity, and professional commitment, we deliver complete application support and exceed expectations at every step of the journey.
+            We are a Melbourne based global student advising and admission counseling agency helping international and domestic students achieve successful college and university admissions. With honesty, integrity, and professional commitment, we deliver complete application support and exceed expectations at every step of the journey.
           </p>
         </div>
       </div>
