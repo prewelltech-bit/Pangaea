@@ -30,14 +30,16 @@ const Welcome = () => {
   return (
     <div className="layout-wrapper">
       <div className="scroll-area">
-        <div className="glass-box" ref={boxRef}>
-          <h1 className="welcome-h1">
-            Welcome In{" "}
-            <span className="welcome-h1-span">Pangaea Pathways</span>{" "}
-          </h1>
-          <p className="sub-text">
-            We are a Melbourne based global student advising and admission counseling agency helping international and domestic students achieve successful college and university admissions. With honesty, integrity, and professional commitment, we deliver complete application support and exceed expectations at every step of the journey.
-          </p>
+        <div className="outer-glass">
+          <div className="glass-box" ref={boxRef}>
+            <h1 className="welcome-h1">
+              Welcome In{" "}
+              <span className="welcome-h1-span">Pangaea Pathways</span>{" "}
+            </h1>
+            <p className="sub-text">
+              We are a Melbourne based global student advising and admission counseling agency helping international and domestic students achieve successful college and university admissions. With honesty, integrity, and professional commitment, we deliver complete application support and exceed expectations at every step of the journey.
+            </p>
+          </div>
         </div>
       </div>
     </div>
