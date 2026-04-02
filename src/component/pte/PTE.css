@@ -15,9 +15,10 @@
 
 .pte-container {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0px auto;
   display: grid;
-  grid-template-columns: 1.5fr 1fr; /* Better control than flex */
+  grid-template-columns: 1.5fr 1fr;
+  /* Better control than flex */
   gap: 50px;
 }
 
@@ -106,7 +107,7 @@
   gap: 15px;
 }
 
-.pte-form input, 
+.pte-form input,
 .pte-form textarea {
   width: 100%;
   padding: 14px;
@@ -116,7 +117,7 @@
   outline: none;
 }
 
-.pte-form input:focus, 
+.pte-form input:focus,
 .pte-form textarea:focus {
   border-color: var(--primary-blue);
   box-shadow: 0 0 0 4px rgba(10, 35, 81, 0.1);
@@ -145,8 +146,15 @@
 
 /* Simple Animations */
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Mobile Responsive */
@@ -154,8 +162,9 @@
   .pte-container {
     grid-template-columns: 1fr;
     padding: 20px;
+    margin: 45px auto;
   }
-  
+
   .pte-section {
     padding: 40px 15px;
   }
