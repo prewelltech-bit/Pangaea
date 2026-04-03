@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import "./Header.css";
+import { FiChevronDown } from "react-icons/fi";
 
 const Header = () => {
   const [isMobile, setIsMobile] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -13,8 +15,20 @@ const Header = () => {
       setScrolled(window.scrollY > 50);
     };
 
+    const handleEsc = (e) => {
+      if (e.key === "Escape") {
+        setIsMobile(false);
+        setIsDropdownOpen(false);
+      }
+    };
+
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    window.addEventListener("keydown", handleEsc);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("keydown", handleEsc);
+    };
   }, []);
 
   const goToPage = (path) => {
@@ -38,30 +52,37 @@ const Header = () => {
         <div className="navbar-container">
 
           {/* LOGO */}
-          <div className="logo" onClick={() => goToPage("/")}>
-            <img src="/assets/Logo/PP-2.png" alt="Pangea Pathways" />
+          <div className="logo">
+            <Link to="/">
+              <img src="/assets/Logo/PP-2.png" alt="logo" />
+            </Link>
           </div>
 
           {/* NAV LINKS */}
-          <ul className={isMobile ? "nav-links-mobile active" : "nav-links"}>
+          <ul className={`nav-links ${isMobile ? "active" : ""}`}>
 
-            <li style={{ "--i": 1 }} onClick={() => goToPage("/")}>Home</li>
+            {/* ❌ CLOSE BUTTON */}
+            {isMobile && (
+              <div className="close-btn" onClick={() => setIsMobile(false)}>
+                ✕
+              </div>
+            )}
 
-            <li 
-              style={{ "--i": 2 }} 
+            <li onClick={() => goToPage("/")}>Home</li>
+
+            <li
               className="dropdown-trigger"
-              onMouseEnter={() => !isMobile && setIsDropdownOpen(true)}
-              onMouseLeave={() => !isMobile && setIsDropdownOpen(false)}
               onClick={() => setIsDropdownOpen(!isDropdownOpen)}
             >
               Destinations
-              <span className={`dropdown-arrow ${isDropdownOpen ? 'open' : ''}`}>▼</span>
-              
-              {/* DROPDOWN MENU */}
+              <span className={`dropdown-arrow ${isDropdownOpen ? "open" : ""}`}>
+                <FiChevronDown />
+              </span>
+
               {isDropdownOpen && (
-                <div className={`dropdown-menu ${isMobile ? 'mobile' : ''}`} onClick={(e) => e.stopPropagation()}>
+                <div className={`dropdown-menu ${isMobile ? "mobile" : ""}`}>
                   {countries.map((country, index) => (
-                    <div 
+                    <div
                       key={index}
                       className="dropdown-item"
                       onClick={() => goToPage(country.path)}
@@ -73,43 +94,42 @@ const Header = () => {
               )}
             </li>
 
-            <li style={{ "--i": 3 }} onClick={() => goToPage("/partnered-universities")}>
+            <li onClick={() => goToPage("/partnered-universities")}>
               Universities
             </li>
-
-            <li style={{ "--i": 4 }} onClick={() => goToPage("/pte")}>
-              PTE
-            </li>
-
-            {/* <li style={{ "--i": 5 }} onClick={()=>goToPage("/about-us")}>About Us</li> */}
-
-            {/* ✅ BLOGS FIX */}
-            <li style={{ "--i": 6 }} onClick={() => goToPage("/blogs")}>
-              Blogs
-            </li>
-
-            <li style={{ "--i": 7 }}>
-              <button className="apply-btn" onClick={() => goToPage("/contact")}>
-                Contact Us
-              </button>
-            </li>
-
+            <li onClick={() => goToPage("/pte")}>PTE</li>
+            <li onClick={() => goToPage("/blogs")}>Blogs</li>
+            <li onClick={() => goToPage("/contact")}>Contact Us</li>
           </ul>
 
-          {/* MOBILE MENU ICON */}
-          <button
+          {/* RIGHT BUTTON */}
+          <div className="nav-right">
+            <button
+              className="consult-btn"
+              onClick={() => goToPage("/contact")}
+            >
+              Free Consultation
+            </button>
+          </div>
+
+          {/* HAMBURGER */}
+          <div
             className={`mobile-menu-icon ${isMobile ? "open" : ""}`}
             onClick={() => setIsMobile(!isMobile)}
           >
             <div className="bar1"></div>
             <div className="bar2"></div>
             <div className="bar3"></div>
-          </button>
+          </div>
+
         </div>
 
         {/* OVERLAY */}
         {isMobile && (
-          <div className="menu-overlay" onClick={() => setIsMobile(false)}></div>
+          <div
+            className="menu-overlay"
+            onClick={() => setIsMobile(false)}
+          />
         )}
       </nav>
     </div>
