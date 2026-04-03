@@ -4,7 +4,7 @@ import { db } from "../../firebase";
 import emailjs from "emailjs-com";
 import { EMAILJS_CONFIG } from "../../utils/emailConfig";
 
-function BookingForm({ selectedSlot }) {
+function BookingForm({ selectedSlot, selectedDate, insideModal = false }) {
   const [formData, setFormData] = useState({
     first_name: "",
     last_name: "",
@@ -46,16 +46,15 @@ function BookingForm({ selectedSlot }) {
       }
 
       // 2️⃣ Check if someone already booked it TODAY
-      const todayDate = new Date().toISOString().split("T")[0];
       const q = query(
         collection(db, "bookings"), 
-        where("date", "==", todayDate), 
+        where("date", "==", selectedDate), 
         where("slot_time", "==", selectedSlot.time)
       );
       const bookingSnap = await getDocs(q);
 
       if (!bookingSnap.empty) {
-        alert("Sorry, this slot was just booked by someone else for today!");
+        alert("Sorry, this slot was just booked by someone else for this date!");
         return;
       }
 
@@ -64,7 +63,7 @@ function BookingForm({ selectedSlot }) {
         ...formData,
         slot_id: selectedSlot.id,
         slot_time: selectedSlot.time,
-        date: todayDate,
+        date: selectedDate,
         created_at: new Date().toISOString()
       });
 
@@ -96,77 +95,115 @@ function BookingForm({ selectedSlot }) {
     }
   };
 
+  const formContent = (
+    <form className="counselling-form" onSubmit={handleSubmit}>
+      <div className="form-row">
+        <div>
+          <label>First name</label>
+          <input
+            name="first_name"
+            placeholder="First Name"
+            value={formData.first_name}
+            onChange={handleChange}
+            style={{ width: "100%" }}
+            required
+          />
+        </div>
+
+        <div>
+          <label>Last Name</label>
+          <input
+            name="last_name"
+            placeholder="Last Name"
+            value={formData.last_name}
+            onChange={handleChange}
+            style={{ width: "100%" }}
+            required
+          />
+        </div>
+      </div>
+
+      <div className="form-row">
+        <div>
+          <label>Email</label>
+          <input
+            name="email"
+            placeholder="Email"
+            value={formData.email}
+            onChange={handleChange}
+            style={{ width: "100%" }}
+            required
+          />
+        </div>
+        <div>
+          <label>Phone</label>
+          <input
+            name="phone"
+            placeholder="Mobile"
+            value={formData.phone}
+            onChange={handleChange}
+            style={{ width: "100%" }}
+            required
+          />
+        </div>
+      </div>
+
+      <div className="form-row">
+        <div>
+          <label>Your preferred study destination</label>
+          <input
+            name="study_destination"
+            placeholder="only Au, Uk, Nz, Eu, Canada, Us"
+            value={formData.study_destination}
+            onChange={handleChange}
+            style={{ width: "100%" }}
+            required
+          />
+        </div>
+      </div>
+
+      <div className="form-row">
+        <div>
+          <label>When do you plan to study?</label>
+          <input
+            name="study_timeline"
+            placeholder="When do you plan to study?"
+            value={formData.study_timeline}
+            onChange={handleChange}
+            style={{ width: "100%" }}
+            required
+          />
+        </div>
+
+        <div>
+          <label>Your preferred year</label>
+          <input
+            name="preferred_year"
+            placeholder="Preferred Year"
+            value={formData.preferred_year}
+            onChange={handleChange}
+            style={{ width: "100%" }}
+            required
+          />
+        </div>
+      </div>
+
+      <button type="submit">Get Free Counselling</button>
+    </form>
+  );
+
+  if (insideModal) {
+    return (
+      <div className="counselling-box-mini">
+        <h2 style={{ textAlign: "left", fontSize: "24px" }}>Schedule Your Session</h2>
+        <p style={{ textAlign: "left" }}>Fill in your details to confirm your slot.</p>
+        {formContent}
+      </div>
+    );
+  }
+
   return (
     <>
-      {/* <form
-        onSubmit={handleSubmit}
-        style={{
-          marginTop: "30px",
-          display: "flex",
-          flexDirection: "column",
-          gap: "10px",
-        }}
-        className=""
-      >
-        <h3>Enter Your Details</h3>
-
-        <input
-          name="first_name"
-          placeholder="First Name"
-          value={formData.first_name}
-          onChange={handleChange}
-          required
-        />
-
-        <input
-          name="last_name"
-          placeholder="Last Name"
-          value={formData.last_name}
-          onChange={handleChange}
-          required
-        />
-
-        <input
-          name="email"
-          placeholder="Email"
-          value={formData.email}
-          onChange={handleChange}
-          required
-        />
-
-        <input
-          name="phone"
-          placeholder="Mobile"
-          value={formData.phone}
-          onChange={handleChange}
-          required
-        />
-
-        <input
-          name="study_destination"
-          placeholder="Preferred Study Destination"
-          value={formData.study_destination}
-          onChange={handleChange}
-        />
-
-        <input
-          name="study_timeline"
-          placeholder="When do you plan to study?"
-          value={formData.study_timeline}
-          onChange={handleChange}
-        />
-
-        <input
-          name="preferred_year"
-          placeholder="Preferred Year"
-          value={formData.preferred_year}
-          onChange={handleChange}
-        />
-
-        <button type="submit" style={{ marginTop: "15px" }}>
-          Confirm Booking
-        </button> 
-      </form> */}
       <section className="counselling-container">
         <div className="counselling-box">
           <h2>Get FREE Counselling Today!</h2>
@@ -174,101 +211,7 @@ function BookingForm({ selectedSlot }) {
             Enter your details and our expert will reach out to you to discuss{" "}
             <br /> your plans. By the way, all our services are free!
           </p>
-
-          <form className="counselling-form" onSubmit={handleSubmit}>
-            <div className="form-row">
-              <div>
-                <label>First name</label>
-                <input
-                  name="first_name"
-                  placeholder="First Name"
-                  value={formData.first_name}
-                  onChange={handleChange}
-                  style={{ width: "100%" }}
-                  required
-                />
-              </div>
-
-              <div>
-                <label>Last Name</label>
-                <input
-                  name="last_name"
-                  placeholder="Last Name"
-                  value={formData.last_name}
-                  onChange={handleChange}
-                  style={{ width: "100%" }}
-                  required
-                />
-              </div>
-            </div>
-
-            <div className="form-row">
-              <div>
-                <label>Email</label>
-                <input
-                  name="email"
-                  placeholder="Email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  style={{ width: "100%" }}
-                  required
-                />
-              </div>
-              <div>
-                <label>Phone</label>
-                <input
-                  name="phone"
-                  placeholder="Mobile"
-                  value={formData.phone}
-                  onChange={handleChange}
-                  style={{ width: "100%" }}
-                  required
-                />
-              </div>
-            </div>
-
-            <div className="form-row">
-              <div>
-                <label>Your preferred study destination</label>
-                <input
-                  name="study_destination"
-                  placeholder="only Au, Uk, Nz, Eu, Canada, Us"
-                  value={formData.study_destination}
-                  onChange={handleChange}
-                  style={{ width: "100%" }}
-                  required
-                />
-              </div>
-            </div>
-
-            <div className="form-row">
-              <div>
-                <label>When do you plan to study?</label>
-                <input
-                  name="study_timeline"
-                  placeholder="When do you plan to study?"
-                  value={formData.study_timeline}
-                  onChange={handleChange}
-                  style={{ width: "100%" }}
-                  required
-                />
-              </div>
-
-              <div>
-                <label>Your preferred year</label>
-                <input
-                  name="preferred_year"
-                  placeholder="Preferred Year"
-                  value={formData.preferred_year}
-                  onChange={handleChange}
-                  style={{ width: "100%" }}
-                  required
-                />
-              </div>
-            </div>
-
-            <button type="submit">Get Free Counselling</button>
-          </form>
+          {formContent}
         </div>
       </section>
     </>
