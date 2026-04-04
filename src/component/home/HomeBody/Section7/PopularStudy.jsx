@@ -40,33 +40,42 @@ const destinations = [
     link: "/study/united-states",
   }
 ];
+
 const PopularStudy = () => {
-  const Navigate = useNavigate();
+  const navigate = useNavigate();
+
   return (
-    <>
-      <div className="popular-study">
-        <section className="destinations-section section">
-          <h2 className="popular-h1">Popular Study <span className="popular-h1-span">Destinations</span></h2>
-          <div className="container">
-            <div className="grid">
-              {destinations.map((dest, index) => (
-                <Link
-                  key={index}
-                  to={dest.link}
-                  className="destination-card card"
+    <div className="popular-study">
+      <section className="destinations-section section">
+        <h2 className="popular-h1">
+          Popular Study <span className="popular-h1-span">Destinations</span>
+        </h2>
+
+        <div className="container">
+          <div className="grid">
+            {destinations.map((dest, index) => (
+              <div key={index} className="destination-card card">
+                <img
+                  src={dest.image}
+                  alt={dest.country}
+                  className="destination-emoji"
+                />
+                <h3>{dest.country}</h3>
+                <p>{dest.description}</p>
+
+                {/* BUTTON */}
+                <button
+                  className="study-btn"
+                  onClick={() => navigate(dest.link)}
                 >
-                  <img src={dest.image} alt={dest.country} className="destination-emoji" />
-                  {/* <div className="destination-emoji">{dest.image}</div> */}
-                  <h3>{dest.country}</h3>
-                  <p>{dest.description}</p>
-                  {/* <div className="read-more" onClick={() => { Navigate(dest.link) }}>Learn More</div> */}
-                </Link>
-              ))}
-            </div>
+                  Explore
+                </button>
+              </div>
+            ))}
           </div>
-        </section>
-      </div>
-    </>
+        </div>
+      </section>
+    </div>
   );
 };
 

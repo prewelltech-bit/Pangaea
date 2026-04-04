@@ -14,21 +14,8 @@ const Header = () => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
     };
-
-    const handleEsc = (e) => {
-      if (e.key === "Escape") {
-        setIsMobile(false);
-        setIsDropdownOpen(false);
-      }
-    };
-
     window.addEventListener("scroll", handleScroll);
-    window.addEventListener("keydown", handleEsc);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-      window.removeEventListener("keydown", handleEsc);
-    };
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const goToPage = (path) => {
@@ -51,27 +38,21 @@ const Header = () => {
       <nav className={`navbar ${scrolled ? "navbar-scrolled" : ""}`}>
         <div className="navbar-container">
 
-          {/* LOGO */}
+          {/* LEFT */}
           <div className="logo">
             <Link to="/">
               <img src="/assets/Logo/PP-2.png" alt="logo" />
             </Link>
           </div>
 
-          {/* NAV LINKS */}
-          <ul className={`nav-links ${isMobile ? "active" : ""}`}>
-
-            {/* ❌ CLOSE BUTTON */}
-            {isMobile && (
-              <div className="close-btn" onClick={() => setIsMobile(false)}>
-                ✕
-              </div>
-            )}
-
+          {/* CENTER */}
+          <ul className={isMobile ? "nav-links-mobile active" : "nav-links"}>
             <li onClick={() => goToPage("/")}>Home</li>
 
             <li
               className="dropdown-trigger"
+              onMouseEnter={() => !isMobile && setIsDropdownOpen(true)}
+              onMouseLeave={() => !isMobile && setIsDropdownOpen(false)}
               onClick={() => setIsDropdownOpen(!isDropdownOpen)}
             >
               Destinations
@@ -102,8 +83,9 @@ const Header = () => {
             <li onClick={() => goToPage("/contact")}>Contact Us</li>
           </ul>
 
-          {/* RIGHT BUTTON */}
+          {/* RIGHT */}
           <div className="nav-right">
+
             <button
               className="consult-btn"
               onClick={() => goToPage("/contact")}
@@ -112,24 +94,20 @@ const Header = () => {
             </button>
           </div>
 
-          {/* HAMBURGER */}
-          <div
+          {/* MOBILE ICON */}
+          <button
             className={`mobile-menu-icon ${isMobile ? "open" : ""}`}
             onClick={() => setIsMobile(!isMobile)}
           >
             <div className="bar1"></div>
             <div className="bar2"></div>
             <div className="bar3"></div>
-          </div>
+          </button>
 
         </div>
 
-        {/* OVERLAY */}
         {isMobile && (
-          <div
-            className="menu-overlay"
-            onClick={() => setIsMobile(false)}
-          />
+          <div className="menu-overlay" onClick={() => setIsMobile(false)}></div>
         )}
       </nav>
     </div>
