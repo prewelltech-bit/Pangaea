@@ -1,42 +1,51 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { useForm } from "react-hook-form";
+import { yupResolver } from "@hookform/resolvers/yup";
+import * as yup from "yup";
 import "./Contact.css";
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 import emailjs from "emailjs-com";
 import { EMAILJS_CONFIG } from "../../utils/emailConfig";
 
+// 1. Define Validation Schema
+const schema = yup.object().shape({
+  fname: yup.string().required("First name is required"),
+  lname: yup.string().required("Last name is required"),
+  email: yup.string().email("Invalid email address").required("Email is required"),
+  phone: yup
+    .string()
+    .matches(/^\+\d{7,15}$/, "Enter a valid phone number with country code (e.g., +919876543210)")
+    .required("Phone number is required"),
+  time_slot: yup.string().required("Please select a contact time"),
+  message: yup.string().required("Message is required").min(10, "Message too short"),
+});
+
 const Contact = () => {
-  const [form, setForm] = useState({
-    fname: "",
-    lname: "",
-    email: "",
-    phone: "",
-    message: "",
-    time_slot: "",
+  const [open, setOpen] = useState(false);   // ✅ custom dropdown
+
+  // 2. Initialize Hook Form
+  const {
+    register,
+    handleSubmit,
+    setValue,
+    watch,
+    reset,
+    formState: { errors },
+  } = useForm({
+    resolver: yupResolver(schema),
   });
 
-  const [open, setOpen] = useState(false);   // ✅ custom dropdown
-  const [error, setError] = useState("");
+  const selectedTime = watch("time_slot");
 
-  const handleChange = (e) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    if (!form.fname || !form.email || !form.message) {
-      setError("Please fill all required fields");
-      return;
-    }
-
-    setError("");
-
+  const onSubmit = (data) => {
     // ✅ EMAIL SEND
     const emailPayload = {
-      name: `${form.fname} ${form.lname}`,
-      email: form.email,
-      phone: form.phone,
-      form_type: "Contact Us"
+      name: `${data.fname} ${data.lname}`,
+      email: data.email,
+      phone: data.phone,
+      form_type: "Contact Us",
+      message: data.message,
+      time: data.time_slot
     };
 
     emailjs
@@ -44,14 +53,7 @@ const Contact = () => {
       .then(
         () => {
           alert("Message Sent Automatically ✅");
-          setForm({
-            fname: "",
-            lname: "",
-            email: "",
-            phone: "",
-            message: "",
-            time_slot: "",
-          });
+          reset();
         },
         (err) => {
           console.error(err);
@@ -117,48 +119,55 @@ const Contact = () => {
         </div>
 
         {/* RIGHT FORM */}
-        <form className="contact-form" onSubmit={handleSubmit}>
+        <form className="contact-form" onSubmit={handleSubmit(onSubmit)}>
           <h2>Send us a Message</h2>
 
-          {error && <span className="error">{error}</span>}
-
           <div className="form-row">
-            <input
-              name="fname"
-              placeholder="First name *"
-              value={form.fname}
-              onChange={handleChange}
-            />
-            <input
-              name="lname"
-              placeholder="Last name"
-              value={form.lname}
-              onChange={handleChange}
-            />
+            <div>
+              <input
+                {...register("fname")}
+                placeholder="First name *"
+                style={{ borderColor: errors.fname ? "#e63946" : "" }}
+              />
+              {errors.fname && <span className="error">{errors.fname.message}</span>}
+            </div>
+            <div>
+              <input
+                {...register("lname")}
+                placeholder="Last name"
+                style={{ borderColor: errors.lname ? "#e63946" : "" }}
+              />
+              {errors.lname && <span className="error">{errors.lname.message}</span>}
+            </div>
           </div>
 
           <div className="form-row">
-            <input
-              type="email"
-              name="email"
-              placeholder="Email address *"
-              value={form.email}
-              onChange={handleChange}
-            />
-            <input
-              name="phone"
-              placeholder="Phone number"
-              value={form.phone}
-              onChange={handleChange}
-            />
+            <div>
+              <input
+                type="email"
+                {...register("email")}
+                placeholder="Email address *"
+                style={{ borderColor: errors.email ? "#e63946" : "" }}
+              />
+              {errors.email && <span className="error">{errors.email.message}</span>}
+            </div>
+            <div>
+              <input
+                {...register("phone")}
+                placeholder="+91 Phone number *"
+                style={{ borderColor: errors.phone ? "#e63946" : "" }}
+              />
+              {errors.phone && <span className="error">{errors.phone.message}</span>}
+            </div>
           </div>
 
           <div className="custom-select">
             <div
-              className="select-box"
+              className={`select-box ${errors.time_slot ? "error-border" : ""}`}
               onClick={() => setOpen(!open)}
+              style={{ borderColor: errors.time_slot ? "#e63946" : "" }}
             >
-              {form.time_slot || "Preferred Contact Time *"}
+              {selectedTime || "Preferred Contact Time *"}
             </div>
 
             {open && (
@@ -168,7 +177,7 @@ const Contact = () => {
                     key={t}
                     className="select-item"
                     onClick={() => {
-                      setForm({...form, time_slot: t});
+                      setValue("time_slot", t, { shouldValidate: true });
                       setOpen(false);
                     }}
                   >
@@ -177,9 +186,17 @@ const Contact = () => {
                 ))}
               </div>
             )}
+            {errors.time_slot && <span className="error" style={{ display: "block", marginTop: "5px" }}>{errors.time_slot.message}</span>}
           </div>
 
-          <textarea name="message" placeholder="Your message *" value={form.message} onChange={handleChange}></textarea>
+          <div style={{ marginBottom: "22px" }}>
+            <textarea 
+              {...register("message")} 
+              placeholder="Your message *" 
+              style={{ borderColor: errors.message ? "#e63946" : "", marginBottom: "5px" }}
+            ></textarea>
+            {errors.message && <span className="error">{errors.message.message}</span>}
+          </div>
 
           <button type="submit">Send Now</button>
         </form>

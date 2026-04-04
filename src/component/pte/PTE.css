@@ -138,6 +138,17 @@
   letter-spacing: 1px;
 }
 
+.pte-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.pte-error {
+  color: #e63946;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
 .pte-form button:hover {
   background-color: var(--accent-blue);
   transform: scale(1.02);

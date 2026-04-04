@@ -40,13 +40,13 @@ function SlotSelector({ selectedSlot, setSelectedSlot, selectedDate, setSelected
       <h3 className="slot-heading">Select {showDatePicker ? "Date & " : ""}Time Slot</h3>
       {showDatePicker && (
         <div style={{ marginBottom: "20px" }}>
-          <input 
-            type="date" 
-            value={selectedDate} 
+          <input
+            type="date"
+            value={selectedDate}
             onChange={(e) => {
               setSelectedDate(e.target.value);
               setSelectedSlot(null);
-            }} 
+            }}
             min={new Date().toLocaleDateString('en-CA')}
             style={{
               padding: "10px",
