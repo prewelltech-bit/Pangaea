@@ -1,30 +1,37 @@
-import React, { useState } from "react";
+import React from "react";
+import { useForm } from "react-hook-form";
+import { yupResolver } from "@hookform/resolvers/yup";
+import * as yup from "yup";
 import { collection, addDoc, doc, getDoc, query, where, getDocs } from "firebase/firestore";
 import { db } from "../../firebase";
 import emailjs from "emailjs-com";
 import { EMAILJS_CONFIG } from "../../utils/emailConfig";
 
-function BookingForm({ selectedSlot }) {
-  const [formData, setFormData] = useState({
-    first_name: "",
-    last_name: "",
-    email: "",
-    phone: "",
-    study_destination: "",
-    study_timeline: "",
-    preferred_year: "",
+// 1. Define Validation Schema
+const schema = yup.object().shape({
+  first_name: yup.string().required("First name is required"),
+  last_name: yup.string().required("Last name is required"),
+  email: yup.string().email("Invalid email address").required("Email is required"),
+  phone: yup
+    .string()
+    .matches(/^\+\d{7,15}$/, "Enter a valid phone number with country code (e.g., +919876543210)")
+    .required("Phone number is required"),
+  study_destination: yup.string().required("Preferred destination is required"),
+  study_timeline: yup.string().required("Timeline is required"),
+  preferred_year: yup.string().required("Preferred year is required"),
+});
+
+function BookingForm({ selectedSlot, selectedDate, insideModal = false }) {
+  // 2. Initialize Hook Form
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm({
+    resolver: yupResolver(schema),
   });
 
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-
+  const onSubmit = async (data) => {
     if (!selectedSlot) {
       alert("Please select a time slot first");
       return;
@@ -46,33 +53,32 @@ function BookingForm({ selectedSlot }) {
       }
 
       // 2️⃣ Check if someone already booked it TODAY
-      const todayDate = new Date().toISOString().split("T")[0];
       const q = query(
-        collection(db, "bookings"), 
-        where("date", "==", todayDate), 
+        collection(db, "bookings"),
+        where("date", "==", selectedDate),
         where("slot_time", "==", selectedSlot.time)
       );
       const bookingSnap = await getDocs(q);
 
       if (!bookingSnap.empty) {
-        alert("Sorry, this slot was just booked by someone else for today!");
+        alert("Sorry, this slot was just booked by someone else for this date!");
         return;
       }
 
-      // 3️⃣ Insert booking
+      // 3️⃣ Insert booking (Keep existing Database Connection)
       await addDoc(collection(db, "bookings"), {
-        ...formData,
+        ...data, // This 'data' contains all the validated form fields
         slot_id: selectedSlot.id,
         slot_time: selectedSlot.time,
-        date: todayDate,
+        date: selectedDate,
         created_at: new Date().toISOString()
       });
 
       // 4️⃣ Send Auto Email via EmailJS
       const emailPayload = {
-        name: `${formData.first_name} ${formData.last_name}`,
-        email: formData.email,
-        phone: formData.phone,
+        name: `${data.first_name} ${data.last_name}`,
+        email: data.email,
+        phone: data.phone,
         form_type: "Counseling Registration",
         time: selectedSlot.time
       };
@@ -96,77 +102,101 @@ function BookingForm({ selectedSlot }) {
     }
   };
 
+  const formContent = (
+    <form className="counselling-form" onSubmit={handleSubmit(onSubmit)}>
+      <div className="form-row">
+        <div>
+          <label>First name</label>
+          <input
+            {...register("first_name")}
+            placeholder="First Name"
+            style={{ width: "100%", borderColor: errors.first_name ? "#e63946" : "" }}
+          />
+          {errors.first_name && <span className="error-msg">{errors.first_name.message}</span>}
+        </div>
+
+        <div>
+          <label>Last Name</label>
+          <input
+            {...register("last_name")}
+            placeholder="Last Name"
+            style={{ width: "100%", borderColor: errors.last_name ? "#e63946" : "" }}
+          />
+          {errors.last_name && <span className="error-msg">{errors.last_name.message}</span>}
+        </div>
+      </div>
+
+      <div className="form-row">
+        <div>
+          <label>Email</label>
+          <input
+            {...register("email")}
+            placeholder="Email"
+            style={{ width: "100%", borderColor: errors.email ? "#e63946" : "" }}
+          />
+          {errors.email && <span className="error-msg">{errors.email.message}</span>}
+        </div>
+        <div>
+          <label>Phone</label>
+          <input
+            {...register("phone")}
+            placeholder="+91 XXXXXXXXXX"
+            style={{ width: "100%", borderColor: errors.phone ? "#e63946" : "" }}
+          />
+          {errors.phone && <span className="error-msg">{errors.phone.message}</span>}
+        </div>
+      </div>
+
+      <div className="form-row">
+        <div>
+          <label>Your preferred study destination</label>
+          <input
+            {...register("study_destination")}
+            placeholder="only Au, Uk, Nz, Eu, Canada, Us"
+            style={{ width: "100%", borderColor: errors.study_destination ? "#e63946" : "" }}
+          />
+          {errors.study_destination && <span className="error-msg">{errors.study_destination.message}</span>}
+        </div>
+      </div>
+
+      <div className="form-row">
+        <div>
+          <label>When do you plan to study?</label>
+          <input
+            {...register("study_timeline")}
+            placeholder="When do you plan to study?"
+            style={{ width: "100%", borderColor: errors.study_timeline ? "#e63946" : "" }}
+          />
+          {errors.study_timeline && <span className="error-msg">{errors.study_timeline.message}</span>}
+        </div>
+
+        <div>
+          <label>Your preferred year</label>
+          <input
+            {...register("preferred_year")}
+            placeholder="Preferred Year"
+            style={{ width: "100%", borderColor: errors.preferred_year ? "#e63946" : "" }}
+          />
+          {errors.preferred_year && <span className="error-msg">{errors.preferred_year.message}</span>}
+        </div>
+      </div>
+
+      <button type="submit">Get Free Counselling</button>
+    </form>
+  );
+
+  if (insideModal) {
+    return (
+      <div className="counselling-box-mini">
+        <h2 style={{ textAlign: "left", fontSize: "24px" }}>Schedule Your Session</h2>
+        <p style={{ textAlign: "left" }}>Fill in your details to confirm your slot.</p>
+        {formContent}
+      </div>
+    );
+  }
+
   return (
     <>
-      {/* <form
-        onSubmit={handleSubmit}
-        style={{
-          marginTop: "30px",
-          display: "flex",
-          flexDirection: "column",
-          gap: "10px",
-        }}
-        className=""
-      >
-        <h3>Enter Your Details</h3>
-
-        <input
-          name="first_name"
-          placeholder="First Name"
-          value={formData.first_name}
-          onChange={handleChange}
-          required
-        />
-
-        <input
-          name="last_name"
-          placeholder="Last Name"
-          value={formData.last_name}
-          onChange={handleChange}
-          required
-        />
-
-        <input
-          name="email"
-          placeholder="Email"
-          value={formData.email}
-          onChange={handleChange}
-          required
-        />
-
-        <input
-          name="phone"
-          placeholder="Mobile"
-          value={formData.phone}
-          onChange={handleChange}
-          required
-        />
-
-        <input
-          name="study_destination"
-          placeholder="Preferred Study Destination"
-          value={formData.study_destination}
-          onChange={handleChange}
-        />
-
-        <input
-          name="study_timeline"
-          placeholder="When do you plan to study?"
-          value={formData.study_timeline}
-          onChange={handleChange}
-        />
-
-        <input
-          name="preferred_year"
-          placeholder="Preferred Year"
-          value={formData.preferred_year}
-          onChange={handleChange}
-        />
-
-        <button type="submit" style={{ marginTop: "15px" }}>
-          Confirm Booking
-        </button> 
-      </form> */}
       <section className="counselling-container">
         <div className="counselling-box">
           <h2>Get FREE Counselling Today!</h2>
@@ -174,101 +204,7 @@ function BookingForm({ selectedSlot }) {
             Enter your details and our expert will reach out to you to discuss{" "}
             <br /> your plans. By the way, all our services are free!
           </p>
-
-          <form className="counselling-form" onSubmit={handleSubmit}>
-            <div className="form-row">
-              <div>
-                <label>First name</label>
-                <input
-                  name="first_name"
-                  placeholder="First Name"
-                  value={formData.first_name}
-                  onChange={handleChange}
-                  style={{ width: "100%" }}
-                  required
-                />
-              </div>
-
-              <div>
-                <label>Last Name</label>
-                <input
-                  name="last_name"
-                  placeholder="Last Name"
-                  value={formData.last_name}
-                  onChange={handleChange}
-                  style={{ width: "100%" }}
-                  required
-                />
-              </div>
-            </div>
-
-            <div className="form-row">
-              <div>
-                <label>Email</label>
-                <input
-                  name="email"
-                  placeholder="Email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  style={{ width: "100%" }}
-                  required
-                />
-              </div>
-              <div>
-                <label>Phone</label>
-                <input
-                  name="phone"
-                  placeholder="Mobile"
-                  value={formData.phone}
-                  onChange={handleChange}
-                  style={{ width: "100%" }}
-                  required
-                />
-              </div>
-            </div>
-
-            <div className="form-row">
-              <div>
-                <label>Your preferred study destination</label>
-                <input
-                  name="study_destination"
-                  placeholder="only Au, Uk, Nz, Eu, Canada, Us"
-                  value={formData.study_destination}
-                  onChange={handleChange}
-                  style={{ width: "100%" }}
-                  required
-                />
-              </div>
-            </div>
-
-            <div className="form-row">
-              <div>
-                <label>When do you plan to study?</label>
-                <input
-                  name="study_timeline"
-                  placeholder="When do you plan to study?"
-                  value={formData.study_timeline}
-                  onChange={handleChange}
-                  style={{ width: "100%" }}
-                  required
-                />
-              </div>
-
-              <div>
-                <label>Your preferred year</label>
-                <input
-                  name="preferred_year"
-                  placeholder="Preferred Year"
-                  value={formData.preferred_year}
-                  onChange={handleChange}
-                  style={{ width: "100%" }}
-                  required
-                />
-              </div>
-            </div>
-
-            <button type="submit">Get Free Counselling</button>
-          </form>
+          {formContent}
         </div>
       </section>
     </>

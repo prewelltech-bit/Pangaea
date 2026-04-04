@@ -33,7 +33,7 @@ const OurPartners = () => {
           slidesPerView={2}
           spaceBetween={20}
           loop={true}
-          speed={1000}
+          speed={2000}
           autoplay={{
             delay: 0,
             disableOnInteraction: false,

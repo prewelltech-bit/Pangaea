@@ -15,6 +15,7 @@ import BookingForm from "../freecounselling/Booking";
 import "../freecounselling/FreeCounselling.css";
 const Body = () => {
   const [selectedSlot, setSelectedSlot] = useState(null);
+  const [selectedDate, setSelectedDate] = useState(new Date().toLocaleDateString('en-CA')); // YYYY-MM-DD local format
   return (
     <>
       <Hero />
@@ -30,8 +31,10 @@ const Body = () => {
         <SlotSelector
           selectedSlot={selectedSlot}
           setSelectedSlot={setSelectedSlot}
+          selectedDate={selectedDate}
+          setSelectedDate={setSelectedDate}
         />
-        <BookingForm selectedSlot={selectedSlot} />
+        <BookingForm selectedSlot={selectedSlot} selectedDate={selectedDate} />
       </div>
       {/* <CounselingDemo /> */}
       {/* <FreeCounselling /> */}

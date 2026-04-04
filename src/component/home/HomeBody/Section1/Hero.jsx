@@ -17,7 +17,7 @@ const Hero = () => {
           modules={[Autoplay, Pagination]}
           slidesPerView={1}
           loop={true}
-          speed={900}
+          speed={1000}
           autoplay={{
             delay: 3500,
             disableOnInteraction: false,
@@ -42,7 +42,7 @@ const Hero = () => {
                 <p>
                   Meet representatives from top universities from Australia,
                   <br />
-                   New Zealand,UK,Europe,Canada,USA...
+                  New Zealand,UK,Europe,Canada,USA...
                 </p>
               </div>
 

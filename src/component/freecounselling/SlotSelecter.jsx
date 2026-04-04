@@ -3,7 +3,7 @@ import { collection, getDocs, query, orderBy, where } from "firebase/firestore";
 import { db } from "../../firebase";
 import "./FreeCounselling.css";
 
-function SlotSelector({ selectedSlot, setSelectedSlot }) {
+function SlotSelector({ selectedSlot, setSelectedSlot, selectedDate, setSelectedDate, showDatePicker = false }) {
   const [slots, setSlots] = useState([]);
   const [bookedTimes, setBookedTimes] = useState([]);
 
@@ -19,12 +19,11 @@ function SlotSelector({ selectedSlot, setSelectedSlot }) {
       setSlots(fetchedSlots);
 
       // 2. Fetch today's actively booked slots
-      const todayDate = new Date().toISOString().split("T")[0];
-      const bq = query(collection(db, "bookings"), where("date", "==", todayDate));
+      const bq = query(collection(db, "bookings"), where("date", "==", selectedDate));
       const bSnapshot = await getDocs(bq);
       const booked = [];
       bSnapshot.forEach((doc) => {
-        booked.push(doc.data().slot_time);
+        booked.push(doc.data().slot_id);
       });
       setBookedTimes(booked);
     } catch (error) {
@@ -33,34 +32,56 @@ function SlotSelector({ selectedSlot, setSelectedSlot }) {
   }
 
   useEffect(() => {
-    fetchSlots();
-  }, []);
+    if (selectedDate) fetchSlots();
+  }, [selectedDate]);
 
   return (
-    <div>
-      <h3 className="slot-heading">Select Time Slot</h3>
+    <div className="slot-selector-container" style={{ width: "100%" }}>
+      <h3 className="slot-heading">Select {showDatePicker ? "Date & " : ""}Time Slot</h3>
+      {showDatePicker && (
+        <div style={{ marginBottom: "20px" }}>
+          <input
+            type="date"
+            value={selectedDate}
+            onChange={(e) => {
+              setSelectedDate(e.target.value);
+              setSelectedSlot(null);
+            }}
+            min={new Date().toLocaleDateString('en-CA')}
+            style={{
+              padding: "10px",
+              borderRadius: "8px",
+              border: "1px solid #ccc",
+              maxWidth: "300px",
+              width: "100%",
+              fontSize: "16px",
+              fontFamily: "inherit"
+            }}
+          />
+        </div>
+      )}
       <div
         style={{ display: "flex", flexWrap: "wrap", gap: "10px" }}
         className="slot-booking"
       >
         {slots.map((slot) => {
-          const isBookedToday = bookedTimes.includes(slot.time) || slot.status === "booked";
+          const isSlotBooked = bookedTimes.includes(slot.id) || slot.status === "booked";
           return (
             <button
               key={slot.id}
-              disabled={isBookedToday}
+              disabled={isSlotBooked}
               onClick={() => setSelectedSlot(slot)}
               style={{
                 padding: "10px 15px",
                 border: "1px solid green",
                 background:
-                  isBookedToday
+                  isSlotBooked
                     ? "#ddd"
                     : selectedSlot?.id === slot.id
                       ? "green"
                       : "white",
-                color: isBookedToday ? "#999" : selectedSlot?.id === slot.id ? "white" : "black",
-                cursor: isBookedToday ? "not-allowed" : "pointer",
+                color: isSlotBooked ? "#999" : selectedSlot?.id === slot.id ? "white" : "black",
+                cursor: isSlotBooked ? "not-allowed" : "pointer",
               }}
             >
               {slot.time}

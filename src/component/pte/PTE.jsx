@@ -1,33 +1,42 @@
-import React, { useState } from "react";
+import React from "react";
+import { useForm } from "react-hook-form";
+import { yupResolver } from "@hookform/resolvers/yup";
+import * as yup from "yup";
 import "./PTE.css";
 import emailjs from "emailjs-com";
 import { EMAILJS_CONFIG } from "../../utils/emailConfig";
 
+// 1. Define Validation Schema
+const schema = yup.object().shape({
+  name: yup.string().required("Name is required"),
+  email: yup.string().email("Invalid email address").required("Email is required"),
+  phone: yup
+    .string()
+    .matches(/^\+\d{7,15}$/, "Enter a valid phone number with country code (e.g., +919000000000)")
+    .required("Phone number is required"),
+  location: yup.string().required("Location is required"),
+  message: yup.string().optional(),
+});
+
 const PTE = () => {
-  const [form, setForm] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    location: "",
-    message: ""
+  // 2. Initialize Hook Form
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm({
+    resolver: yupResolver(schema),
   });
 
-  const handleChange = (e) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (!form.name || !form.email || !form.phone) {
-      alert("Please fill in required fields.");
-      return;
-    }
-
+  const onSubmit = (data) => {
     const emailPayload = {
-      name: form.name,
-      email: form.email,
-      phone: form.phone,
-      form_type: "PTE Registration"
+      name: data.name,
+      email: data.email,
+      phone: data.phone,
+      form_type: "PTE Registration",
+      location: data.location,
+      message: data.message
     };
 
     emailjs
@@ -35,7 +44,7 @@ const PTE = () => {
       .then(
         () => {
           alert("Registration Sent Successfully! ✅");
-          setForm({ name: "", email: "", phone: "", location: "", message: "" });
+          reset();
         },
         (err) => {
           console.error(err);
@@ -100,15 +109,56 @@ const PTE = () => {
         <div className="pte-right">
           <h3>Register Now</h3>
 
-          <form className="pte-form" onSubmit={handleSubmit}>
+          <form className="pte-form" onSubmit={handleSubmit(onSubmit)}>
             <label>Course Applied for</label>
             <input type="text" value="PTE" readOnly />
 
-            <input type="text" name="name" placeholder="Name*" value={form.name} onChange={handleChange} required />
-            <input type="email" name="email" placeholder="Email*" value={form.email} onChange={handleChange} required />
-            <input type="text" name="phone" placeholder="Phone*" value={form.phone} onChange={handleChange} required />
-            <input type="text" name="location" placeholder="Location*" value={form.location} onChange={handleChange} />
-            <textarea name="message" placeholder="Enter Your Message*" rows="4" value={form.message} onChange={handleChange}></textarea>
+            <div className="pte-field">
+              <input 
+                {...register("name")} 
+                placeholder="Name*" 
+                style={{ borderColor: errors.name ? "#e63946" : "" }}
+              />
+              {errors.name && <span className="pte-error">{errors.name.message}</span>}
+            </div>
+
+            <div className="pte-field">
+              <input 
+                type="email" 
+                {...register("email")} 
+                placeholder="Email*" 
+                style={{ borderColor: errors.email ? "#e63946" : "" }}
+              />
+              {errors.email && <span className="pte-error">{errors.email.message}</span>}
+            </div>
+
+            <div className="pte-field">
+              <input 
+                {...register("phone")} 
+                placeholder="+91 Mobile*" 
+                style={{ borderColor: errors.phone ? "#e63946" : "" }}
+              />
+              {errors.phone && <span className="pte-error">{errors.phone.message}</span>}
+            </div>
+
+            <div className="pte-field">
+              <input 
+                {...register("location")} 
+                placeholder="Location*" 
+                style={{ borderColor: errors.location ? "#e63946" : "" }}
+              />
+              {errors.location && <span className="pte-error">{errors.location.message}</span>}
+            </div>
+
+            <div className="pte-field">
+              <textarea 
+                {...register("message")} 
+                placeholder="Enter Your Message*" 
+                rows="4"
+                style={{ borderColor: errors.message ? "#e63946" : "" }}
+              ></textarea>
+              {errors.message && <span className="pte-error">{errors.message.message}</span>}
+            </div>
 
             <button type="submit">SEND MESSAGE</button>
           </form>
