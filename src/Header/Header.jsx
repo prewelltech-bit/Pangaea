@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import "./Header.css";
-import { FiChevronDown } from "react-icons/fi";
+import { FiChevronDown, FiMoon, FiSun } from "react-icons/fi";
+import { useTheme } from "../context/ThemeContext";
 
 const Header = () => {
+  const { theme, toggleTheme } = useTheme();
   const [isMobile, setIsMobile] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -104,6 +106,13 @@ const Header = () => {
 
           {/* RIGHT BUTTON */}
           <div className="nav-right">
+            <button
+              className="theme-toggle"
+              onClick={toggleTheme}
+              aria-label="Toggle Theme"
+            >
+              {theme === "light" ? <FiMoon /> : <FiSun />}
+            </button>
             <button
               className="consult-btn"
               onClick={() => goToPage("/contact")}

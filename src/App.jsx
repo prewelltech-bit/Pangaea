@@ -25,9 +25,11 @@ import AboutUs from "./component/AboutUS/AboutUs";
 import WhatsAppChat from "./component/WhatsAppChat";
 // import Footer1 from "./Footer/Footer1";
 
+import { ThemeProvider } from "./context/ThemeContext";
+
 const App = () => {
   return (
-    <>
+    <ThemeProvider>
       <BrowserRouter>
         <Header />
 
@@ -60,7 +62,7 @@ const App = () => {
         <Footer />
       </BrowserRouter>
       <WhatsAppChat />
-    </>
+    </ThemeProvider>
   );
 };
 

@@ -56,10 +56,9 @@ const PopularStudy = () => {
                   className="destination-card card"
                 >
                   <img src={dest.image} alt={dest.country} className="destination-emoji" />
-                  {/* <div className="destination-emoji">{dest.image}</div> */}
                   <h3>{dest.country}</h3>
                   <p>{dest.description}</p>
-                  {/* <div className="read-more" onClick={() => { Navigate(dest.link) }}>Learn More</div> */}
+                  <div className="read-more-btn">Learn More</div>
                 </Link>
               ))}
             </div>

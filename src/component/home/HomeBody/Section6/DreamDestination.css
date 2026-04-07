@@ -265,3 +265,11 @@
     height: 250px;
   }
 }
+
+.dark .dream-title-span {
+  color: #1c4479 !important;
+}
+
+.dark .dream-title {
+  color: #ffffff !important;
+}

@@ -33,6 +33,15 @@
   width: 95vw;
   margin: 10px 2.5%;
   border-radius: 20px;
+  transition: background 0.4s ease, backdrop-filter 0.4s ease, border 0.4s ease;
+}
+
+/* --- INTEGRATED DARK NAVBAR --- */
+.dark .navbar {
+  background: #09090b;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+  background-image: none;
 }
 
 /* ================= CONTAINER ================= */
@@ -113,6 +122,41 @@
   flex: 1;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
+}
+
+.theme-toggle {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-right: 15px;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  padding: 0;
+}
+
+.theme-toggle:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: #fff;
+  transform: translateY(-2px);
+}
+
+.dark .theme-toggle {
+  background: #18181b;
+  border-color: var(--border-color);
+  color: #fafafa;
+}
+
+.dark .theme-toggle:hover {
+  background: #27272a;
+  border-color: #fafafa;
 }
 
 .consult-btn {
@@ -173,7 +217,13 @@
   }
 
   .nav-right {
-    display: none;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 15px;
+  }
+
+  .consult-btn {
+    display: none; /* Hide consultation btn on mobile to save space, but keep toggle */
   }
 
   .mobile-menu-icon {
