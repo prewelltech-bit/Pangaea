@@ -43,14 +43,11 @@ body,
 }
 
 /* --- Global Theme Sync --- */
-.dark section,
+.dark section:not(.Au-country-hero):not(.uk-country-hero):not(.Us-country-hero):not(.Ca-country-hero):not(.Nz-country-hero):not(.Eu-country-hero),
 .dark .section,
 .dark .contact-section:not(.hero-main),
 .dark .pte-section {
-  /* background-color: var(--bg-color); */
-  /* background-image: none !important; */
-  /* Removed to allow Hero background */
-  background-image: radial-gradient(circle at 50% 50%, rgba(30, 58, 138, 0.05) 0%, transparent 80%) !important;
+  background-image: radial-gradient(circle at 50% 50%, rgba(30, 58, 138, 0.05) 0%, transparent 80%);
 }
 
 .dark .card,

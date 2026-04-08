@@ -1,5 +1,5 @@
 import React from "react";
-import "../../../UK/UkSection/sections/Additional_info/FutureOpportunities.css";
+import "./AuFutureOppo.css";
 const AuFutureOppo = () => {
   return (
     <>

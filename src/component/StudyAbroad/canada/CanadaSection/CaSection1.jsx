@@ -26,15 +26,15 @@ const CaSection1 = () => {
       {/* UK Overview Section */}
       {Country.map((section, index) => {
         return (
-          <div className="Au-overview" key={index}>
-            <div className="Au-overview-container">
-              <div className="Au-left-overview">
+          <div className="Ca-overview" key={index}>
+            <div className="Ca-overview-container">
+              <div className="Ca-left-overview">
                 <img src={section.image} alt={section.name} />
               </div>
-              <div className="Au-right-overview">
-                <h1 className="Au-right-overview-h1">
+              <div className="Ca-right-overview">
+                <h1 className="Ca-right-overview-h1">
                   Overview of{" "}
-                  <span className="Au-right-overview-h1-span">
+                  <span className="Ca-right-overview-h1-span">
                     {section.name}
                   </span>
                 </h1>
@@ -48,19 +48,19 @@ const CaSection1 = () => {
       {/* UK- Why Study in UK Section */}
       {Country.map((section, index) => {
         return (
-          <div className="Au-why-study" key={index}>
-            <div className="Au-why-study-container">
-              <div className="Au-why-study-text">
-                <h1 className="Au-why-study-h1">
+          <div className="Ca-why-study" key={index}>
+            <div className="Ca-why-study-container">
+              <div className="Ca-why-study-text">
+                <h1 className="Ca-why-study-h1">
                   Why Study in{" "}
-                  <span className="Au-why-study-h1-span">{section.name} ?</span>
+                  <span className="Ca-why-study-h1-span">{section.name} ?</span>
                 </h1>
-                <div className="Au-why-study-cards">
+                <div className="Ca-why-study-cards">
                   {section.whyStudyInCanada.map((item) => (
-                    <div className="Au-why-study-card" key={item.id}>
-                      <div className="Au-why-study-icon">{item.icon}</div>
-                      <h3 className="Au-why-study-card-h3">{item.title}</h3>
-                      <p className="Au-why-study-card-p">{item.description}</p>
+                    <div className="Ca-why-study-card" key={item.id}>
+                      <div className="Ca-why-study-icon">{item.icon}</div>
+                      <h3 className="Ca-why-study-card-h3">{item.title}</h3>
+                      <p className="Ca-why-study-card-p">{item.description}</p>
                     </div>
                   ))}
                 </div>

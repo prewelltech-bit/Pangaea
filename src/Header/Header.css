@@ -38,7 +38,7 @@
 
 /* --- INTEGRATED DARK NAVBAR --- */
 .dark .navbar {
-  background: #09090b;
+  background: linear-gradient(90deg, #fff, #9c9fa5) !important;
   border: 1px solid var(--border-color);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
   background-image: none;
@@ -57,7 +57,8 @@
 /* ================= LOGO ================= */
 
 .logo img {
-  height: 80px;
+  height: 100px;
+  /* margin-top: 10px; */
 }
 
 /* ================= NAV LINKS ================= */
@@ -73,9 +74,15 @@
 
 .nav-links li {
   color: #fff;
-  font-size: 14px;
+  font-size: 17px;
   font-weight: 600;
   cursor: pointer;
+}
+
+.dark .nav-links li {
+  color: #020244;
+  font-size: 17px;
+  font-weight: 600;
 }
 
 /* ================= DROPDOWN ================= */
@@ -149,7 +156,7 @@
 }
 
 .dark .theme-toggle {
-  background: #18181b;
+  background: #020244;
   border-color: var(--border-color);
   color: #fafafa;
 }
@@ -223,7 +230,8 @@
   }
 
   .consult-btn {
-    display: none; /* Hide consultation btn on mobile to save space, but keep toggle */
+    display: none;
+    /* Hide consultation btn on mobile to save space, but keep toggle */
   }
 
   .mobile-menu-icon {

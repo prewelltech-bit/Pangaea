@@ -273,3 +273,11 @@
 .dark .dream-title {
   color: #ffffff !important;
 }
+
+.dark .dream-section {
+  background: linear-gradient(180deg, #000000, #6b6b6b, #525252) !important;
+}
+
+.dark .stack-card {
+  background: #c0bebe;
+}

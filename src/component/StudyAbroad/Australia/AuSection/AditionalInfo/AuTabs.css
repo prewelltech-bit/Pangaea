@@ -1,0 +1,67 @@
+.tabs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin: 40px auto;
+  padding: 0 15px;
+}
+
+.tabs button {
+  padding: 12px 24px;
+  border-radius: 50px;
+  border: 2px solid #0a2351;
+  background: transparent;
+  color: #0a2351;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.tabs button:hover {
+  background: #0a2351;
+  color: #ffffff;
+}
+
+.tabs button.active {
+  background: #0a2351;
+  color: #ffffff;
+}
+
+/* ================= Dark Mode ================= */
+.dark .tabs button {
+  border-color: #60a5fa;
+  color: #60a5fa;
+}
+
+.dark .tabs button:hover,
+.dark .tabs button.active {
+  background: #60a5fa;
+  color: #09090b;
+}
+
+/* ================= Mobile Responsiveness ================= */
+@media (max-width: 768px) {
+  .tabs {
+    gap: 10px;
+    margin: 30px auto;
+  }
+
+  .tabs button {
+    padding: 10px 18px;
+    font-size: 0.9rem;
+    width: 100%; /* Stack on small mobile if needed, or keep wrap */
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tabs button {
+    width: 100%;
+    white-space: normal;
+    line-height: 1.4;
+  }
+}

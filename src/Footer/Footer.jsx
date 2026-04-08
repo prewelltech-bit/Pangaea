@@ -4,9 +4,13 @@ import React from "react";
 import { motion } from "framer-motion";
 import { useRevealAnimation, staggerContainerVariants, getDirectionVariants } from "../hooks/useRevealAnimation";
 import { Link } from "react-router-dom";
-const logo = "/assets/Logo/PP-2.png";
+import { useTheme } from "../context/ThemeContext";
+
 const Footer = () => {
+  const { theme } = useTheme();
   const { ref, isInView } = useRevealAnimation(0.4);
+
+  const logoSrc = theme === "light" ? "/assets/Logo/PP-2.png" : "/assets/Logo/PANGEA_PATHWAYS.png";
 
   return (
     <motion.div
@@ -18,12 +22,10 @@ const Footer = () => {
     >
       <footer className="footer7">
         <div className="footer7-container">
-
           <div className="footer7-top">
-
             {/* Brand */}
             <motion.div className="footer7-brand" variants={getDirectionVariants('left')}>
-              <img src={logo} alt="Pangaea Pathways Logo" className="footer7-logo" />
+              <img src={logoSrc} alt="Pangaea Pathways Logo" className="footer7-logo" />
             </motion.div>
 
             {/* Links */}

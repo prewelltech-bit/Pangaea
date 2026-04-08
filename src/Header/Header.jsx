@@ -56,7 +56,10 @@ const Header = () => {
           {/* LOGO */}
           <div className="logo">
             <Link to="/">
-              <img src="/assets/Logo/PP-2.png" alt="logo" />
+              <img
+                src={theme === "light" ? "/assets/Logo/PP-2.png" : "/assets/Logo/PANGEA_PATHWAYS.png"}
+                alt="logo"
+              />
             </Link>
           </div>
 

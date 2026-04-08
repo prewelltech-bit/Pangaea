@@ -100,3 +100,37 @@
     padding: 80px 5%;
   }
 }
+
+.dark .blogs-section {
+  background: #000000 !important;
+}
+
+.dark .blogs-heading {
+  color: #ffffff !important;
+}
+
+.dark .blog-card {
+  background: #666666 !important;
+}
+
+.dark .blog-content h3 {
+  color: #ffffff !important;
+}
+
+.dark .blog-desc {
+  color: #ffffff !important;
+}
+
+.dark .blog-date {
+  color: #ffffff !important;
+}
+
+.dark .blog-btn {
+  background: #ffffff !important;
+  color: #000000 !important;
+}
+
+.dark .blog-btn:hover {
+  background: #000000 !important;
+  color: #ffffff !important;
+}

@@ -216,3 +216,18 @@
 .info-card p {
   color: var(--text-light);
 }
+
+.dark .popular-h1-span {
+  color: #1c4479 !important;
+}
+
+.dark .popular-h1 {
+  color: #ffffff;
+}
+
+/* .dark .destinations-section {
+  background-color: #000000;
+} */
+/* .dark .destinations-section section {
+  background-color: #000000;
+} */

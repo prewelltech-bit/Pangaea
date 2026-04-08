@@ -1,7 +1,6 @@
 import React from "react";
 import "./EurSection.css";
 import Country from "../../../../jsonFiles/EuropeCountry.json";
-import "../../Australia/AuSection/AuSection1.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
@@ -27,15 +26,15 @@ const EurSction1 = () => {
       {/* Europe Overview Section */}
       {Country.map((section, index) => {
         return (
-          <div className="Au-overview" key={index}>
-            <div className="Au-overview-container">
-              <div className="Au-left-overview">
+          <div className="Eu-overview" key={index}>
+            <div className="Eu-overview-container">
+              <div className="Eu-left-overview">
                 <img src={section.image} alt={section.name} />
               </div>
-              <div className="Au-right-overview">
-                <h1 className="Au-right-overview-h1">
+              <div className="Eu-right-overview">
+                <h1 className="Eu-right-overview-h1">
                   Overview of{" "}
-                  <span className="Au-right-overview-h1-span">
+                  <span className="Eu-right-overview-h1-span">
                     {section.name}
                   </span>
                 </h1>
@@ -49,19 +48,19 @@ const EurSction1 = () => {
       {/* Europe- Why Study in Europe Section */}
       {Country.map((section, index) => {
         return (
-          <div className="Au-why-study" key={index}>
-            <div className="Au-why-study-container">
-              <div className="Au-why-study-text">
-                <h1 className="Au-why-study-h1">
+          <div className="Eu-why-study" key={index}>
+            <div className="Eu-why-study-container">
+              <div className="Eu-why-study-text">
+                <h1 className="Eu-why-study-h1">
                   Why Study in{" "}
-                  <span className="Au-why-study-h1-span">{section.name} ?</span>
+                  <span className="Eu-why-study-h1-span">{section.name} ?</span>
                 </h1>
-                <div className="Au-why-study-cards">
+                <div className="Eu-why-study-cards">
                   {section.whyStudyInEurope.map((item) => (
-                    <div className="Au-why-study-card" key={item.id}>
-                      <div className="Au-why-study-icon">{item.icon}</div>
-                      <h3 className="Au-why-study-card-h3">{item.title}</h3>
-                      <p className="Au-why-study-card-p">{item.description}</p>
+                    <div className="Eu-why-study-card" key={item.id}>
+                      <div className="Eu-why-study-icon">{item.icon}</div>
+                      <h3 className="Eu-why-study-card-h3">{item.title}</h3>
+                      <p className="Eu-why-study-card-p">{item.description}</p>
                     </div>
                   ))}
                 </div>

@@ -168,3 +168,11 @@ button:hover {
 .dark .form-row input {
   background-color: #000000;
 }
+
+.dark .counselling-box h2 {
+  color: #179ae6;
+}
+
+.dark .counselling-box p {
+  color: #ffffff;
+}
