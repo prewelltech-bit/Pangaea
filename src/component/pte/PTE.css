@@ -61,6 +61,8 @@
   margin-bottom: 40px;
 }
 
+
+
 /* Info Cards Look */
 .pte-info h4 {
   color: var(--primary-blue);
@@ -179,4 +181,46 @@
   .pte-section {
     padding: 40px 15px;
   }
+}
+
+.dark .pte-right {
+  background-color: #3b3a3a;
+}
+
+.dark .pte-right h3 {
+  color: #6a90c9;
+}
+
+.dark .pte-right input,
+.dark .pte-right textarea {
+  background-color: #1c1c1c;
+  border-color: #444;
+  color: #fafafa;
+}
+
+.dark .pte-right input:focus,
+.dark .pte-right textarea:focus {
+  border-color: var(--primary-blue);
+  box-shadow: 0 0 0 4px rgba(10, 35, 81, 0.1);
+}
+
+.dark .pte-form label {
+  color: #fafafa;
+}
+
+.dark .pte-form button {
+  background-color: var(--primary-blue);
+  color: white;
+}
+
+.dark .pte-info h4 {
+  color: #6a90c9;
+}
+
+.dark .pte-info p {
+  color: #fafafa;
+}
+
+.dark .pte-intro {
+  color: #afafaf;
 }
