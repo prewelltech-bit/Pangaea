@@ -223,3 +223,19 @@
     max-width: 280px;
   }
 }
+/* ===== DARK MODE OVERRIDES ===== */
+.dark .left-hero h1,
+.dark .left-hero p,
+.dark .left-hero span {
+  color: #ffffff !important;
+  font-weight: 400 !important; /* Never bold */
+}
+
+.dark .hero-swiper .swiper-pagination-bullet {
+  background: #ffffff !important;
+  opacity: 0.6;
+}
+
+.dark .hero-swiper .swiper-pagination-bullet-active {
+  opacity: 1;
+}

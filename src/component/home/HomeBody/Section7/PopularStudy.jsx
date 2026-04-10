@@ -68,10 +68,20 @@ const PopularStudy = () => {
                   className="study-btn"
                   onClick={() => navigate(dest.link)}
                 >
+<<<<<<< HEAD
                   Explore
                 </button>
               </div>
             ))}
+=======
+                  <img src={dest.image} alt={dest.country} className="destination-emoji" />
+                  <h3>{dest.country}</h3>
+                  <p>{dest.description}</p>
+                  <div className="read-more-btn">Learn More</div>
+                </Link>
+              ))}
+            </div>
+>>>>>>> 28d8afbc81bd46af6fe9c247fb7f9a47ad07fa1b
           </div>
         </div>
       </section>

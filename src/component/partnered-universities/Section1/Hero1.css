@@ -108,3 +108,19 @@
     max-width: 100%;
   }
 }
+
+/* .dark .edwise-container {
+  background: #1c1c1f;
+} */
+
+.dark .edwise-left h1 {
+  color: #fafafa !important;
+}
+
+.dark .highlight {
+  color: #6a90c9 !important;
+}
+
+.dark .edwise-left p {
+  color: #c1c9d6 !important;
+}

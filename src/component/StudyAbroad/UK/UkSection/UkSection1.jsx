@@ -18,8 +18,8 @@ const UkSection1 = () => {
       {/* UK hero section */}
       {Country.map((section, index) => (
         <div className="uk-section" key={index}>
-          <section className="country-hero">
-            <div className="container">
+          <section className="uk-country-hero">
+            <div className="uk-container">
               <h1>{section.name}</h1>
               {/* <p>{section.overview}</p> */}
             </div>

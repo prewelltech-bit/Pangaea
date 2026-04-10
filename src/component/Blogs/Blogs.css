@@ -11,6 +11,78 @@
   margin-bottom: 50px;
 }
 
+/* ================= FILTER SIDEBAR LAYOUT ================= */
+.blogs-wrapper {
+  display: flex;
+  gap: 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.blogs-content {
+  flex: 1;
+}
+
+.blogs-sidebar {
+  width: 260px;
+  background: #f8fafc;
+  padding: 24px;
+  border-radius: 16px;
+  height: fit-content;
+  position: sticky;
+  top: 100px;
+  /* Make it stick on scroll */
+}
+
+.blogs-sidebar h3 {
+  font-size: 1.2rem;
+  color: #0c2444;
+  margin-bottom: 20px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.blog-filter-btn {
+  width: 100%;
+  padding: 12px 18px;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  border: none;
+  background: transparent;
+  color: #475569;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.blog-filter-btn:hover,
+.blog-filter-btn.active {
+  background: #0c2444;
+  color: #ffffff;
+}
+
+/* ================= DARK MODE TABS ================= */
+.dark .blogs-sidebar {
+  background: #1c1c1f;
+}
+
+.dark .blogs-sidebar h3 {
+  color: #fafafa;
+}
+
+.dark .blog-filter-btn {
+  color: #fafafa;
+}
+
+.dark .blog-filter-btn:hover,
+.dark .blog-filter-btn.active {
+  background: #3b82f6;
+  color: #fafafa;
+}
+
+
 /* UPDATED CONTAINER */
 .blogs-container {
   display: grid;
@@ -95,8 +167,74 @@
 }
 
 /* Responsive (optional fine-tune) */
+@media (max-width: 900px) {
+  .blogs-wrapper {
+    flex-direction: column-reverse;
+  }
+
+  .blogs-sidebar {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    position: relative;
+    top: 0;
+  }
+
+  .blogs-sidebar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .blogs-sidebar h3 {
+    display: none;
+    /* Hide the title when scrolling horizontally */
+  }
+
+  .blog-filter-btn {
+    white-space: nowrap;
+    margin-bottom: 0;
+    width: auto;
+  }
+}
+
 @media (max-width: 600px) {
   .blogs-section {
     padding: 80px 5%;
   }
+}
+
+.dark .blogs-section {
+  background: #000000 !important;
+}
+
+.dark .blogs-heading {
+  color: #ffffff !important;
+}
+
+.dark .blog-card {
+  background: #666666 !important;
+}
+
+.dark .blog-content h3 {
+  color: #ffffff !important;
+}
+
+.dark .blog-desc {
+  color: #ffffff !important;
+}
+
+.dark .blog-date {
+  color: #ffffff !important;
+}
+
+.dark .blog-btn {
+  background: #ffffff !important;
+  color: #000000 !important;
+}
+
+.dark .blog-btn:hover {
+  background: #000000 !important;
+  color: #ffffff !important;
 }

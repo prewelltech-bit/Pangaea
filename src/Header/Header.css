@@ -35,6 +35,15 @@
   margin: 10px 2.5%;
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: background 0.4s ease, backdrop-filter 0.4s ease, border 0.4s ease;
+}
+
+/* DARK MODE NAVBAR */
+.dark .navbar {
+  background: linear-gradient(90deg, #fff, #9c9fa5) !important;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+  background-image: none;
 }
 
 /* ================= CONTAINER ================= */
@@ -53,7 +62,7 @@
 }
 
 .logo img {
-  height: 95px;
+  height: 100px;
 }
 
 .nav-links {
@@ -67,19 +76,58 @@
 
 .nav-links li {
   color: #fff;
-  font-size: 14px;
+  font-size: 17px;
   font-weight: 600;
   cursor: pointer;
 }
 
-/* RIGHT */
+.dark .nav-links li {
+  color: #020244;
+}
+
+/* ================= RIGHT ================= */
+
 .nav-right {
   flex: 1;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 }
 
-/* ================= BUTTON ================= */
+.theme-toggle {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-right: 15px;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.theme-toggle:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: #fff;
+  transform: translateY(-2px);
+}
+
+.dark .theme-toggle {
+  background: #020244;
+  border-color: var(--border-color);
+  color: #fafafa;
+}
+
+.dark .theme-toggle:hover {
+  background: #27272a;
+  border-color: #fafafa;
+}
+
+/* BUTTON */
 
 .consult-btn {
   background: linear-gradient(135deg, #ffffff, #f1f5ff);
@@ -90,7 +138,6 @@
   font-size: 13px;
   font-weight: 600;
   cursor: pointer;
-  margin-top: -2px;
 }
 
 /* ================= DROPDOWN ================= */
@@ -123,7 +170,7 @@
   background: rgba(255, 255, 255, 0.1);
 }
 
-/* ================= MOBILE ================= */
+/* ================= MOBILE ICON ================= */
 
 .mobile-menu-icon {
   display: none;
@@ -152,7 +199,6 @@
     margin: 5px;
   }
 
-  /* MOBILE MENU */
   .nav-links-mobile {
     position: fixed;
     top: 0;
@@ -177,6 +223,12 @@
   }
 
   .nav-right {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 15px;
+  }
+
+  .consult-btn {
     display: none;
   }
 
@@ -184,7 +236,6 @@
     display: flex;
   }
 
-  /* DROPDOWN MOBILE */
   .dropdown-menu.mobile {
     position: static;
     background: transparent;
@@ -225,9 +276,8 @@
     height: 70px;
   }
 
-  /* 🔥 MENU WIDTH SMALL */
   .nav-links {
-    width: 45%;   
+    width: 45%;
     padding: 60px 10px;
   }
 
@@ -239,6 +289,7 @@
     font-size: 13px;
   }
 }
+
 .close-btn {
   position: absolute;
   top: 20px;

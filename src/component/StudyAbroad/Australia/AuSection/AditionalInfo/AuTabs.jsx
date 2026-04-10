@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./AuTabs.css";
 import AuFeesLivingCost from "./AuFeesLivingCost";
 import AuScholarships from "./AuScholarship";
 import AuFutureOppo from "./AuFutureOppo";
@@ -13,22 +14,32 @@ const AuTabs = () => {
       case "scholarships":
         return <AuScholarships />;
       case "future":
-        return <AuFutureOppo/>;
+        return <AuFutureOppo />;
       default:
         return null;
     }
   };
+
   return (
     <>
       <div>
         <div className="tabs">
-          <button onClick={() => setActiveTab("fees")}>
+          <button
+            className={activeTab === "fees" ? "active" : ""}
+            onClick={() => setActiveTab("fees")}
+          >
             Fees & Living Cost
           </button>
-          <button onClick={() => setActiveTab("scholarships")}>
+          <button
+            className={activeTab === "scholarships" ? "active" : ""}
+            onClick={() => setActiveTab("scholarships")}
+          >
             Scholarships
           </button>
-          <button onClick={() => setActiveTab("future")}>
+          <button
+            className={activeTab === "future" ? "active" : ""}
+            onClick={() => setActiveTab("future")}
+          >
             PR & Future Opportunities
           </button>
         </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import "../../../UK/UkSection/sections/Additional_info/FeesLivingCost.css"
+import "./AuFeesLivingCost.css"
 const AuFeesLivingCost = () => {
   return (
     <>

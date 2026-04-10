@@ -14,7 +14,7 @@
 /* ===== Welcome Background ===== */
 .welcome-section {
   height: 100vh;
-  background-image: url("/assets/Img/event-image.jpg");
+  /* background-image: url("/public/assets/Img/event-image.jpg"); */
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -265,4 +265,28 @@
   .welcome-h1 {
     font-size: 24px;
   }
+}
+
+/* ===== DARK MODE OVERRIDES ===== */
+.dark .layout-wrapper {
+  /* background-image is now preserved from light mode */
+  background-color: rgba(0, 0, 0, 0.8) !important;
+  /* Added overlay to make image darker */
+}
+
+.dark .glass-box {
+  background: #000000 !important;
+  /* Solid black as requested */
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1) !important;
+}
+
+.dark .welcome-h1,
+.dark .sub-text {
+  color: #ffffff !important;
+
+}
+
+.dark .welcome-h1-span {
+  color: #1c4479 !important;
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import "../../../UK/UkSection/sections/Additional_info/Scholarships.css"; // reuse same CSS
+import "./AuScholarship.css";
 
 const AuScholarships = () => {
   return (
