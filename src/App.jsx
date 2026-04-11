@@ -26,8 +26,8 @@ import WhatsAppChat from "./component/WhatsAppChat";
 // import Footer1 from "./Footer/Footer1";
 
 import { ThemeProvider } from "./context/ThemeContext";
-import Course from "./component/Course/Course";
 import FormCounsalting from "./component/freecounselling/FormCounsalting";
+import Course from "./component/Course/course";
 
 const App = () => {
   return (
