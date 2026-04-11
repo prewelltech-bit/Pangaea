@@ -40,21 +40,40 @@ const destinations = [
     link: "/study/united-states",
   }
 ];
+
 const PopularStudy = () => {
-  const Navigate = useNavigate();
+  const navigate = useNavigate();
+
   return (
-    <>
-      <div className="popular-study">
-        <section className="destinations-section section">
-          <h2 className="popular-h1">Popular Study <span className="popular-h1-span">Destinations</span></h2>
-          <div className="container">
-            <div className="grid">
-              {destinations.map((dest, index) => (
-                <Link
-                  key={index}
-                  to={dest.link}
-                  className="destination-card card"
+    <div className="popular-study">
+      <section className="destinations-section section">
+        <h2 className="popular-h1">
+          Popular Study <span className="popular-h1-span">Destinations</span>
+        </h2>
+
+        <div className="container">
+          <div className="grid">
+            {destinations.map((dest, index) => (
+              <div key={index} className="destination-card card">
+                <img
+                  src={dest.image}
+                  alt={dest.country}
+                  className="destination-emoji"
+                />
+                <h3>{dest.country}</h3>
+                <p>{dest.description}</p>
+
+                {/* BUTTON */}
+                <button
+                  className="study-btn"
+                  onClick={() => navigate(dest.link)}
                 >
+<<<<<<< HEAD
+                  Explore
+                </button>
+              </div>
+            ))}
+=======
                   <img src={dest.image} alt={dest.country} className="destination-emoji" />
                   <h3>{dest.country}</h3>
                   <p>{dest.description}</p>
@@ -62,10 +81,11 @@ const PopularStudy = () => {
                 </Link>
               ))}
             </div>
+>>>>>>> 28d8afbc81bd46af6fe9c247fb7f9a47ad07fa1b
           </div>
-        </section>
-      </div>
-    </>
+        </div>
+      </section>
+    </div>
   );
 };
 
