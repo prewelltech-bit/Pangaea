@@ -39,6 +39,25 @@ const Header = () => {
     setIsDropdownOpen(false);
   };
 
+  const handleCounsellingClick = () => {
+    setIsMobile(false);
+    setIsDropdownOpen(false);
+    if (window.location.pathname === "/") {
+      const section = document.getElementById("free-counselling");
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
+    } else {
+      navigate("/");
+      setTimeout(() => {
+        const section = document.getElementById("free-counselling");
+        if (section) {
+          section.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 100);
+    }
+  };
+
   const countries = [
     { name: "Australia", path: "/study/australia" },
     { name: "New Zealand", path: "/study/new-zealand" },
@@ -105,6 +124,7 @@ const Header = () => {
             <li onClick={() => goToPage("/pte")}>PTE</li>
             <li onClick={() => goToPage("/blogs")}>Blogs</li>
             <li onClick={() => goToPage("/contact")}>Contact Us</li>
+            <li onClick={() => goToPage("/course")}>Course</li>
           </ul>
 
           {/* RIGHT BUTTON */}
@@ -118,7 +138,7 @@ const Header = () => {
             </button>
             <button
               className="consult-btn"
-              onClick={() => goToPage("/contact")}
+              onClick={handleCounsellingClick}
             >
               Free Consultation
             </button>

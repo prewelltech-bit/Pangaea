@@ -26,6 +26,8 @@ import WhatsAppChat from "./component/WhatsAppChat";
 // import Footer1 from "./Footer/Footer1";
 
 import { ThemeProvider } from "./context/ThemeContext";
+import Course from "./component/Course/course";
+import FormCounsalting from "./component/freecounselling/FormCounsalting";
 
 const App = () => {
   return (
@@ -49,6 +51,7 @@ const App = () => {
           <Route path="/Contact" element={<Contact />} />
           <Route path="/pte" element={<PTE />} />
           <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/course" element={<Course />} />
 
           <Route path="/blogs" element={<Blogs />} />
           <Route path="/australia-blog" element={<AustraliaBlog />} />
@@ -57,6 +60,7 @@ const App = () => {
 
           <Route path="/terms" element={<TermsAndCondition />} />
           <Route path="/privacy-policy" element={<PrivacyPolice />} />
+          <Route path="/free-counselling" element={<FormCounsalting />} />
         </Routes>
         {/* <Footer1 /> */}
         <Footer />

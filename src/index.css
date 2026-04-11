@@ -110,3 +110,88 @@ body,
 .wap:hover::after {
   width: 120px;
 }
+
+/* Swiper Navigation Customization */
+.uni-swiper-section {
+  position: relative;
+}
+
+/* Adjust pagination slightly higher so arrows fit cleanly below it */
+.uni-swiper-section .swiper-pagination {
+  bottom: 25px !important;
+}
+
+.uni-swiper-section .swiper-button-next,
+.uni-swiper-section .swiper-button-prev {
+  top: auto !important;
+  bottom: -15px !important;
+  /* Position perfectly below pagination */
+  width: 44px !important;
+  height: 44px !important;
+  color: var(--brand-blue) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin: 0 !important;
+  background-image: none !important;
+  transition: transform 0.3s ease, color 0.3s ease !important;
+}
+
+/* Hide Swiper's default inline SVGs to fix the ugly double-icon overlap! */
+.uni-swiper-section .swiper-button-next svg,
+.uni-swiper-section .swiper-button-prev svg {
+  display: none !important;
+}
+
+/* Anchor perfectly to the absolute center to NEVER overlap */
+.uni-swiper-section .swiper-button-prev {
+  left: 50% !important;
+  right: auto !important;
+  transform: translateX(-150%) !important;
+}
+
+.uni-swiper-section .swiper-button-next {
+  left: 50% !important;
+  right: auto !important;
+  transform: translateX(50%) !important;
+}
+
+/* Clean long arrows overriding Swiper */
+.uni-swiper-section .swiper-button-prev::after,
+.uni-swiper-section .swiper-button-next::after {
+  font-family: inherit !important;
+  font-size: 32px !important;
+  font-weight: 300 !important;
+}
+
+.uni-swiper-section .swiper-button-prev::after {
+  content: '\2190' !important;
+  /* ← Long robust arrow */
+}
+
+.uni-swiper-section .swiper-button-next::after {
+  content: '\2192' !important;
+  /* → Long robust arrow */
+}
+
+/* Hover effect with anchored offsets kept intact */
+.uni-swiper-section .swiper-button-prev:hover {
+  color: var(--accent-blue) !important;
+  transform: translateX(-150%) scale(1.1) !important;
+}
+
+.uni-swiper-section .swiper-button-next:hover {
+  color: var(--accent-blue) !important;
+  transform: translateX(50%) scale(1.1) !important;
+}
+
+/* Dark theme overrides */
+.dark .uni-swiper-section .swiper-button-next,
+.dark .uni-swiper-section .swiper-button-prev {
+  color: #fff !important;
+}
+
+.dark .uni-swiper-section .swiper-button-next:hover,
+.dark .uni-swiper-section .swiper-button-prev:hover {
+  color: var(--accent-blue) !important;
+}

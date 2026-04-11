@@ -82,7 +82,7 @@ const UkSection1 = () => {
           modules={[Navigation, Pagination, Autoplay]}
           spaceBetween={30}
           slidesPerView={3}
-          // navigation
+          navigation={true}
           pagination={{ clickable: true }}
           autoplay={{ delay: 3500 }}
           loop={true}
