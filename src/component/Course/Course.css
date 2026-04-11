@@ -25,17 +25,33 @@
   padding: 20px;
   border-radius: 16px;
   height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.filter-section h3 {
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: #1e293b;
+  font-weight: 600;
+}
+
+.filter-scroll {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .country-btn {
   width: 100%;
-  padding: 14px;
-  margin-bottom: 12px;
+  padding: 12px 14px;
+  margin-bottom: 0;
   border: none;
   background: transparent;
-  font-size: 16px;
+  font-size: 15px;
   text-align: left;
-  border-radius: 12px;
+  border-radius: 10px;
   cursor: pointer;
   color: #475569;
   transition: all 0.3s ease;
@@ -55,36 +71,104 @@
   flex: 1;
 }
 
-/* GRID */
-.course-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+/* LIST LAYOUT */
+.course-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
-.course-card {
+.course-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background: #ffffff;
-  border-radius: 22px;
+  border-radius: 12px;
+  padding: 20px 24px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid #f1f5f9;
+}
+
+.course-list-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  border-color: #e2e8f0;
+}
+
+.course-item-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.course-item-logo {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  background: #f8fafc;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0a2351;
   overflow: hidden;
-  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
-  transition: all 0.35s ease;
 }
 
-.course-card:hover {
-  transform: translateY(-8px);
-}
-
-.course-card img {
+.uni-logo-img {
   width: 100%;
-  height: 210px;
-  object-fit: cover;
+  height: 100%;
+  object-fit: contain;
+  mix-blend-mode: multiply;
 }
 
-.course-title {
-  padding: 16px 18px;
-  font-size: 16px;
+.course-item-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.course-item-info .course-university {
+  font-size: 15px;
+  color: #64748b;
   font-weight: 500;
   text-align: left;
+}
+
+.course-item-info .course-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1e293b;
+  margin: 0;
+  text-align: left;
+}
+
+.course-item-right {
+  flex-shrink: 0;
+}
+
+.view-more-link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #0a2351;
+  transition: color 0.3s ease;
+}
+
+.course-list-item:hover .view-more-link {
+  color: #1d4ed8;
+}
+
+.no-courses {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 40px;
+  color: #64748b;
+  font-size: 16px;
 }
 
 /* Responsive */
@@ -103,13 +187,27 @@
   .sidebar {
     width: 100%;
     display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow-x: visible;
+  }
+
+  .filter-section h3 {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+
+  .filter-scroll {
+    display: flex;
+    flex-direction: row;
     gap: 10px;
     overflow-x: auto;
     -ms-overflow-style: none;
     scrollbar-width: none;
+    padding-bottom: 5px;
   }
 
-  .sidebar::-webkit-scrollbar {
+  .filter-scroll::-webkit-scrollbar {
     display: none;
   }
 
@@ -128,8 +226,15 @@
     padding: 0 20px;
   }
 
-  .course-grid {
-    grid-template-columns: 1fr;
+  .course-list-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .course-item-right {
+    align-self: flex-start;
+    padding-left: 70px;
   }
 }
 
@@ -143,16 +248,26 @@
 }
 
 .dark .sidebar,
-.dark .course-card {
-  background: #575555;
+.dark .course-list-item {
+  background: #2d2d2d;
+  border-color: #404040;
+  box-shadow: none;
 }
 
-.dark .country-btn {
+.dark .course-list-item:hover {
+  border-color: #525252;
+}
+
+.dark .filter-section h3 {
   color: #ffffff;
 }
 
+.dark .country-btn {
+  color: #cbd5e1;
+}
+
 .dark .country-btn:hover {
-  background: #737373;
+  background: #404040;
 }
 
 .dark .country-btn.active {
@@ -160,6 +275,31 @@
   color: #ffffff;
 }
 
-.dark .course-title {
-  color: #ffffff;
+.dark .course-item-logo {
+  background: #ffffff;
+  color: #cbd5e1;
+}
+
+.dark .uni-logo-img {
+  mix-blend-mode: normal;
+}
+
+.dark .course-item-info .course-title {
+  color: #f1f5f9;
+}
+
+.dark .course-item-info .course-university {
+  color: #94a3b8;
+}
+
+.dark .view-more-link {
+  color: #93c5fd;
+}
+
+.dark .course-list-item:hover .view-more-link {
+  color: #bfdbfe;
+}
+
+.dark .no-courses {
+  color: #cbd5e1;
 }

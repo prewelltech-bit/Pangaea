@@ -116,10 +116,10 @@ function BookingForm({ selectedSlot, selectedDate, insideModal = false }) {
         </div>
 
         <div>
-          <label>Last Name</label>
+          <label>Surname</label>
           <input
             {...register("last_name")}
-            placeholder="Last Name"
+            placeholder="Surname"
             style={{ width: "100%", borderColor: errors.last_name ? "#e63946" : "" }}
           />
           {errors.last_name && <span className="error-msg">{errors.last_name.message}</span>}

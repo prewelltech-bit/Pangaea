@@ -42,47 +42,30 @@ function SlotSelector({ selectedSlot, setSelectedSlot, selectedDate, setSelected
         <div style={{ marginBottom: "20px" }}>
           <input
             type="date"
+            className="date-picker-input"
             value={selectedDate}
             onChange={(e) => {
               setSelectedDate(e.target.value);
               setSelectedSlot(null);
             }}
             min={new Date().toLocaleDateString('en-CA')}
-            style={{
-              padding: "10px",
-              borderRadius: "8px",
-              border: "1px solid #ccc",
-              maxWidth: "300px",
-              width: "100%",
-              fontSize: "16px",
-              fontFamily: "inherit"
-            }}
           />
         </div>
       )}
-      <div
-        style={{ display: "flex", flexWrap: "wrap", gap: "10px" }}
-        className="slot-booking"
-      >
+      <div className="slot-booking">
         {slots.map((slot) => {
           const isSlotBooked = bookedTimes.includes(slot.id) || slot.status === "booked";
+          let btnClass = "slot-btn";
+          if (isSlotBooked) btnClass += " booked";
+          else if (selectedSlot?.id === slot.id) btnClass += " selected";
+          else btnClass += " available";
+
           return (
             <button
               key={slot.id}
               disabled={isSlotBooked}
+              className={btnClass}
               onClick={() => setSelectedSlot(slot)}
-              style={{
-                padding: "10px 15px",
-                border: "1px solid green",
-                background:
-                  isSlotBooked
-                    ? "#ddd"
-                    : selectedSlot?.id === slot.id
-                      ? "green"
-                      : "white",
-                color: isSlotBooked ? "#999" : selectedSlot?.id === slot.id ? "white" : "black",
-                cursor: isSlotBooked ? "not-allowed" : "pointer",
-              }}
             >
               {slot.time}
             </button>
