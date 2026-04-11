@@ -176,9 +176,9 @@
   display: none;
 }
 
-/* ================= TABLET ================= */
+/* ================= TABLET & MOBILE ================= */
 
-@media (max-width: 968px) {
+@media (max-width: 1200px) {
   .nav-links {
     display: none;
   }
@@ -197,6 +197,20 @@
     height: 3px;
     background: #fff;
     margin: 5px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  /* Hamburger to Cross Animation */
+  .mobile-menu-icon.open .bar1 {
+    transform: translateY(13px) rotate(45deg);
+  }
+
+  .mobile-menu-icon.open .bar2 {
+    opacity: 0;
+  }
+
+  .mobile-menu-icon.open .bar3 {
+    transform: translateY(-13px) rotate(-45deg);
   }
 
   .nav-links-mobile {
@@ -220,6 +234,7 @@
 
   .nav-links-mobile li {
     font-size: 18px;
+    color: var(--text-main);
   }
 
   .nav-right {
@@ -228,27 +243,62 @@
     margin-right: 15px;
   }
 
-  .consult-btn {
+  .nav-right .consult-btn {
     display: none;
+  }
+
+  .mobile-consult-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    margin-top: 10px;
   }
 
   .mobile-menu-icon {
     display: flex;
+    flex-direction: column;
+    background: transparent;
+    border: none;
+  }
+
+  .dropdown-trigger {
+    flex-wrap: wrap;
   }
 
   .dropdown-menu.mobile {
     position: static;
     background: transparent;
     box-shadow: none;
-    padding-left: 10px;
+    padding-left: 15px;
+    width: 100%;
+    transform: none;
+    margin-top: 10px;
   }
 
   .dropdown-item {
-    color: #fff;
+    color: var(--text-main);
+    padding: 12px 10px;
+    font-size: 16px;
   }
 
   .dropdown-item:hover {
-    background: transparent;
+    background: rgba(0, 0, 0, 0.05);
+    /* Slight dark hover effect for mobile */
+  }
+
+  /* DARK THEME FOR MOBILE MENU */
+  .dark .nav-links-mobile {
+    background: #1e1e2d;
+    /* Good dark theme matching */
+  }
+
+  .dark .nav-links-mobile li,
+  .dark .dropdown-menu.mobile .dropdown-item {
+    color: #ffffff;
+  }
+
+  .dark .dropdown-item:hover {
+    background: rgba(255, 255, 255, 0.1);
   }
 }
 
@@ -260,7 +310,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.4);
+  background: rgba(0, 0, 0, 0.4);
   z-index: 999;
 }
 

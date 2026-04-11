@@ -106,6 +106,18 @@ const Header = () => {
             <li onClick={() => goToPage("/blogs")}>Blogs</li>
             <li onClick={() => goToPage("/contact")}>Contact Us</li>
             <li onClick={() => goToPage("/course")}>Course</li>
+            
+            {/* MOBILE ONLY CONSULTATION BUTTON */}
+            {isMobile && (
+              <li className="mobile-only-btn">
+                <button
+                  className="consult-btn mobile-consult-btn"
+                  onClick={handleCounsellingClick}
+                >
+                  Free Consultation
+                </button>
+              </li>
+            )}
           </ul>
 
           {/* RIGHT */}
