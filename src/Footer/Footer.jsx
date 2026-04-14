@@ -26,7 +26,7 @@ const Footer = () => {
           <div className="footer7-top">
             {/* Brand */}
             <motion.div className="footer7-brand" variants={getDirectionVariants('left')}>
-              <img src={logoSrc} alt="Pangaea Pathways Logo" className="footer7-logo" />
+              <a href="/"><img src={logoSrc} alt="Pangaea Pathways Logo" className="footer7-logo" /></a>
             </motion.div>
 
             {/* Links */}
