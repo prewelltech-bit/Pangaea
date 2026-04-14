@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { useRevealAnimation, staggerContainerVariants, getDirectionVariants } from "../hooks/useRevealAnimation";
 import { Link } from "react-router-dom";
 import { useTheme } from "../context/ThemeContext";
+import { FaInstagram, FaTelegramPlane, FaLinkedinIn } from "react-icons/fa";
 
 const Footer = () => {
   const { theme } = useTheme();
@@ -37,9 +38,15 @@ const Footer = () => {
 
             {/* Social Icons */}
             <motion.div className="footer7-social" variants={getDirectionVariants('right')}>
-              <a href="https://www.instagram.com/pangaea_pathways/" className="footer-a">i</a>
-              <a href="#" className="footer-a">t</a>
-              <a href="#" className="footer-a">in</a>
+              <a href="https://www.instagram.com/pangaea_pathways/" className="footer-a" aria-label="Instagram">
+                <FaInstagram size={18} />
+              </a>
+              <a href="#" className="footer-a" aria-label="Telegram">
+                <FaTelegramPlane size={18} />
+              </a>
+              <a href="#" className="footer-a" aria-label="LinkedIn">
+                <FaLinkedinIn size={18} />
+              </a>
             </motion.div>
 
           </div>

@@ -27,12 +27,14 @@ import WhatsAppChat from "./component/WhatsAppChat";
 
 import { ThemeProvider } from "./context/ThemeContext";
 import FormCounsalting from "./component/freecounselling/FormCounsalting";
-import Course from "./component/Course/course";
+import Course from "./component/Course/Course";
+import ScrollToTop from "./component/ScrollToTop";
 
 const App = () => {
   return (
     <ThemeProvider>
       <BrowserRouter>
+        <ScrollToTop />
         <Header />
 
         <Routes>

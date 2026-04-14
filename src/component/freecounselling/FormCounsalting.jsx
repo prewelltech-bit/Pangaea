@@ -12,6 +12,7 @@ const FormCounsalting = () => {
                 setSelectedSlot={setSelectedSlot}
                 selectedDate={selectedDate}
                 setSelectedDate={setSelectedDate}
+                showDatePicker={true}
             />
             <BookingForm selectedSlot={selectedSlot} selectedDate={selectedDate} />
         </>

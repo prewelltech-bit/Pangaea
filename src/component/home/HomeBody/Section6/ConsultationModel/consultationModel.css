@@ -258,6 +258,8 @@
   font-weight: 500;
   transition: all 0.3s ease;
   font-family: inherit;
+  width: 140px;
+  text-align: center;
 }
 
 .slot-btn.available {

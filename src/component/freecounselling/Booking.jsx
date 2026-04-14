@@ -150,11 +150,18 @@ function BookingForm({ selectedSlot, selectedDate, insideModal = false }) {
       <div className="form-row">
         <div>
           <label>Your preferred study destination</label>
-          <input
+          <select
             {...register("study_destination")}
-            placeholder="only Au, Uk, Nz, Eu, Canada, Us"
-            style={{ width: "100%", borderColor: errors.study_destination ? "#e63946" : "" }}
-          />
+            style={{ width: "100%", borderColor: errors.study_destination ? "#e63946" : "", padding: "10px", borderRadius: "5px", border: "1px solid #ccc" }}
+          >
+            <option value="">-- Select Destination --</option>
+            <option value="Australia">Australia</option>
+            <option value="UK">United Kingdom</option>
+            <option value="Canada">Canada</option>
+            <option value="New Zealand">New Zealand</option>
+            <option value="Europe">Europe</option>
+            <option value="United States">United States</option>
+          </select>
           {errors.study_destination && <span className="error-msg">{errors.study_destination.message}</span>}
         </div>
       </div>
@@ -162,11 +169,16 @@ function BookingForm({ selectedSlot, selectedDate, insideModal = false }) {
       <div className="form-row">
         <div>
           <label>When do you plan to study?</label>
-          <input
+          <select
             {...register("study_timeline")}
-            placeholder="When do you plan to study?"
-            style={{ width: "100%", borderColor: errors.study_timeline ? "#e63946" : "" }}
-          />
+            style={{ width: "100%", borderColor: errors.study_timeline ? "#e63946" : "", padding: "10px", borderRadius: "5px", border: "1px solid #ccc" }}
+          >
+            <option value="">-- Select Timeline --</option>
+            <option value="Within 3 Months">Within 3 Months</option>
+            <option value="3-6 Months">3-6 Months</option>
+            <option value="6-12 Months">6-12 Months</option>
+            <option value="More than a Year">More than a Year</option>
+          </select>
           {errors.study_timeline && <span className="error-msg">{errors.study_timeline.message}</span>}
         </div>
 
