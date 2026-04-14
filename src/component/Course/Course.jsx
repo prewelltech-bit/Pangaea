@@ -37,15 +37,22 @@ const Course = () => {
 
     const [activeCountry, setActiveCountry] = useState(countries[0] || "");
     const [activeSector, setActiveSector] = useState("All");
+    const [searchQuery, setSearchQuery] = useState("");
 
     const filteredCourses = useMemo(() => {
         const countryData = courseData.find(c => c.country === activeCountry);
         if (!countryData) return [];
 
+        const lowerQuery = searchQuery.toLowerCase();
         const results = [];
         countryData.universities?.forEach(u => {
             u.courses?.forEach(crs => {
-                if (activeSector === "All" || crs.sector === activeSector) {
+                const matchesSector = activeSector === "All" || crs.sector === activeSector;
+                const matchesSearch = !searchQuery || 
+                    crs.name.toLowerCase().includes(lowerQuery) || 
+                    u.name.toLowerCase().includes(lowerQuery);
+
+                if (matchesSector && matchesSearch) {
                     results.push({
                         ...crs,
                         universityName: u.name,
@@ -55,7 +62,7 @@ const Course = () => {
             });
         });
         return results;
-    }, [activeCountry, activeSector]);
+    }, [activeCountry, activeSector, searchQuery]);
 
     return (
         <div className="course-page-wrapper">
@@ -100,6 +107,20 @@ const Course = () => {
 
                 {/* CONTENT */}
                 <div className="content">
+                    <div className="course-search-container" style={{ marginBottom: "25px", position: "relative" }}>
+                        <input
+                            type="text"
+                            placeholder="🔍 Search courses or universities..."
+                            value={searchQuery}
+                            onChange={(e) => setSearchQuery(e.target.value)}
+                            style={{
+                                width: "100%", padding: "14px 20px", borderRadius: "12px", 
+                                border: "1px solid #d1d5db", fontSize: "16px", outline: "none",
+                                boxShadow: "0 2px 10px rgba(0,0,0,0.05)"
+                            }}
+                        />
+                    </div>
+                    
                     <div className="course-list">
                         {filteredCourses.map((course, idx) => {
                             const logoUrl = logoMap[course.universityName.trim()];
