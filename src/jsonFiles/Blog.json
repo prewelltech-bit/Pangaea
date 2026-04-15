@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "id": 1,
     "country": "Australia",
@@ -10,6 +10,7 @@
   },
   {
     "id": 2,
+    "active": false,
     "country": "Canada",
     "title": "Canada Study Visa February 2025: New IRCC Rules",
     "description": "Start your Business with 485 Visa: How to Start your Entrepreneurship Journey in Australia...",
@@ -19,6 +20,7 @@
   },
   {
     "id": 3,
+    "active": false,
     "country": "UK",
     "title": "Can You Change Jobs on a UK 485 Visa Without Affecting PR?",
     "description": "Can You Change Jobs on a 485 Without Hurting Your PR Plans?",
@@ -27,5 +29,3 @@
     "slug": "uk-study-feb-2026"
   }
 ]
-
-

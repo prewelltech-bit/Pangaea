@@ -11,16 +11,19 @@ const Blogs = ({ isHome = false }) => {
     navigate("/australia-blog"); // direct Australia page
   };
 
-  // Extract unique countries from the blog data
-  const uniqueCountries = ["All", ...new Set(blogData.map((blog) => blog.country))];
+  // Only include blogs that are active (no active:false flag)
+  const activeBlogs = blogData.filter((blog) => blog.active !== false);
+
+  // Extract unique countries from active blogs only
+  const uniqueCountries = ["All", ...new Set(activeBlogs.map((blog) => blog.country))];
 
   // Filter the blogs based on the selected country
   const filteredBlogs =
     activeCountry === "All"
-      ? blogData
-      : blogData.filter((blog) => blog.country === activeCountry);
+      ? activeBlogs
+      : activeBlogs.filter((blog) => blog.country === activeCountry);
 
-  const displayBlogs = isHome ? blogData.slice(0, 1) : filteredBlogs;
+  const displayBlogs = isHome ? activeBlogs.slice(0, 1) : filteredBlogs;
 
   const renderBlogCards = () => (
     <div className="blogs-container">
