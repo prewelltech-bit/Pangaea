@@ -149,6 +149,16 @@
   gap: 4px;
 }
 
+.dropdown-arrow {
+  display: inline-flex;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.dropdown-arrow.open {
+  transform: rotate(180deg);
+}
+
 .dropdown-menu {
   position: absolute;
   top: 100%;
