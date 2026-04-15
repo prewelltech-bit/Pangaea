@@ -106,7 +106,7 @@ function BookingForm({ selectedSlot, selectedDate, insideModal = false }) {
     <form className="counselling-form" onSubmit={handleSubmit(onSubmit)}>
       <div className="form-row">
         <div>
-          <label>First name</label>
+          <label>Name</label>
           <input
             {...register("first_name")}
             placeholder="First Name"

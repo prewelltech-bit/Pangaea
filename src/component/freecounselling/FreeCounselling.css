@@ -170,6 +170,11 @@ button:hover {
   background-color: #000000;
 }
 
+.dark .form-row select {
+  background-color: #000000;
+  color: #8f8f8f;
+}
+
 .dark .counselling-box h2 {
   color: #179ae6;
 }

@@ -126,7 +126,7 @@ const Contact = () => {
             <div>
               <input
                 {...register("fname")}
-                placeholder="First name *"
+                placeholder="Name *"
                 style={{ borderColor: errors.fname ? "#e63946" : "" }}
               />
               {errors.fname && <span className="error">{errors.fname.message}</span>}
@@ -134,7 +134,7 @@ const Contact = () => {
             <div>
               <input
                 {...register("lname")}
-                placeholder="Last name"
+                placeholder="Surname"
                 style={{ borderColor: errors.lname ? "#e63946" : "" }}
               />
               {errors.lname && <span className="error">{errors.lname.message}</span>}
@@ -190,9 +190,9 @@ const Contact = () => {
           </div>
 
           <div style={{ marginBottom: "22px" }}>
-            <textarea 
-              {...register("message")} 
-              placeholder="Your message *" 
+            <textarea
+              {...register("message")}
+              placeholder="Your message *"
               style={{ borderColor: errors.message ? "#e63946" : "", marginBottom: "5px" }}
             ></textarea>
             {errors.message && <span className="error">{errors.message.message}</span>}
