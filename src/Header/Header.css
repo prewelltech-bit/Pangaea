@@ -148,23 +148,20 @@
   align-items: center;
   gap: 4px;
 }
-
 .dropdown-arrow {
   display: inline-flex;
   align-items: center;
-  transition: transform 0.3s ease;
+  transition: transform .5s ease-in-out;
 }
-
 .dropdown-arrow.open {
   transform: rotate(180deg);
 }
-
 .dropdown-menu {
   position: absolute;
   top: 100%;
   left: 50%;
   transform: translateX(-50%);
-  /* background: rgba(10, 35, 81, 0.98); */
+  background: rgba(10, 35, 81, 0.98);
   border-radius: 10px;
   min-width: 200px;
   padding: 10px 0;
