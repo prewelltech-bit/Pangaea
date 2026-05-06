@@ -11,12 +11,17 @@ import usaUni from "../../jsonFiles/UniversityList/USA.json";
 import euUni from "../../jsonFiles/UniversityList/Europian.json";
 import nzUni from "../../jsonFiles/UniversityList/NewZealand.json";
 
+// Normalize any logo path to a clean /assets/... format
+// Handles all variants: '/assets/...', './assets/...', '..//assets/...', '../assets/...'
+const normalizeLogo = (logo) => '/' + logo.replace(/^[./]+/, '');
+
 // Create a mapping of University Name to Logo URL
-const allUnis = [...ausUni, ...canUni, ...ukUni, ...usaUni, ...euUni.flat(), ...nzUni];
+// euUni.flat(2) handles the nested array bug inside Europian.json
+const allUnis = [...ausUni, ...canUni, ...ukUni, ...usaUni, ...euUni.flat(2), ...nzUni];
 const logoMap = {};
 allUnis.forEach(u => {
     if (u && u.name && u.logo) {
-        logoMap[u.name.trim()] = u.logo.startsWith('.') ? u.logo.replace(/^\.+/, '') : u.logo;
+        logoMap[u.name.trim()] = normalizeLogo(u.logo);
     }
 });
 
@@ -48,8 +53,8 @@ const Course = () => {
         countryData.universities?.forEach(u => {
             u.courses?.forEach(crs => {
                 const matchesSector = activeSector === "All" || crs.sector === activeSector;
-                const matchesSearch = !searchQuery || 
-                    crs.name.toLowerCase().includes(lowerQuery) || 
+                const matchesSearch = !searchQuery ||
+                    crs.name.toLowerCase().includes(lowerQuery) ||
                     u.name.toLowerCase().includes(lowerQuery);
 
                 if (matchesSector && matchesSearch) {
@@ -114,13 +119,13 @@ const Course = () => {
                             value={searchQuery}
                             onChange={(e) => setSearchQuery(e.target.value)}
                             style={{
-                                width: "100%", padding: "14px 20px", borderRadius: "12px", 
+                                width: "100%", padding: "14px 20px", borderRadius: "12px",
                                 border: "1px solid #d1d5db", fontSize: "16px", outline: "none",
                                 boxShadow: "0 2px 10px rgba(0,0,0,0.05)"
                             }}
                         />
                     </div>
-                    
+
                     <div className="course-list">
                         {filteredCourses.map((course, idx) => {
                             const logoUrl = logoMap[course.universityName.trim()];
