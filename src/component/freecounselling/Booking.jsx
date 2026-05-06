@@ -114,7 +114,6 @@ function BookingForm({ selectedSlot, selectedDate, insideModal = false }) {
           />
           {errors.first_name && <span className="error-msg">{errors.first_name.message}</span>}
         </div>
-
         <div>
           <label>Surname</label>
           <input

@@ -28,7 +28,6 @@ const Footer = () => {
             <motion.div className="footer7-brand" variants={getDirectionVariants('left')}>
               <a href="/"><img src={logoSrc} alt="Pangaea Pathways Logo" className="footer7-logo" /></a>
             </motion.div>
-
             {/* Links */}
             <motion.div className="footer7-links" variants={getDirectionVariants('up')}>
               <a href="#" className="footer-a">Documentation</a>
@@ -48,9 +47,7 @@ const Footer = () => {
                 <FaLinkedinIn size={18} />
               </a>
             </motion.div>
-
           </div>
-
           {/* Bottom */}
           <motion.div className="footer7-bottom" variants={getDirectionVariants('down')}>
             <p>
